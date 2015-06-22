@@ -1,6 +1,9 @@
-21\ :sup:`st` June 2015 PJH
+===========================================================
+Tutorial on CellML, OpenCOR & the Physiome Model Repository
+===========================================================
 
-**Tutorial on CellML, OpenCOR & the Physiome Model Repository**
+.. warning::
+   This version of the tutorial is undergoing translation from the original source to reStructuredText. Many aspects of formatting and presentation are currently lacking, although being worked on. The original tutorial is available here: :download:`OpenCOR-Tutorial-v14.pdf <images/OpenCOR-Tutorial-v14.pdf>`.
 
 This tutorial shows you how to install and run the OpenCOR [1]_ software
 [1], to author and edit CellML models [2]_ [2] and to use the Physiome
@@ -25,56 +28,18 @@ emphasis in the tutorial on establishing ‘best practice’ in the creation
 of CellML models and using the PMR resources, particularly in relation
 to modular approaches (model hierarchies) and model annotation.
 
-**Note**: This tutorial relies on readers having some background in
-algebra and calculus, but tries to explain all mathematical concepts
-beyond this, along with the physical principles, as they are needed for
-the development of CellML models. Any errors discovered or suggested
-improvements emailed to p.hunter@auckland.ac.nz will be gratefully
-received!
+.. note::
+   This tutorial relies on readers having some background in
+   algebra and calculus, but tries to explain all mathematical concepts
+   beyond this, along with the physical principles, as they are needed for
+   the development of CellML models. Any errors discovered or suggested
+   improvements emailed to p.hunter@auckland.ac.nz will be gratefully
+   received!
 
-**Contents** page
+.. contents::
 
-1.  Background to the VPH-Physiome project 2
-
-2.  Install and launch OpenCOR 3
-
-3.  Create and run a simple CellML model: editing and simulation 4
-
-4.  Open an existing CellML file from a local directory or the Physiome
-    Model Repository 8
-
-5.  A simple first order ODE 9
-
-6.  The Lorenz attractor 10
-
-7.  A model of ion channel gating and current: Introducing CellML units
-    12
-
-8.  A model of the potassium channel: Introducing CellML components and
-    connections 16
-
-9.  A model of the sodium channel: Introducing CellML encapsulation and
-    interfaces 20
-
-10. A model of the nerve action potential: Introducing CellML imports 24
-
-11. A model of the cardiac action potential: Importing units and
-    parameters 28
-
-12. Model annotation 33
-
-13. The Physiome Model Repository and the link to bioinformatics 37
-
-14. Speed comparisons with MatLab 41
-
-15. Future developments 42
-
-16. References 42
-
-**
-**
-
-1. **Background to the VPH-Physiome project**
+Background to the VPH-Physiome project
+======================================
 
 To be of benefit to applications in healthcare, organ and whole organism
 physiology needs to be understood at both a systems level and in terms
@@ -117,7 +82,8 @@ project [9]_. The VPH-Institute [10]_ was formed in 2012 as a virtual
 organisation to providing strategic leadership, initially in Europe but
 now globally, for the VPH-Physiome Project.
 
-1. **Install and launch OpenCOR**
+Install and launch OpenCOR
+==========================
 
 | Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`__.
   Versions are available for Windows, Mac and Linux. Note that the
@@ -217,17 +183,17 @@ comment.
 
 A partial list of mathematical functions available for OpenCOR is:
 
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: x^{2}              | sqr(x)     | .. math:: \sqrt{x}           | sqrt(x)    | .. math:: \ln x              | ln(x)      | .. math:: \operatorname{}x       | log(x)     | .. math:: e^{x}                  | exp(x)     | .. math:: x^{a}              | pow(x,a)   |
-+==============================+============+==============================+============+==============================+============+==================================+============+==================================+============+==============================+============+
-| .. math:: \sin x             | sin(x)     | .. math:: \cos x             | cos(x)     | .. math:: \tan x             | tan(x)     | .. math:: \csc x                 | csc(x)     | .. math:: \sec x                 | sec(x)     | .. math:: \cot x             | cot(x)     |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \operatorname{}x   | asin(x)    | .. math:: \operatorname{}x   | acos(x)    | .. math:: \operatorname{}x   | atan(x)    | .. math:: \operatorname{}x       | acsc(x)    | .. math:: \operatorname{}x       | asec(x)    | .. math:: \operatorname{}x   | acot(x)    |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \sinh x            | sinh(x)    | .. math:: \cosh x            | cosh(x)    | .. math:: \tanh x            | tanh(x)    | .. math:: \operatorname{csch}x   | csch(x)    | .. math:: \operatorname{sech}x   | sech(x)    | .. math:: \coth x            | coth(x)    |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \operatorname{}x   | asinh(x)   | .. math:: \operatorname{}x   | acosh(x)   | .. math:: \operatorname{}x   | atanh(x)   | .. math:: \operatorname{}x       | acsch(x)   | .. math:: \operatorname{}x       | asech(x)   | .. math:: \operatorname{}x   | acoth(x)   |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: x^{2}            | sqr(x)   | .. math:: \sqrt{x}         | sqrt(x)  | .. math:: \ln x            | ln(x)    | .. math:: \operatorname{}x     | log(x)   | .. math:: e^{x}                | exp(x)   | .. math:: x^{a}            | pow(x,a) |
++============================+==========+============================+==========+============================+==========+================================+==========+================================+==========+============================+==========+
+| .. math:: \sin x           | sin(x)   | .. math:: \cos x           | cos(x)   | .. math:: \tan x           | tan(x)   | .. math:: \csc x               | csc(x)   | .. math:: \sec x               | sec(x)   | .. math:: \cot x           | cot(x)   |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \operatorname{}x | asin(x)  | .. math:: \operatorname{}x | acos(x)  | .. math:: \operatorname{}x | atan(x)  | .. math:: \operatorname{}x     | acsc(x)  | .. math:: \operatorname{}x     | asec(x)  | .. math:: \operatorname{}x | acot(x)  |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \sinh x          | sinh(x)  | .. math:: \cosh x          | cosh(x)  | .. math:: \tanh x          | tanh(x)  | .. math:: \operatorname{csch}x | csch(x)  | .. math:: \operatorname{sech}x | sech(x)  | .. math:: \coth x          | coth(x)  |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \operatorname{}x | asinh(x) | .. math:: \operatorname{}x | acosh(x) | .. math:: \operatorname{}x | atanh(x) | .. math:: \operatorname{}x     | acsch(x) | .. math:: \operatorname{}x     | asech(x) | .. math:: \operatorname{}x | acoth(x) |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
 
 **Table 1**. The list of mathematical functions available for coding in
 OpenCOR.
@@ -590,7 +556,7 @@ with parameter :math:`A = 0.2645` and initial conditions
 :math:`x\left( t \right)` and :math:`y\left( x \right)`. Also try with
 :math:`A = 0.265` to see how sensitive the solution is to small changes
 in parameter values. **
-**
+***********************
 
 1. **A model of ion channel gating and current: Introducing CellML
    units**
@@ -748,19 +714,19 @@ defined units) are: **Hz** (s:sup:`−1`); **Newton**, N
 H (Wb.A:sup:`−1`). Multiples and fractions of these are defined as
 follows:
 
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-| Multiples   | Prefix   |                | deca            | hecto           | kilo            | mega            | giga            | tera             | peta             | exa              | zetta            | yotta            |
-+=============+==========+================+=================+=================+=================+=================+=================+==================+==================+==================+==================+==================+
-|             | Symbol   |                | da              | h               | k               | M               | G               | T                | P                | E                | Z                | Y                |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`1`    | 10\ :sup:`2`    | 10\ :sup:`3`    | 10\ :sup:`6`    | 10\ :sup:`9`    | 10\ :sup:`12`    | 10\ :sup:`15`    | 10\ :sup:`18`    | 10\ :sup:`21`    | 10\ :sup:`24`    |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-| Fractions   | Prefix   |                | deci            | centi           | milli           | micro           | nano            | pico             | femto            | atto             | zepto            | yocto            |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Symbol   |                | d               | c               | m               | μ               | n               | p                | f                | a                | z                | y                |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`−1`   | 10\ :sup:`−2`   | 10\ :sup:`−3`   | 10\ :sup:`−6`   | 10\ :sup:`−9`   | 10\ :sup:`−12`   | 10\ :sup:`−15`   | 10\ :sup:`−18`   | 10\ :sup:`−21`   | 10\ :sup:`−24`   |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+| Multiples | Prefix |              | deca          | hecto         | kilo          | mega          | giga          | tera           | peta           | exa            | zetta          | yotta          |
++===========+========+==============+===============+===============+===============+===============+===============+================+================+================+================+================+
+|           | Symbol |              | da            | h             | k             | M             | G             | T              | P              | E              | Z              | Y              |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Factor | 10\ :sup:`0` | 10\ :sup:`1`  | 10\ :sup:`2`  | 10\ :sup:`3`  | 10\ :sup:`6`  | 10\ :sup:`9`  | 10\ :sup:`12`  | 10\ :sup:`15`  | 10\ :sup:`18`  | 10\ :sup:`21`  | 10\ :sup:`24`  |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+| Fractions | Prefix |              | deci          | centi         | milli         | micro         | nano          | pico           | femto          | atto           | zepto          | yocto          |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Symbol |              | d             | c             | m             | μ             | n             | p              | f              | a              | z              | y              |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Factor | 10\ :sup:`0` | 10\ :sup:`−1` | 10\ :sup:`−2` | 10\ :sup:`−3` | 10\ :sup:`−6` | 10\ :sup:`−9` | 10\ :sup:`−12` | 10\ :sup:`−15` | 10\ :sup:`−18` | 10\ :sup:`−21` | 10\ :sup:`−24` |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
 
 Units for this model, with multiples and fractions, are illustrated in
 the following *CellML Text* code:
@@ -2515,7 +2481,7 @@ terminology used in the models, CellML uses five separate ontologies:
 
 These ontologies are available through OpenCOR’s annotation facilities
 as explained below. **
-**
+**********************
 
 If we now go back to the potassium ion channel CellML model and, under
 *Editing*, click on *CellML* *Annotation*, the various elements of the
@@ -2871,6 +2837,9 @@ Uploading to PMR. Link to weblab.
 13. Cooling M, Hunter P and Crampin EJ. Modeling biological modularity
     with CellML. *IET Systems Biology* 2(2):73-79, 2008.
 
+Footnotes
+=========
+
 .. [1]
    OpenCOR is a C\ :sup:`++` desktop application written by Alan Garny
    at INRIA with funding support from the Auckland Bioengineering
@@ -3088,7 +3057,7 @@ Uploading to PMR. Link to weblab.
 .. [44]
    https://creativecommons.org/licenses/by/3.0/
 
-.. |image0| image:: media/image14.tif
+.. |image0| image:: media/image14.png
 .. |image1| image:: media/image15.png
 .. |image2| image:: media/image16.png
 .. |image3| image:: media/image17.png
