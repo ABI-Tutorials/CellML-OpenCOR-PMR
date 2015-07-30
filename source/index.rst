@@ -1,9 +1,6 @@
-===========================================================
-Tutorial on CellML, OpenCOR & the Physiome Model Repository
-===========================================================
+27\ :sup:`th` June 2015 PJH
 
-.. warning::
-   This version of the tutorial is undergoing translation from the original source to reStructuredText. Many aspects of formatting and presentation are currently lacking, although being worked on. The original tutorial is available here: :download:`OpenCOR-Tutorial-v14.pdf <images/OpenCOR-Tutorial-v14.pdf>`.
+**Tutorial on CellML, OpenCOR & the Physiome Model Repository**
 
 This tutorial shows you how to install and run the OpenCOR [1]_ software
 [1], to author and edit CellML models [2]_ [2] and to use the Physiome
@@ -28,18 +25,54 @@ emphasis in the tutorial on establishing ‘best practice’ in the creation
 of CellML models and using the PMR resources, particularly in relation
 to modular approaches (model hierarchies) and model annotation.
 
-.. note::
-   This tutorial relies on readers having some background in
-   algebra and calculus, but tries to explain all mathematical concepts
-   beyond this, along with the physical principles, as they are needed for
-   the development of CellML models. Any errors discovered or suggested
-   improvements emailed to p.hunter@auckland.ac.nz will be gratefully
-   received!
+**Note**: This tutorial relies on readers having some background in
+algebra and calculus, but tries to explain all mathematical concepts
+beyond this, along with the physical principles, as they are needed for
+the development of CellML models. [5]_
 
-.. contents::
+**Contents** page
 
-Background to the VPH-Physiome project
-======================================
+1.  Background to the VPH-Physiome project 2
+
+2.  Install and launch OpenCOR 3
+
+3.  Create and run a simple CellML model: editing and simulation 4
+
+4.  Open an existing CellML file from a local directory or the Physiome
+    Model Repository 8
+
+5.  A simple first order ODE 9
+
+6.  The Lorenz attractor 10
+
+7.  A model of ion channel gating and current: Introducing CellML units
+    12
+
+8.  A model of the potassium channel: Introducing CellML components and
+    connections 16
+
+9.  A model of the sodium channel: Introducing CellML encapsulation and
+    interfaces 20
+
+10. A model of the nerve action potential: Introducing CellML imports 24
+
+11. A model of the cardiac action potential: Importing units and
+    parameters 28
+
+12. Model annotation 34
+
+13. The Physiome Model Repository and the link to bioinformatics 38
+
+14. Speed comparisons with MATLAB 42
+
+15. Future developments 43
+
+16. References 44
+
+**
+**
+
+1. **Background to the VPH-Physiome project**
 
 To be of benefit to applications in healthcare, organ and whole organism
 physiology needs to be understood at both a systems level and in terms
@@ -59,39 +92,37 @@ systems. To address these challenges and to take advantage of
 bioengineering approaches to modelling anatomy and physiology, the
 International Union of Physiological Sciences (IUPS) formed the Physiome
 Project in 1997 as an international collaboration to provide a
-computational framework for understanding human physiology [5]_.
+computational framework for understanding human physiology [6]_.
 
 One of the primary goals of the Physiome Project [4] has been to promote
 the development of standards for the exchange of information between
 models. The first of these standards, dealing with time varying but
-spatially lumped processes, is CellML [5] and the second (dealing with
-spatially and time varying processes) is FieldML [6]_. A further goal of
-the Physiome Project has been the development of open source tools for
-creating and visualizing standards-based models and running model
-simulations. OpenCOR is the latest in a series of software projects
-aimed at providing a modelling environment for CellML models. Similar
-tools exist for FieldML models.
+spatially lumped processes, is CellML [5]. The second (dealing with
+spatially and time varying processes) is FieldML [6,7] [7]_. A further
+goal of the Physiome Project has been the development of open source
+tools for creating and visualizing standards-based models and running
+model simulations. OpenCOR is the latest in a series of software
+projects aimed at providing a modelling environment for CellML models.
+Similar tools exist for FieldML models.
 
-Following the publication of the STEP [7]_ (*Strategy for a European
+Following the publication of the STEP [8]_ (*Strategy for a European
 Physiome*) Roadmap in 2006, the European Commission in 2007 initiated
-the Virtual Physiological Human (VPH) project [6]. A related US
+the Virtual Physiological Human (VPH) project [8]. A related US
 initiative by the Interagency Modeling and Analysis Group (IMAG) began
-in 2003 [8]_. These projects and similar initiatives are now coordinated
+in 2003 [9]_. These projects and similar initiatives are now coordinated
 and are collectively referred to here as the ‘VPH-Physiome’
-project [9]_. The VPH-Institute [10]_ was formed in 2012 as a virtual
+project [10]_. The VPH-Institute [11]_ was formed in 2012 as a virtual
 organisation to providing strategic leadership, initially in Europe but
 now globally, for the VPH-Physiome Project.
 
-Install and launch OpenCOR
-==========================
+1. **Install and launch OpenCOR**
 
-| Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`__.
-  Versions are available for Windows, Mac and Linux. Note that the
-  annotation section of this tutorial relies on the OpenCOR snapshot
-  2015-06-09.
-| Create a shortcut to the executable (found in the bin directory) on
-  your desktop and click on this to launch OpenCOR. A window will appear
-  that looks like Figure 1(a).
+Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`__.
+Versions are available for Windows, Mac and Linux. Note that the
+annotation section of this tutorial relies on the OpenCOR snapshot
+2015-06-09 (or later). Create a shortcut to the executable (found in the
+bin directory) on your desktop and click on this to launch OpenCOR. A
+window will appear that looks like Figure 1(a).
 
 |image0| |image1|
 
@@ -108,7 +139,7 @@ can be dragged and dropped to the top or bottom of the central area as
 shown in Figure 1(b) or they can be individually undocked or closed. All
 closed panels can be re-displayed by enabling them in the *View* menu,
 or by using the *Tools* menu *Reset All* option. Clicking on
-‘CTRL’ [11]_ & ‘spacebar’ on the Windows version, removes (for less
+‘CTRL’ [12]_ & ‘spacebar’ on the Windows version, removes (for less
 clutter) or restores these two side panels.
 
 Any of the subpanels (*Physiome Model Repository*, *File Browser*, and
@@ -120,7 +151,7 @@ structure for your files.
 |image2|\ OpenCOR has a plugin architecture and can be used with or
 without a range of modules. These can be viewed under the *Tools* menu.
 By default they are all included, as shown in Figure 2. Information
-about developing plugins for OpenCOR is also available [12]_.
+about developing plugins for OpenCOR is also available [13]_.
 
 **
 **
@@ -128,14 +159,14 @@ about developing plugins for OpenCOR is also available [12]_.
 1. **Create and run a simple CellML model: editing and simulation**
 
 In this example we create a simple CellML model and run it. The model is
-the Van der Pol oscillator [13]_ defined by the second order equation
+the Van der Pol oscillator [14]_ defined by the second order equation
 
 .. math:: \frac{d^{2}x}{dt^{2}} - \mu\left( 1 - x^{2} \right)\frac{\text{dx}}{\text{dt}} + x = 0
 
 with initial conditions
 :math:`x = - 2;\ \frac{\text{dx}}{\text{dt}} = 0`. The parameter
 :math:`\mu` controls the magnitude of the damping term. To create a
-CellML model we convert this to two first order equations [14]_ by
+CellML model we convert this to two first order equations [15]_ by
 defining the velocity :math:`\frac{\text{dx}}{\text{dt}}` as a new
 variable :math:`y`:
 
@@ -172,28 +203,28 @@ where the code should go:
 
     **enddef**;
 
-Things to note [15]_ are: (i) the closing semicolon at the end of each
+Things to note [16]_ are: (i) the closing semicolon at the end of each
 line (apart from the first two *def* statements that are opening a
 CellML construct); (ii) the need to indicate dimensions for each
 variable and constant (all dimensionless in this example – but more on
 dimensions later); (iii) the use of *ode(x,t)* to indicate a first
-order [16]_ ODE in *x* and *t*, (iv) the use of the squaring function
+order [17]_ ODE in *x* and *t*, (iv) the use of the squaring function
 *sqr(x)* for :math:`x^{2}`, and (v) the use of ‘//’ to indicate a
 comment.
 
 A partial list of mathematical functions available for OpenCOR is:
 
-+----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
-| .. math:: x^{2}            | sqr(x)   | .. math:: \sqrt{x}         | sqrt(x)  | .. math:: \ln x            | ln(x)    | .. math:: \operatorname{}x     | log(x)   | .. math:: e^{x}                | exp(x)   | .. math:: x^{a}            | pow(x,a) |
-+============================+==========+============================+==========+============================+==========+================================+==========+================================+==========+============================+==========+
-| .. math:: \sin x           | sin(x)   | .. math:: \cos x           | cos(x)   | .. math:: \tan x           | tan(x)   | .. math:: \csc x               | csc(x)   | .. math:: \sec x               | sec(x)   | .. math:: \cot x           | cot(x)   |
-+----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
-| .. math:: \operatorname{}x | asin(x)  | .. math:: \operatorname{}x | acos(x)  | .. math:: \operatorname{}x | atan(x)  | .. math:: \operatorname{}x     | acsc(x)  | .. math:: \operatorname{}x     | asec(x)  | .. math:: \operatorname{}x | acot(x)  |
-+----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
-| .. math:: \sinh x          | sinh(x)  | .. math:: \cosh x          | cosh(x)  | .. math:: \tanh x          | tanh(x)  | .. math:: \operatorname{csch}x | csch(x)  | .. math:: \operatorname{sech}x | sech(x)  | .. math:: \coth x          | coth(x)  |
-+----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
-| .. math:: \operatorname{}x | asinh(x) | .. math:: \operatorname{}x | acosh(x) | .. math:: \operatorname{}x | atanh(x) | .. math:: \operatorname{}x     | acsch(x) | .. math:: \operatorname{}x     | asech(x) | .. math:: \operatorname{}x | acoth(x) |
-+----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
++------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
+| .. math:: x^{2}              | sqr(x)     | .. math:: \sqrt{x}           | sqrt(x)    | .. math:: \ln x              | ln(x)      | .. math:: \operatorname{}x       | log(x)     | .. math:: e^{x}                  | exp(x)     | .. math:: x^{a}              | pow(x,a)   |
++==============================+============+==============================+============+==============================+============+==================================+============+==================================+============+==============================+============+
+| .. math:: \sin x             | sin(x)     | .. math:: \cos x             | cos(x)     | .. math:: \tan x             | tan(x)     | .. math:: \csc x                 | csc(x)     | .. math:: \sec x                 | sec(x)     | .. math:: \cot x             | cot(x)     |
++------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
+| .. math:: \operatorname{}x   | asin(x)    | .. math:: \operatorname{}x   | acos(x)    | .. math:: \operatorname{}x   | atan(x)    | .. math:: \operatorname{}x       | acsc(x)    | .. math:: \operatorname{}x       | asec(x)    | .. math:: \operatorname{}x   | acot(x)    |
++------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
+| .. math:: \sinh x            | sinh(x)    | .. math:: \cosh x            | cosh(x)    | .. math:: \tanh x            | tanh(x)    | .. math:: \operatorname{csch}x   | csch(x)    | .. math:: \operatorname{sech}x   | sech(x)    | .. math:: \coth x            | coth(x)    |
++------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
+| .. math:: \operatorname{}x   | asinh(x)   | .. math:: \operatorname{}x   | acosh(x)   | .. math:: \operatorname{}x   | atanh(x)   | .. math:: \operatorname{}x       | acsch(x)   | .. math:: \operatorname{}x       | asech(x)   | .. math:: \operatorname{}x   | acoth(x)   |
++------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
 
 **Table 1**. The list of mathematical functions available for coding in
 OpenCOR.
@@ -201,7 +232,7 @@ OpenCOR.
 Positioning the cursor over either of the ODEs renders the maths in
 standard form above the code as shown in Figure 3(a).
 
-Note that CellML is a declarative language [17]_ (unlike say C, Fortran
+Note that CellML is a declarative language [18]_ (unlike say C, Fortran
 or Matlab, which are procedural languages) and therefore the order of
 statements does not affect the solution. For example, the order of the
 ODEs could equally well be
@@ -220,16 +251,17 @@ rather than grey. The right hand tabs provide different views of the
 CellML code.
 
 Now save the code to a local folder using *Save* under the *File* menu
-(or ‘CTRL-S’) and choosing *.cellml* as the file format [18]_. With the
+(or ‘CTRL-S’) and choosing *.cellml* as the file format [19]_. With the
 CellML model saved various views, accessed via the tabs on the right
 hand edge of the window, become available. One is the *CellML Text* view
 (the view used to enter the code above); another is the *Raw CellML*
-view that displays the way the model is stored (note that positioning
-the cursor over part of the code shows the maths in this view also); and
-another is the *Raw* view. Notice that the *Raw CellML* is intentionally
-verbose to ensure that the meaning is always unambiguous. The *CellML
-Text* view provides a much more convenient format for entering and
-editing the CellML model.
+view that displays the way the model is stored and is intentionally
+verbose to ensure that the meaning is always unambiguous (note that
+positioning the cursor over part of the code shows the maths in this
+view also); and another is the *Raw* view. Notice that ‘CTRL-T’ in the
+*Raw CellML* view performs validation tests on the CellML model. The
+*CellML Text* view provides a much more convenient format for entering
+and editing the CellML model.
 
 With the equations and initial conditions defined, we are ready to run
 the model. To do this, click on the *Simulation* tab on the left hand
@@ -273,7 +305,7 @@ This area is used to configure the solver that will run the simulation.
    appropriate to the type of equations you are solving if you choose
    to. For example, CVODE for ODE (ordinary differential equation)
    problems, IDA for DAE (differential algebraic equation) problems,
-   KINSOL for NLA (non-linear algebraic) problems [19]_.
+   KINSOL for NLA (non-linear algebraic) problems [20]_.
 
 -  Other parameters for the chosen solver – e.g. *Maximum step*,
    *Maximum number of steps*, and *Tolerance* settings for CVODE and
@@ -281,7 +313,7 @@ This area is used to configure the solver that will run the simulation.
    the documentation for the particular solver.
 
 Note: these can all be left at their default values for our simple demo
-problem [20]_.
+problem [21]_.
 
 ***Graphs panel***
 
@@ -359,9 +391,13 @@ click and drag’. Holding the SHIIFT key down while clicking on a
 graphical output panel allows you to interrogate the solution at any
 point. Right clicking on a panel provides zoom facilities.
 
-Note that the various plugins used by OpenCOR can be viewed under the
-Tools menu. A French language version of OpenCOR is also available under
-the Tools menu.
+The various plugins used by OpenCOR can be viewed under the Tools menu.
+A French language version of OpenCOR is also available under the *Tools*
+menu. An option under the *File* menu allows a file to be locked (also
+‘CTRL-L’). To indicate that the file is locked, the background colour
+switches to **pink** in the *CellML Text* and *Raw CellML* views and a
+lock symbol appears on the filename tab. Note that OpenCOR text is case
+sensitive.
 
 **
 **
@@ -384,17 +420,17 @@ or *File Organiser*. For a file under *File Browser* or *File
 Organiser*, either double-click it or ‘drag&drop’ it over the central
 workspace to open that model. Clicking on a model in the *Physiome Model
 Repository* (PMR) (e.g. Chen, Popel, 2007) opens a new browser window
-with that model (PMR is covered in more detail in Section 12). You can
+with that model (PMR is covered in more detail in Section 13). You can
 either load this model directly into OpenCOR or create an identical copy
 (clone) of the model in your local directory. Note that PMR contains
 *workspaces* and *exposures*. Workspaces are online environments for the
 collaborative development of models (e.g. by geographically dispersed
 groups) and can have password protected access. Exposures are workspaces
-that are exposed to the modelling community and mostly contain models
-from peer-reviewed journal publications. There are about 600 exposures
-based on journal papers and covering many areas of cell processes and
-other ODE/algebraic models, but these are currently being supplemented
-with reusable protein-based models – see discussion in a Section 13.
+that are exposed for public view and mostly contain models from
+peer-reviewed journal publications. There are about 600 exposures based
+on journal papers and covering many areas of cell processes and other
+ODE/algebraic models, but these are currently being supplemented with
+reusable protein-based models – see discussion in a Section 13.
 
 To load a model directly into OpenCOR, click on the right-most of the
 two buttons in Figure 5 - this lists the CellML models in that exposure
@@ -434,7 +470,7 @@ The final steady state solution as :math:`t \rightarrow \infty` is
 At :math:`t = \tau` , :math:`y\left( t \right)` has therefore fallen to
 :math:`\frac{1}{e}` (or about 37%) of the difference between the initial
 (:math:`y\left( 0 \right)`) and final steady state (
-:math:`y\left( \infty \right)`) values. [21]_
+:math:`y\left( \infty \right)`) values. [22]_
 
 Choosing parameters :math:`a = \tau = 1;b = 2` and
 :math:`y\left( 0 \right) = 5`, the *CellML Text* for this model is
@@ -497,7 +533,7 @@ ODE.
 1. **The Lorenz attractor**
 
 An example of a third order ODE system (i.e. three 1\ :sup:`st` order
-equations) is the *Lorenz equations*\  [22]_.
+equations) is the *Lorenz equations*\  [23]_.
 
 This system has three equations:
 
@@ -538,12 +574,12 @@ figure – normally they would be at their final solution values.
 
 Solutions to the Lorenz equations are organised by the 2D ‘Lorenz
 manifold’. This surface has a very beautiful shape and has become an art
-form – even rendered in crochet! [23]_ (See Figure 11).
+form – even rendered in crochet! [24]_ (See Figure 11).
 
 **Exercise for the reader**
 
 Another example of intriguing and unpredictable behaviour from a simple
-deterministic ODE system is the ‘blue sky catastrophe’ model [7] defined
+deterministic ODE system is the ‘blue sky catastrophe’ model [9] defined
 by the following equations:
 
 :math:`\frac{\text{dx}}{\text{dt}} = y`
@@ -556,22 +592,23 @@ with parameter :math:`A = 0.2645` and initial conditions
 :math:`x\left( t \right)` and :math:`y\left( x \right)`. Also try with
 :math:`A = 0.265` to see how sensitive the solution is to small changes
 in parameter values. **
-***********************
+**
 
 1. **A model of ion channel gating and current: Introducing CellML
    units**
 
 A good example of a model based on a first order equation is the one
-used by Hodgkin and Huxley [8] to describe the gating behaviour of an
+used by Hodgkin and Huxley [10] to describe the gating behaviour of an
 ion channel (see also next three sections). Before we describe the
 gating behaviour of an ion channel, however, we need to explain the
 concepts of the ‘Nernst potential’ and channel conductance.
 
 An ion channel is a protein or protein complex embedded in the bilipid
 membrane surrounding a cell and containing a pore through which an ion
-:math:`Y^{+}` can pass when the channel is open. If the concentration of
-this ion is :math:`\left\lbrack Y \right\rbrack_{o}` outside the cell
-and :math:`\left\lbrack Y \right\rbrack_{i}` inside the cell, the force
+:math:`Y^{+}` (or :math:`Y^{-}`) can pass when the channel is open. If
+the concentration of this ion is
+:math:`\left\lbrack Y^{+} \right\rbrack_{o}` outside the cell and
+:math:`\left\lbrack Y^{+} \right\rbrack_{i}` inside the cell, the force
 driving an ion through the pore is calculated from the change in
 *entropy*.
 
@@ -579,9 +616,9 @@ Entropy :math:`S` (J.K:sup:`-1`) is a measure of the number of
 microstates available to a system, as defined by Boltzmann’s equation
 :math:`S = k_{B}\text{lnW}`, where :math:`W` is the number of ways of
 arranging a given distribution of microstates of a system and
-:math:`k_{B}` is Boltzmann’s constant [24]_. The driving force for ion
+:math:`k_{B}` is Boltzmann’s constant [25]_. The driving force for ion
 movement is the dispersal of energy into a more probable distribution
-(see Figure 12; cf the second law of thermodynamics [25]_).
+(see Figure 12; cf the second law of thermodynamics [26]_).
 
 The energy change :math:`\Delta q` associated with this change of
 entropy :math:`\Delta S` at temperature :math:`T` is
@@ -589,7 +626,7 @@ entropy :math:`\Delta S` at temperature :math:`T` is
 
 For a given volume of fluid the number of microstates :math:`W`
 available to a solute (and hence the entropy of the solute) at a high
-concentration is less than that for a low concentration [26]_. The
+concentration is less than that for a low concentration [27]_. The
 energy difference driving ion movement from a high ion concentration
 :math:`\left\lbrack Y^{+} \right\rbrack_{i}` (lower entropy) to a lower
 ion concentration :math:`\left\lbrack Y^{+} \right\rbrack_{o}` (higher
@@ -599,11 +636,11 @@ entropy) is therefore
 (J.ion:sup:`-1`) or
 
 :math:`\Delta Q = RT\ln\frac{\left\lbrack Y^{+} \right\rbrack_{o}}{\left\lbrack Y^{+} \right\rbrack_{i}}`
-(J.mol:sup:`-1`),
+(J.mol:sup:`-1`).
 
 | :math:`R = k_{B}N_{A}` ≈ 1.34x10\ :sup:`-23` (J.K:sup:`-1`) x
   6.02x10\ :sup:`23` (mol:sup:`-1`) ≈ 8.4 (J.mol:sup:`-1`\ K\ :sup:`-1`)
-  is the ‘universal gas constant’ [27]_.
+  is the ‘universal gas constant’ [28]_.
 | At 25°C (298K), :math:`\text{RT}` ≈ 2.5 kJ.mol\ :sup:`-1`.
 
 | Every positively charged ion that crosses the membrane raises the
@@ -642,9 +679,9 @@ Nernst potential for that ion:
 
 :math:`{\overset{\overline{}}{i}}_{Y}\mathbf{=}{\overset{\overline{}}{g}}_{Y}\left( V - E_{Y} \right)`.
 
-| This defines a linear current-voltage relation (‘Ohms law’) as shown
-  in Figure 14.
-| The gates to be discussed below modify this open channel conductance.
+This defines a linear current-voltage relation (‘Ohms law’) as shown in
+Figure 14. The gates to be discussed below modify this open channel
+conductance.
 
 To describe the time dependent transition between the closed and open
 states of the channel, Hodgkin and Huxley introduced the idea of channel
@@ -686,8 +723,13 @@ We can represent this in OpenCOR with a simple extension of the first
 order ODE model, but in developing this model we will also demonstrate
 the way in which CellML deals with units.
 
+Note that the decision to deal with units in CellML, rather than just
+ignoring them or insisting that all equations are represented in
+dimensionless form, was made in order to be able to be able to check the
+physical consistency of all terms in each equation. [29]_
+
 | There are seven base physical quantities defined by the *Système
-  International d’Unités* (SI) [28]_.
+  International d’Unités* (SI) [30]_.
 | These are (with their SI units):
 
 -  **length** (meter or m)
@@ -714,19 +756,19 @@ defined units) are: **Hz** (s:sup:`−1`); **Newton**, N
 H (Wb.A:sup:`−1`). Multiples and fractions of these are defined as
 follows:
 
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
-| Multiples | Prefix |              | deca          | hecto         | kilo          | mega          | giga          | tera           | peta           | exa            | zetta          | yotta          |
-+===========+========+==============+===============+===============+===============+===============+===============+================+================+================+================+================+
-|           | Symbol |              | da            | h             | k             | M             | G             | T              | P              | E              | Z              | Y              |
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
-|           | Factor | 10\ :sup:`0` | 10\ :sup:`1`  | 10\ :sup:`2`  | 10\ :sup:`3`  | 10\ :sup:`6`  | 10\ :sup:`9`  | 10\ :sup:`12`  | 10\ :sup:`15`  | 10\ :sup:`18`  | 10\ :sup:`21`  | 10\ :sup:`24`  |
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
-| Fractions | Prefix |              | deci          | centi         | milli         | micro         | nano          | pico           | femto          | atto           | zepto          | yocto          |
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
-|           | Symbol |              | d             | c             | m             | μ             | n             | p              | f              | a              | z              | y              |
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
-|           | Factor | 10\ :sup:`0` | 10\ :sup:`−1` | 10\ :sup:`−2` | 10\ :sup:`−3` | 10\ :sup:`−6` | 10\ :sup:`−9` | 10\ :sup:`−12` | 10\ :sup:`−15` | 10\ :sup:`−18` | 10\ :sup:`−21` | 10\ :sup:`−24` |
-+-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+| Multiples   | Prefix   |                | deca            | hecto           | kilo            | mega            | giga            | tera             | peta             | exa              | zetta            | yotta            |
++=============+==========+================+=================+=================+=================+=================+=================+==================+==================+==================+==================+==================+
+|             | Symbol   |                | da              | h               | k               | M               | G               | T                | P                | E                | Z                | Y                |
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`1`    | 10\ :sup:`2`    | 10\ :sup:`3`    | 10\ :sup:`6`    | 10\ :sup:`9`    | 10\ :sup:`12`    | 10\ :sup:`15`    | 10\ :sup:`18`    | 10\ :sup:`21`    | 10\ :sup:`24`    |
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+| Fractions   | Prefix   |                | deci            | centi           | milli           | micro           | nano            | pico             | femto            | atto             | zepto            | yocto            |
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|             | Symbol   |                | d               | c               | m               | μ               | n               | p                | f                | a                | z                | y                |
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`−1`   | 10\ :sup:`−2`   | 10\ :sup:`−3`   | 10\ :sup:`−6`   | 10\ :sup:`−9`   | 10\ :sup:`−12`   | 10\ :sup:`−15`   | 10\ :sup:`−18`   | 10\ :sup:`−21`   | 10\ :sup:`−24`   |
++-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
 
 Units for this model, with multiples and fractions, are illustrated in
 the following *CellML Text* code:
@@ -810,8 +852,22 @@ is the current through the channel. Note the slow start to the current
 trace in comparison with the single gate transient
 :math:`y\left( t \right)`.
 
-**
-**
+The model of a gated ion channel presented here is used in the next two
+sections for the neural potassium and sodium channels and then in
+Section 11 for cardiac ion channels. The gates make the channel
+conductance time dependent and, as we will see in the next section, the
+experimentally observed voltage dependence of the gating rate constants
+:math:`\alpha_{y}` and :math:`\beta_{y}` means that the channel
+conductance (including the open channel conductance) is voltage
+dependent. For a partially open channel (:math:`y < 1`), the steady
+state conductance is
+:math:`\left( y_{\infty} \right)^{\gamma}{.\overset{\overline{}}{g}}_{Y}`,
+where :math:`y_{\infty} = \frac{\alpha_{y}}{\alpha_{y} + \beta_{y}}`.
+Moreover the gating time constants
+:math:`\tau = \frac{1}{\alpha_{y} + \beta_{y}}` are therefore also
+voltage dependent. Both of these voltage dependent factors of ion
+channel gating are important in explaining channel properties, as we
+show now for the neural potassium and sodium ion channels.
 
 1. **A model of the potassium channel: Introducing CellML components and
    connections **
@@ -851,16 +907,24 @@ with time constant :math:`\tau_{n} = \frac{1}{\alpha_{n} + \beta_{n}}`
 The main difference from the gating model in our previous example is
 that Hodgkin and Huxley found it necessary to make the rate constants
 functions of the membrane potential :math:`V` (see Figure 18) as
-follows [29]_:
+follows [31]_:
 
 :math:`\alpha_{n} = \frac{- 0.01\left( V + 65 \right)}{e^{\frac{- \left( V + 65 \right)}{10}} - 1}`;
 :math:`\beta_{n} = 0.125e^{\frac{- \left( V + 75 \right)}{80}}` .
 
 Note that under steady state conditions when
 :math:`t \rightarrow \infty` and
+
 :math:`\frac{\text{dn}}{\text{dt}} \rightarrow 0`,
 :math:`\left. \ n \right|_{t = \infty} = n_{\infty} = \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}}`
 .
+
+The voltage dependence of the steady state channel conductance is then
+
+:math:`g_{\text{SS}} = \left( \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} \right)^{4}{.\overset{\overline{}}{g}}_{Y}`.
+
+(see Figure 18). The steady state current-voltage relation for the
+channel is illustrated in Figure 19.
 
 These equations are captured with OpenCOR *CellML Text* view (together
 with the previous unit definitions) on the next page. But first we need
@@ -869,7 +933,7 @@ to explain some further CellML concepts.
 We introduced CellML ***units*** above. We now need to introduce three
 more CellML constructs: ***components***, ***connections*** (mappings
 between components) and ***groups***. For completeness we also show one
-other construct in Figure 19 that will be used later in Section 10:
+other construct in Figure 20 that will be used later in Section 10:
 ***imports***.
 
 Defining components serves two purposes: it preserves a modular
@@ -884,7 +948,9 @@ need to also define the component maps as indicated in the *CellML Text*
 view on the next page.
 
 The *CellML Text* code for the potassium ion channel model is as
-follows [30]_:
+follows [32]_:
+
+***Potassium\_ion\_channel.cellml***
 
 **def model potassium\_ion\_channel** as
 
@@ -1055,7 +1121,7 @@ Note that several other features have been added:
 -  the use of :math:`\left\{ pub:in \right\}` and
    :math:`\left\{ pub:out \right\}` to indicate which variables are
    either supplied as inputs to a component or produced as outputs from
-   a component [31]_. Any variables not labelled as *in* or *out* are
+   a component [33]_. Any variables not labelled as *in* or *out* are
    local variables or parameters defined and used only within that
    component. Public (and private) interfaces are discussed in more
    detail in the next section.
@@ -1066,9 +1132,9 @@ condition in which the membrane voltage is clamped initially at 0mV and
 then stepped down to -85mV for 10ms before being returned to 0mV. At
 0mV, the steady state value of the n gate is
 :math:`n_{\infty} = \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} =` 0.324
-and, at -85mV, :math:`n_{\infty} = \ `\ 0.945 .
+and, at -85mV, :math:`n_{\infty} = \ `\ 0.945.
 
-The voltage traces are shown at the top of Figure 20. The n-gate
+The voltage traces are shown at the top of Figure 21. The n-gate
 response, shown next, is to open further from its partially open value
 of :math:`n =`\ 0.324 at 0mV and then plateau at an almost fully open
 state of :math:`n =`\ 0.945 at the Nernst potential -85mV before closing
@@ -1088,7 +1154,7 @@ conductance declines but now there is a voltage gradient to drive an
 outward (positive) current flow through the partially open channel –
 albeit brief since the channel is closing.
 
-**Figure 20**. Kinetics of the potassium channel gates for a voltage
+**Figure 21**. Kinetics of the potassium channel gates for a voltage
 step from 0mV to -85mV. The voltage clamp step is shown at the top, then
 the n gate first order response, then the channel conductance, then the
 channel current. Notice how the conductance is slightly slower to turn
@@ -1146,7 +1212,7 @@ The gating kinetics are described by
 :math:`\frac{\text{dh}}{\text{dt}} = \alpha_{h}\left( 1 - h \right) - \beta_{h}\text{.h}`
 
 where the voltage dependence of these four rate constants is determined
-experimentally to be [32]_
+experimentally to be [34]_
 
 :math:`\alpha_{m} = \frac{- 0.1\left( V + 50 \right)}{e^{\frac{- \left( V + 50 \right)}{10}} - 1}`;
 :math:`\beta_{m} = 4e^{\frac{- \left( V + 75 \right)}{18}}`;
@@ -1171,15 +1237,18 @@ We can then talk about the sodium channel as the parent of two children:
 the m gate and the h gate, which are therefore siblings. A *private
 interface* allows a parent to talk to its children and a *public
 interface* allows siblings to talk among themselves and to their parents
-(see Figure 21).
+(see Figure 22).
 
-**Figure 21**. The children talk to each other as siblings, and to their
-parents, via public interfaces. But the outside world can only talk to
-children through their parents via a private interface. Note that the
-siblings m\_gate and h\_gate could talk via a public interface but only
-if a mapping is established between them (not needed here).
+**Figure 22**. Children talk to each other as siblings, and to their
+parents, via **public** interfaces. But the outside world can only talk
+to children through their parents via a **private** interface. Note that
+the siblings **m\_gate** and **h\_gate** could talk via a **public**
+interface but only if a mapping is established between them (not needed
+here).
 
 The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
+
+***Sodium\_ion\_channel.cellml***
 
 **def model sodium\_ion\_channel as**
 
@@ -1378,7 +1447,7 @@ vars h and h;
 **enddef;**
 
 | The results of the OpenCOR computation, with *Ending point* 40 and
-  *Point interval* 0.1, are shown in Figure 22 with plots of
+  *Point interval* 0.1, are shown in Figure 23 with plots of
   :math:`V\left( t \right)`, :math:`m\left( t \right)`,
   :math:`h\left( t \right)`, :math:`g_{\text{Na}}\left( t \right)` and
   :math:`i_{\text{Na}}(t)` for voltage steps from (a) -85mV to
@@ -1395,7 +1464,7 @@ iii. The sodium channel conductance rises (*activates*) and then falls
      (*inactivates*) under a positive voltage step from rest since the
      three m-gates turn on but the h-gate turns off and the conductance
      is a product of these. Compare this with the potassium channel
-     conductance shown in Figure 19 which is only reduced back to zero
+     conductance shown in Figure 21 which is only reduced back to zero
      by stepping the voltage back to its resting value – i.e.
      *deactivating* it.
 
@@ -1413,7 +1482,7 @@ Note that the bottom trace does not quite line up at t=0 because the
 values shown on the axes are computed automatically and hence can take
 more or less space depending on their magnitude.
 
-**Figure 22.** Kinetics of the sodium channel gates for voltage steps to
+**Figure 23.** Kinetics of the sodium channel gates for voltage steps to
 (a) -20mV, (b) 0mV, and (c) 20mV.
 
 1. **A model of the nerve action potential: Introducing CellML imports**
@@ -1421,19 +1490,19 @@ more or less space depending on their magnitude.
 Here we describe the first (and most famous) model of nerve fibre
 electrophysiology based on the membrane ion channels that we have
 discussed in the last two sections. This is the work by Alan Hodgkin and
-Andrew Huxley in 1952 [8] that won them (together with John Eccles) the
+Andrew Huxley in 1952 [10] that won them (together with John Eccles) the
 1963 Noble prize in Physiology or Medicine for *"their discoveries
 concerning the ionic mechanisms involved in excitation and inhibition in
 the peripheral and central portions of the nerve cell membrane"*.
 
 ***Cable equation***
 
-The *cable equation* was developed in 1890 [33]_ to predict the
+The *cable equation* was developed in 1890 [35]_ to predict the
 degradation of an electrical signal passing along the transatlantic
 cable. It is derived as follows:
 
 If the voltage is raised at the left hand end of the cable (shown by the
-deep red in Figure 23), a current :math:`i_{a}` (A) will flow that
+deep red in Figure 24), a current :math:`i_{a}` (A) will flow that
 depends on the voltage gradient, given by
 :math:`\frac{\partial V}{\partial x}` (V.m:sup:`-1`) and the resistance
 :math:`r_{a}` (Ω.m:sup:`-1`), Ohm’s law gives
@@ -1467,7 +1536,7 @@ is associated primarily with the inward movement of sodium ions through
 the membrane ‘sodium channel’, giving the **inward** membrane current
 :math:`i_{\text{Na}}`, and the outward movement of potassium ions
 through a membrane ‘potassium channel’, giving the **outward** current
-:math:`i_{K}` (see Figure 24). A further small leak current
+:math:`i_{K}` (see Figure 25). A further small leak current
 :math:`i_{L} = g_{L}\left( V - E_{L} \right)` associated with chloride
 and other ions is also included.
 
@@ -1476,9 +1545,9 @@ the Na channels open and the K channels close, such that the membrane
 potential moves towards the Nernst potential for sodium. The subsequent
 decline of the Na channel conductance and the increasing K channel
 conductance as the voltage drops rapidly repolarises the membrane to its
-resting potential of -85mV (see Figure 25).
+resting potential of -85mV (see Figure 26).
 
-We can neglect [34]_ the term
+We can neglect [36]_ the term
 (:math:`- \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}}`) (the
 rate of change of axial current along the cable) for the present models
 since we assume the whole cell is clamped with an axially uniform
@@ -1487,7 +1556,7 @@ integrating the first order ODE
 
 |image18|\ :math:`\frac{\text{dV}}{\text{dt}} = - \left( i_{\text{Na}} + \ i_{K} + i_{L} \right)/C_{m}`.
 
-**Figure 26**. A schematic cell diagram describing the current flows
+**Figure 27**. A schematic cell diagram describing the current flows
 across the cell bilipid membrane that are captured in the Hodgkin-Huxley
 model. The membrane ion channels are a sodium (Na:sup:`+`) channel, a
 potassium (K:sup:`+`) channel, and a leakage (L) channel (for chloride
@@ -1503,9 +1572,9 @@ brings the children components with it along with their connections and
 units, but it does not bring the siblings of that component with it.
 
 To establish a CellML model of the HH equations we first lay out the
-model components with their public and private interfaces (Figure 27).
+model components with their public and private interfaces (Figure 28).
 
-**Figure 27**. Overall structure of the HH CellML model showing the
+**Figure 28**. Overall structure of the HH CellML model showing the
 encapsulation hierarchy (**purple**), the CellML model imports
 (**blue**) and the other key parts (**units**, **components** &
 **mappings**) of the top level CellML model.
@@ -1514,6 +1583,8 @@ The HH model is the top level model. The *CellML Text* code for the HH
 model, together with the leakage\_channel model, is given on the next
 page. The imported potassium\_ion\_channel model and
 sodium\_ion\_channel model are unchanged from the previous sections
+
+***HH.cellml***
 
 **def model HH as**
 
@@ -1724,14 +1795,17 @@ i\_L = g\_L\*(V-E\_L);
 
 **enddef;**
 
+Note that the CellML Text code for the potassium channel is on page 17
+and for the sodium channel is on page 21.
+
 Note that the only units that need to be defined for this top level HH
 model are the ones explicitly required for the membrane component. All
 the other units, required for the various imported sub-models, are
 imported along with the imported components.
 
-The results generated by the HH model are shown in Figure 28.
+The results generated by the HH model are shown in Figure 29.
 
-**Figure 28**. Results from OpenCOR for the Hodgkin Huxley (HH) CellML
+**Figure 29**. Results from OpenCOR for the Hodgkin Huxley (HH) CellML
 model. The top panel shows the generated action potential. Note that the
 stimulus current is not really needed as the background outward leakage
 current is enough to drive the membrane potential up to the threshold
@@ -1743,7 +1817,7 @@ It is often convenient to have the sub-models – in this case the
 sodium\_ion\_channel.cellml model, the potassium\_ion\_channel.cellml
 model and the leakage\_ion\_channel.cellml model - loaded into OpenCOR
 at the same time as the high level model (HH.cellml), as shown in Figure
-29. If you make changes to a model in the *CellML Text* view, you must
+30. If you make changes to a model in the *CellML Text* view, you must
 save the file (*CTRL-S*) before running a new simulation since the
 simulator works with the saved model. Furthermore, a change to a
 sub-model will only affect the high level model which imports it if you
@@ -1754,17 +1828,17 @@ when the file is saved.
 
 |image19|
 
-**Figure 29.** The HH.cellml model and its three sub-models are
+**Figure 30.** The HH.cellml model and its three sub-models are
 available under separate tabs in OpenCOR.
 
 1. **A model of the cardiac action potential: Importing units and
    parameters **
 
-We now examine the Noble 1962 model [9] that applied the Hodgkin-Huxley
+We now examine the Noble 1962 model [12] that applied the Hodgkin-Huxley
 approach to cardiac cells and thereby initiated the development of a
 long line of cardiac cell models that, in their human cell formulation,
 are now used clinically and are the most sophisticated models of any
-cell type. It is the incorporation of these models into whole heart
+cell type. It was the incorporation of these models into whole heart
 bioengineering models that initiated the Physiome Project. We also
 illustrate the use of imported units and imported parameter sets.
 
@@ -1773,19 +1847,19 @@ operate in a similar way to neurons (as do all electrically active
 cells). There is one major difference, however, in the potassium channel
 that holds the cells in their resting state at -85mV (HH neuron) or
 -100mV (cardiac Purkinje cells). This difference is illustrated in
-Figure 30a. When the membrane potential is raised above the equilibrium
+Figure 31a. When the membrane potential is raised above the equilibrium
 potential for potassium, the cardiac channel conductance shown by the
 dashed line drops to nearly zero – i.e. it is an *inward rectifier*
 since it rectifies (‘cuts off’) the outward current that otherwise would
 have flowed through the channel at that potential. This is an
 evolutionary adaptation of the potassium channel to avoid loss of
 potassium ions out of the cell during the long plateau phase of the
-cardiac action potential (Figure 30b) needed to give the heart time to
+cardiac action potential (Figure 31b) needed to give the heart time to
 contract. This evolutionary change saves the additional energy that
 would otherwise be needed to pump potassium ions back into the cell, but
 this Faustian “pact with the devil” is also the reason the heart is so
 susceptible to conduction failure (more on this later). To explain his
-data on Purkinje cells Noble [9] postulated the existence of two inward
+data on Purkinje cells Noble [12] postulated the existence of two inward
 rectifier potassium channels, one with a conductance :math:`g_{K1}` that
 showed voltage dependence but no significant time dependence and another
 with conductance :math:`g_{K2}` that showed less severe rectification
@@ -1794,7 +1868,7 @@ channel.
 
 (a) (b)
 
-**Figure 30**. Current-voltage relations (a) around the equilibrium
+**Figure 31**. Current-voltage relations (a) around the equilibrium
 potentials for the potassium and sodium channels in cardiac cells. The
 sodium channel is similar to the one in neurons but the two potassium
 channels have an inward rectifying property that stops leakage of
@@ -1804,15 +1878,15 @@ potential.
 
 To model the cardiac action potential in Purkinje fibres (a cardiac cell
 specialised for rapid conduction from the atrio-ventricular node to the
-apical ventricular myocardial tissue), Noble [9] proposed two potassium
+apical ventricular myocardial tissue), Noble [12] proposed two potassium
 channels (one of these being the inwardly rectifying potassium channel
 described above and the other called the delayed potassium channel), one
 sodium channel (very similar to the HH neuronal sodium channel) and one
 leakage channel (also similar to the HH one).
 
 The equations for these are as follows: (as for the HH model, time is in
-ms, all conductances are in mS, all voltages are in mV and all currents
-are in nA).
+ms, voltages are in mV, concentrations are in mM, conductances are in
+mS, currents are in µA and capacitance is in µF).
 
 ***Inward rectifying*** :math:`\mathbf{i}_{\mathbf{K}\mathbf{1}}`
 ***potassium channel** (voltage dependent only)*
@@ -1823,7 +1897,7 @@ are in nA).
 :math:`g_{K1} = 1.2e^{\frac{- \left( V + 90 \right)}{50}} + 0.015e^{\frac{\left( V + 90 \right)}{60}}`
 
 ***Inward rectifying*** :math:`\mathbf{i}_{\mathbf{K}\mathbf{2}}`
-***potassium channel** (voltage and time dependent)*
+***potassium channel** (voltage and time dependent)*\  [37]_
 
 :math:`i_{K2} = g_{K2}\left( V - E_{K} \right)`.
 
@@ -1843,7 +1917,8 @@ time dependent change in conductance than in the HH potassium channel.
 with
 :math:`E_{\text{Na}} = \frac{\text{RT}}{\text{zF}}\ln\frac{\left\lbrack \text{Na}^{+} \right\rbrack_{o}}{\left\lbrack \text{Na}^{+} \right\rbrack_{i}} = 25\ \ln\frac{140}{30} = 35\text{mV}`.
 
-:math:`g_{\text{Na}} = m^{3}\text{h.}g_{Na\_ max}`
+:math:`g_{\text{Na}} = m^{3}\text{h.}g_{Na\_ max}` where
+:math:`g_{Na\_ max} = 400\text{mS}.`
 
 :math:`\frac{\text{dm}}{\text{dt}} = \alpha_{m}\left( 1 - m \right) - \beta_{m}\text{.m}`,
 where
@@ -1859,25 +1934,46 @@ and
 ***Leakage channel ***
 
 :math:`i_{\text{leak}} = g_{L}\left( V - E_{L} \right)`, with
-:math:`E_{L} = 30mV`.
+:math:`E_{L} = - 60mV` and :math:`g_{L} = 0.075\text{mS}`.
 
 ***Membrane equation ***
 
 :math:`\frac{\text{dV}}{\text{dt}} = - \left( i_{\text{Na}} + i_{K1} + i_{K2} + i_{\text{leak}} \right)/C_{m}`
-where :math:`C_{m} = 12000\text{nF}`.
+where :math:`C_{m} = 12\text{μF}`. [38]_
 
-The Purkinje fibre membrane capacitance :math:`C_{m}` is found to be 12
-times higher than that found for squid nerve.
+Figure 32 shows the structure of the model, including separate files for
+units, parameters, and the three ion channels (the two potassium
+channels are lumped together). We include the Nernst equations
+dependence on potassium and sodium ion concentrations in order to
+demonstrate the use of parameter values, defined in a separate
+parameters file, that are read in at the top (whole cell model) level
+and passed down to the individual ion channel models.
 
-Note that the second inwardly rectifying channel model was later
-replaced with two currents :math:`i_{\text{Kr}}` and
-:math:`i_{\text{Ks}}`, so that modern cardiac cell models do not include
-:math:`g_{K2}` but they do include the inward rectifier :math:`g_{K1}`.
-
-**Figure 31**. Overall structure of the HH CellML model showing the
+**Figure 32**. Overall structure of the Noble62 CellML model showing the
 encapsulation hierarchy (**purple**), the CellML model imports
 (**blue**) and the other key parts (**units**, **components** &
-**mappings**) of the top level CellML model.
+**mappings**) of the top level CellML model. Note that the overall
+structure of the Noble62 model differs from that of the earlier HH model
+in that all units are defined in a units file and imported where needed
+(shown by the **red arrows**). Also the ion concentration parameters are
+defined in a parameters file and imported into the top level file but
+passed down to the modules that use them via the mappings.
+
+The CellML Text code for all six files is shown on the following two
+pages. The arrows indicate the imports (appropriately colour coded for
+**units**, **components**, and **parameters**).
+
+Graphical outputs from solution of the Noble 1962 model with OpenCOR for
+5000ms are shown in Figure 33.
+
+Interpretation of the model outputs is given in the Figure 33 legend.
+The Noble62 model was developed further by Noble and others to include
+additional sodium and potassium channels, calcium channels (needed for
+excitation-contraction coupling), chloride channels and various ion
+exchange mechanisms (Na/Ca, Na/H), co-transporters (Na/Cl, K/Cl) and
+energy (ATP)-dependent pumps (Na/K, Ca) needed to model the observed
+beat by beat changes in intracellular ion concentrations. These are
+discussed further in Section 15.
 
 ***Noble\_1962.cellml***
 
@@ -2384,7 +2480,7 @@ vars n and n;
 
 **enddef**;
 
-| **Figure 32**. Output from the Noble62 model. Top panel is
+| **Figure 33**. Output from the Noble62 model. Top panel is
   :math:`V\left( t \right)`, the cardiac action potential. The next
   panel has the two membrane ion channel currents
   :math:`i_{\text{Na}}\left( t \right)` and
@@ -2393,16 +2489,25 @@ vars n and n;
   inward current) spike that is triggered when the membrane voltage
   reaches about -70mV. This is caused by the huge increase in sodium
   channel conductance :math:`g_{\text{Na}}\left( t \right)` shown in the
-  panel below. The resting state of about
+  panel below associated with the simultaneous opening of the *m*-gate
+  and closing of the *h*-gate (5:sup:`th` panel down). The resting state
+  of about
 | -80mV in the top panel is set by the potassium equilibrium (Nernst)
-  potential via the open potassium channel. As can be seen in the bottom
-  panel, the rise in potential from -80mV to this threshold is
-  associated with the declining conductance of the two potassium
-  channels. With a small background leakage current
-  :math:`i_{L}\left( t \right)`, the declining conductance of the
-  potassium channel ensures that the membrane potential can drift
-  upwards. Later cardiac cell models include additional ion channels
-  that directly affect the heart rate by controlling this rise.
+  potential via the open potassium channels. As can be seen from the
+  4\ :sup:`th` and bottom panels, it is the closing of the
+  time-dependent potassium *n*-gate and the corresponding decline of
+  potassium conductance that, with a small background leakage current
+  :math:`i_{L}\left( t \right)`, leads to the membrane potential rising
+  from -80mV to the threshold for activation of the sodium channel (note
+  the dotted red line showing the point when *n(t)* reaches a minimum).
+  Later cardiac cell models include additional ion channels that
+  directly affect the heart rate by controlling this rise.
+
+We have now covered all existing features of CellML and OpenCOR. But,
+most importantly, you have learned 'best practice' for building CellML
+models, including encapsulation of sub-components and a modular approach
+in which units, parameters and model components are defined in separate
+files that are imported into a composite model.
 
 1. **Model annotation**
 
@@ -2441,22 +2546,22 @@ on. The terms **is-the-concentration-of**, **in-the** and **of-the** are
 the predicates and these semantically rich expressions too have to come
 from controlled vocabularies. Each of these
 *subject*-*predicate*-*object* expressions is called an RDF ***triple***
-and the World Wide Web consortium [35]_ has established a framework
-called the *Resource Description Framework* (RDF [36]_) to support
+and the World Wide Web consortium [39]_ has established a framework
+called the *Resource Description Framework* (RDF [40]_) to support
 these.
 
 CellML models therefore contain two parts, one dealing with ***syntax***
 (the MathML definition of the models together with the structure of
 components, connections, groups, units, etc) as discussed in previous
 sections, and one dealing with ***semantics*** (the meanings of the
-terms used in the models) discussed in this section [37]_. This latter
+terms used in the models) discussed in this section [41]_. This latter
 is also referred to as *metadata* – i.e. data about data.
 
-In the CellML metadata specification [38]_ the first RDF *subject* of a
+In the CellML metadata specification [42]_ the first RDF *subject* of a
 triple is a CellML element (e.g. a variable such as ‘Ki’), the RDF
-*predicate* is chosen from the Biomodels Biological Qualifiers [39]_
+*predicate* is chosen from the Biomodels Biological Qualifiers [43]_
 list, and the RDF *object* is a URI (the string of characters used to
-identify the name of a resource [40]_). Establishing these RDF links to
+identify the name of a resource [44]_). Establishing these RDF links to
 biological and biophysical meaning is the goal of annotation.
 
 Note the different types of subject/object used in the RDF triples: *the
@@ -2481,12 +2586,12 @@ terminology used in the models, CellML uses five separate ontologies:
 
 These ontologies are available through OpenCOR’s annotation facilities
 as explained below. **
-**********************
+**
 
 If we now go back to the potassium ion channel CellML model and, under
 *Editing*, click on *CellML* *Annotation*, the various elements of the
 model (Units, Components, Variables, Groups and Connections) are
-displayed (see Figure 33). If you right click on any of them a popup
+displayed (see Figure 34). If you right click on any of them a popup
 menu will appear, which you can use to expand/collapse all the child
 nodes, as well as remove the metadata associated with the current CellML
 element or the whole CellML file. Expanding *Components* lists all the
@@ -2507,31 +2612,31 @@ If you do not know which qualifier to use, click on the
 |image20|\ button to get some information about the current qualifier
 (you must be connected to the internet) and go through the list of
 qualifiers until you find the one that best suits your needs. Here, we
-will say that you want to use bio:isVersionOf. Figure 34 shows the
+will say that you want to use bio:isVersionOf. Figure 35 shows the
 information displayed about this qualifier.
 
 |image21|
 
-**Figure 34**. The qualifiers are displayed from the top right menu.
+**Figure 35**. The qualifiers are displayed from the top right menu.
 Clicking on the most appropriate one (bio:isVersionOf) gives more
 information about this qualifier in the bottom panel.
 
 Now you need to retrieve some possible ontological terms to describe the
 *potassium\_channel* component. For this you must enter a search term,
 which in our case is ‘potassium channel’ (note that regular expressions
-are supported [41]_). This returns 24 possible ontological terms as
-shown in Figure 35. The *voltage-gated potassium channel complex* is the
+are supported [45]_). This returns 24 possible ontological terms as
+shown in Figure 36. The *voltage-gated potassium channel complex* is the
 most appropriate. Clicking on the GO identifier link shown provides more
-information about this term (see Figure 36).
+information about this term (see Figure 37).
 
 |image22|
 
-**Figure 35**. The ontological terms listed when ‘potassium channel’ is
+**Figure 36**. The ontological terms listed when ‘potassium channel’ is
 entered into the search box next to *Term*.
 
 |image23|
 
-**Figure 36**. The qualifier, resource & ID information in the middle
+**Figure 37**. The qualifier, resource & ID information in the middle
 panel appears when you click on the |image24|\ button next to the
 selected term in Fig.32. GO identifier details are listed when either of
 the **arrowed** links are clicked.
@@ -2545,10 +2650,10 @@ the button.
 
 The first level annotation of the *potassium\_channel* component has now
 been achieved. The content of the three terms in the RDF triple are
-shown in Figure 37, along with the annotation for the variables *Ki* and
+shown in Figure 38, along with the annotation for the variables *Ki* and
 *Ko*.
 
-**Figure 37**. The RDF triple used in CellML metadata to link a CellML
+**Figure 38**. The RDF triple used in CellML metadata to link a CellML
 element (component or variable) with an ontological term from one of the
 five ontologies accessed via
 `**identifiers.org** <http://www.identifiers.org/>`__, using a predicate
@@ -2574,7 +2679,7 @@ Note that the three annotations added above are all biological
 annotations. Many of the other components and variables in the CellML
 potassium channel model deal with biophysical entities and these require
 the use of the OPB ontology (yet to be implemented in OpenCOR). The use
-of composite annotations is also being developed [42]_, such as
+of composite annotations is also being developed [46]_, such as
 “\ **Ki** **is-the** **concentration** **of** **potassium** **in-the**
 **cytosol of-the neuron of-the giant-squid”**, where *concentration*,
 *potassium*, *cytosol*, *neuron* and *giant-squid* are defined by the
@@ -2585,10 +2690,10 @@ ontologies OPB, ChEBI, GO, FMA and a species ontology, respectively.
 
 1. **The Physiome Model Repository and the link to bioinformatics**
 
-The Physiome Model Repository (PMR) [10] is the main online repository
+The Physiome Model Repository (PMR) [13] is the main online repository
 for the IUPS Physiome Project, providing version and access controlled
-repositories, called *workspaces*, for users to store their data. There
-are currently approximately 640 public workspaces and another 200
+repositories, called *workspaces*, for users to store their data.
+Currently there are approximately 640 public workspaces and another 200
 private workspaces in the repository. PMR also provides a mechanism to
 create persistent access to specific revisions of a workspace, termed
 *exposures*. Exposure plugins are available for specific types of data
@@ -2597,12 +2702,12 @@ the data when browsing the repository via a web browser, or an
 application accessing the repository’s content via web services.
 
 The CellML project website and the CellML Physiome Model Repository are
-shown below.
+shown in Figures 39, 40.
 
-**Figure 38**. The website for the CellML project at
+**Figure 39**. The website for the CellML project at
 `www.cellml.org <http://www.cellml.org>`__.
 
-**Figure 39**. The website for the Physiome Model Repository project at
+**Figure 40**. The website for the Physiome Model Repository project at
 `www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`__.
 
 | The CellML models on
@@ -2661,10 +2766,10 @@ the models.
 
 To illustrate the features of PMR, click on the Hund, Rudy 2004 (Basic)
 model in the alphabetic listing of models under *Electrophysiology*.
-This opens a web page (Figure 40) using a 32 character string that has
+This opens a web page (Figure 41) using a 32 character string that has
 been randomly generated as the ID for the exposure page for that model.
 
-**Figure 40**. The Physiome Model Repository exposure page for the basic
+**Figure 41**. The Physiome Model Repository exposure page for the basic
 Hund-Rudy 2004 model.
 
 Note that the string is still unique even with only 5 characters:
@@ -2673,15 +2778,15 @@ e.g.
 https://models.physiomeproject.org/exposure/f4b71/hund_rudy_2004_a.cellml/view
 
 The section labelled ‘Model Structure’ contains the journal paper
-abstract and often a diagram of the model [43]_. This is shown for the
-Hund-Rudy 2004 model in Figure 41. This model, with over 22 separate
+abstract and often a diagram of the model [47]_. This is shown for the
+Hund-Rudy 2004 model in Figure 42. This model, with over 22 separate
 protein model components, is also a good example of why it is important
-to build models from modular components [13], and in particular the
+to build models from modular components [14], and in particular the
 individual ion channels for electrophysiology models.
 
 |image27|
 
-**Figure 41**. A diagrammatic representation of the Hund-Rudy 2004
+**Figure 42**. A diagrammatic representation of the Hund-Rudy 2004
 model.
 
 There is a list of ‘Views Available’ for the CellMLmodel on the lower
@@ -2713,13 +2818,13 @@ model.
 is included in OpenCOR.
 
 Note that CellML models are available under a Creative Commons
-Attribution 3.0 Unported License [44]_. This means that you are free to:
+Attribution 3.0 Unported License [48]_. This means that you are free to:
 
 -  Share — copy and redistribute the material in any medium or format
 
 -  Adapt — remix, transform, and build upon the material
 
-for any purpose, even commercially.
+for any purpose, including commercial use.
 
 The next stage of content development for PMR is to provide a list of
 the modular components of these models each with their own exposure. For
@@ -2742,25 +2847,115 @@ https://models.physiomeproject.org/e/232/
 https://models.physiomeproject.org/e/233/
 
 Note that in each case, as well as the CellML-encoded mathematical
-model, links are provided (see Figure 42) to the UniProt Knowledgebase
+model, links are provided (see Figure 43) to the UniProt Knowledgebase
 for that protein, and to the Foundational Model of Anatomy (FMA)
 ontology (via the EMBLE-EBI Ontology Lookup Service) for information
 about tissue regions relevant to the expression of that protein (e.g.
 *Proximal convoluted tubule*, *Apical plasma membrane*; *Epithelial cell
 of proximal tubule*; *Proximal straight tubule*). Similar facilities are
 available for SMBL-encoded biochemical reaction models through the
-Biomodels database [11].
+Biomodels database [15].
 
-**Figure 42**. The PMR workspace for the Thiazide-sensitive Na-Cl
+**Figure 43**. The PMR workspace for the Thiazide-sensitive Na-Cl
 cotransporter. Bioinformatic data for this model is accessed via the
 links under the headings highlight by the **arrows** and include
 **Protein** (labelled **A**) and the model **Location** (labelled
 **B**). Other information is as already described for the Hund-Rudy 2004
 model.
 
-1. **Speed comparisons**
+1. **Speed comparisons with MATLAB**
 
-2. **Future developments**
+Solution speed is important for complex computational models and here we
+compare the performance of OpenCOR with MATLAB [49]_. Nine
+representative CellML models were chosen from the PMR model repository.
+For the MATLAB tests we used the MATLAB code, generated automatically
+from CellML, that is available on the PMR site. These comparisons are
+based on using the default solvers (listed below) available in the two
+packages.
+
+***Testing environment***
+
+-  MacBook Pro (Retina, Mid 2012).
+
+-  Processor: 2.6 GHz Intel Core i7.
+
+-  Memory: 16 GB 1600 MHz DDR3.
+
+-  Operating system: OS X Yosemite 10.10.3.
+
+`***OpenCOR*** <http://www.opencor.ws/>`__
+
+-  Version: 0.4.1.
+
+-  Solver: CVODE with its default settings, except for its Maximum step
+       parameter, which is set to the model's stimulation duration, if
+       needed.
+
+`***MATLAB*** <http://www.mathworks.com/products/matlab/>`__
+
+-  Version: R2013a.
+
+-  Solver: ode15s (i.e. a solver suitable for stiff problems and which
+       has low to medium order of accuracy) with both its RelTol and
+       AbsTol parameters set to 1e-7 and its MaxStep parameter set to
+       the stimulation duration, if needed.
+
+***Testing protocol***
+
+-  Run a model for a given simulation duration.
+
+-  Generate simulation data every milliseconds.
+
+-  Only keep track of all the simulation data (i.e. no graphical
+   output).
+
+-  Run a model 7 times, discard the 2 slowest runs (to account for
+   unpredictable slowdowns of the testing machine) and average the
+   resulting computational times.
+
+-  Computational times are obtained directly from OpenCOR and MATLAB
+   (through a couple of calls to cputime in the case of MATLAB).
+
+***Results***
+
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| **CellML model                                                                                            | **Duration**   | **OpenCOR time** (s)   | **MATLAB time** (s)   | **Time ratio           |
+| **\ (from PMR on 18/6/2015)                                                                               |                |                        |                       | **\ (MATLAB/OpenCOR)   |
+|                                                                                                           | (s)            |                        |                       |                        |
++===========================================================================================================+================+========================+=======================+========================+
+| `*Bondarenko et al. 2004* <http://models.cellml.org/e/41>`__                                              | 10             | 1.16                   | 140.14                | 121                    |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Courtemanche et al. 1998* <http://models.cellml.org/exposure/0e03bbe01606be5811691f9d5de10b65>`__ \*    | 100            | 0.998                  | 45.720                | 46                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Faber & Rudy 2000* <http://models.cellml.org/exposure/55643f2114a2a463ada007deb9fc3913>`__              | 50             | 0.717                  | 29.010                | 40                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Garny et al. 2003* <http://models.cellml.org/exposure/d71105df45dd7030b3c99b2b1e95b8c0>`__              | 100            | 0.996                  | 48.180                | 48                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Luo & Rudy 1991* <http://models.cellml.org/exposure/2d2ce7737b42a4f72d6bf8b67f6eb5a2>`__\ \*            | 200            | 0.666                  | 70.070                | 105                    |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Noble 1962* <http://models.cellml.org/exposure/812eeafbc8ebe97bef435340c80cfcce>`__                     | 1000           | 1.42                   | 310.02                | 218                    |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Noble et al. 1998* <http://models.cellml.org/exposure/a40c4434423c0436e2789a2d457b7ab2>`__              | 100            | 0.834                  | 42.010                | 50                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*Nygren et al. 1998* <http://models.cellml.org/exposure/ad761ce160f3b4077bbae7a004c229e3>`__             | 100            | 0.824                  | 31.370                | 38                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+| `*ten Tusscher & Panfilov 2006* <http://models.cellml.org/exposure/a7179d94365ff0c9c0e6eb7c6a787d3d>`__   | 100            | 0.969                  | 59.080                | 61                     |
++-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
+
+:sup:`\*`\ The value of membrane.stim\_end was increased so as to get
+action potentials for the duration of the simulation
+
+***Conclusions***
+
+| For this range of tests, OpenCOR is between 38 and 218 times faster
+  than MATLAB.
+| A more extensive evaluation of these results is available on
+  GitHub [50]_.
+
+**
+**
+
+1. **Future developments**
 
 Both CellML and OpenCOR are continuing to be developed. These notes will
 be updated to reflect new features of both. The next release of OpenCOR
@@ -2776,17 +2971,29 @@ be updated to reflect new features of both. The next release of OpenCOR
 -  colour plots, to better distinguish overlapping traces in the output
    windows
 
+Priorities for later releases of OpenCOR include the incorporation of
+GIT into OpenCOR to enable the upload of models to PMR, graphical
+rendering of the model structure (using SVG), model building templates,
+such as templates for creating Markov models, tools for parameter
+estimation and tools for analysing model outputs.
+
 The next release of CellML (1.2) will include the ability to specify a
 probability distribution for a parameter value. Together with SED-ML,
 this will allow OpenCOR to generate error bounds on the solutions,
 corresponding to the specified parameter uncertainty.
 
-Later releases of OpenCOR will include graphical rendering of the model
-structure (using SVG), model building templates, such as templates for
-creating Markov models, tools for parameter estimation and tools for
-analysing model outputs.
+Link to weblab.
 
-Uploading to PMR. Link to weblab.
+These notes are currently being extended to include
+
+-  a discussion of system identification and parameter estimation
+
+-  more extensive discussion of membrane protein models
+
+-  CellML modules for signal transduction pathways
+
+**
+**
 
 **References**
 
@@ -2800,7 +3007,7 @@ Uploading to PMR. Link to weblab.
       language. *SIMULATION*: *Transactions of the Society for Modeling
       and Simulation* 79(12):740-747, 2003
 
-3.  Yu T. et al. The Physiome Model Repository 2. *Bioinformatics* 27,
+3.  Yu T et al. The Physiome Model Repository 2. *Bioinformatics* 27,
     743–744, 2011.
 
 4.  Hunter PJ. The IUPS Physiome Project: a framework for computational
@@ -2811,41 +3018,48 @@ Uploading to PMR. Link to weblab.
     `www.cellml.org/about/publications <http://www.cellml.org/about/publications>`__
     for a more extensive list of publications on CellML and OpenCOR.
 
-6.  Hunter P. et al. A vision and strategy for the virtual physiological
+6.  Christie R, Nielsen PMF, Blackett S, Bradley C and Hunter PJ.
+    FieldML: concepts and implementation. *Philosophical Transactions of
+    the Royal Society (London)* A367(1895):1869-1884, 2009.
+
+7.  Britten RD, Christie GR, Little C, Miller AK, Bradley C, Wu A, Yu T,
+    Hunter P, Nielsen P. FieldML, a proposed open standard for the
+    Physiome project for mathematical model representation. *Med Biol
+    Eng Comput* *51*\ (11), 1191-1207, 2013.
+
+8.  Hunter PJ et al. A vision and strategy for the virtual physiological
     human: 2012 update. *Interface Focus* 3, 2013.
     http://journal.frontiersin.org/article/10.3389/fphys.2015.00026/abstract
 
-7.  Thompson JMT and Stewart HB. *Nonlinear Dynamics and Chaos*,
+9.  Thompson JMT and Stewart HB. *Nonlinear Dynamics and Chaos*,
     2\ :sup:`nd` Edn. Wiley, 2002.
 
-8.  Hodgkin AL and Huxley AF. A quantitative description of membrane
+10. Hodgkin AL and Huxley AF. A quantitative description of membrane
     current and its application to conduction and excitation in nerve.
     *Journal of Physiology* 117, 500-544, 1952. `PubMed ID:
     12991237 <http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=12991237&query_hl=1&itool=pubmed_docsum>`__
 
-9.  Noble D. A modification of the Hodgkin-Huxley equations applicable
+11. Wigglesworth J. ‘Energy and Life’, Taylor & Francis Ltd, 1997.
+
+12. Noble D. A modification of the Hodgkin-Huxley equations applicable
     to Purkinje fibre action and pace-maker potentials. *Journal of
     Physiology* 160, 317-352, 1962.
 
-10. Lloyd CM, Lawson JR, Hunter PJ and Nielsen PF. The CellML Model
+13. Lloyd CM, Lawson JR, Hunter PJ and Nielsen PF. The CellML Model
     Repository. *Bioinformatics* 24, 2122-2123, 2008.
 
-11. `www.biomodels.org <http://www.biomodels.org>`__
-
-12. Wigglesworth J. ‘Energy and Life’, Taylor & Francis Ltd, 1997.
-
-13. Cooling M, Hunter P and Crampin EJ. Modeling biological modularity
+14. Cooling M, Hunter PJ and Crampin EJ. Modeling biological modularity
     with CellML. *IET Systems Biology* 2(2):73-79, 2008.
 
-Footnotes
-=========
+15. `www.biomodels.org <http://www.biomodels.org>`__
 
 .. [1]
-   OpenCOR is a C\ :sup:`++` desktop application written by Alan Garny
-   at INRIA with funding support from the Auckland Bioengineering
-   Institute (`www.abi.auckland.ac.nz <../customXml/item1.xml>`__) and
-   the NIH-funded Virtual Physiological Rat (VPR) project led by Dan
-   Beard at the University of Michigan
+   OpenCOR is an open source, freely available, C\ :sup:`++` desktop
+   application written by Alan Garny at INRIA with funding support from
+   the Auckland Bioengineering Institute
+   (`www.abi.auckland.ac.nz <../customXml/item1.xml>`__) and the
+   NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard
+   at the University of Michigan
    (`http://virtualrat.org <numbering.xml>`__).
 
 .. [2]
@@ -2864,88 +3078,93 @@ Footnotes
    `www.cellml.org/specifications/cellml\_1.0 <webSettings.xml>`__.
 
 .. [5]
-   `www.iups.org <footnotes.xml>`__. The IUPS President, Denis Noble
-   from Oxford University, and Jim Bassingthwaighte from the University
-   of Washington in Seattle have been two of the driving forces behind
-   the Physiome Project. Peter Hunter from the University of Auckland
-   was appointed Chair of the newly created Physiome Commission of the
-   IUPS in 2000. The IUPS Physiome Committee, formed in 2008, was
-   co-chaired by Peter Hunter and Sasha Popel (JHU) and is now chaired
-   by Andrew McCulloch from UCSD. The UK Wellcome Trust provided initial
-   support for the Physiome Project through the Heart Physiome grant
-   awarded in 2004 to David Paterson, Denis Noble and Peter Hunter.
+   Please send any errors discovered or suggested improvements to
+   `p.hunter@auckland.ac.nz <footnotes.xml>`__.
 
 .. [6]
+   `www.iups.org <endnotes.xml>`__. The IUPS President, Denis Noble from
+   Oxford University, and Jim Bassingthwaighte from the University of
+   Washington in Seattle have been two of the driving forces behind the
+   Physiome Project. Peter Hunter from the University of Auckland was
+   appointed Chair of the newly created Physiome Commission of the IUPS
+   in 2000. The IUPS Physiome Committee, formed in 2008, was co-chaired
+   by Peter Hunter and Sasha Popel (JHU) and is now chaired by Andrew
+   McCulloch from UCSD. The UK Wellcome Trust provided initial support
+   for the Physiome Project through the Heart Physiome grant awarded in
+   2004 to David Paterson, Denis Noble and Peter Hunter.
+
+.. [7]
    CellML began as a joint public-private initiative in 1998 with
    funding by the US company Physiome Sciences (CEO Jeremy Levin),
    before being launched under IUPS as a fully open source project in
    1999.
 
-.. [7]
-   The STEP report, led by Marco Viceconte (University of Sheffield,
-   UK), is available at `www.europhysiome.org/roadmap <endnotes.xml>`__.
-
 .. [8]
+   The STEP report, led by Marco Viceconte (University of Sheffield,
+   UK), is available at
+   `www.europhysiome.org/roadmap <media/image2.png>`__.
+
+.. [9]
    This coordinates various US Governmental funding agencies involved in
    multi-scale bioengineering modeling research including NIH, NSF,
    NASA, the Dept of Energy (DoE), the Dept of Defense (DoD), the US
    Dept of Agriculture and the Dept of Veteran Affairs. See
-   `www.nibib.nih.gov/Research/MultiScaleModeling/IMAG <media/image2.png>`__.
+   `www.nibib.nih.gov/Research/MultiScaleModeling/IMAG <media/image3.jpeg>`__.
    Grace Peng of NHBIB leads the IMAG group.
 
-.. [9]
+.. [10]
    Other significant contributions to the VPH-Physiome project have come
    from Yoshi Kurachi in Japan
-   (`www.physiome.jp <media/image3.jpeg>`__), Stig Omholt in Norway
-   (`www.ntnu <media/image4.tiff>`__) and Chae-Hun Leem in Korea
-   (`www.physiome.or.kr <media/image5.png>`__).
+   (`www.physiome.jp <media/image4.tiff>`__), Stig Omholt in Norway
+   (`www.ntnu <media/image5.png>`__) and Chae-Hun Leem in Korea
+   (`www.physiome.or.kr <media/image6.jpeg>`__).
 
-.. [10]
-   `www.vph-institute.org <media/image6.jpeg>`__. Formed in 2012, the
+.. [11]
+   `www.vph-institute.org <media/image7.png>`__. Formed in 2012, the
    inaugural Director was Marco Viceconti. The current Director is
    Adriano Henney. The inaugural and current President of the
    VPH-Institute is Denis Noble.
 
-.. [11]
+.. [12]
    The ⌘ key being the equivalent on Macs.
 
-.. [12]
-   `www.opencor.ws/developer/develop/plugins/index.html <media/image7.png>`__
-
 .. [13]
-   `en.wikipedia.org/wiki/Van\_der\_Pol\_oscillator <mailto:p.hunter@auckland.ac.nz>`__
+   `www.opencor.ws/developer/develop/plugins/index.html <media/image8.png>`__
 
 .. [14]
+   `en.wikipedia.org/wiki/Van\_der\_Pol\_oscillator <media/image9.jpeg>`__
+
+.. [15]
    Note that gray boxes are used to indicate equations that are
    implemented directly in OpenCOR.
 
-.. [15]
-   For more on the *CellML Text* view see
-   `opencor.ws/user/plugins/editing/CellMLTextView.html <media/image8.png>`__.
-
 .. [16]
+   For more on the *CellML Text* view see
+   `opencor.ws/user/plugins/editing/CellMLTextView.html <media/image10.png>`__.
+
+.. [17]
    Note that a more elaborated version of this is ‘ode(x, t,
    1{dimensionless})’ and a 2\ :sup:`nd` order ODE can be specified as
    ‘ode(x, t, 2{dimensionless})’. 1\ :sup:`st` order is assumed as the
    default.
 
-.. [17]
-   Note also that the mathematical expressions in CellML are based on
-   MathML – see `www.w3.org/Math/ <media/image9.jpeg>`__
-
 .. [18]
-   Note that ‘.cellml’ is not strictly required but is best practice.
+   Note also that the mathematical expressions in CellML are based on
+   MathML – see `www.w3.org/Math/ <media/image11.png>`__
 
 .. [19]
+   Note that ‘.cellml’ is not strictly required but is best practice.
+
+.. [20]
    Other solvers include forward Euler, Heun and Runga-Kutta solvers
    (RK2 and RK4).
 
-.. [20]
+.. [21]
    Note that a model that requires a stimulus protocol should have the
    maximum step value of the CVODE solver set to the length of the
    stimulus.
 
-.. [21]
+.. [22]
    It is often convenient to write a first order equation as
    :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that
    its solution is expressed in terms of time constant :math:`\tau`,
@@ -2953,30 +3172,30 @@ Footnotes
    :math:`y_{\infty}` as:
    :math:`y\left( t \right) = y_{\infty} + \left( y_{0} - y_{\infty} \right).e^{- \frac{t}{\tau}}`.
 
-.. [22]
-   `http://en.wikipedia.org/wiki/Lorenz\_system <media/image10.png>`__
-
 .. [23]
-   `www.math.auckland.ac.nz/~hinke/crochet/ <media/image11.png>`__
+   `http://en.wikipedia.org/wiki/Lorenz\_system <media/image12.jpeg>`__
 
 .. [24]
+   `www.math.auckland.ac.nz/~hinke/crochet/ <media/image13.png>`__
+
+.. [25]
    The Brownian motion of individual molecules has energy :math:`k_{B}T`
    (J), where the Boltzmann constant :math:`k_{B}` is approximately
    1.34x10\ :sup:`-23` (J.K:sup:`-1`). At 25°C, or 298K, :math:`k_{B}T`
    = 4.10\ :sup:`-21` (J) is the minimum amount of energy to contain a
    ‘bit’ of information at that temperature.
 
-.. [25]
+.. [26]
    The *first law of thermodynamics* states that energy is conserved,
    and the *second law* (that natural processes are accompanied by an
    increase in entropy of the universe) deals with the distribution of
    energy in space.
 
-.. [26]
+.. [27]
    At infinitely high concentration the specified volume is jammed
    packed with solute and the entropy is zero.
 
-.. [27]
+.. [28]
    :math:`N_{A}` is Avogadro’s number (6.023x10:sup:`23`) and is the
    scaling factor between molecular and macroscopic processes.
    Boltzmann’s constant :math:`k_{B}` and electron charge *e* operate at
@@ -2984,10 +3203,18 @@ Footnotes
    is via the universal gas constant :math:`R = k_{B}N_{A}` and
    Faraday’s constant :math:`F = eN_{A}`.
 
-.. [28]
-   `http://en.wikipedia.org/wiki/International\_System\_of\_Units <media/image12.jpeg>`__
-
 .. [29]
+   It is well accepted in engineering analysis that thinking about and
+   dealing with units is a key aspect of modelling. Taking the ratio of
+   dimensionally consistent terms provides non-dimensional numbers which
+   can be used to decide when a term in an equation can be omitted in
+   the interests of modelling simplicity. We investigate this idea
+   further in a later section.
+
+.. [30]
+   `http://en.wikipedia.org/wiki/International\_System\_of\_Units <http://www.opencor.ws>`__
+
+.. [31]
    The original expression in the HH paper used
    :math:`\alpha_{n} = \frac{0.01\left( v + 10 \right)}{e^{\frac{\left( v + 10 \right)}{10}} - 1}`
    and :math:`\beta_{n} = 0.125e^{\frac{v}{80}}` , where :math:`v` is
@@ -2995,18 +3222,18 @@ Footnotes
    corresponding to +ve *inward* current and
    :math:`v = - \left( V + 75 \right)`.
 
-.. [30]
+.. [32]
    From here on we use a coloured background to identify code blocks
    that relate to a particular CellML construct: **units**,
    **components**, **mappings** and **encapsulation groups** and later
    **imports**.
 
-.. [31]
+.. [33]
    Note that a later version of CellML will remove the terms *in* and
    *out* since it is now thought that the *direction* of information
    flow should not be constrained.
 
-.. [32]
+.. [34]
    The HH paper used
    :math:`\alpha_{m} = \frac{0.1\left( v + 25 \right)}{e^{\frac{\left( v + 25 \right)}{10}} - 1}`;
    :math:`\beta_{m} = 4e^{\frac{v}{18}}`;
@@ -3014,50 +3241,70 @@ Footnotes
    :math:`\beta_{h} = \frac{1}{e^{\frac{\left( v + 30 \right)}{10}} + 1}`
    (see footnote on page 16).
 
-.. [33]
+.. [35]
    http://en.wikipedia.org/wiki/Cable\_theory
 
-.. [34]
+.. [36]
    This term is needed when determining the propagation of the action
    potential, including its wave speed.
 
-.. [35]
-   Referred to as W3C – see `www.w3.org <media/image13.png>`__
-
-.. [36]
-   `www.w3.org/RDF <http://www.opencor.ws>`__
-
 .. [37]
-   For details on the annotation plugin see
-   `opencor.ws/user/plugins/editing/CellMLAnnotationView.html <media/image14.tif>`__
+   The second inwardly rectifying channel model was later replaced with
+   two currents :math:`i_{\text{Kr}}` and :math:`i_{\text{Ks}}`, so that
+   modern cardiac cell models do not include :math:`g_{K2}` but they do
+   include the inward rectifier :math:`g_{K1}` (see later section).
 
 .. [38]
-   See `www.cellml.org/specifications/metadata/ <media/image15.png>`__
-   and
-   `www.cellml.org/specifications/metadata/mcdraft <media/image16.png>`__
+   The Purkinje fibre membrane capacitance :math:`C_{m}` is 12 times
+   higher than that found for squid axon. The use of µF ensures unit
+   consistency with ms, mV and µA since F is equivalent to
+   C.V\ :sup:`-1` or s.A.V\ :sup:`-1` and therefore µA/µF or µA/(ms.µA.
+   mV\ :sup:`-1`) on the RHS matches mV/ms on the LHS).
 
 .. [39]
-   `http://co.mbine.org/standards/qualifiers <media/image17.png>`__
+   Referred to as W3C – see `www.w3.org <media/image14.tif>`__
 
 .. [40]
-   `http://en.wikipedia.org/wiki/Uniform\_resource\_identifier <media/image18.png>`__
+   `www.w3.org/RDF <media/image15.png>`__
 
 .. [41]
-   `http://en.wikipedia.org/wiki/Regular\_expression <media/image19.png>`__
+   For details on the annotation plugin see
+   `opencor.ws/user/plugins/editing/CellMLAnnotationView.html <media/image16.png>`__
 
 .. [42]
+   See `www.cellml.org/specifications/metadata/ <media/image17.png>`__
+   and
+   `www.cellml.org/specifications/metadata/mcdraft <media/image18.png>`__
+
+.. [43]
+   `http://co.mbine.org/standards/qualifiers <media/image19.png>`__
+
+.. [44]
+   `http://en.wikipedia.org/wiki/Uniform\_resource\_identifier <media/image20.png>`__
+
+.. [45]
+   `http://en.wikipedia.org/wiki/Regular\_expression <media/image21.png>`__
+
+.. [46]
    This is a project being carried out at the University of Washington,
    Seattle, using an annotation tool called SEMGEN (…).
 
-.. [43]
+.. [47]
    These are currently hand drawn SVG diagrams but the plan is to
    automatically generate them from the model annotation and also (at
    some stage!) to animate them as the model is executed.
 
-.. [44]
+.. [48]
    https://creativecommons.org/licenses/by/3.0/
 
-.. |image0| image:: media/image14.png
+.. [49]
+   `www.mathworks.com/products/matlab <media/image22.png>`__
+
+.. [50]
+   `https://github.com/opencor/speedcomparison <media/image23.png>`__.
+   These tests were carried out by Alan Garny.
+
+.. |image0| image:: media/image14.tif
 .. |image1| image:: media/image15.png
 .. |image2| image:: media/image16.png
 .. |image3| image:: media/image17.png
@@ -3075,8 +3322,8 @@ Footnotes
 .. |image15| image:: media/image19.png
 .. |image16| image:: media/image22.png
 .. |image17| image:: media/image23.png
-.. |image18| image:: media/image48.png
-.. |image19| image:: media/image51.png
+.. |image18| image:: media/image46.png
+.. |image19| image:: media/image49.png
 .. |image20| image:: media/image56.png
 .. |image21| image:: media/image57.png
 .. |image22| image:: media/image58.png
@@ -3084,4 +3331,4 @@ Footnotes
 .. |image24| image:: media/image60.png
 .. |image25| image:: media/image61.png
 .. |image26| image:: media/image60.png
-.. |image27| image:: media/image70.png
+.. |image27| image:: media/image68.png
