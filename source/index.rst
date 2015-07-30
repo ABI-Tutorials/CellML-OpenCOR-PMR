@@ -1,6 +1,10 @@
-27\ :sup:`th` June 2015 PJH
+===========================================================
+Tutorial on CellML, OpenCOR & the Physiome Model Repository
+===========================================================
 
-**Tutorial on CellML, OpenCOR & the Physiome Model Repository**
+.. warning::
+   This version of the tutorial is undergoing translation from the original source to reStructuredText. Many aspects of formatting and presentation are currently lacking, although being worked on. The original tutorial is available here: :download:`OpenCOR-Tutorial-v17.pdf <images/OpenCOR-Tutorial-v17.pdf>`.
+
 
 This tutorial shows you how to install and run the OpenCOR [1]_ software
 [1], to author and edit CellML models [2]_ [2] and to use the Physiome
@@ -25,54 +29,17 @@ emphasis in the tutorial on establishing ‘best practice’ in the creation
 of CellML models and using the PMR resources, particularly in relation
 to modular approaches (model hierarchies) and model annotation.
 
-**Note**: This tutorial relies on readers having some background in
-algebra and calculus, but tries to explain all mathematical concepts
-beyond this, along with the physical principles, as they are needed for
-the development of CellML models. [5]_
+.. note::
 
-**Contents** page
+   This tutorial relies on readers having some background in
+   algebra and calculus, but tries to explain all mathematical concepts
+   beyond this, along with the physical principles, as they are needed for
+   the development of CellML models. [5]_
 
-1.  Background to the VPH-Physiome project 2
+.. contents::
 
-2.  Install and launch OpenCOR 3
-
-3.  Create and run a simple CellML model: editing and simulation 4
-
-4.  Open an existing CellML file from a local directory or the Physiome
-    Model Repository 8
-
-5.  A simple first order ODE 9
-
-6.  The Lorenz attractor 10
-
-7.  A model of ion channel gating and current: Introducing CellML units
-    12
-
-8.  A model of the potassium channel: Introducing CellML components and
-    connections 16
-
-9.  A model of the sodium channel: Introducing CellML encapsulation and
-    interfaces 20
-
-10. A model of the nerve action potential: Introducing CellML imports 24
-
-11. A model of the cardiac action potential: Importing units and
-    parameters 28
-
-12. Model annotation 34
-
-13. The Physiome Model Repository and the link to bioinformatics 38
-
-14. Speed comparisons with MATLAB 42
-
-15. Future developments 43
-
-16. References 44
-
-**
-**
-
-1. **Background to the VPH-Physiome project**
+Background to the VPH-Physiome project
+======================================
 
 To be of benefit to applications in healthcare, organ and whole organism
 physiology needs to be understood at both a systems level and in terms
@@ -115,7 +82,8 @@ project [10]_. The VPH-Institute [11]_ was formed in 2012 as a virtual
 organisation to providing strategic leadership, initially in Europe but
 now globally, for the VPH-Physiome Project.
 
-1. **Install and launch OpenCOR**
+Install and launch OpenCOR
+==========================
 
 Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`__.
 Versions are available for Windows, Mac and Linux. Note that the
@@ -153,10 +121,8 @@ without a range of modules. These can be viewed under the *Tools* menu.
 By default they are all included, as shown in Figure 2. Information
 about developing plugins for OpenCOR is also available [13]_.
 
-**
-**
-
-1. **Create and run a simple CellML model: editing and simulation**
+Create and run a simple CellML model: editing and simulation
+============================================================
 
 In this example we create a simple CellML model and run it. The model is
 the Van der Pol oscillator [14]_ defined by the second order equation
@@ -214,17 +180,17 @@ comment.
 
 A partial list of mathematical functions available for OpenCOR is:
 
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: x^{2}              | sqr(x)     | .. math:: \sqrt{x}           | sqrt(x)    | .. math:: \ln x              | ln(x)      | .. math:: \operatorname{}x       | log(x)     | .. math:: e^{x}                  | exp(x)     | .. math:: x^{a}              | pow(x,a)   |
-+==============================+============+==============================+============+==============================+============+==================================+============+==================================+============+==============================+============+
-| .. math:: \sin x             | sin(x)     | .. math:: \cos x             | cos(x)     | .. math:: \tan x             | tan(x)     | .. math:: \csc x                 | csc(x)     | .. math:: \sec x                 | sec(x)     | .. math:: \cot x             | cot(x)     |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \operatorname{}x   | asin(x)    | .. math:: \operatorname{}x   | acos(x)    | .. math:: \operatorname{}x   | atan(x)    | .. math:: \operatorname{}x       | acsc(x)    | .. math:: \operatorname{}x       | asec(x)    | .. math:: \operatorname{}x   | acot(x)    |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \sinh x            | sinh(x)    | .. math:: \cosh x            | cosh(x)    | .. math:: \tanh x            | tanh(x)    | .. math:: \operatorname{csch}x   | csch(x)    | .. math:: \operatorname{sech}x   | sech(x)    | .. math:: \coth x            | coth(x)    |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
-| .. math:: \operatorname{}x   | asinh(x)   | .. math:: \operatorname{}x   | acosh(x)   | .. math:: \operatorname{}x   | atanh(x)   | .. math:: \operatorname{}x       | acsch(x)   | .. math:: \operatorname{}x       | asech(x)   | .. math:: \operatorname{}x   | acoth(x)   |
-+------------------------------+------------+------------------------------+------------+------------------------------+------------+----------------------------------+------------+----------------------------------+------------+------------------------------+------------+
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: x^{2}            | sqr(x)   | .. math:: \sqrt{x}         | sqrt(x)  | .. math:: \ln x            | ln(x)    | .. math:: \operatorname{}x     | log(x)   | .. math:: e^{x}                | exp(x)   | .. math:: x^{a}            | pow(x,a) |
++============================+==========+============================+==========+============================+==========+================================+==========+================================+==========+============================+==========+
+| .. math:: \sin x           | sin(x)   | .. math:: \cos x           | cos(x)   | .. math:: \tan x           | tan(x)   | .. math:: \csc x               | csc(x)   | .. math:: \sec x               | sec(x)   | .. math:: \cot x           | cot(x)   |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \operatorname{}x | asin(x)  | .. math:: \operatorname{}x | acos(x)  | .. math:: \operatorname{}x | atan(x)  | .. math:: \operatorname{}x     | acsc(x)  | .. math:: \operatorname{}x     | asec(x)  | .. math:: \operatorname{}x | acot(x)  |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \sinh x          | sinh(x)  | .. math:: \cosh x          | cosh(x)  | .. math:: \tanh x          | tanh(x)  | .. math:: \operatorname{csch}x | csch(x)  | .. math:: \operatorname{sech}x | sech(x)  | .. math:: \coth x          | coth(x)  |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
+| .. math:: \operatorname{}x | asinh(x) | .. math:: \operatorname{}x | acosh(x) | .. math:: \operatorname{}x | atanh(x) | .. math:: \operatorname{}x     | acsch(x) | .. math:: \operatorname{}x     | asech(x) | .. math:: \operatorname{}x | acoth(x) |
++----------------------------+----------+----------------------------+----------+----------------------------+----------+--------------------------------+----------+--------------------------------+----------+----------------------------+----------+
 
 **Table 1**. The list of mathematical functions available for coding in
 OpenCOR.
@@ -399,11 +365,8 @@ switches to **pink** in the *CellML Text* and *Raw CellML* views and a
 lock symbol appears on the filename tab. Note that OpenCOR text is case
 sensitive.
 
-**
-**
-
-1. **Open an existing CellML file from a local directory or the Physiome
-   Model Repository**
+Open an existing CellML file from a local directory or the Physiome Model Repository
+====================================================================================
 
 Go to the *File* menu and select *Open...*. Browse to the folder that
 contains your existing models and select one. Note that this brings up a
@@ -445,10 +408,8 @@ creating.
 models. These can be opened from within OpenCOR using the two buttons to
 the right of a model, as explained below.
 
-**
-**
-
-1. **A simple first order ODE**
+A simple first order ODE
+========================
 
 The simplest example of a first order ODE is
 
@@ -530,7 +491,8 @@ Sir Ernest Rutherford - best known for ‘splitting the atom’. This may be
 the only bank note depicting the mathematical solution of a first order
 ODE.
 
-1. **The Lorenz attractor**
+The Lorenz attractor
+====================
 
 An example of a third order ODE system (i.e. three 1\ :sup:`st` order
 equations) is the *Lorenz equations*\  [23]_.
@@ -591,11 +553,10 @@ with parameter :math:`A = 0.2645` and initial conditions
 :math:`t = 500` with :math:`\Delta t = 0.01` and plot
 :math:`x\left( t \right)` and :math:`y\left( x \right)`. Also try with
 :math:`A = 0.265` to see how sensitive the solution is to small changes
-in parameter values. **
-**
+in parameter values.
 
-1. **A model of ion channel gating and current: Introducing CellML
-   units**
+A model of ion channel gating and current: Introducing CellML units
+===================================================================
 
 A good example of a model based on a first order equation is the one
 used by Hodgkin and Huxley [10] to describe the gating behaviour of an
@@ -756,19 +717,19 @@ defined units) are: **Hz** (s:sup:`−1`); **Newton**, N
 H (Wb.A:sup:`−1`). Multiples and fractions of these are defined as
 follows:
 
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-| Multiples   | Prefix   |                | deca            | hecto           | kilo            | mega            | giga            | tera             | peta             | exa              | zetta            | yotta            |
-+=============+==========+================+=================+=================+=================+=================+=================+==================+==================+==================+==================+==================+
-|             | Symbol   |                | da              | h               | k               | M               | G               | T                | P                | E                | Z                | Y                |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`1`    | 10\ :sup:`2`    | 10\ :sup:`3`    | 10\ :sup:`6`    | 10\ :sup:`9`    | 10\ :sup:`12`    | 10\ :sup:`15`    | 10\ :sup:`18`    | 10\ :sup:`21`    | 10\ :sup:`24`    |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-| Fractions   | Prefix   |                | deci            | centi           | milli           | micro           | nano            | pico             | femto            | atto             | zepto            | yocto            |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Symbol   |                | d               | c               | m               | μ               | n               | p                | f                | a                | z                | y                |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
-|             | Factor   | 10\ :sup:`0`   | 10\ :sup:`−1`   | 10\ :sup:`−2`   | 10\ :sup:`−3`   | 10\ :sup:`−6`   | 10\ :sup:`−9`   | 10\ :sup:`−12`   | 10\ :sup:`−15`   | 10\ :sup:`−18`   | 10\ :sup:`−21`   | 10\ :sup:`−24`   |
-+-------------+----------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+| Multiples | Prefix |              | deca          | hecto         | kilo          | mega          | giga          | tera           | peta           | exa            | zetta          | yotta          |
++===========+========+==============+===============+===============+===============+===============+===============+================+================+================+================+================+
+|           | Symbol |              | da            | h             | k             | M             | G             | T              | P              | E              | Z              | Y              |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Factor | 10\ :sup:`0` | 10\ :sup:`1`  | 10\ :sup:`2`  | 10\ :sup:`3`  | 10\ :sup:`6`  | 10\ :sup:`9`  | 10\ :sup:`12`  | 10\ :sup:`15`  | 10\ :sup:`18`  | 10\ :sup:`21`  | 10\ :sup:`24`  |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+| Fractions | Prefix |              | deci          | centi         | milli         | micro         | nano          | pico           | femto          | atto           | zepto          | yocto          |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Symbol |              | d             | c             | m             | μ             | n             | p              | f              | a              | z              | y              |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
+|           | Factor | 10\ :sup:`0` | 10\ :sup:`−1` | 10\ :sup:`−2` | 10\ :sup:`−3` | 10\ :sup:`−6` | 10\ :sup:`−9` | 10\ :sup:`−12` | 10\ :sup:`−15` | 10\ :sup:`−18` | 10\ :sup:`−21` | 10\ :sup:`−24` |
++-----------+--------+--------------+---------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+----------------+
 
 Units for this model, with multiples and fractions, are illustrated in
 the following *CellML Text* code:
@@ -869,8 +830,8 @@ voltage dependent. Both of these voltage dependent factors of ion
 channel gating are important in explaining channel properties, as we
 show now for the neural potassium and sodium ion channels.
 
-1. **A model of the potassium channel: Introducing CellML components and
-   connections **
+A model of the potassium channel: Introducing CellML components and connections
+===============================================================================
 
 We now deal specifically with the application of the previous model to
 the Hodgkin and Huxley (HH) potassium channel. Following the convention
@@ -1186,8 +1147,8 @@ neuron model, where the membrane ion channel current flows are coupled
 to the equations governing current flow along the axon to generate an
 action potential.
 
-1. **A model of the sodium channel: Introducing CellML encapsulation and
-   interfaces**
+A model of the sodium channel: Introducing CellML encapsulation and interfaces
+==============================================================================
 
 The HH sodium channel has two types of gate, an :math:`m` gate (of which
 there are 3) that is initially closed (:math:`m = 0`) before activating
@@ -1485,7 +1446,8 @@ more or less space depending on their magnitude.
 **Figure 23.** Kinetics of the sodium channel gates for voltage steps to
 (a) -20mV, (b) 0mV, and (c) 20mV.
 
-1. **A model of the nerve action potential: Introducing CellML imports**
+A model of the nerve action potential: Introducing CellML imports
+=================================================================
 
 Here we describe the first (and most famous) model of nerve fibre
 electrophysiology based on the membrane ion channels that we have
@@ -1831,8 +1793,8 @@ when the file is saved.
 **Figure 30.** The HH.cellml model and its three sub-models are
 available under separate tabs in OpenCOR.
 
-1. **A model of the cardiac action potential: Importing units and
-   parameters **
+A model of the cardiac action potential: Importing units and parameters
+=======================================================================
 
 We now examine the Noble 1962 model [12] that applied the Hodgkin-Huxley
 approach to cardiac cells and thereby initiated the development of a
@@ -2509,7 +2471,8 @@ models, including encapsulation of sub-components and a modular approach
 in which units, parameters and model components are defined in separate
 files that are imported into a composite model.
 
-1. **Model annotation**
+Model annotation
+================
 
 One of the most powerful features of CellML is its ability to import
 models. This means that complex models can be built up by combining
@@ -2585,8 +2548,7 @@ terminology used in the models, CellML uses five separate ontologies:
    `sbp.bhi.washington.edu/projects/the-ontology-of-physics-for-biology-opb <http://sbp.bhi.washington.edu/projects/the-ontology-of-physics-for-biology-opb>`__
 
 These ontologies are available through OpenCOR’s annotation facilities
-as explained below. **
-**
+as explained below.
 
 If we now go back to the potassium ion channel CellML model and, under
 *Editing*, click on *CellML* *Annotation*, the various elements of the
@@ -2685,10 +2647,8 @@ of composite annotations is also being developed [46]_, such as
 *potassium*, *cytosol*, *neuron* and *giant-squid* are defined by the
 ontologies OPB, ChEBI, GO, FMA and a species ontology, respectively.
 
-**
-**
-
-1. **The Physiome Model Repository and the link to bioinformatics**
+The Physiome Model Repository and the link to bioinformatics
+============================================================
 
 The Physiome Model Repository (PMR) [13] is the main online repository
 for the IUPS Physiome Project, providing version and access controlled
@@ -2863,7 +2823,8 @@ links under the headings highlight by the **arrows** and include
 **B**). Other information is as already described for the Hund-Rudy 2004
 model.
 
-1. **Speed comparisons with MATLAB**
+Speed comparisons with MATLAB
+=============================
 
 Solution speed is important for complex computational models and here we
 compare the performance of OpenCOR with MATLAB [49]_. Nine
@@ -2918,29 +2879,29 @@ packages.
 
 ***Results***
 
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| **CellML model                                                                                            | **Duration**   | **OpenCOR time** (s)   | **MATLAB time** (s)   | **Time ratio           |
-| **\ (from PMR on 18/6/2015)                                                                               |                |                        |                       | **\ (MATLAB/OpenCOR)   |
-|                                                                                                           | (s)            |                        |                       |                        |
-+===========================================================================================================+================+========================+=======================+========================+
-| `*Bondarenko et al. 2004* <http://models.cellml.org/e/41>`__                                              | 10             | 1.16                   | 140.14                | 121                    |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Courtemanche et al. 1998* <http://models.cellml.org/exposure/0e03bbe01606be5811691f9d5de10b65>`__ \*    | 100            | 0.998                  | 45.720                | 46                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Faber & Rudy 2000* <http://models.cellml.org/exposure/55643f2114a2a463ada007deb9fc3913>`__              | 50             | 0.717                  | 29.010                | 40                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Garny et al. 2003* <http://models.cellml.org/exposure/d71105df45dd7030b3c99b2b1e95b8c0>`__              | 100            | 0.996                  | 48.180                | 48                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Luo & Rudy 1991* <http://models.cellml.org/exposure/2d2ce7737b42a4f72d6bf8b67f6eb5a2>`__\ \*            | 200            | 0.666                  | 70.070                | 105                    |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Noble 1962* <http://models.cellml.org/exposure/812eeafbc8ebe97bef435340c80cfcce>`__                     | 1000           | 1.42                   | 310.02                | 218                    |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Noble et al. 1998* <http://models.cellml.org/exposure/a40c4434423c0436e2789a2d457b7ab2>`__              | 100            | 0.834                  | 42.010                | 50                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*Nygren et al. 1998* <http://models.cellml.org/exposure/ad761ce160f3b4077bbae7a004c229e3>`__             | 100            | 0.824                  | 31.370                | 38                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
-| `*ten Tusscher & Panfilov 2006* <http://models.cellml.org/exposure/a7179d94365ff0c9c0e6eb7c6a787d3d>`__   | 100            | 0.969                  | 59.080                | 61                     |
-+-----------------------------------------------------------------------------------------------------------+----------------+------------------------+-----------------------+------------------------+
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| **CellML model                                                                                          | **Duration** | **OpenCOR time** (s) | **MATLAB time** (s) | **Time ratio         |
+| **\ (from PMR on 18/6/2015)                                                                             |              |                      |                     | **\ (MATLAB/OpenCOR) |
+|                                                                                                         | (s)          |                      |                     |                      |
++=========================================================================================================+==============+======================+=====================+======================+
+| `*Bondarenko et al. 2004* <http://models.cellml.org/e/41>`__                                            | 10           | 1.16                 | 140.14              | 121                  |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Courtemanche et al. 1998* <http://models.cellml.org/exposure/0e03bbe01606be5811691f9d5de10b65>`__ \*  | 100          | 0.998                | 45.720              | 46                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Faber & Rudy 2000* <http://models.cellml.org/exposure/55643f2114a2a463ada007deb9fc3913>`__            | 50           | 0.717                | 29.010              | 40                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Garny et al. 2003* <http://models.cellml.org/exposure/d71105df45dd7030b3c99b2b1e95b8c0>`__            | 100          | 0.996                | 48.180              | 48                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Luo & Rudy 1991* <http://models.cellml.org/exposure/2d2ce7737b42a4f72d6bf8b67f6eb5a2>`__\ \*          | 200          | 0.666                | 70.070              | 105                  |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Noble 1962* <http://models.cellml.org/exposure/812eeafbc8ebe97bef435340c80cfcce>`__                   | 1000         | 1.42                 | 310.02              | 218                  |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Noble et al. 1998* <http://models.cellml.org/exposure/a40c4434423c0436e2789a2d457b7ab2>`__            | 100          | 0.834                | 42.010              | 50                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*Nygren et al. 1998* <http://models.cellml.org/exposure/ad761ce160f3b4077bbae7a004c229e3>`__           | 100          | 0.824                | 31.370              | 38                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
+| `*ten Tusscher & Panfilov 2006* <http://models.cellml.org/exposure/a7179d94365ff0c9c0e6eb7c6a787d3d>`__ | 100          | 0.969                | 59.080              | 61                   |
++---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
 
 :sup:`\*`\ The value of membrane.stim\_end was increased so as to get
 action potentials for the duration of the simulation
@@ -2952,10 +2913,8 @@ action potentials for the duration of the simulation
 | A more extensive evaluation of these results is available on
   GitHub [50]_.
 
-**
-**
-
-1. **Future developments**
+Future developments
+===================
 
 Both CellML and OpenCOR are continuing to be developed. These notes will
 be updated to reflect new features of both. The next release of OpenCOR
@@ -2992,10 +2951,8 @@ These notes are currently being extended to include
 
 -  CellML modules for signal transduction pathways
 
-**
-**
-
-**References**
+References
+==========
 
 1.  Garny A and Hunter PJ. OpenCOR: OpenCOR: a modular and interoperable
     approach to computational biology. *Frontiers in Physiology* 6, 26
