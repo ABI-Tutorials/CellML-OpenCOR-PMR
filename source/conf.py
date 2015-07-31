@@ -32,6 +32,7 @@ import shlex
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
+    'sphinxcontrib.bibtex'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
