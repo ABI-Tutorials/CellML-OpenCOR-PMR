@@ -151,13 +151,13 @@ where the code should go:
 
     **def** comp main as
 
-    var t: dimensionless *{init: 0};*
+    var t: dimensionless *{init: 0}*;
 
-    var x: dimensionless *{init: -2};*
+    var x: dimensionless *{init: -2}*;
 
-    var y: dimensionless *{init: 0};*
+    var y: dimensionless *{init: 0}*;
 
-    var mu: dimensionless *{init: 1};*
+    var mu: dimensionless *{init: 1}*;
 
     // These are the ODEs
 
@@ -440,13 +440,13 @@ Choosing parameters :math:`a = \tau = 1;b = 2` and
 
     def comp main as
 
-    var t: dimensionless *{init: 0};*
+    var t: dimensionless *{init: 0}*;
 
-    var y: dimensionless *{init: 5};*
+    var y: dimensionless *{init: 5}*;
 
-    var a: dimensionless *{init: 1};*
+    var a: dimensionless *{init: 1}*;
 
-    var b: dimensionless *{init: 2};*
+    var b: dimensionless *{init: 2}*;
 
     ode(y,t)=-a\*y+b;
 
@@ -738,57 +738,57 @@ the following *CellML Text* code:
 
 **def unit** **millisec** as
 
-unit second *{pref: milli};*
+unit second *{pref: milli}*;
 
 **enddef**;
 
 **def unit per\_millisec** as
 
-unit second *{pref: milli, expo: -1};*
+unit second *{pref: milli, expo: -1}*;
 
 **enddef**;
 
 **def unit millivolt** as
 
-unit volt *{pref: milli};*
+unit volt *{pref: milli}*;
 
 **enddef**;
 
 **def unit microA\_per\_cm2** as
 
-unit ampere *{pref: micro};*
+unit ampere *{pref: micro}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 **def unit milliS\_per\_cm2** as
 
-unit siemens *{pref: milli};*
+unit siemens *{pref: milli}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 **def comp ion\_channel** as
 
-var V: millivolt *{init: 0};*
+var V: millivolt *{init: 0}*;
 
-var t: millisec *{init: 0};*
+var t: millisec *{init: 0}*;
 
-var y: dimensionless *{init: 0};*
+var y: dimensionless *{init: 0}*;
 
-var E\_y: millivolt *{init: -85};*
+var E\_y: millivolt *{init: -85}*;
 
 var i\_y: microA\_per\_cm2;
 
-var g\_y: milliS\_per\_cm2 *{init: 36};*
+var g\_y: milliS\_per\_cm2 *{init: 36}*;
 
-var gamma: dimensionless *{init: 4};*
+var gamma: dimensionless *{init: 4}*;
 
-var alpha\_y: per\_millisec *{init: 1};*
+var alpha\_y: per\_millisec *{init: 1}*;
 
-var beta\_y: per\_millisec *{init: 2};*
+var beta\_y: per\_millisec *{init: 2}*;
 
 ode(y, t) = alpha\_y\*(1{dimensionless}-y)-beta\_y\*y;
 
@@ -917,19 +917,19 @@ follows [32]_:
 
 **def unit** **millisec** as
 
-unit second *{pref: milli};*
+unit second *{pref: milli}*;
 
 **enddef**;
 
 **def unit per\_millisec** as
 
-unit second *{pref: milli, expo: -1};*
+unit second *{pref: milli, expo: -1}*;
 
 **enddef**;
 
 **def unit millivolt** as
 
-unit volt *{pref: milli};*
+unit volt *{pref: milli}*;
 
 **enddef**;
 
@@ -949,41 +949,41 @@ unit per\_millisec;
 
 **def unit microA\_per\_cm2** as
 
-unit ampere *{pref: micro};*
+unit ampere *{pref: micro}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 **def unit milliS\_per\_cm2** as
 
-unit siemens *{pref: milli};*
+unit siemens *{pref: milli}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 def **unit mM** as
 
-unit mole *{pref: milli};*
+unit mole *{pref: milli}*;
 
 **enddef**;
 
 **def comp environment** as
 
-var V: millivolt *{ pub: out};*
+var V: millivolt *{ pub: out}*;
 
-var t: millisec *{pub: out};*
+var t: millisec *{pub: out}*;
 
 V = sel
 
 case (t > 5 *{millisec}*) and (t < 15 *{millisec}*):
 
--85.0 *{millivolt};*
+-85.0 *{millivolt}*;
 
 otherwise:
 
-0.0 *{millivolt}; *
+0.0 *{millivolt}*;
 
 endsel;
 
@@ -1001,25 +1001,25 @@ enddef;
 
 **def comp potassium\_channel** as
 
-var V: millivolt *{pub: in* *, priv: out};*
+var V: millivolt *{pub: in* *, priv: out}*;
 
-var t: millisec *{pub: in, priv: out};*
+var t: millisec *{pub: in, priv: out}*;
 
-var n: dimensionless *{priv: in};*
+var n: dimensionless *{priv: in}*;
 
-var i\_K: microA\_per\_cm2 *{pub: out};*
+var i\_K: microA\_per\_cm2 *{pub: out}*;
 
-var g\_K: milliS\_per\_cm2 *{init: 36};*
+var g\_K: milliS\_per\_cm2 *{init: 36}*;
 
-var Ko: mM *{init: 3};*
+var Ko: mM *{init: 3}*;
 
-var Ki: mM *{init: 90};*
+var Ki: mM *{init: 90}*;
 
-var RTF: millivolt *{init: 25};*
+var RTF: millivolt *{init: 25}*;
 
-var E\_K: millivolt\ *;*
+var E\_K: millivolt;
 
-var K\_conductance: milliS\_per\_cm2 *{pub: out};*
+var K\_conductance: milliS\_per\_cm2 *{pub: out}*;
 
 E\_K=RTF\*ln(Ko/Ki);
 
@@ -1031,11 +1031,11 @@ i\_K = K\_conductance\*(V-E\_K);
 
 **def comp potassium\_channel\_n\_gate** as
 
-var V: millivolt *{pub: in};*
+var V: millivolt *{pub: in}*;
 
-var t: millisec *{pub: in};*
+var t: millisec *{pub: in}*;
 
-var n: dimensionless *{init: 0.325, pub: out};*
+var n: dimensionless *{init: 0.325, pub: out}*;
 
 var alpha\_n: per\_millisec;
 
@@ -1215,19 +1215,19 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
 
 **def unit** **millisec** as
 
-unit second *{pref: milli};*
+unit second *{pref: milli}*;
 
 **enddef**;
 
 **def unit per\_millisec** as
 
-unit second *{pref: milli, expo: -1};*
+unit second *{pref: milli, expo: -1}*;
 
 **enddef**;
 
 **def unit millivolt** as
 
-unit volt *{pref: milli};*
+unit volt *{pref: milli}*;
 
 **enddef**;
 
@@ -1247,41 +1247,41 @@ unit per\_millisec;
 
 **def unit microA\_per\_cm2** as
 
-unit ampere *{pref: micro};*
+unit ampere *{pref: micro}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 **def unit milliS\_per\_cm2** as
 
-unit siemens *{pref: milli};*
+unit siemens *{pref: milli}*;
 
-unit metre *{pref: centi, expo: -2};*
+unit metre *{pref: centi, expo: -2}*;
 
 **enddef**;
 
 def **unit mM** as
 
-unit mole *{pref: milli};*
+unit mole *{pref: milli}*;
 
 **enddef**;
 
 **def comp environment** as
 
-var V: millivolt *{pub: out};*
+var V: millivolt *{pub: out}*;
 
-var t: millisec *{pub: out};*
+var t: millisec *{pub: out}*;
 
 V = sel
 
 case (t > 5 *{millisec}*) and (t < 15 *{millisec}*):
 
--20.0 *{millivolt};*
+-20.0 *{millivolt}*;
 
 otherwise:
 
--85.0 *{millivolt}; *
+-85.0 *{millivolt}*; 
 
 endsel;
 
@@ -1301,29 +1301,29 @@ endcomp;
 
 **def comp sodium\_channel** as
 
-var V: millivolt *{pub: in, priv: out};*
+var V: millivolt *{pub: in, priv: out}*;
 
-var t: millisec *{pub: in, priv: out };*
+var t: millisec *{pub: in, priv: out }*;
 
-var m: dimensionless *{priv: in};*
+var m: dimensionless *{priv: in}*;
 
-var h: dimensionless *{priv: in};*
+var h: dimensionless *{priv: in}*;
 
-var g\_Na: milliS\_per\_cm2 *{init: 120};*
+var g\_Na: milliS\_per\_cm2 *{init: 120}*;
 
-var E\_Na: millivolt *{init: 35};*
+var E\_Na: millivolt *{init: 35}*;
 
-var i\_Na: microA\_per\_cm2 *{pub: out};*
+var i\_Na: microA\_per\_cm2 *{pub: out}*;
 
-var Nao: mM *{init: 140};*
+var Nao: mM *{init: 140}*;
 
-var Nai: mM *{init: 30};*
+var Nai: mM *{init: 30}*;
 
-var RTF: millivolt *{init: 25};*
+var RTF: millivolt *{init: 25}*;
 
-var E\_Na: millivolt\ *;*
+var E\_Na: millivolt;
 
-var Na\_conductance: milliS\_per\_cm2 *{pub: out};*
+var Na\_conductance: milliS\_per\_cm2 *{pub: out}*;
 
 E\_Na=RTF\*ln(Nao/Nai);
 
@@ -1335,15 +1335,15 @@ i\_Na= Na\_conductance\*(V-E\_Na);
 
 **def comp sodium\_channel\_m\_gate** a s
 
-var V: millivolt *{pub: in};*
+var V: millivolt *{pub: in}*;
 
-var t: millisec *{pub: in};*
+var t: millisec *{pub: in}*;
 
 var alpha\_m: per\_millisec;
 
 var beta\_m: per\_millisec;
 
-var m: dimensionless *{init: 0.05, pub: out};*
+var m: dimensionless *{init: 0.05, pub: out}*;
 
 | alpha\_m = 0.1{per\_millivolt\_millisec}\*(V+25{millivolt})
 |  /(exp((V+25{millivolt})/10{millivolt})-1{dimensionless});
@@ -1356,15 +1356,15 @@ ode(m, t) = alpha\_m\*(1{dimensionless}-m)-beta\_m\*m;
 
 **def comp sodium\_channel\_h\_gate** as
 
-var V: millivolt *{pub: in};*
+var V: millivolt *{pub: in}*;
 
-var t: millisec *{pub: in};*
+var t: millisec *{pub: in}*;
 
 var alpha\_h: per\_millisec;
 
 var beta\_h: per\_millisec;
 
-var h: dimensionless *{init: 0.6, pub: out};*
+var h: dimensionless *{init: 0.6, pub: out}*;
 
 alpha\_h = 0.07{per\_millisec}\*exp(V/20{millivolt});
 
@@ -1405,7 +1405,7 @@ vars h and h;
 
 **enddef**;
 
-**enddef;**
+**enddef**;
 
 | The results of the OpenCOR computation, with *Ending point* 40 and
   *Point interval* 0.1, are shown in Figure 23 with plots of
@@ -1689,7 +1689,7 @@ ode(V,t) = -i\_Tot/Cm;
 
 **enddef**;
 
-**enddef;**
+**enddef**;
 
 **def model leakage\_ion\_channel as**
 
@@ -1755,7 +1755,7 @@ i\_L = g\_L\*(V-E\_L);
 
 **enddef**;
 
-**enddef;**
+**enddef**;
 
 Note that the CellML Text code for the potassium channel is on page 17
 and for the sodium channel is on page 21.
@@ -2880,8 +2880,8 @@ packages.
 ***Results***
 
 +---------------------------------------------------------------------------------------------------------+--------------+----------------------+---------------------+----------------------+
-| **CellML model                                                                                          | **Duration** | **OpenCOR time** (s) | **MATLAB time** (s) | **Time ratio         |
-| **\ (from PMR on 18/6/2015)                                                                             |              |                      |                     | **\ (MATLAB/OpenCOR) |
+| **CellML model                                                                                          | **Duration** | **OpenCOR time** (s) | **MATLAB time** (s) | **Time ratio**       |
+|   (from PMR on 18/6/2015)                                                                               |              |                      |                     | (MATLAB/OpenCOR)     |
 |                                                                                                         | (s)          |                      |                     |                      |
 +=========================================================================================================+==============+======================+=====================+======================+
 | `*Bondarenko et al. 2004* <http://models.cellml.org/e/41>`__                                            | 10           | 1.16                 | 140.14              | 121                  |
@@ -3010,14 +3010,7 @@ References
 
 15. `www.biomodels.org <http://www.biomodels.org>`__
 
-.. [1]
-   OpenCOR is an open source, freely available, C\ :sup:`++` desktop
-   application written by Alan Garny at INRIA with funding support from
-   the Auckland Bioengineering Institute
-   (`www.abi.auckland.ac.nz <../customXml/item1.xml>`__) and the
-   NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard
-   at the University of Michigan
-   (`http://virtualrat.org <numbering.xml>`__).
+.. [1] OpenCOR is an open source, freely available, C++ desktop application written by Alan Garny at INRIA with funding support from the Auckland Bioengineering Institute (`www.abi.auckland.ac.nz <../customXml/item1.xml>`__) and the NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard at the University of Michigan (`http://virtualrat.org <numbering.xml>`__).
 
 .. [2]
    For an overview and the background of CellML see
