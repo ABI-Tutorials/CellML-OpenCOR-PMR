@@ -41,7 +41,7 @@ to modular approaches (model hierarchies) and model annotation.
 
    background
    install
-   create_and_run_first
+   create_and_first_run
    open_existing
    simple_ode
    lorenz

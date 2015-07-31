@@ -2,50 +2,6 @@
 Footnotes
 =========
 
-.. [6]
-   `www.iups.org <endnotes.xml>`__. The IUPS President, Denis Noble from
-   Oxford University, and Jim Bassingthwaighte from the University of
-   Washington in Seattle have been two of the driving forces behind the
-   Physiome Project. Peter Hunter from the University of Auckland was
-   appointed Chair of the newly created Physiome Commission of the IUPS
-   in 2000. The IUPS Physiome Committee, formed in 2008, was co-chaired
-   by Peter Hunter and Sasha Popel (JHU) and is now chaired by Andrew
-   McCulloch from UCSD. The UK Wellcome Trust provided initial support
-   for the Physiome Project through the Heart Physiome grant awarded in
-   2004 to David Paterson, Denis Noble and Peter Hunter.
-
-.. [7]
-   CellML began as a joint public-private initiative in 1998 with
-   funding by the US company Physiome Sciences (CEO Jeremy Levin),
-   before being launched under IUPS as a fully open source project in
-   1999.
-
-.. [8]
-   The STEP report, led by Marco Viceconte (University of Sheffield,
-   UK), is available at
-   `www.europhysiome.org/roadmap <media/image2.png>`__.
-
-.. [9]
-   This coordinates various US Governmental funding agencies involved in
-   multi-scale bioengineering modeling research including NIH, NSF,
-   NASA, the Dept of Energy (DoE), the Dept of Defense (DoD), the US
-   Dept of Agriculture and the Dept of Veteran Affairs. See
-   `www.nibib.nih.gov/Research/MultiScaleModeling/IMAG <media/image3.jpeg>`__.
-   Grace Peng of NHBIB leads the IMAG group.
-
-.. [10]
-   Other significant contributions to the VPH-Physiome project have come
-   from Yoshi Kurachi in Japan
-   (`www.physiome.jp <media/image4.tiff>`__), Stig Omholt in Norway
-   (`www.ntnu <media/image5.png>`__) and Chae-Hun Leem in Korea
-   (`www.physiome.or.kr <media/image6.jpeg>`__).
-
-.. [11]
-   `www.vph-institute.org <media/image7.png>`__. Formed in 2012, the
-   inaugural Director was Marco Viceconti. The current Director is
-   Adriano Henney. The inaugural and current President of the
-   VPH-Institute is Denis Noble.
-
 .. [12]
    The ⌘ key being the equivalent on Macs.
 
