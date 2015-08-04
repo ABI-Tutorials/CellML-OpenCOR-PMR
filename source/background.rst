@@ -3,6 +3,10 @@
 Background to the VPH-Physiome project
 ======================================
 
+.. figure:: _static/images/sideimage_background.png
+   :align: right
+   :alt: various logos
+
 To be of benefit to applications in healthcare, organ and whole organism
 physiology needs to be understood at both a systems level and in terms
 of subcellular function and tissue properties. Understanding a
@@ -22,6 +26,9 @@ bioengineering approaches to modelling anatomy and physiology, the
 International Union of Physiological Sciences (IUPS) formed the Physiome
 Project in 1997 as an international collaboration to provide a
 computational framework for understanding human physiology [*]_.
+
+Primary Goals
+=============
 
 One of the primary goals of the Physiome Project :cite:`4` has been to promote
 the development of standards for the exchange of information between

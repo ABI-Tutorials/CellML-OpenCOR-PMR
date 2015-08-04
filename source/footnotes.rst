@@ -2,45 +2,6 @@
 Footnotes
 =========
 
-.. [12]
-   The ⌘ key being the equivalent on Macs.
-
-.. [13]
-   `www.opencor.ws/developer/develop/plugins/index.html <media/image8.png>`__
-
-.. [14]
-   `en.wikipedia.org/wiki/Van\_der\_Pol\_oscillator <media/image9.jpeg>`__
-
-.. [15]
-   Note that gray boxes are used to indicate equations that are
-   implemented directly in OpenCOR.
-
-.. [16]
-   For more on the *CellML Text* view see
-   `opencor.ws/user/plugins/editing/CellMLTextView.html <media/image10.png>`__.
-
-.. [17]
-   Note that a more elaborated version of this is ‘ode(x, t,
-   1{dimensionless})’ and a 2\ :sup:`nd` order ODE can be specified as
-   ‘ode(x, t, 2{dimensionless})’. 1\ :sup:`st` order is assumed as the
-   default.
-
-.. [18]
-   Note also that the mathematical expressions in CellML are based on
-   MathML – see `www.w3.org/Math/ <media/image11.png>`__
-
-.. [19]
-   Note that ‘.cellml’ is not strictly required but is best practice.
-
-.. [20]
-   Other solvers include forward Euler, Heun and Runga-Kutta solvers
-   (RK2 and RK4).
-
-.. [21]
-   Note that a model that requires a stimulus protocol should have the
-   maximum step value of the CVODE solver set to the length of the
-   stimulus.
-
 .. [22]
    It is often convenient to write a first order equation as
    :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that

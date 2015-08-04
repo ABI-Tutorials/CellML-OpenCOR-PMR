@@ -1,3 +1,9 @@
+
+.. figure:: _static/images/banner_introduction.png
+   :align: center
+   :width: 100%
+   :alt: logo banner
+
 ===========================================================
 Tutorial on CellML, OpenCOR & the Physiome Model Repository
 ===========================================================
@@ -37,7 +43,7 @@ to modular approaches (model hierarchies) and model annotation.
    the development of CellML models. [*]_
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    background
    install
