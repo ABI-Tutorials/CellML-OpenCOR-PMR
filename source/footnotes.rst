@@ -2,20 +2,6 @@
 Footnotes
 =========
 
-.. [22]
-   It is often convenient to write a first order equation as
-   :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that
-   its solution is expressed in terms of time constant :math:`\tau`,
-   initial condition :math:`y_{0}` and steady state solution
-   :math:`y_{\infty}` as:
-   :math:`y\left( t \right) = y_{\infty} + \left( y_{0} - y_{\infty} \right).e^{- \frac{t}{\tau}}`.
-
-.. [23]
-   `http://en.wikipedia.org/wiki/Lorenz\_system <media/image12.jpeg>`__
-
-.. [24]
-   `www.math.auckland.ac.nz/~hinke/crochet/ <media/image13.png>`__
-
 .. [25]
    The Brownian motion of individual molecules has energy :math:`k_{B}T`
    (J), where the Boltzmann constant :math:`k_{B}` is approximately

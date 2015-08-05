@@ -71,13 +71,13 @@ to modular approaches (model hierarchies) and model annotation.
 
 .. rubric:: Footnotes
 
-.. [*] OpenCOR is an open source, freely available, C++ desktop application written by Alan Garny at INRIA with funding support from the Auckland Bioengineering Institute (`www.abi.auckland.ac.nz <../customXml/item1.xml>`__) and the NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard at the University of Michigan (`http://virtualrat.org <numbering.xml>`__).
+.. [*] OpenCOR is an open source, freely available, C++ desktop application written by Alan Garny at INRIA with funding support from the Auckland Bioengineering Institute (http://www.abi.auckland.ac.nz) and the NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard at the University of Michigan (http://virtualrat.org).
 
-.. [*] For an overview and the background of CellML see `www.cellml.org <styles.xml>`__. This project is led by Poul Nielsen and David (Andre) Nickerson at the Auckland (University) Bioengineering Institute (ABI:`www.abi.auckland.ac.nz <stylesWithEffects.xml>`__).
+.. [*] For an overview and the background of CellML see www.cellml.org. This project is led by Poul Nielsen and David (Andre) Nickerson at the Auckland (University) Bioengineering Institute (`ABI <http://www.abi.auckland.ac.nz>`_).
 
-.. [*] `https://models.physiomeproject.org <settings.xml>`__. The PMR project is led by Tommy Yu at the ABI.
+.. [*] https://models.physiomeproject.org. The PMR project is led by Tommy Yu at the ABI.
 
-.. [*] For details on the specifications of CellML1.0 see `www.cellml.org/specifications/cellml\_1.0 <webSettings.xml>`__.
+.. [*] For details on the specifications of CellML1.0 see http://www.cellml.org/specifications/cellml_1.0.
 
-.. [*] Please send any errors discovered or suggested improvements to `p.hunter@auckland.ac.nz <footnotes.xml>`__.
+.. [*] Please send any errors discovered or suggested improvements to p.hunter@auckland.ac.nz.
 

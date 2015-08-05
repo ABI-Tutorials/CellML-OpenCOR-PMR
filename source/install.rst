@@ -7,9 +7,10 @@ Versions are available for Windows, OS X and Linux. Note that the
 annotation section of this tutorial relies on the OpenCOR snapshot
 2015-06-09 (or later). Create a shortcut to the executable (found in the
 bin directory) on your desktop and click on this to launch OpenCOR. A
-window will appear that looks like Figure 1(a).
+window will appear that looks like :numref:`Fig. %s(a)<ocr_tut_main_win>`.
 
 .. Figure:: _static/images/opencor_01.png
+   :name: ocr_tut_main_win
    :alt: OpenCOR application
    :align: center
    

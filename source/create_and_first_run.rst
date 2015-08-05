@@ -29,7 +29,7 @@ variable :math:`y`:
 The initial conditions are now :math:`x = - 2;y = 0`.
 
 With the central pane in *Editing* mode (e.g. *CellML Text* view), under
-the *File* menu and *New*, click on *CellML 1.1 File* then type in the
+the *File* menu and *New*, click on *CellML 1.1 File* (:menuselection:`File --> New --> CellML 1.1 File`) then type in the
 following lines of code after deleting the three lines that indicate
 where the code should go:
 
@@ -38,10 +38,10 @@ where the code should go:
 
    def model van_der_pol_model as
        def comp main as
-           var t: dimensionless *{init: 0}*;
-           var x: dimensionless *{init: -2}*;
-           var y: dimensionless *{init: 0}*;
-           var mu: dimensionless *{init: 1}*;
+           var t: dimensionless {init: 0};
+           var x: dimensionless {init: -2};
+           var y: dimensionless {init: 0};
+           var mu: dimensionless {init: 1};
            // These are the ODEs
            ode(x,t)=y;
            ode(y,t)=mu*(1{dimensionless}-sqr(x))*y-x;
@@ -83,6 +83,12 @@ or Matlab, which are procedural languages) and therefore the order of
 statements does not affect the solution. For example, the order of the
 ODEs could equally well be
 
+.. code-block:: python
+   :emphasize-lines: 1,2
+
+   ode(y,t)=mu*(1{dimensionless}-sqr(x))*y-x;
+   ode(x,t)=y;
+
 The significance of this will become apparent later when we import
 several CellML models to create a composite model.
 
@@ -97,7 +103,7 @@ several CellML models to create a composite model.
    rather than grey. The right hand tabs provide different views of the
    CellML code.
 
-Now save the code to a local folder using *Save* under the *File* menu
+Now save the code to a local folder using *Save* under the *File* menu (:menuselection:`File --> Save`)
 (or ‘CTRL-S’) and choosing *.cellml* as the file format [*]_. With the
 CellML model saved various views, accessed via the tabs on the right
 hand edge of the window, become available. One is the *CellML Text* view
