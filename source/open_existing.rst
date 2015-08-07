@@ -37,7 +37,7 @@ copies the PMR workspace to a local directory that you specify. This is
 useful if you want to use that model as a template for a new one you are
 creating.
 
-.. figure:: _static/images/pmr_window_notannotated.png
+.. figure:: _static/images/pmr_window.png
    :name: ocr_tut_pmr_win
    :alt: PMR window
    :align: center
@@ -46,7 +46,7 @@ creating.
    models. These can be opened from within OpenCOR using the two buttons to
    the right of a model, as explained below.
 
-In the PMR window the buttons on the right-hand side [1] lists all the CellML files for this model.  Clicking on one of those uploads the model into OpenCOR.  The left-hand buttons [2] copies the PMR workspace to a local directory.
+In the PMR window (:numref:`ocr_tut_pmr_win`) the buttons on the right-hand side [**1**] lists all the CellML files for this model.  Clicking on one of those [**2**] uploads the model into OpenCOR.  The left-hand buttons [**3**] copies the PMR workspace to a local directory.
 
 .. |image_cross| image:: _static/images/close_red_square.png
    :height: 12pt

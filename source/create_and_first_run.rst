@@ -17,14 +17,14 @@ defining the velocity :math:`\frac{\text{dx}}{\text{dt}}` as a new
 variable :math:`y`:
 
 .. math::
-   :label: first_order_eqns_1
-
-   \frac{\text{dx}}{\text{dt}} &= y
+   :label: first_order_eqns
+   
+   \frac{\text{dx}}{\text{dt}} & = y \\
    
 .. math::
    :label: first_order_eqns_2
-
-   \frac{\text{dy}}{\text{dt}} &= \mu\left( 1 - x^{2} \right)y - x
+   
+   \frac{\text{dy}}{\text{dt}} & = \mu\left( 1 - x^{2} \right)y - x
 
 The initial conditions are now :math:`x = - 2;y = 0`.
 
@@ -268,7 +268,7 @@ sensitive.
 
 .. [*] http://en.wikipedia.org/wiki/Van_der_Pol_oscillator
 
-.. [*] Equations :eq:`first_order_eqns_1` and :eq:`first_order_eqns_2` are equations that are implemented directly in OpenCOR.
+.. [*] Equations :eq:`first_order_eqns` and :eq:`first_order_eqns_2` are equations that are implemented directly in OpenCOR.
 
 .. [*] For more on the *CellML Text* view see http://opencor.ws/user/plugins/editing/CellMLTextView.html.
 

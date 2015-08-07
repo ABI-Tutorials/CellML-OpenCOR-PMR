@@ -2,42 +2,6 @@
 Footnotes
 =========
 
-.. [25]
-   The Brownian motion of individual molecules has energy :math:`k_{B}T`
-   (J), where the Boltzmann constant :math:`k_{B}` is approximately
-   1.34x10\ :sup:`-23` (J.K:sup:`-1`). At 25°C, or 298K, :math:`k_{B}T`
-   = 4.10\ :sup:`-21` (J) is the minimum amount of energy to contain a
-   ‘bit’ of information at that temperature.
-
-.. [26]
-   The *first law of thermodynamics* states that energy is conserved,
-   and the *second law* (that natural processes are accompanied by an
-   increase in entropy of the universe) deals with the distribution of
-   energy in space.
-
-.. [27]
-   At infinitely high concentration the specified volume is jammed
-   packed with solute and the entropy is zero.
-
-.. [28]
-   :math:`N_{A}` is Avogadro’s number (6.023x10:sup:`23`) and is the
-   scaling factor between molecular and macroscopic processes.
-   Boltzmann’s constant :math:`k_{B}` and electron charge *e* operate at
-   the atomic/molecular scale. Their effect at the physiological scale
-   is via the universal gas constant :math:`R = k_{B}N_{A}` and
-   Faraday’s constant :math:`F = eN_{A}`.
-
-.. [29]
-   It is well accepted in engineering analysis that thinking about and
-   dealing with units is a key aspect of modelling. Taking the ratio of
-   dimensionally consistent terms provides non-dimensional numbers which
-   can be used to decide when a term in an equation can be omitted in
-   the interests of modelling simplicity. We investigate this idea
-   further in a later section.
-
-.. [30]
-   `http://en.wikipedia.org/wiki/International\_System\_of\_Units <http://www.opencor.ws>`__
-
 .. [31]
    The original expression in the HH paper used
    :math:`\alpha_{n} = \frac{0.01\left( v + 10 \right)}{e^{\frac{\left( v + 10 \right)}{10}} - 1}`

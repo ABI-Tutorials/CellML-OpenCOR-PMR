@@ -4,10 +4,13 @@
 A simple first order ODE
 ========================
 
-.. figure:: _static/images/sol_first_order_eqn.gif
+.. figure:: _static/images/sol_first_order_eqn.png
    :name: ocr_tut_sol_1order
    :alt: Solution of 1st order equation
    :align: right
+   :figwidth: 45%
+   
+   Solution of 1:sup:`st` order equation.
    
 The simplest example of a first order ODE is
 
@@ -87,7 +90,7 @@ example) is a statement that the **rate of decay**
 the NZ$100 note (should you be lucky enough to possess one), shown in
 Figure 8.
 
-.. figure:: _static/images/100_dollar_note.jpeg
+.. figure:: _static/images/exponential_curve.png
    :name: ocr_tut_100_note
    :alt: $100 New Zealand dollar note
    :align: center
