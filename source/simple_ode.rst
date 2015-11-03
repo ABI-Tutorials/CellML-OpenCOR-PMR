@@ -12,7 +12,7 @@ A simple first order ODE
    :align: right
    :figwidth: 45%
    
-   Solution of 1:sup:`st` order equation.
+   Solution of 1\ :sup:`st` order equation.
    
 The simplest example of a first order ODE is
 
