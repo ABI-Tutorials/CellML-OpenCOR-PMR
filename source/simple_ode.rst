@@ -1,5 +1,7 @@
 .. role:: red
 
+.. _ocr_tut_out_first_ode:
+
 ========================
 A simple first order ODE
 ========================

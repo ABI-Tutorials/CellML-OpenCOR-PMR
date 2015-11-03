@@ -9,23 +9,23 @@ introduced by Hodgkin and Huxley, the gating variable for the potassium
 channel is :math:`n` and the number of gates in series is
 :math:`\gamma = 4`, therefore
 
-:math:`i_{K} = {\overset{\overline{}}{i}}_{K}n^{4} = n^{4}{\overset{\overline{}}{g}}_{K}\left( V - E_{K} \right)`
+:math:`i_{K} = \bar{i}_{K}n^{4} = n^{4}\bar{g}_{K}\left( V - E_{K} \right)`
 
-where :math:`{\overset{\overline{}}{g}}_{K} = \ `\ 36 mS.cm\ :sup:`-2`,
+where :math:`\bar{g}_{K} = \ 36 \text{mS.cm}^{-2}`,
 and with intra- and extra-cellular concentrations
-:math:`\left\lbrack K^{+} \right\rbrack_{i}`\ = 90mM and
-:math:`\left\lbrack K^{+} \right\rbrack_{o}`\ = 3mM, respectively, the
-Nernst potential for the potassium channel (z=1 since 1 +ve charge on
+:math:`\left\lbrack K^{+} \right\rbrack_{i} = 90\text{mM}` and
+:math:`\left\lbrack K^{+} \right\rbrack_{o} = 3\text{mM}`, respectively, the
+Nernst potential for the potassium channel (:math:`z = 1` since one +ve charge on
 :math:`K^{+}`) is
 
-:math:`E_{k} = \frac{\text{RT}}{\text{zF}}\ln\frac{\left\lbrack K^{+} \right\rbrack_{o}}{\left\lbrack K^{+} \right\rbrack_{i}} = 25\text{\ ln}\frac{3}{90} = - 85\text{mV}`.
+:math:`E_{k} = \frac{\text{RT}}{\text{zF}}\ ln\frac{\left\lbrack K^{+} \right\rbrack_{o}}{\left\lbrack K^{+} \right\rbrack_{i}} = 25\ ln\frac{3}{90} = - 85\text{mV}`.
 
 As noted above, this is called the *equilibrium potential* since it is
 the potential across the cell membrane when the channel is open but no
 current is flowing because the electrostatic driving force from the
 potential (voltage) difference between internal and external ion charges
 is exactly matched by the entropic driving force from the ion
-concentration difference. :math:`n^{4}{\overset{\overline{}}{g}}_{K}` is
+concentration difference. :math:`n^{4}\bar{g}_{K}` is
 the channel conductance.
 
 The gating kinetics are described (as before) by
@@ -33,7 +33,7 @@ The gating kinetics are described (as before) by
 :math:`\frac{\text{dn}}{\text{dt}} = \alpha_{n}\left( 1 - n \right) - \beta_{n}\text{.n}`
 
 with time constant :math:`\tau_{n} = \frac{1}{\alpha_{n} + \beta_{n}}`
-(see page 9).
+(see :ref:`A simple first order ODE <ocr_tut_out_first_ode>`).
 
 The main difference from the gating model in our previous example is
 that Hodgkin and Huxley found it necessary to make the rate constants
