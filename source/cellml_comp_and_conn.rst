@@ -1,3 +1,4 @@
+.. include:: resources/roles.txt
 
 ===============================================================================
 A model of the potassium channel: Introducing CellML components and connections
@@ -28,6 +29,15 @@ is exactly matched by the entropic driving force from the ion
 concentration difference. :math:`n^{4}\bar{g}_{K}` is
 the channel conductance.
 
+.. figure:: _static/images/volt_deps_of_gate_consts.png
+   :name: ocr_tut_volt_deps_gates
+   :alt: Voltage dependencies of gate constants
+   :align: right
+   :figwidth: 45%
+   
+   Voltage dependence of rate constants :math:`\alpha_n` and :math:`\beta_n\ (\text{ms}^{-1})`, time constant
+   :math:`\tau_n\ (\text{ms})` and relative conductance :math:`\frac{g_{SS}}{\bar{g}_Y}`.
+   
 The gating kinetics are described (as before) by
 
 :math:`\frac{\text{dn}}{\text{dt}} = \alpha_{n}\left( 1 - n \right) - \beta_{n}\text{.n}`
@@ -37,8 +47,8 @@ with time constant :math:`\tau_{n} = \frac{1}{\alpha_{n} + \beta_{n}}`
 
 The main difference from the gating model in our previous example is
 that Hodgkin and Huxley found it necessary to make the rate constants
-functions of the membrane potential :math:`V` (see Figure 18) as
-follows [31]_:
+functions of the membrane potential :math:`V` (see :numref:`ocr_tut_volt_deps_gates`) as
+follows\ [*]_:
 
 :math:`\alpha_{n} = \frac{- 0.01\left( V + 65 \right)}{e^{\frac{- \left( V + 65 \right)}{10}} - 1}`;
 :math:`\beta_{n} = 0.125e^{\frac{- \left( V + 75 \right)}{80}}` .
@@ -47,29 +57,43 @@ Note that under steady state conditions when
 :math:`t \rightarrow \infty` and
 
 :math:`\frac{\text{dn}}{\text{dt}} \rightarrow 0`,
-:math:`\left. \ n \right|_{t = \infty} = n_{\infty} = \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}}`
-.
+:math:`\left. \ n \right|_{t = \infty} = n_{\infty} = \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}}`.
 
+.. figure:: _static/images/ss_cur_volt.png
+   :name: ocr_tut_ss_cur_volt
+   :alt: Steady-state current voltage
+   :align: right
+   :figwidth: 45%
+   
+   The steady-state current-voltage relation for the potassium channel.
+   
 The voltage dependence of the steady state channel conductance is then
 
-:math:`g_{\text{SS}} = \left( \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} \right)^{4}{.\overset{\overline{}}{g}}_{Y}`.
+:math:`g_{\text{SS}} = \left( \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} \right)^{4}.\bar{g}_{Y}`.
 
-(see Figure 18). The steady state current-voltage relation for the
-channel is illustrated in Figure 19.
+(see :numref:`ocr_tut_volt_deps_gates`). The steady state current-voltage relation for the
+channel is illustrated in :numref:`ocr_tut_ss_cur_volt`.
 
 These equations are captured with OpenCOR *CellML Text* view (together
 with the previous unit definitions) on the next page. But first we need
 to explain some further CellML concepts.
 
-We introduced CellML ***units*** above. We now need to introduce three
-more CellML constructs: ***components***, ***connections*** (mappings
-between components) and ***groups***. For completeness we also show one
-other construct in Figure 20 that will be used later in Section 10:
-***imports***.
+.. figure:: _static/images/cellml_comp_legend.png
+   :name: ocr_tut_cellml_comp_legend
+   :alt: CellML components legend
+   :align: right
+   :figwidth: 45%
+   
+   Key entities in a CellML model.
+   
+We introduced CellML :red:`units` above. We now need to introduce three
+more CellML constructs: :green:`components`, :orange:`connections` (mappings
+between components) and :purple:`groups`. For completeness we also show one
+other construct in :numref:`ocr_tut_cellml_comp_legend`, :blue:`imports`, that will be used later in :ref:`ocr_tut_intro_cellml_imports`.
 
 Defining components serves two purposes: it preserves a modular
 structure for CellML models, and allows these component modules to be
-imported into other models, as we will illustrate later [2]. For the
+imported into other models, as we will illustrate later :cite:`2`. For the
 potassium channel model we define components representing (i) the
 environment, (ii) the potassium channel conductivity, and (iii) the
 dynamics of the n-gate.
@@ -79,161 +103,93 @@ need to also define the component maps as indicated in the *CellML Text*
 view on the next page.
 
 The *CellML Text* code for the potassium ion channel model is as
-follows [32]_:
-
-***Potassium\_ion\_channel.cellml***
-
-**def model potassium\_ion\_channel** as
-
-**def unit** **millisec** as
-
-unit second *{pref: milli}*;
-
-**enddef**;
-
-**def unit per\_millisec** as
-
-unit second *{pref: milli, expo: -1}*;
-
-**enddef**;
-
-**def unit millivolt** as
-
-unit volt *{pref: milli}*;
-
-**enddef**;
-
-**def** **unit per\_millivolt** as
-
-unit millivolt {expo: -1};
-
-**enddef**;
-
-**def** **unit per\_millivolt\_millisec** as
-
-unit per\_millivolt;
-
-unit per\_millisec;
-
-**enddef**;
-
-**def unit microA\_per\_cm2** as
-
-unit ampere *{pref: micro}*;
-
-unit metre *{pref: centi, expo: -2}*;
-
-**enddef**;
-
-**def unit milliS\_per\_cm2** as
-
-unit siemens *{pref: milli}*;
-
-unit metre *{pref: centi, expo: -2}*;
-
-**enddef**;
-
-def **unit mM** as
-
-unit mole *{pref: milli}*;
-
-**enddef**;
-
-**def comp environment** as
-
-var V: millivolt *{ pub: out}*;
-
-var t: millisec *{pub: out}*;
-
-V = sel
-
-case (t > 5 *{millisec}*) and (t < 15 *{millisec}*):
-
--85.0 *{millivolt}*;
-
-otherwise:
-
-0.0 *{millivolt}*;
-
-endsel;
-
-**enddef**;
-
-def **group as encapsulation** for
-
-comp **potassium\_channel** incl
-
-comp **potassium\_channel\_n\_gate**;
-
-endcomp;
-
-enddef;
-
-**def comp potassium\_channel** as
-
-var V: millivolt *{pub: in* *, priv: out}*;
-
-var t: millisec *{pub: in, priv: out}*;
-
-var n: dimensionless *{priv: in}*;
-
-var i\_K: microA\_per\_cm2 *{pub: out}*;
-
-var g\_K: milliS\_per\_cm2 *{init: 36}*;
-
-var Ko: mM *{init: 3}*;
-
-var Ki: mM *{init: 90}*;
-
-var RTF: millivolt *{init: 25}*;
-
-var E\_K: millivolt;
-
-var K\_conductance: milliS\_per\_cm2 *{pub: out}*;
-
-E\_K=RTF\*ln(Ko/Ki);
-
-K\_conductance = g\_K\*pow(n, 4{dimensionless});
-
-i\_K = K\_conductance\*(V-E\_K);
-
-**enddef**;
-
-**def comp potassium\_channel\_n\_gate** as
-
-var V: millivolt *{pub: in}*;
-
-var t: millisec *{pub: in}*;
-
-var n: dimensionless *{init: 0.325, pub: out}*;
-
-var alpha\_n: per\_millisec;
-
-var beta\_n: per\_millisec;
-
-| alpha\_n = 0.01{per\_millivolt\_millisec}\*(V+10{millivolt})
-|  /(exp((V+10{millivolt})/10{millivolt})-1{dimensionless});
-
-beta\_n = 0.125{per\_millisec}\*exp(V/80{millivolt});
-
-ode(n, t) = alpha\_n\*(1{dimensionless}-n)-beta\_n\*n;
-
-**enddef**;
-
-|    **def map between environment** **and potassium\_channel** for
-|         vars V and V;
-|         vars t and t;
-
-|     **enddef**;
-|     **def map between potassium\_channel and
-  potassium\_channel\_n\_gate** for
-|         vars V and V;
-|         vars t and t;
-
-|        vars n and n;
-|     **enddef**;
-
-**enddef**;
+follows [*]_:
+
+**Potassium\_ion\_channel.cellml**
+
+.. code-block:: cell
+   :linenos:
+   
+   def model potassium_ion_channel as
+      def unit millisec as
+         unit second {pref: milli};
+      enddef;
+      def unit per_millisec as
+         unit second {pref: milli, expo: -1};
+      enddef;
+      def unit millivolt as
+         unit volt {pref: milli};
+      enddef;
+      def unit per_millivolt as
+         unit millivolt {expo: -1};
+      enddef;
+      def unit per_millivolt_millisec as
+         unit per_millivolt;
+         unit per_millisec;
+      enddef;
+      def unit microA_per_cm2 as
+         unit ampere {pref: micro};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def unit milliS_per_cm2 as
+         unit siemens {pref: milli};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def unit mM as
+         unit mole {pref: milli};
+      enddef;
+      def comp environment as
+         var V: millivolt { pub: out};
+         var t: millisec {pub: out};
+         V = sel
+         case (t > 5 {millisec}) and (t < 15 {millisec}):
+            -85.0 {millivolt};
+         otherwise:
+            0.0 {millivolt};
+         endsel;
+      enddef;
+      def group as encapsulation for
+         comp potassium_channel incl
+            comp potassium_channel_n_gate;
+         endcomp;
+      enddef;
+      def comp potassium_channel as
+         var V: millivolt {pub: in , priv: out};
+         var t: millisec {pub: in, priv: out};
+         var n: dimensionless {priv: in};
+         var i_K: microA_per_cm2 {pub: out};
+         var g_K: milliS_per_cm2 {init: 36};
+         var Ko: mM {init: 3};
+         var Ki: mM {init: 90};
+         var RTF: millivolt {init: 25};
+         var E_K: millivolt;
+         var K_conductance: milliS_per_cm2 {pub: out};
+         E_K=RTF*ln(Ko/Ki);
+         K_conductance = g_K*pow(n, 4{dimensionless});
+         i_K = K_conductance(V-E_K);
+      enddef;
+      def comp potassium_channel_n_gate as
+         var V: millivolt {pub: in};
+         var t: millisec {pub: in};
+         var n: dimensionless {init: 0.325, pub: out};
+         var alpha_n: per_millisec;
+         var beta_n: per_millisec;
+         alpha_n = 0.01{per_millivolt_millisec}*(V+10{millivolt})
+            /(exp((V+10{millivolt})/10{millivolt})-1{dimensionless});
+         beta_n = 0.125{per_millisec}*exp(V/80{millivolt});
+         ode(n, t) = alpha_n*(1{dimensionless}-n)-beta_n*n;
+      enddef;
+      def map between environment and potassium_channel for
+         vars V and V;
+         vars t and t;
+      enddef;
+      def map between potassium_channel and
+        potassium_channel_n_gate for
+         vars V and V;
+         vars t and t;
+         vars n and n;
+      enddef;
+   enddef;
 
 Note that several other features have been added:
 
@@ -317,3 +273,10 @@ neuron model, where the membrane ion channel current flows are coupled
 to the equations governing current flow along the axon to generate an
 action potential.
 
+---------------------------
+
+.. rubric:: Footnotes
+
+.. [*] The original expression in the HH paper used :math:`\alpha_n\ =\ \frac{0.01(v+10)}{e^{\frac{(v+10)}{10}}-1}` and :math:`\beta_n\ =\ 0.125e^{\frac{v}{80}}`, where :math:`v` is defined relative to the resting potential (:math:`-75\text{mV}`) with +ve corresponding to +ve *inward* current and :math:`v\ =\ -(V+75)`.
+
+.. [*] From here on we use a coloured background to identify code blocks that relate to a particular CellML construct: :red:`units`, :green:`components`, :orange:`mappings` and :purple:`encapsulation groups` and later :blue:`imports`.

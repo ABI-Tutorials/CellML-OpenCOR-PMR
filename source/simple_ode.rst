@@ -45,7 +45,7 @@ At :math:`t = \tau` , :math:`y\left( t \right)` has therefore fallen to
 Choosing parameters :math:`a = \tau = 1;b = 2` and
 :math:`y\left( 0 \right) = 5`, the *CellML Text* for this model is
 
-.. code-block:: python
+.. code-block:: cell
    :emphasize-lines: 7
 
    def model first_order_model as

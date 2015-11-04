@@ -1,5 +1,4 @@
-.. role:: red
-.. role:: purple
+.. include:: resources/roles.txt
 
 ===================================================================
 A model of ion channel gating and current: Introducing CellML units
@@ -226,7 +225,7 @@ follows:
 Units for this model, with multiples and fractions, are illustrated in
 the following *CellML Text* code:
 
-.. code-block:: python
+.. code-block:: cell
    :linenos:
    :emphasize-lines: 29,30
 
@@ -348,7 +347,4 @@ show now for the neural potassium and sodium ion channels.
 
 .. [*] http://en.wikipedia.org/wiki/International_System_of_Units
 
-.. raw:: html
-
-   <style> .red {color:red} .purple {color:purple}</style>
 
