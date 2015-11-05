@@ -251,13 +251,18 @@ conductance declines but now there is a voltage gradient to drive an
 outward (positive) current flow through the partially open channel –
 albeit brief since the channel is closing.
 
-**Figure 21**. Kinetics of the potassium channel gates for a voltage
-step from 0mV to -85mV. The voltage clamp step is shown at the top, then
-the n gate first order response, then the channel conductance, then the
-channel current. Notice how the conductance is slightly slower to turn
-on (due to the four gates in series) but fast to inactivate. Current
-only flows when there is a non-zero conductance and a non-zero voltage
-gradient. This is called the ‘tail current’.
+.. figure:: _static/images/kinetics_of_potassium_ch.png
+   :name: ocr_tut_kin_pot_ch
+   :alt: Kinetics of the potassium channel
+   :align: center
+   
+   Kinetics of the potassium channel gates for a voltage
+   step from 0mV to -85mV. The voltage clamp step is shown at the top, then
+   the n gate first order response, then the channel conductance, then the
+   channel current. Notice how the conductance is slightly slower to turn
+   on (due to the four gates in series) but fast to inactivate. Current
+   only flows when there is a non-zero conductance and a non-zero voltage
+   gradient. This is called the ‘tail current’.
 
 Note that the *CellML Text* code above includes the Nernst equation with
 its dependence on the concentrations
