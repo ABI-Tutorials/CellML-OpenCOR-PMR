@@ -105,7 +105,7 @@ view on the next page.
 The *CellML Text* code for the potassium ion channel model is as
 follows [*]_:
 
-**Potassium\_ion\_channel.cellml**
+:download:`Potassium_ion_channel.cellml <resources/potassium_ion_channel.cellml>`
 
 .. code-block:: cell
    :linenos:

@@ -1,0 +1,80 @@
+def model potassium_ion_channel as
+   def unit millisec as
+      unit second {pref: milli};
+   enddef;
+   def unit per_millisec as
+      unit second {pref: milli, expo: -1};
+   enddef;
+   def unit millivolt as
+      unit volt {pref: milli};
+   enddef;
+   def unit per_millivolt as
+      unit millivolt {expo: -1};
+   enddef;
+   def unit per_millivolt_millisec as
+      unit per_millivolt;
+      unit per_millisec;
+   enddef;
+   def unit microA_per_cm2 as
+      unit ampere {pref: micro};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def unit milliS_per_cm2 as
+      unit siemens {pref: milli};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def unit mM as
+      unit mole {pref: milli};
+   enddef;
+   def comp environment as
+      var V: millivolt { pub: out};
+      var t: millisec {pub: out};
+      V = sel
+      case (t > 5 {millisec}) and (t < 15 {millisec}):
+         -85.0 {millivolt};
+      otherwise:
+         0.0 {millivolt};
+      endsel;
+   enddef;
+   def group as encapsulation for
+      comp potassium_channel incl
+         comp potassium_channel_n_gate;
+      endcomp;
+   enddef;
+   def comp potassium_channel as
+      var V: millivolt {pub: in , priv: out};
+      var t: millisec {pub: in, priv: out};
+      var n: dimensionless {priv: in};
+      var i_K: microA_per_cm2 {pub: out};
+      var g_K: milliS_per_cm2 {init: 36};
+      var Ko: mM {init: 3};
+      var Ki: mM {init: 90};
+      var RTF: millivolt {init: 25};
+      var E_K: millivolt;
+      var K_conductance: milliS_per_cm2 {pub: out};
+      E_K=RTF*ln(Ko/Ki);
+      K_conductance = g_K*pow(n, 4{dimensionless});
+      i_K = K_conductance(V-E_K);
+   enddef;
+   def comp potassium_channel_n_gate as
+      var V: millivolt {pub: in};
+      var t: millisec {pub: in};
+      var n: dimensionless {init: 0.325, pub: out};
+      var alpha_n: per_millisec;
+      var beta_n: per_millisec;
+      alpha_n = 0.01{per_millivolt_millisec}*(V+10{millivolt})
+         /(exp((V+10{millivolt})/10{millivolt})-1{dimensionless});
+      beta_n = 0.125{per_millisec}*exp(V/80{millivolt});
+      ode(n, t) = alpha_n*(1{dimensionless}-n)-beta_n*n;
+   enddef;
+   def map between environment and potassium_channel for
+      vars V and V;
+      vars t and t;
+   enddef;
+   def map between potassium_channel and
+     potassium_channel_n_gate for
+      vars V and V;
+      vars t and t;
+      vars n and n;
+   enddef;
+enddef;
