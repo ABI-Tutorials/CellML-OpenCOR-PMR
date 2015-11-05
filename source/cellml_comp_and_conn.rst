@@ -191,24 +191,34 @@ follows [*]_:
       enddef;
    enddef;
 
+
+|  **Lines 2-28:** Define :red:`units`.
+|  **Lines 29-38:** Define :green:`component` 'environment'.
+|  **Lines 32-37:** Define **voltage step**.
+|  **Lines 39-43:** Define :purple:`encapsulation` of 'n_gate'.
+|  **Lines 44-58:** Define :green:`component` 'potassium_channel'.
+|  **Lines 59-69:** Define :green:`component` 'potassium_channel_n_gate'.
+|  **Lines 70-79:** Define :orange:`mappings` between :green:`components` for variables that are shared between these components.
+
+
 Note that several other features have been added:
 
 -  the event control *select case* which indicates that the voltage is
-   specified to jump from 0mV to -85mV at t=5ms then back to 0mV at
-   t=15ms. This is only used here in order to test the K channel model;
-   when the potassium\_channel component is later imported into a neuron
+   specified to jump from 0 mV to -85 mV at t = 5 ms then back to 0 mV at
+   t = 15 ms. This is only used here in order to test the K channel model;
+   when the potassium_channel component is later imported into a neuron
    model, the environment component is not imported.
 
--  the use of **encapsulation** to embed the
-   **potassium\_channel\_n\_gate** inside the **potassium\_channel**.
+-  the use of :purple:`encapsulation` to embed the
+   **potassium_channel_n_gate** inside the **potassium_channel**.
    This avoids the need to establish mappings from **environment** to
-   **potassium\_channel\_n\_gate** since the gate component is entirely
+   **potassium_channel_n_gate** since the gate component is entirely
    within the channel component.
 
 -  the use of :math:`\left\{ pub:in \right\}` and
    :math:`\left\{ pub:out \right\}` to indicate which variables are
    either supplied as inputs to a component or produced as outputs from
-   a component [33]_. Any variables not labelled as *in* or *out* are
+   a component [*]_. Any variables not labelled as *in* or *out* are
    local variables or parameters defined and used only within that
    component. Public (and private) interfaces are discussed in more
    detail in the next section.
@@ -229,7 +239,7 @@ again as the voltage is stepped back to 0mV. Note that the gate opening
 behaviour (set by the voltage dependence of the :math:`\alpha_{n}`
 opening rate constant) is faster than the closing behaviour (set by the
 voltage dependence of the :math:`\beta_{n}` closing rate constant). The
-channel conductance (:math:`= n^{4}{\overset{\overline{}}{g}}_{K}`) is
+channel conductance (:math:`= n^{4}\bar{g}_K`) is
 shown next – note the initial s-shaped conductance increase caused by
 the :math:`n^{4}` (four gates in series) effect on conductance. Finally
 the channel current :math:`i_{K} =` conductance x
@@ -280,3 +290,5 @@ action potential.
 .. [*] The original expression in the HH paper used :math:`\alpha_n\ =\ \frac{0.01(v+10)}{e^{\frac{(v+10)}{10}}-1}` and :math:`\beta_n\ =\ 0.125e^{\frac{v}{80}}`, where :math:`v` is defined relative to the resting potential (:math:`-75\text{mV}`) with +ve corresponding to +ve *inward* current and :math:`v\ =\ -(V+75)`.
 
 .. [*] From here on we use a coloured background to identify code blocks that relate to a particular CellML construct: :red:`units`, :green:`components`, :orange:`mappings` and :purple:`encapsulation groups` and later :blue:`imports`.
+
+.. [*] Note that a later version of CellML will remove the terms in and out since it is now thought that the direction of information flow should not be constrained.
