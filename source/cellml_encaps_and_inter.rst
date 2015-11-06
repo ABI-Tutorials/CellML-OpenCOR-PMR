@@ -188,7 +188,7 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
    enddef;
    
 The results of the OpenCOR computation, with *Ending point* 40 and
-*Point interval* 0.1, are shown in Figure 23 with plots :math:`V\left( t \right)`, :math:`m\left( t \right)`,
+*Point interval* 0.1, are shown in :numref:`ocr_tut_kin_na_ch_vs` with plots :math:`V\left( t \right)`, :math:`m\left( t \right)`,
 :math:`h\left( t \right)`, :math:`g_{\text{Na}}\left( t \right)` and
 :math:`i_{\text{Na}}(t)` for voltage steps from (a) -85mV to -20mV, (b) -85mV to 0mV and (c) -85mV to 20mV. There are several
 things to note:
@@ -203,7 +203,7 @@ iii. The sodium channel conductance rises (*activates*) and then falls
      (*inactivates*) under a positive voltage step from rest since the
      three m-gates turn on but the h-gate turns off and the conductance
      is a product of these. Compare this with the potassium channel
-     conductance shown in Figure 21 which is only reduced back to zero
+     conductance shown in :numref:`ocr_tut_kin_pot_ch` which is only reduced back to zero
      by stepping the voltage back to its resting value – i.e.
      *deactivating* it.
 
@@ -221,8 +221,12 @@ Note that the bottom trace does not quite line up at t=0 because the
 values shown on the axes are computed automatically and hence can take
 more or less space depending on their magnitude.
 
-**Figure 23.** Kinetics of the sodium channel gates for voltage steps to
-(a) -20mV, (b) 0mV, and (c) 20mV.
+.. figure:: _static/images/kinetics_na_ch_votages.png
+   :name: ocr_tut_kin_na_ch_vs
+   :alt: Interfaces between CellML components
+   :align: center
+   
+   Kinetics of the sodium channel gates for voltage steps to (a) -20mV, (b) 0mV, and (c) 20mV.
 
 
 ---------------------------

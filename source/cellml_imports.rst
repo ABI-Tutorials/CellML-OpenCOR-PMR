@@ -25,10 +25,10 @@ cable. It is derived as follows:
 If the voltage is raised at the left hand end of the cable (shown by the
 deep red in Figure 24), a current :math:`i_{a}` (A) will flow that
 depends on the voltage gradient, given by
-:math:`\frac{\partial V}{\partial x}` (V.m:sup:`-1`) and the resistance
-:math:`r_{a}` (Ω.m:sup:`-1`), Ohm’s law gives
+:math:`\frac{\partial V}{\partial x}` (:math:`V.m^{-1}`) and the resistance
+:math:`r_{a}` (:math:`\Omega.m^{-1}`), Ohm’s law gives
 :math:`- \frac{\partial V}{\partial x} = r_{a}i_{a}` . But if the cable
-leaks current :math:`i_{m}` (A.m:sup:`-1`) per unit length of cable,
+leaks current :math:`i_{m}` (:math:`A.m^{-1}`) per unit length of cable,
 conservation of current gives
 :math:`\frac{\partial i_{a}}{\partial x} = i_{m}` and therefore,
 substituting for :math:`i_{a}` ,
