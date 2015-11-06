@@ -108,6 +108,7 @@ follows [*]_:
 :download:`Potassium_ion_channel.cellml <resources/potassium_ion_channel.cellml>`
 
 .. code-block:: cell
+   :name: ocr_tut_k_ion_ch_ctc
    :linenos:
    
    def model potassium_ion_channel as

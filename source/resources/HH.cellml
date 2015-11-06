@@ -1,0 +1,72 @@
+def model HH as
+   def import using "sodium_ion_channel.cellml" for
+      comp Na_channel using comp sodium_channel;
+   enddef;
+   def import using "potassium_ion_channel.cellml" for
+      comp K_channel using comp potassium_channel;
+   enddef;
+   def import using "leakage_ion_channel.cellml" for
+      comp L_channel using comp leakage_channel;
+   enddef;
+   def unit millisec as
+      unit second {pref: milli};
+   enddef;
+   def unit millivolt as
+      unit volt {pref: milli};
+   enddef;
+   def unit microA_per_cm2 as
+      unit ampere {pref: micro};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def unit microF_per_cm2 as
+      unit farad {pref: micro};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def group as encapsulation for
+      comp membrane incl
+         comp Na_channel;
+         comp K_channel;
+         comp L_channel;
+      endcomp;
+   enddef;
+   def comp environment as
+      var V: millivolt {init: -85, pub: out};
+      var t: millisec {pub: out};
+   enddef;
+   def map between environment and membrane for
+      vars V and V;
+      vars t and t;
+   enddef;
+   def map between membrane and Na_channel for
+      vars V and V;
+      vars t and t;
+      vars i_Na and i_Na;
+   enddef;
+   def map between membrane and K_channel for
+      vars V and V;
+      vars t and t;
+      vars i_K and i_K;
+   enddef;
+   def map between membrane and L_channel for
+      vars V and V;
+      vars i_L and i_L;
+   enddef;
+   def comp membrane as
+      var V: millivolt {pub: in, priv: out};
+      var t: millisec {pub: in, priv: out};
+      var i_Na: microA_per_cm2 {pub: out, priv: in};
+      var i_K: microA_per_cm2 {pub: out, priv: in};
+      var i_L: microA_per_cm2 {pub: out, priv: in};
+      var Cm: microF_per_cm2 {init: 1};
+      var i_Stim: microA_per_cm2;
+      var i_Tot: microA_per_cm2;
+      i_Stim = sel
+      case (t >= 1{millisec}) and (t <= 1.2{millisec}):
+         100{microA_per_cm2};
+      otherwise:
+         0{microA_per_cm2};
+      endsel;
+      i_Tot = i_Stim + i_Na + i_K + i_L;
+      ode(V,t) = -i_Tot/Cm;
+   enddef;
+enddef;

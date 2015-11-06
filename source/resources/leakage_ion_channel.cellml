@@ -1,0 +1,33 @@
+def model leakage_ion_channel as
+   def unit millisec as
+      unit second {pref: milli};
+   enddef;
+   def unit millivolt as
+      unit volt {pref: milli};
+   enddef;
+   def unit per_millivolt as
+      unit millivolt {expo: -1};
+   enddef;
+   def unit microA_per_cm2 as
+      unit ampere {pref: micro};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def unit milliS_per_cm2 as
+      unit siemens {pref: milli};
+      unit metre {pref: centi, expo: -2};
+   enddef;
+   def comp environment as
+      var V: millivolt {init: 0, pub: out};
+      var t: millisec {pub: out};
+   enddef;
+   def map between leakage_channel and environment for
+      vars V and V;
+   enddef;
+   def comp leakage_channel as
+      var V: millivolt {pub: in};
+      var i_L: microA_per_cm2 {pub: out};
+      var g_L: milliS_per_cm2 {init: 0.3};
+      var E_L: millivolt {init: -54.4};
+      i_L = g_L*(V-E_L);
+   enddef;
+enddef;

@@ -81,16 +81,17 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
 :download:`Sodium_ion_channel.cellml <resources/sodium_ion_channel.cellml>`
 
 .. code-block:: cell
+   :name: ocr_tut_na_ion_ch_ctc
 
    def model sodium_ion_channel as
       def unit millisec as
-         unit second *{pref: milli}*;
+         unit second {pref: milli};
       enddef;
       def unit per_millisec as
-         unit second *{pref: milli, expo: -1}*;
+         unit second {pref: milli, expo: -1};
       enddef;
       def unit millivolt as
-         unit volt *{pref: milli}*;
+         unit volt {pref: milli};
       enddef;
       def unit per_millivolt as
          unit millivolt {expo: -1};
@@ -100,24 +101,24 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
          unit per_millisec;
       enddef;
       def unit microA_per_cm2 as
-         unit ampere *{pref: micro}*;
-         unit metre *{pref: centi, expo: -2}*;
+         unit ampere {pref: micro};
+         unit metre {pref: centi, expo: -2};
       enddef;
       def unit milliS_per_cm2 as
-         unit siemens *{pref: milli}*;
-         unit metre *{pref: centi, expo: -2}*;
+         unit siemens {pref: milli};
+         unit metre {pref: centi, expo: -2};
       enddef;
       def unit mM as
-         unit mole *{pref: milli}*;
+         unit mole {pref: milli};
       enddef;
       def comp environment as
-         var V: millivolt *{pub: out}*;
-         var t: millisec *{pub: out}*;
+         var V: millivolt {pub: out};
+         var t: millisec {pub: out};
          V = sel
-         case (t > 5 *{millisec}*) and (t < 15 *{millisec}*):
-            -20.0 *{millivolt}*;
+         case (t > 5 {millisec}) and (t < 15 {millisec}):
+            -20.0 {millivolt};
          otherwise:
-            -85.0 *{millivolt}*; 
+            -85.0 {millivolt}; 
          endsel;
       enddef;
       def group as encapsulation for
@@ -127,43 +128,43 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
          endcomp;
       enddef;
       def comp sodium_channel as
-         var V: millivolt *{pub: in, priv: out}*;
-         var t: millisec *{pub: in, priv: out }*;
-         var m: dimensionless *{priv: in}*;
-         var h: dimensionless *{priv: in}*;
-         var g_Na: milliS_per_cm2 *{init: 120}*;
-         var E_Na: millivolt *{init: 35}*;
-         var i_Na: microA_per_cm2 *{pub: out}*;
-         var Nao: mM *{init: 140}*;
-         var Nai: mM *{init: 30}*;
-         var RTF: millivolt *{init: 25}*;
+         var V: millivolt {pub: in, priv: out};
+         var t: millisec {pub: in, priv: out };
+         var m: dimensionless {priv: in};
+         var h: dimensionless {priv: in};
+         var g_Na: milliS_per_cm2 {init: 120};
+         var E_Na: millivolt {init: 35};
+         var i_Na: microA_per_cm2 {pub: out};
+         var Nao: mM {init: 140};
+         var Nai: mM {init: 30};
+         var RTF: millivolt {init: 25};
          var E_Na: millivolt;
-         var Na_conductance: milliS_per_cm2 *{pub: out}*;
+         var Na_conductance: milliS_per_cm2 {pub: out};
    
-         E_Na=RTF\*ln(Nao/Nai);
-         Na_conductance = g_Na\*pow(m, 3{dimensionless})\*h);
-         i_Na= Na_conductance\*(V-E_Na);
+         E_Na=RTF*ln(Nao/Nai);
+         Na_conductance = g_Na*pow(m, 3{dimensionless})*h);
+         i_Na= Na_conductance*(V-E_Na);
       enddef;
          def comp sodium_channel_m_gate a s
-         var V: millivolt *{pub: in}*;
-         var t: millisec *{pub: in}*;
+         var V: millivolt {pub: in};
+         var t: millisec {pub: in};
          var alpha_m: per_millisec;
          var beta_m: per_millisec;
-         var m: dimensionless *{init: 0.05, pub: out}*;
-         alpha_m = 0.1{per_millivolt_millisec}\*(V+25{millivolt})
+         var m: dimensionless {init: 0.05, pub: out};
+         alpha_m = 0.1{per_millivolt_millisec}*(V+25{millivolt})
             /(exp((V+25{millivolt})/10{millivolt})-1{dimensionless});
-         beta_m = 4{per_millisec}\*exp(V/18{millivolt});
-         ode(m, t) = alpha_m\*(1{dimensionless}-m)-beta_m\*m;
+         beta_m = 4{per_millisec}*exp(V/18{millivolt});
+         ode(m, t) = alpha_m*(1{dimensionless}-m)-beta_m*m;
       enddef;
       def comp sodium_channel_h_gate as
-         var V: millivolt *{pub: in}*;
-         var t: millisec *{pub: in}*;
+         var V: millivolt {pub: in};
+         var t: millisec {pub: in};
          var alpha_h: per_millisec;
          var beta_h: per_millisec;
-         var h: dimensionless *{init: 0.6, pub: out}*;
-         alpha_h = 0.07{per_millisec}\*exp(V/20{millivolt});
+         var h: dimensionless {init: 0.6, pub: out};
+         alpha_h = 0.07{per_millisec}*exp(V/20{millivolt});
          beta_h = 1{per_millisec}/(exp((V+30{millivolt})/10{millivolt})+1{dimensionless});
-         ode(h, t) = alpha_h\*(1{dimensionless}-h)-beta_h\*h;
+         ode(h, t) = alpha_h*(1{dimensionless}-h)-beta_h*h;
       enddef;
       def map between environment and sodium_channel for
          vars V and V;
@@ -180,20 +181,18 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
          vars h and h;
       enddef;
    enddef;
-
-| The results of the OpenCOR computation, with *Ending point* 40 and
-  *Point interval* 0.1, are shown in Figure 23 with plots of
-  :math:`V\left( t \right)`, :math:`m\left( t \right)`,
-  :math:`h\left( t \right)`, :math:`g_{\text{Na}}\left( t \right)` and
-  :math:`i_{\text{Na}}(t)` for voltage steps from (a) -85mV to
-| -20mV, (b) -85mV to 0mV and (c) -85mV to 20mV. There are several
-  things to note:
+   
+The results of the OpenCOR computation, with *Ending point* 40 and
+*Point interval* 0.1, are shown in Figure 23 with plots :math:`V\left( t \right)`, :math:`m\left( t \right)`,
+:math:`h\left( t \right)`, :math:`g_{\text{Na}}\left( t \right)` and
+:math:`i_{\text{Na}}(t)` for voltage steps from (a) -85mV to -20mV, (b) -85mV to 0mV and (c) -85mV to 20mV. There are several
+things to note:
 
 i.   The kinetics of the m-gate are much faster than the h-gate.
 
 ii.  The opening behaviour is faster as the voltage is stepped to higher
      values since :math:`\tau = \frac{1}{\alpha_{n} + \beta_{n}}`
-     reduces with increasing V (see Figure 18).
+     reduces with increasing V (see :numref:`ocr_tut_volt_deps_gates`).
 
 iii. The sodium channel conductance rises (*activates*) and then falls
      (*inactivates*) under a positive voltage step from rest since the

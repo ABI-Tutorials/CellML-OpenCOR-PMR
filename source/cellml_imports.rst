@@ -1,3 +1,4 @@
+.. include:: resources/roles.txt
 
 .. _ocr_tut_intro_cellml_imports:
 
@@ -13,9 +14,11 @@ Andrew Huxley in 1952 [10] that won them (together with John Eccles) the
 concerning the ionic mechanisms involved in excitation and inhibition in
 the peripheral and central portions of the nerve cell membrane"*.
 
-***Cable equation***
+--------------
+Cable equation
+--------------
 
-The *cable equation* was developed in 1890 [35]_ to predict the
+The *cable equation* was developed in 1890 [*]_ to predict the
 degradation of an electrical signal passing along the transatlantic
 cable. It is derived as follows:
 
@@ -37,16 +40,22 @@ associated with the capacitance :math:`C_{m}`
 holes or channels in the membrane, :math:`i_{\text{leak}}`. Inserting
 these into the RHS gives
 
-:math:`\frac{\partial}{\partial x}\left( - \frac{1}{r_{a}}\frac{\partial V}{\partial x} \right) = i_{m} = C_{m}\frac{\partial V}{\partial t} + i_{\text{leak}}`
+.. math::
+
+   \frac{\partial}{\partial x}\left( - \frac{1}{r_{a}}\frac{\partial V}{\partial x} \right) = i_{m} = C_{m}\frac{\partial V}{\partial t} + i_{\text{leak}}
 
 Rearranging gives the *cable equation* (for constant :math:`r_{a}`):
 
-:math:`C_{m}\frac{\partial V}{\partial t} = - \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}} - i_{\text{leak}}`
+.. math::
+
+   C_{m}\frac{\partial V}{\partial t} = - \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}} - i_{\text{leak}}
 
 where all terms represent *current density* (current per membrane area)
 and have units of :math:`\mu A/\text{cm}^{2}`.
 
-***Action potentials***
+-----------------
+Action potentials
+-----------------
 
 The cable equation can be used to model the propagation of an action
 potential along a neuron or any other excitable cell. The ‘leak’ current
@@ -65,19 +74,21 @@ decline of the Na channel conductance and the increasing K channel
 conductance as the voltage drops rapidly repolarises the membrane to its
 resting potential of -85mV (see Figure 26).
 
-We can neglect [36]_ the term
+We can neglect [*]_ the term
 (:math:`- \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}}`) (the
 rate of change of axial current along the cable) for the present models
 since we assume the whole cell is clamped with an axially uniform
 potential. We can therefore obtain the membrane potential :math:`V` by
 integrating the first order ODE
 
-|image18|\ :math:`\frac{\text{dV}}{\text{dt}} = - \left( i_{\text{Na}} + \ i_{K} + i_{L} \right)/C_{m}`.
+.. math::
+
+   \frac{\text{dV}}{\text{dt}} = - \left( i_{\text{Na}} + \ i_{K} + i_{L} \right)/C_{m}.
 
 **Figure 27**. A schematic cell diagram describing the current flows
 across the cell bilipid membrane that are captured in the Hodgkin-Huxley
-model. The membrane ion channels are a sodium (Na:sup:`+`) channel, a
-potassium (K:sup:`+`) channel, and a leakage (L) channel (for chloride
+model. The membrane ion channels are a sodium (Na\ :sup:`+`) channel, a
+potassium (K\ :sup:`+`) channel, and a leakage (L) channel (for chloride
 and other ions) through which the currents I\ :sub:`Na`, I\ :sub:`K` and
 I\ :sub:`L` flow, respectively.
 
@@ -93,228 +104,132 @@ To establish a CellML model of the HH equations we first lay out the
 model components with their public and private interfaces (Figure 28).
 
 **Figure 28**. Overall structure of the HH CellML model showing the
-encapsulation hierarchy (**purple**), the CellML model imports
-(**blue**) and the other key parts (**units**, **components** &
-**mappings**) of the top level CellML model.
+encapsulation hierarchy (:purple:`purple`), the CellML model imports
+(:blue:`blue`) and the other key parts (:red:`units`, :green:`components`, and :orange:`mappings`) of the top level CellML model.
 
 The HH model is the top level model. The *CellML Text* code for the HH
-model, together with the leakage\_channel model, is given on the next
-page. The imported potassium\_ion\_channel model and
-sodium\_ion\_channel model are unchanged from the previous sections
-
-***HH.cellml***
-
-**def model HH as**
-
-**def** **import** using "sodium\_ion\_channel.cellml" for
-
-comp Na\_channel using comp sodium\_channel;
-
-**enddef**;
-
-**def** **import** using "potassium\_ion\_channel.cellml" for
-
-comp K\_channel using comp potassium\_channel;
-
-**enddef**;
-
-**def** **import** using "leakage\_ion\_channel.cellml" for
-
-comp L\_channel using comp leakage\_channel;
-
-**enddef**;
-
-**def** **unit millisec** as
-
-unit second {pref: milli};
-
-**enddef**;
-
-**def** **unit millivolt** as
-
-unit volt {pref: milli};
-
-**enddef**;
-
-**def** **unit microA\_per\_cm2** as
-
-unit ampere {pref: micro};
-
-unit metre {pref: centi, expo: -2};
-
-| **enddef**;
-|  **def** **unit microF\_per\_cm2** as
-
-unit farad {pref: micro};
-
-unit metre {pref: centi, expo: -2};
-
-**enddef**;
-
-**def** **group as encapsulation** for
-
-**comp membrane** incl
-
-**comp Na\_channel**;
-
-**comp K\_channel**;
-
-**comp L\_channel**;
-
-endcomp;
-
-**enddef**;
-
-**def** **comp environment** as
-
-var V: millivolt {init: -85, pub: out};
-
-var t: millisec {pub: out};
-
-**enddef**;
-
-**def** **map** between **environment** and **membrane** for
-
-vars V and V;
-
-vars t and t;
-
-**enddef**;
-
-**def** **map** between **membrane** and **Na\_channel** for
-
-vars V and V;
-
-vars t and t;
-
-vars i\_Na and i\_Na;
-
-**enddef**;
-
-**def** **map** between **membrane** and **K\_channel** for
-
-vars V and V;
-
-vars t and t;
-
-vars i\_K and i\_K;
-
-**enddef**;
-
-**def** **map** between **membrane** and **L\_channel** for
-
-vars V and V;
-
-vars i\_L and i\_L;
-
-**enddef**;
-
-**def** **comp membrane** as
-
-var V: millivolt {pub: in, priv: out};
-
-var t: millisec {pub: in, priv: out};
-
-var i\_Na: microA\_per\_cm2 {pub: out, priv: in};
-
-var i\_K: microA\_per\_cm2 {pub: out, priv: in};
-
-var i\_L: microA\_per\_cm2 {pub: out, priv: in};
-
-var Cm: microF\_per\_cm2 {init: 1};
-
-var i\_Stim: microA\_per\_cm2;
-
-var i\_Tot: microA\_per\_cm2;
-
-i\_Stim = sel
-
-case (t >= 1{millisec}) and (t <= 1.2{millisec}):
-
-100{microA\_per\_cm2};
-
-otherwise:
-
-0{microA\_per\_cm2};
-
-endsel;
-
-i\_Tot = i\_Stim + i\_Na + i\_K + i\_L;
-
-ode(V,t) = -i\_Tot/Cm;
-
-**enddef**;
-
-**enddef**;
-
-**def model leakage\_ion\_channel as**
-
-**def** **unit millisec** as
-
-unit second {pref: milli};
-
-**enddef**;
-
-**def** **unit millivolt** as
-
-unit volt {pref: milli};
-
-**enddef**;
-
-**def** **unit per\_millivolt** as
-
-unit millivolt {expo: -1};
-
-**enddef**;
-
-**def** **unit microA\_per\_cm2** as
-
-unit ampere {pref: micro};
-
-unit metre {pref: centi, expo: -2};
-
-**enddef**;
-
-**def** **unit milliS\_per\_cm2** as
-
-unit siemens {pref: milli};
-
-unit metre {pref: centi, expo: -2};
-
-**enddef**;
-
-**def** **comp environment** as
-
-var V: millivolt {init: 0, pub: out};
-
-var t: millisec {pub: out};
-
-**enddef**;
-
-**def** **map** between **leakage\_channel** and **environment** for
-
-vars V and V;
-
-**enddef**;
-
-**def** **comp leakage\_channel** as
-
-var V: millivolt {pub: in};
-
-var i\_L: microA\_per\_cm2 {pub: out};
-
-var g\_L: milliS\_per\_cm2 {init: 0.3};
-
-var E\_L: millivolt {init: -54.4};
-
-i\_L = g\_L\*(V-E\_L);
-
-**enddef**;
-
-**enddef**;
-
-Note that the CellML Text code for the potassium channel is on page 17
-and for the sodium channel is on page 21.
+model, together with the leakage_channel model, is given on the next
+page. The imported potassium_ion_channel model and
+sodium_ion_channel model are unchanged from the previous sections
+
+:download:`HH.cellml <resources/HH.cellml>`
+
+.. code-block:: cell
+
+   def model HH as
+      def import using "sodium_ion_channel.cellml" for
+         comp Na_channel using comp sodium_channel;
+      enddef;
+      def import using "potassium_ion_channel.cellml" for
+         comp K_channel using comp potassium_channel;
+      enddef;
+      def import using "leakage_ion_channel.cellml" for
+         comp L_channel using comp leakage_channel;
+      enddef;
+      def unit millisec as
+         unit second {pref: milli};
+      enddef;
+      def unit millivolt as
+         unit volt {pref: milli};
+      enddef;
+      def unit microA_per_cm2 as
+         unit ampere {pref: micro};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def unit microF_per_cm2 as
+         unit farad {pref: micro};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def group as encapsulation for
+         comp membrane incl
+            comp Na_channel;
+            comp K_channel;
+            comp L_channel;
+         endcomp;
+      enddef;
+      def comp environment as
+         var V: millivolt {init: -85, pub: out};
+         var t: millisec {pub: out};
+      enddef;
+      def map between environment and membrane for
+         vars V and V;
+         vars t and t;
+      enddef;
+      def map between membrane and Na_channel for
+         vars V and V;
+         vars t and t;
+         vars i_Na and i_Na;
+      enddef;
+      def map between membrane and K_channel for
+         vars V and V;
+         vars t and t;
+         vars i_K and i_K;
+      enddef;
+      def map between membrane and L_channel for
+         vars V and V;
+         vars i_L and i_L;
+      enddef;
+      def comp membrane as
+         var V: millivolt {pub: in, priv: out};
+         var t: millisec {pub: in, priv: out};
+         var i_Na: microA_per_cm2 {pub: out, priv: in};
+         var i_K: microA_per_cm2 {pub: out, priv: in};
+         var i_L: microA_per_cm2 {pub: out, priv: in};
+         var Cm: microF_per_cm2 {init: 1};
+         var i_Stim: microA_per_cm2;
+         var i_Tot: microA_per_cm2;
+         i_Stim = sel
+         case (t >= 1{millisec}) and (t <= 1.2{millisec}):
+            100{microA_per_cm2};
+         otherwise:
+            0{microA_per_cm2};
+         endsel;
+         i_Tot = i_Stim + i_Na + i_K + i_L;
+         ode(V,t) = -i_Tot/Cm;
+      enddef;
+   enddef;
+   
+:download:`Leakage_ion_channel <resources/leakage_ion_channel.cellml>`
+
+.. code-block:: cell
+
+   def model leakage_ion_channel as
+      def unit millisec as
+         unit second {pref: milli};
+      enddef;
+      def unit millivolt as
+         unit volt {pref: milli};
+      enddef;
+      def unit per_millivolt as
+         unit millivolt {expo: -1};
+      enddef;
+      def unit microA_per_cm2 as
+         unit ampere {pref: micro};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def unit milliS_per_cm2 as
+         unit siemens {pref: milli};
+         unit metre {pref: centi, expo: -2};
+      enddef;
+      def comp environment as
+         var V: millivolt {init: 0, pub: out};
+         var t: millisec {pub: out};
+      enddef;
+      def map between leakage_channel and environment for
+         vars V and V;
+      enddef;
+      def comp leakage_channel as
+         var V: millivolt {pub: in};
+         var i_L: microA_per_cm2 {pub: out};
+         var g_L: milliS_per_cm2 {init: 0.3};
+         var E_L: millivolt {init: -54.4};
+         i_L = g_L*(V-E_L);
+      enddef;
+   enddef;
+   
+
+Note that the *CellML Text* code for the potassium channel is :ref:`ocr_tut_k_ion_ch_ctc`
+and for the sodium channel is :ref:`ocr_tut_na_ion_ch_ctc`.
 
 Note that the only units that need to be defined for this top level HH
 model are the ones explicitly required for the membrane component. All
@@ -329,7 +244,8 @@ stimulus current is not really needed as the background outward leakage
 current is enough to drive the membrane potential up to the threshold
 for sodium channel opening.
 
-**Important note**
+Important note
+==============
 
 It is often convenient to have the sub-models – in this case the
 sodium\_ion\_channel.cellml model, the potassium\_ion\_channel.cellml
@@ -349,3 +265,10 @@ when the file is saved.
 **Figure 30.** The HH.cellml model and its three sub-models are
 available under separate tabs in OpenCOR.
 
+---------------------------
+
+.. rubric:: Footnotes
+
+.. [*] http://en.wikipedia.org/wiki/Cable_theory
+
+.. [*] This term is needed when determining the propagation of the action potential, including its wave speed.
