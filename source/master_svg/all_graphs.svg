@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="210mm"
@@ -24,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.9530939"
-     inkscape:cx="610.95373"
-     inkscape:cy="373.23335"
+     inkscape:cx="632.03617"
+     inkscape:cy="1279.2456"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,6 +37,90 @@
      inkscape:window-maximized="1" />
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient45293">
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="0"
+         id="stop45265" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:1"
+         offset="1"
+         id="stop45267" />
+    </linearGradient>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker43981"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInS">
+      <path
+         transform="scale(-0.2,-0.2)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path43983"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker42109"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInS">
+      <path
+         transform="scale(-0.2,-0.2)"
+         style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path42111"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutS"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path24589"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
+         transform="scale(0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker24963"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path24580"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
+         transform="scale(-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path24586"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -548,6 +633,279 @@
          style="fill:#4c7fb9;fill-opacity:1;fill-rule:evenodd;stroke:#4c7fb9;stroke-width:1pt;stroke-opacity:1"
          transform="scale(-0.4,-0.4)" />
     </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4902-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInM">
+      <path
+         transform="scale(-0.4,-0.4)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path4904-1"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24589-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-4-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24589-3-5"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-4-89"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24589-3-51"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-4-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24589-3-50"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.2,0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-6"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-27"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-9"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:0"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutS-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24589-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:0"
+         transform="scale(0.2,0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3-6"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8-9-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3-6-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8-9-4-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3-6-1-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8-9-4-9-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3-6-1-2-1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInS"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker24963-0-6-8-9-4-9-4-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24580-7-2-3-6-1-2-1-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(-0.2,-0.2)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient45293"
+       id="linearGradient45269"
+       x1="237.42387"
+       y1="700.50067"
+       x2="268.13263"
+       y2="646.15601"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient45293"
+       id="linearGradient45332"
+       gradientUnits="userSpaceOnUse"
+       x1="237.42387"
+       y1="700.50067"
+       x2="268.13263"
+       y2="646.15601" />
   </defs>
   <metadata
      id="metadata7">
@@ -3177,5 +3535,969 @@
          y="675.77386"
          x="896.86346"
          sodipodi:role="line">cellml_comp_legend.png</tspan></text>
+    <rect
+       style="fill:#cccccc;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect23794"
+       width="164.17116"
+       height="63.526371"
+       x="500.26385"
+       y="-379.05524"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="535.25824"
+       y="-341.80917"
+       id="text23823"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23825"
+         x="535.25824"
+         y="-341.80917">environment</tspan></text>
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8-9-4-9-4-1)"
+       d="M 702.81092,1080.2047 544.8701,949.41016"
+       id="path4900-3-6-1-0-6-7-5-7-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <g
+       id="g28146"
+       transform="matrix(1.1984648,0,0,1.1984648,612.27872,-851.09804)"
+       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         y="394.71588"
+         x="114.92986"
+         height="72.984131"
+         width="135.45299"
+         id="rect23794-2"
+         style="fill:#cccccc;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text23827"
+         y="435.0607"
+         x="123.26733"
+         style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="435.0607"
+           x="123.26733"
+           id="tspan23829"
+           sodipodi:role="line">sodium_channel</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.42861176px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="713.54358"
+       y="-466.78232"
+       id="text23839"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23841"
+         x="713.54358"
+         y="-466.78232"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle"><tspan
+   style="font-weight:bold"
+   id="tspan32854">Siblings</tspan> communicate</tspan><tspan
+         sodipodi:role="line"
+         x="713.54358"
+         y="-448.74622"
+         id="tspan23843"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle">via <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#0000ff"
+   id="tspan23845">public</tspan> interface</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="995.92468"
+       y="-274.87433"
+       id="text23847"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23849"
+         x="995.92468"
+         y="-274.87433"
+         style="text-align:center;text-anchor:middle"><tspan
+   style="font-weight:bold"
+   id="tspan31977">Parents</tspan> communicate</tspan><tspan
+         sodipodi:role="line"
+         x="995.92468"
+         y="-256.83823"
+         id="tspan23851"
+         style="text-align:center;text-anchor:middle"> with <tspan
+   style="font-weight:bold"
+   id="tspan31975">children</tspan> via</tspan><tspan
+         sodipodi:role="line"
+         x="995.92468"
+         y="-238.80211"
+         style="text-align:center;text-anchor:middle"
+         id="tspan30337"><tspan
+   style="text-align:center;text-anchor:middle;fill:#ff0000"
+   id="tspan23855"><tspan
+   style="fill:#000000"
+   id="tspan31205"> their</tspan> private</tspan> interface</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.26993656;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28151"
+       width="141.37361"
+       height="37.781761"
+       x="760.27271"
+       y="-395.22818"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.47167683px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="795.12726"
+       y="-363.52356"
+       id="text23859"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23861"
+         x="795.12726"
+         y="-363.52356"
+         style="font-weight:bold">i_Na</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="861.0769"
+       y="-363.52356"
+       id="text23863"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23865"
+         x="861.0769"
+         y="-363.52356"
+         style="font-weight:bold">V, t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="177.36971"
+       y="914.17273"
+       id="text23867"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan23869"
+         x="177.36971"
+         y="914.17273">{<tspan
+   style="font-style:italic"
+   id="tspan23871"><tspan
+   style="fill:#0000ff"
+   id="tspan23873">pub</tspan>: in</tspan>}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="157.56432"
+       y="959.44641"
+       id="text23867-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan23869-1"
+         x="157.56432"
+         y="959.44641">{<tspan
+   style="font-style:italic"
+   id="tspan23871-4"><tspan
+   style="fill:#0000ff"
+   id="tspan23873-1">pub</tspan>: out</tspan>}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="265.00674"
+       y="969.94006"
+       id="text23899"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan23901"
+         x="265.00674"
+         y="969.94006">m: {<tspan
+   style="font-style:italic;fill:#ff0000"
+   id="tspan23903">priv</tspan><tspan
+   style="font-style:italic"
+   id="tspan23907">: in</tspan>} &amp; {<tspan
+   style="font-style:italic;fill:#0000ff"
+   id="tspan23905">pub</tspan><tspan
+   style="font-style:italic"
+   id="tspan23909">: out</tspan>}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="213.38834"
+       y="945.34039"
+       id="text23899-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan23901-2"
+         x="213.38834"
+         y="945.34039">V, t: {<tspan
+   style="font-style:italic;fill:#ff0000"
+   id="tspan23903-6">priv</tspan><tspan
+   style="font-style:italic"
+   id="tspan23907-1">: out</tspan>} &amp; {<tspan
+   style="font-style:italic;fill:#0000ff"
+   id="tspan23905-6">pub</tspan><tspan
+   style="font-style:italic"
+   id="tspan23909-2">: in</tspan>}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="201.99509"
+       y="929.01532"
+       id="text23899-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan23901-0"
+         x="201.99509"
+         y="929.01532">h: {<tspan
+   style="font-style:italic;fill:#ff0000"
+   id="tspan23903-2">priv</tspan><tspan
+   style="font-style:italic"
+   id="tspan23907-6">: in</tspan>} &amp; {<tspan
+   style="font-style:italic;fill:#0000ff"
+   id="tspan23905-2">pub</tspan><tspan
+   style="font-style:italic"
+   id="tspan23909-7">: out</tspan>}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1085.7552"
+       y="-174.05072"
+       id="text23839-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23841-9"
+         x="1085.7552"
+         y="-174.05072"
+         style="text-align:center;text-anchor:middle"><tspan
+   style="font-weight:bold"
+   id="tspan31979">Children</tspan> communicate</tspan><tspan
+         sodipodi:role="line"
+         x="1085.7552"
+         y="-156.01462"
+         id="tspan23843-2"
+         style="text-align:center;text-anchor:middle"> with <tspan
+   style="font-weight:bold"
+   id="tspan31981">parents</tspan> via</tspan><tspan
+         sodipodi:role="line"
+         x="1085.7552"
+         y="-137.9785"
+         style="text-align:center;text-anchor:middle"
+         id="tspan30330">their <tspan
+   style="text-align:center;text-anchor:middle;fill:#0000ff"
+   id="tspan23845-4">public</tspan> interface</tspan><tspan
+         sodipodi:role="line"
+         x="1085.7552"
+         y="-119.9424"
+         id="tspan23981" /></text>
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963);marker-end:url(#TriangleOutS)"
+       d="m 353.07154,997.01408 -96.2304,0"
+       id="path4900-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutS-4)"
+       d="m 831.18598,-433.051 0,25.45754"
+       id="path4900-3-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6)"
+       d="m 301.21314,1094.6871 -52.8435,79.8923"
+       id="path4900-3-6-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.90661812px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="747.79572"
+       y="-398.42953"
+       id="text28153"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0408902,0.96071613)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28155"
+         x="747.79572"
+         y="-398.42953"><tspan
+   style="fill:#0000ff"
+   id="tspan28161">public</tspan> interface</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.53542995px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="764.45428"
+       y="-363.52356"
+       id="text28177"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28179"
+         x="764.45428"
+         y="-363.52356"
+         style="font-style:italic">out:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.57125759px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="837.17578"
+       y="-363.52356"
+       id="text28181"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28183"
+         x="837.17578"
+         y="-363.52356"
+         style="font-style:italic">in:</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18843269;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.56529811, 2.1884327;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 762.68056,-378.1492 140.07014,0"
+       id="path28185"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8-9-4-9-4)"
+       d="M 729.70029,1080.136 558.84182,949.73938"
+       id="path4900-3-6-1-0-6-7-5-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8-9-4)"
+       d="M 524.14331,1077.4888 553.61695,959.14809"
+       id="path4900-3-6-1-0-6-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8-9-4-9)"
+       d="M 543.25599,1076.6 575.00952,950.77549"
+       id="path4900-3-6-1-0-6-7-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.26993656;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28151-0"
+       width="141.37361"
+       height="37.781761"
+       x="761.24243"
+       y="-310.27777"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.53296089px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="770.71411"
+       y="-299.75992"
+       id="text28157"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0107556,0.98935886)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28159"
+         x="770.71411"
+         y="-299.75992"><tspan
+   style="fill:#ff0000"
+   id="tspan28163">private</tspan> interface</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18843269;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.56529811, 2.1884327;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 761.72977,-290.47179 140.07014,0"
+       id="path28185-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.53542995px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="764.38171"
+       y="-275.99152"
+       id="text28177-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28179-0"
+         x="764.38171"
+         y="-275.99152"
+         style="font-style:italic">out:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="794.57983"
+       y="-275.99152"
+       id="text23863-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23865-3"
+         x="794.57983"
+         y="-275.99152"
+         style="font-weight:bold">V, t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.57125759px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="838.66058"
+       y="-275.99152"
+       id="text28181-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28183-1"
+         x="838.66058"
+         y="-275.99152"
+         style="font-style:italic">in:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.28277683px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="858.75055"
+       y="-275.99152"
+       id="text28165-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28167-7"
+         x="858.75055"
+         y="-275.99152"
+         style="font-weight:bold">h, m</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.26993656;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28151-3"
+       width="141.37361"
+       height="37.781761"
+       x="511.46429"
+       y="-395.32092"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.47167683px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="546.31885"
+       y="-364.37143"
+       id="text23859-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23861-6"
+         x="546.31885"
+         y="-364.37143"
+         style="font-weight:bold">i_Na</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="612.26849"
+       y="-364.37143"
+       id="text23863-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23865-0"
+         x="612.26849"
+         y="-364.37143"
+         style="font-weight:bold">V, t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.90661812px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="508.76047"
+       y="-399.31201"
+       id="text28153-9"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0408902,0.96071613)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28155-8"
+         x="508.76047"
+         y="-399.31201"><tspan
+   style="fill:#0000ff"
+   id="tspan28161-5">public</tspan> interface</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.53542995px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="515.64587"
+       y="-364.37143"
+       id="text28177-37"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28179-3"
+         x="515.64587"
+         y="-364.37143"
+         style="font-style:italic">out:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.57125759px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="588.36725"
+       y="-364.37143"
+       id="text28181-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28183-4"
+         x="588.36725"
+         y="-364.37143"
+         style="font-style:italic">in:</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18843269;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.56529811, 2.1884327;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 513.87217,-378.99705 140.0701,0"
+       id="path28185-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8-9)"
+       d="m 643.90437,976.15057 14.6553,130.43983"
+       id="path4900-3-6-1-0-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <rect
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:#000000;stroke-width:2.0879662;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect23794-8"
+       width="164.15855"
+       height="51.912033"
+       x="847.15662"
+       y="-130.02484"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="901.52698"
+       y="-89.453918"
+       id="text23831"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23833"
+         x="901.52698"
+         y="-89.453918">m_gate</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.26993656;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28151-6"
+       width="141.37361"
+       height="37.781761"
+       x="861.6568"
+       y="-147.8302"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.02375984px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="895.39801"
+       y="-115.39648"
+       id="text28173"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28175"
+         x="895.39801"
+         y="-115.39648"
+         style="font-weight:bold">m</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="962.461"
+       y="-115.39648"
+       id="text23863-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23865-31"
+         x="962.461"
+         y="-115.39648"
+         style="font-weight:bold">V, t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.90661812px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="845.19708"
+       y="-140.15651"
+       id="text28153-4"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0408902,0.96071613)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28155-3"
+         x="845.19708"
+         y="-140.15651"><tspan
+   style="fill:#0000ff"
+   id="tspan28161-6">public</tspan> interface</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.53542995px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="865.83838"
+       y="-115.60229"
+       id="text28177-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28179-4"
+         x="865.83838"
+         y="-115.60229"
+         style="font-style:italic">out:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.57125759px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="938.55988"
+       y="-115.39648"
+       id="text28181-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28183-45"
+         x="938.55988"
+         y="-115.39648"
+         style="font-style:italic">in:</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18843269;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.56529811, 2.1884327;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 864.06466,-130.02211 140.07014,0"
+       id="path28185-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-8)"
+       d="M 605.26434,971.25331 453.58585,1109.7711"
+       id="path4900-3-6-1-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <rect
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect23794-8-8"
+       width="164.22084"
+       height="52.772213"
+       x="644.90845"
+       y="-130.06885"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="701.80908"
+       y="-90.717163"
+       id="text23835"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23837"
+         x="701.80908"
+         y="-90.717163">h_gate</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.26993656;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28151-6-1"
+       width="141.37361"
+       height="37.781761"
+       x="656.06104"
+       y="-147.8302"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.09362984px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="691.87134"
+       y="-115.39648"
+       id="text28169"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28171"
+         x="691.87134"
+         y="-115.39648"
+         style="font-weight:bold">h</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.70722103px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="756.86523"
+       y="-115.39648"
+       id="text23863-2-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23865-31-6"
+         x="756.86523"
+         y="-115.39648"
+         style="font-weight:bold">V, t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.90661812px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="647.67792"
+       y="-140.15657"
+       id="text28153-4-4"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0408902,0.96071613)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28155-3-8"
+         x="647.67792"
+         y="-140.15657"><tspan
+   style="fill:#0000ff"
+   id="tspan28161-6-5">public</tspan> interface</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.53542995px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="660.24261"
+       y="-115.60229"
+       id="text28177-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28179-4-3"
+         x="660.24261"
+         y="-115.60229"
+         style="font-style:italic">out:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.57125759px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="732.96411"
+       y="-115.39648"
+       id="text28181-9-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan28183-45-5"
+         x="732.96411"
+         y="-115.39648"
+         style="font-style:italic">in:</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.18843269;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6.56529811, 2.1884327;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 658.4689,-130.02217 140.07015,0"
+       id="path28185-8-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutS-4-7)"
+       d="m 582.34947,-433.14374 0,25.45754"
+       id="path4900-3-6-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 835.22951,-429.14374 -256.59941,0"
+       id="path4900-3-6-1-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png" />
+    <path
+       style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24963-0-6-27)"
+       d="m 356.88694,1136.1422 -53.4422,-79.493"
+       id="path4900-3-6-1-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    <g
+       id="g45319"
+       transform="translate(520.41042,-883.43866)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker42109)"
+         d="m 282.3156,620.8862 -13.95634,25.00918"
+         id="path42107"
+         inkscape:connector-curvature="0"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+      <path
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker43981)"
+         d="m 222.9737,726.15739 14.75364,-26.43793"
+         id="path43979"
+         inkscape:connector-curvature="0"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+      <path
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:connector-curvature="0"
+         id="path4900-3-6-1-0-6-7-5-0"
+         d="m 224.95396,722.50318 54.72121,-96.68049"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient45269);stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <g
+       id="g45324"
+       transform="matrix(-1,0,0,1,1157.6997,-883.43866)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:connector-curvature="0"
+         id="path45326"
+         d="m 282.3156,620.8862 -13.95634,25.00918"
+         style="fill:#d40000;fill-opacity:1;fill-rule:evenodd;stroke:#d40000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker42109)" />
+      <path
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png"
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:connector-curvature="0"
+         id="path45328"
+         d="m 222.9737,726.15739 14.75364,-26.43793"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker43981)" />
+      <path
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient45332);stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 224.95396,722.50318 54.72121,-96.68049"
+         id="path45330"
+         inkscape:connector-curvature="0"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/open_ch_linear_iv.png" />
+    </g>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.36210346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect17992-6"
+       width="742.29065"
+       height="470.01096"
+       x="466.83835"
+       y="-515.10779"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text6377-3-3-5-57-7"
+       y="-548.41284"
+       x="733.26605"
+       style="font-style:normal;font-weight:normal;font-size:12.3198595px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         id="tspan6417-8-6-4"
+         y="-548.41284"
+         x="733.26605"
+         sodipodi:role="line">interfaces_between_cellml_components.png</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:14.42888641px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1068.0461"
+       y="-440.80881"
+       id="text23847-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/interfaces_between_cellml_components.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan23849-3"
+         x="1068.0461"
+         y="-440.80881"
+         style="text-align:center;text-anchor:middle"><tspan
+   style="font-weight:bold"
+   id="tspan45864">Nieces</tspan>, <tspan
+   style="font-weight:bold"
+   id="tspan45866">nephews</tspan>, and <tspan
+   style="font-weight:bold"
+   id="tspan45888">cousins</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="1068.0461"
+         y="-422.77271"
+         style="text-align:center;text-anchor:middle"
+         id="tspan45862"><tspan
+   style="font-weight:bold"
+   id="tspan45890"> do not</tspan> directly communicate</tspan><tspan
+         sodipodi:role="line"
+         x="1068.0461"
+         y="-404.7366"
+         style="text-align:center;text-anchor:middle"
+         id="tspan30337-9" /></text>
   </g>
 </svg>
