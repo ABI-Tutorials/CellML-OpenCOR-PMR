@@ -67,14 +67,19 @@ We can then talk about the sodium channel as the parent of two children:
 the m gate and the h gate, which are therefore siblings. A *private
 interface* allows a parent to talk to its children and a *public
 interface* allows siblings to talk among themselves and to their parents
-(see Figure 22).
+(see :numref:`ocr_tut_int_bet_comp`).
 
-**Figure 22**. Children talk to each other as siblings, and to their
-parents, via *public interfaces*. But the outside world can only talk
-to children through their parents via a *private interface*. Note that
-the siblings **m_gate** and **h_gate** could talk via a *public
-interface* but only if a mapping is established between them (not needed
-here).
+.. figure:: _static/images/interfaces_between_cellml_components.png
+   :name: ocr_tut_int_bet_comp
+   :alt: Interfaces between CellML components
+   :align: center
+   
+   Children talk to each other as siblings, and to their
+   parents, via *public interfaces*. But the outside world can only talk
+   to children through their parents via a *private interface*. Note that
+   the siblings **m_gate** and **h_gate** could talk via a *public
+   interface* but only if a mapping is established between them (not needed
+   here).
 
 The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
 
