@@ -22,8 +22,16 @@ The *cable equation* was developed in 1890 [*]_ to predict the
 degradation of an electrical signal passing along the transatlantic
 cable. It is derived as follows:
 
+.. figure:: _static/images/current_flow_leaky_cable.png
+   :name: ocr_tut_cur_flow_leaky
+   :alt: Current flow in a leaky cable
+   :align: right
+   :figwidth: 35%
+   
+   Current flow in a leaky cable.
+
 If the voltage is raised at the left hand end of the cable (shown by the
-deep red in Figure 24), a current :math:`i_{a}` (A) will flow that
+deep red in :numref:`ocr_tut_cur_flow_leaky`), a current :math:`i_{a}` (A) will flow that
 depends on the voltage gradient, given by
 :math:`\frac{\partial V}{\partial x}` (:math:`V.m^{-1}`) and the resistance
 :math:`r_{a}` (:math:`\Omega.m^{-1}`), Ohm’s law gives
@@ -57,22 +65,38 @@ and have units of :math:`\mu A/\text{cm}^{2}`.
 Action potentials
 -----------------
 
+.. figure:: _static/images/current_flow_neuron.png
+   :name: ocr_tut_cur_flow_neuron
+   :alt: Current flow in a neuron
+   :align: right
+   :figwidth: 35%
+   
+   Current flow in a neuron.
+
 The cable equation can be used to model the propagation of an action
 potential along a neuron or any other excitable cell. The ‘leak’ current
 is associated primarily with the inward movement of sodium ions through
 the membrane ‘sodium channel’, giving the **inward** membrane current
 :math:`i_{\text{Na}}`, and the outward movement of potassium ions
 through a membrane ‘potassium channel’, giving the **outward** current
-:math:`i_{K}` (see Figure 25). A further small leak current
+:math:`i_{K}` (see :numref:`ocr_tut_cur_flow_neuron`). A further small leak current
 :math:`i_{L} = g_{L}\left( V - E_{L} \right)` associated with chloride
 and other ions is also included.
+
+.. figure:: _static/images/current_voltage_trajectory.png
+   :name: ocr_tut_cur_volt_traj
+   :alt: Current-voltage trajectory
+   :align: right
+   :figwidth: 55%
+   
+   Current-voltage trajectory during an action potential.
 
 When the membrane potential :math:`V` rises due to axial current flow,
 the Na channels open and the K channels close, such that the membrane
 potential moves towards the Nernst potential for sodium. The subsequent
 decline of the Na channel conductance and the increasing K channel
 conductance as the voltage drops rapidly repolarises the membrane to its
-resting potential of -85mV (see Figure 26).
+resting potential of -85mV (see :numref:`ocr_tut_cur_volt_traj`).
 
 We can neglect [*]_ the term
 (:math:`- \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}}`) (the
@@ -85,12 +109,18 @@ integrating the first order ODE
 
    \frac{\text{dV}}{\text{dt}} = - \left( i_{\text{Na}} + \ i_{K} + i_{L} \right)/C_{m}.
 
-**Figure 27**. A schematic cell diagram describing the current flows
-across the cell bilipid membrane that are captured in the Hodgkin-Huxley
-model. The membrane ion channels are a sodium (Na\ :sup:`+`) channel, a
-potassium (K\ :sup:`+`) channel, and a leakage (L) channel (for chloride
-and other ions) through which the currents I\ :sub:`Na`, I\ :sub:`K` and
-I\ :sub:`L` flow, respectively.
+.. figure:: _static/images/hodgkin_1952.png
+   :name: ocr_tut_hh_1952
+   :alt: CellML schematic HH model
+   :align: center
+   :figwidth: 95%
+   
+   A schematic cell diagram describing the current flows
+   across the cell bilipid membrane that are captured in the Hodgkin-Huxley
+   model. The membrane ion channels are a sodium (Na\ :sup:`+`) channel, a
+   potassium (K\ :sup:`+`) channel, and a leakage (L) channel (for chloride
+   and other ions) through which the currents I\ :sub:`Na`, I\ :sub:`K` and
+   I\ :sub:`L` flow, respectively.
 
 We use this example to demonstrate the importing feature of CellML.
 CellML *imports* are used to bring a previously defined CellML model of
