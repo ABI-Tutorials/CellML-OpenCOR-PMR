@@ -221,9 +221,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
       enddef;
    enddef;
    
-:download:`Noble62_units.txt <resources/Noble62_units.txt>` raw text form.
-
-:download:`Noble62_units.xml <>` xml form.
+Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file `Noble62_units.xml <>`_.
 
 .. code-block:: cell
 
@@ -258,7 +256,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
       enddef;
    enddef;
    
-:download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`
+Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`, XML file `Noble62_parameters.xml <>`_.
 
 .. code-block:: cell
 
@@ -274,7 +272,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
       enddef;
    enddef;
    
-:download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`
+Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`, XML file `Noble62_Na_channel.xml <>`_.
 
 .. code-block:: cell
 
@@ -347,9 +345,8 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
          vars h and h;
       enddef;
    enddef;
-   
 
-:download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`
+Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, XML file `Noble62_K_channel.xml <>`_.
 
 .. code-block:: cell
 
@@ -410,7 +407,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
       enddef;
    enddef;
       
-:download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`
+Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, XML file `Noble62_L_channel.xml <>`_.
 
 .. code-block:: cell
 

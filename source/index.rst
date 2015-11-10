@@ -68,6 +68,13 @@ to modular approaches (model hierarchies) and model annotation.
    
    footnotes
 
+.. todo::
+
+   * Colour background of *CellML Text*
+   * Convert images from screen shots to diagrams in svg format
+   * Annotate screen shots with svg for same look and feel
+   * *CellML Text* code is not highlighted for all display situations
+   
 ---------------------------
 
 .. rubric:: Footnotes
