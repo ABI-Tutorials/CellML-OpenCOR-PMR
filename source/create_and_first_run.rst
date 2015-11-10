@@ -1,4 +1,4 @@
-.. role:: pink
+.. include:: resources/roles.txt
 
 ============================================================
 Create and run a simple CellML model: editing and simulation
@@ -7,7 +7,9 @@ Create and run a simple CellML model: editing and simulation
 In this example we create a simple CellML model and run it. The model is
 the Van der Pol oscillator [*]_ defined by the second order equation
 
-.. math:: \frac{d^{2}x}{dt^{2}} - \mu\left( 1 - x^{2} \right)\frac{\text{dx}}{\text{dt}} + x = 0
+.. math::
+
+   \frac{d^{2}x}{dt^{2}} - \mu\left( 1 - x^{2} \right)\frac{\text{dx}}{\text{dt}} + x = 0
 
 with initial conditions
 :math:`x = - 2;\ \frac{\text{dx}}{\text{dt}} = 0`. The parameter
@@ -324,7 +326,3 @@ sensitive.
 .. |image_alg| image:: _static/images/algebraic.png
    :height: 12pt
    
-.. raw:: html
-
-   <style> .pink {color:pink} </style>
-

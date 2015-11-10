@@ -1,0 +1,15 @@
+def model leakage_ion_channel as
+   def import using "Noble62_units.xml" for
+      unit mV using unit mV;
+      unit ms using unit ms;
+      unit microS using unit microS;
+      unit nanoA using unit nanoA;
+   enddef;
+   def comp leakage_channel as
+      var V: mV {pub: in};
+      var g_L: microS {init: 75};
+      var E_L: mV {init: -60};
+      var i_L: nanoA {pub: out};
+      i_L = g_L*(V-E_L);
+   enddef;
+enddef;

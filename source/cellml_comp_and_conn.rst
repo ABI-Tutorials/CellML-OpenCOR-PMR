@@ -1,5 +1,7 @@
 .. include:: resources/roles.txt
 
+.. _ocr_tut_intro_cellml_comp_conn:
+
 ===============================================================================
 A model of the potassium channel: Introducing CellML components and connections
 ===============================================================================

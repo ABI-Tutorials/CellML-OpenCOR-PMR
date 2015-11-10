@@ -1,9 +1,10 @@
+.. include:: resources/roles.txt
 
 ============================================================
 The Physiome Model Repository and the link to bioinformatics
 ============================================================
 
-The Physiome Model Repository (PMR) [13] is the main online repository
+The Physiome Model Repository (PMR) :cite:`13` is the main online repository
 for the IUPS Physiome Project, providing version and access controlled
 repositories, called *workspaces*, for users to store their data.
 Currently there are approximately 640 public workspaces and another 200
@@ -18,58 +19,58 @@ The CellML project website and the CellML Physiome Model Repository are
 shown in Figures 39, 40.
 
 **Figure 39**. The website for the CellML project at
-`www.cellml.org <http://www.cellml.org>`__.
+`www.cellml.org <http://www.cellml.org>`_.
 
 **Figure 40**. The website for the Physiome Model Repository project at
-`www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`__.
+`www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`_.
 
 | The CellML models on
-  `models.physiomeproject.org <https://models.physiomeproject.org>`__
+  `models.physiomeproject.org <https://models.physiomeproject.org>`_
   are listed under 20 categories, shown below:
 | (numbers of exposures in each category are given besides the bar
   graph)
 
 **Browse by category**
 
--  Calcium Dynamics 140
+ -  Calcium Dynamics 140
 
--  Cardiovascular Circulation 60
+ -  Cardiovascular Circulation 60
 
--  Cell Cycle 38
+ -  Cell Cycle 38
 
--  Cell Migration 2
+ -  Cell Migration 2
 
--  Circadian Rhythms 22
+ -  Circadian Rhythms 22
 
--  Electrophysiology 230
+ -  Electrophysiology 230
 
--  Endocrine 60
+ -  Endocrine 60
 
--  Excitation-Contraction Coupling 22
+ -  Excitation-Contraction Coupling 22
 
--  Gene Regulation 12
+ -  Gene Regulation 12
 
--  Hepatology 29
+ -  Hepatology 29
 
--  Immunology 55
+ -  Immunology 55
 
--  Ion transport 13
+ -  Ion transport 13
 
--  Mechanical Constitutive Laws 19
+ -  Mechanical Constitutive Laws 19
 
--  Metabolism 86
+ -  Metabolism 86
 
--  Myofilament Mechanics 22
+ -  Myofilament Mechanics 22
 
--  Neurobiology 33
+ -  Neurobiology 33
 
--  pH regulation 2
+ -  pH regulation 2
 
--  PKPD 11
+ -  PKPD 11
 
--  Signal Transduction 120
+ -  Signal Transduction 120
 
--  Synthetic Biology 6
+ -  Synthetic Biology 6
 
 Note that searching of models can be done anywhere on the site using the
 search box on the upper right hand corner. An important benefit of
@@ -91,16 +92,19 @@ e.g.
 https://models.physiomeproject.org/exposure/f4b71/hund_rudy_2004_a.cellml/view
 
 The section labelled ‘Model Structure’ contains the journal paper
-abstract and often a diagram of the model [47]_. This is shown for the
+abstract and often a diagram of the model [*]_. This is shown for the
 Hund-Rudy 2004 model in Figure 42. This model, with over 22 separate
 protein model components, is also a good example of why it is important
 to build models from modular components [14], and in particular the
 individual ion channels for electrophysiology models.
 
-|image27|
-
-**Figure 42**. A diagrammatic representation of the Hund-Rudy 2004
-model.
+.. figure:: _static/images/hund_2004.png
+   :name: ocr_tut_hund_2004
+   :alt: Hund 2004 shematic diagram
+   :align: center
+   :figwidth: 95%
+   
+   A diagrammatic representation of the Hund-Rudy 2004 model.
 
 There is a list of ‘Views Available’ for the CellMLmodel on the lower
 right hand side of the exposure page. The function of each of these
@@ -131,11 +135,11 @@ model.
 is included in OpenCOR.
 
 Note that CellML models are available under a Creative Commons
-Attribution 3.0 Unported License [48]_. This means that you are free to:
+Attribution 3.0 Unported License [*]_. This means that you are free to:
 
--  Share — copy and redistribute the material in any medium or format
+ -  Share — copy and redistribute the material in any medium or format
 
--  Adapt — remix, transform, and build upon the material
+ -  Adapt — remix, transform, and build upon the material
 
 for any purpose, including commercial use.
 
@@ -167,12 +171,19 @@ about tissue regions relevant to the expression of that protein (e.g.
 *Proximal convoluted tubule*, *Apical plasma membrane*; *Epithelial cell
 of proximal tubule*; *Proximal straight tubule*). Similar facilities are
 available for SMBL-encoded biochemical reaction models through the
-Biomodels database [15].
+Biomodels database :cite:`15`.
 
 **Figure 43**. The PMR workspace for the Thiazide-sensitive Na-Cl
 cotransporter. Bioinformatic data for this model is accessed via the
-links under the headings highlight by the **arrows** and include
-**Protein** (labelled **A**) and the model **Location** (labelled
-**B**). Other information is as already described for the Hund-Rudy 2004
+links under the headings highlight by the :red:`arrows` and include
+**Protein** (labelled :red:`A`) and the model **Location** (labelled
+:red:`B`). Other information is as already described for the Hund-Rudy 2004
 model.
 
+---------------------------
+
+.. rubric:: Footnotes
+
+.. [*] These are currently hand drawn SVG diagrams but the plan is to automatically generate them from the model annotation and also (at some stage!) to animate them as the model is executed.
+
+.. [*] `https://creativecommons.org/licenses/by/3.0/ <https://creativecommons.org/licenses/by/3.0/>`_

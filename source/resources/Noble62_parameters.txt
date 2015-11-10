@@ -1,0 +1,11 @@
+def model Noble62_parameters as
+   def import using "Noble62_units.xml" for
+      unit mM using unit mM;
+   enddef;
+   def comp parameters as
+      var Ki: mM {init: 140, pub: out};
+      var Ko: mM {init: 2.5, pub: out};
+      var Nai: mM {init: 30, pub: out};
+      var Nao: mM {init: 140, pub: out};
+   enddef;
+enddef;

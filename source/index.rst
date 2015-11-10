@@ -58,6 +58,7 @@ to modular approaches (model hierarchies) and model annotation.
    cellml_import_unit_params
    annotation
    pmr
+   sedml_func_cur_web_lab
    speed_comp
    future
    zreferences

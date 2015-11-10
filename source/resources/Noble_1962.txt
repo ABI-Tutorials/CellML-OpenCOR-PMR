@@ -1,0 +1,70 @@
+def model Noble_1962 as
+   def import using "Noble62_Na_channel.xml" for
+      comp Na_channel using comp sodium_channel;
+   enddef;
+   def import using "Noble62_K_channel.xml" for
+      comp K_channel using comp potassium_channel;
+   enddef;
+   def import using "Noble62_L_channel.xml" for
+      comp L_channel using comp leakage_channel;
+   enddef;
+   def import using "Noble62_units.xml" for
+      unit mV using unit mV;
+      unit ms using unit ms;
+      unit nanoF using unit nanoF;
+      unit nanoA using unit nanoA;
+   enddef;
+   def import using "Noble62_parameters.xml" for
+      comp parameters using comp parameters;
+   enddef;
+   def map between parameters and membrane for
+      vars Ki and Ki;
+      vars Ko and Ko;
+      vars Nai and Nai;
+      vars Nao and Nao;
+   enddef;
+   def comp environment as
+      var t: ms {init: 0, pub: out};
+   enddef;
+   def group as encapsulation for
+      comp membrane incl
+         comp Na_channel;
+         comp K_channel;
+         comp L_channel;
+      endcomp;
+   enddef;
+   def comp membrane as
+      var V: mV {init: -85, pub: out, priv: out};
+      var t: ms {pub: in, priv: out};
+      var Cm: nanoF {init: 12000};
+      var Ki: mM {pub: in, priv: out};
+      var Ko: mM {pub: in, priv: out};
+      var Nai: mM {pub: in, priv: out};
+      var Nao: mM {pub: in, priv: out};
+      var i_Na: nanoA {pub: out, priv: in};
+      var i_K: nanoA {pub: out, priv: in};
+      var i_L: nanoA {pub: out, priv: in};
+      ode(V, t) = -(i_Na+i_K+i_L)/Cm;
+   enddef;
+   def map between environment and membrane for
+      vars t and t;
+   enddef;
+   def map between membrane and Na_channel for
+      vars V and V;
+      vars t and t;
+      vars Nai and Nai;
+      vars Nao and Nao;
+      vars i_Na and i_Na;
+   enddef;
+   def map between membrane and K_channel for
+      vars V and V;
+      vars t and t;
+      vars Ki and Ki;
+      vars Ko and Ko;
+      vars i_K and i_K;
+   enddef;
+   def map between membrane and L_channel for
+      vars V and V;
+      vars i_L and i_L;
+   enddef;
+enddef;

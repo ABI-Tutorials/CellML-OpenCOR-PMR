@@ -1,0 +1,69 @@
+def model sodium_ion_channel as
+   def import using "Noble62_units.xml" for
+      unit mV using unit mV;
+      unit ms using unit ms;
+      unit mM using unit mM;
+      unit per_ms using unit per_ms;
+      unit per_mV using unit per_mV;
+      unit per_mV_ms using unit per_mV_ms;
+      unit microS using unit microS;
+      unit nanoA using unit nanoA;
+   enddef;
+   def group as encapsulation for
+      comp sodium_channel incl
+      comp sodium_channel_m_gate;
+      comp sodium_channel_h_gate;
+   endcomp;
+   enddef;
+   def comp sodium_channel as
+      var V: mV {pub: in, priv: out};
+      var t: ms {pub: in, priv: out};
+      var g_Na_max: microS {init: 400000};
+      var g_Na: microS;
+      var E_Na: mV;
+      var m: dimensionless {priv: in};
+      var h: dimensionless {priv: in};
+      var Nai: mM {pub: in};
+      var Nao: mM {pub: in};
+      var RTF: mV {init: 25};
+      var i_Na: nanoA {pub: out};
+      E_Na = RTF*ln(Nao/Nai);
+      g_Na = pow(m, 3{dimensionless})*h*g_Na_max;
+      i_Na = (g_Na+140{microS})*(V-E_Na);
+   enddef;
+   def comp sodium_channel_m_gate as
+      var V: mV {pub: in};
+      var t: ms {pub: in};
+      var m: dimensionless {init: 0.01, pub: out};
+      var alpha_m: per_ms;
+      var beta_m: per_ms;
+      alpha_m = -0.10{per_mV_ms}(V+48{mV})
+        /(exp(-(V+48{mV})/15{mV})-1{dimensionless});
+      beta_m = 0.12{per_mV_ms}(V+8{mV})
+        /(exp((V+8{mV})/5{mV})-1{dimensionless});
+      ode(m, t)=alpha_m*(1{dimensionless}-m)-beta_m*m;
+   enddef;
+   def comp sodium_channel_h_gate as
+      var V: mV {pub: in};
+      var t: ms {pub: in};
+      var h: dimensionless {init: 0.8, pub: out};
+      var alpha_h: per_ms;
+      var beta_h: per_ms;
+      alpha_h = 0.17{per_ms}exp(-(V+90{mV})/20{mV});
+      beta_h = 1.00{per_ms}
+        /(1{dimensionless}+exp(-(V+42{mV})/10{mV}));
+      ode(h, t) = alpha_h*(1{dimensionless}-h)-beta_h*h;
+   enddef;
+   def map between sodium_channel
+     and sodium_channel_m_gate for
+      vars V and V;
+      vars t and t;
+      vars m and m;
+   enddef;
+   def map between sodium_channel
+     and sodium_channel_h_gate for
+      vars V and V;
+      vars t and t;
+      vars h and h;
+   enddef;
+enddef;

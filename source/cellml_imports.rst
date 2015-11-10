@@ -266,8 +266,8 @@ some text
    enddef;
    
 
-Note that the *CellML Text* code for the potassium channel is :ref:`ocr_tut_k_ion_ch_ctc`
-and for the sodium channel is :ref:`ocr_tut_na_ion_ch_ctc`.
+Note that the *CellML Text* code for the potassium channel is :ref:`Potassium_ion_channel.cellml <ocr_tut_k_ion_ch_ctc>`
+and for the sodium channel is :ref:`Sodium_ion_channel.cellml <ocr_tut_na_ion_ch_ctc>`.
 
 Note that the only units that need to be defined for this top level HH
 model are the ones explicitly required for the membrane component. All
