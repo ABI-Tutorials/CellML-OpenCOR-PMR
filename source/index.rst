@@ -66,11 +66,13 @@ to modular approaches (model hierarchies) and model annotation.
 .. todo::
 
    * Colour background of *CellML Text*
-   * Convert images from screen shots to diagrams in svg format
+   * Convert images from screen shots to diagrams in svg format, mostly done three or four left to complete
    * Annotate screen shots with svg for same look and feel
-   * *CellML Text* code is not highlighted for all display situations
+   * *CellML Text* code is not highlighted for all display situations, currently only in environments that are using an adapted version of pygments 
    * Bar graph not implemented for PMR model categories
    * Tidy up citations and BiBTeX sourece (possibly use Zotero to manage?)
+   * Make horizontal line for footnotes only visible in html output
+   * Check external references markup
    
 ---------------------------
 
