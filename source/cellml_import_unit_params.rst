@@ -146,7 +146,7 @@ discussed further in Section 15.
 
    The downloadable links below are links to the raw text file that may be used for copying and pasting into OpenCOR.  For the underlying CellML file that is suitable for opening with OpenCOR from disk obtain the xml file.
 
-Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Noble_1962.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble_1962.cellml>`_.
+Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Noble_1962.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble_1962.cellml>`_.
 
 .. code-block:: cell
 
@@ -221,7 +221,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
       enddef;
    enddef;
    
-Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file `Noble62_units.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble62_units.xml>`_.
+Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file `Noble62_units.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_units.cellml>`_.
 
 .. code-block:: cell
 
@@ -256,7 +256,7 @@ Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file 
       enddef;
    enddef;
    
-Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`, XML file `Noble62_parameters.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble62_parameters.xml>`_.
+Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`, XML file `Noble62_parameters.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_parameters.cellml>`_.
 
 .. code-block:: cell
 
@@ -272,7 +272,7 @@ Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`,
       enddef;
    enddef;
    
-Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`, XML file `Noble62_Na_channel.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble62_Na_channel.xml>`_.
+Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`, XML file `Noble62_Na_channel.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_Na_channel.cellml>`_.
 
 .. code-block:: cell
 
@@ -346,7 +346,7 @@ Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`,
       enddef;
    enddef;
 
-Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, XML file `Noble62_K_channel.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble62_K_channel.xml>`_.
+Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, XML file `Noble62_K_channel.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_K_channel.cellml>`_.
 
 .. code-block:: cell
 
@@ -407,7 +407,7 @@ Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, X
       enddef;
    enddef;
       
-Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, XML file `Noble62_L_channel.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble62_L_channel.xml>`_.
+Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, XML file `Noble62_L_channel.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_L_channel.cellml>`_.
 
 .. code-block:: cell
 
