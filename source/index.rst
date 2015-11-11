@@ -63,11 +63,6 @@ to modular approaches (model hierarchies) and model annotation.
    future
    zreferences
 
-.. toctree::
-   :hidden:
-   
-   footnotes
-
 .. todo::
 
    * Colour background of *CellML Text*
