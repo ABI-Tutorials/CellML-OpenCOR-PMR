@@ -70,6 +70,7 @@ to modular approaches (model hierarchies) and model annotation.
    * Annotate screen shots with svg for same look and feel
    * *CellML Text* code is not highlighted for all display situations
    * Bar graph not implemented for PMR model categories
+   * Tidy up citations and BiBTeX sourece (possibly use Zotero to manage?)
    
 ---------------------------
 
