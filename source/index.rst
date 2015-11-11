@@ -74,6 +74,7 @@ to modular approaches (model hierarchies) and model annotation.
    * Convert images from screen shots to diagrams in svg format
    * Annotate screen shots with svg for same look and feel
    * *CellML Text* code is not highlighted for all display situations
+   * Bar graph not implemented for PMR model categories
    
 ---------------------------
 
