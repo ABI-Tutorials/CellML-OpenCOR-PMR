@@ -146,7 +146,7 @@ discussed further in Section 15.
 
    The downloadable links below are links to the raw text file that may be used for copying and pasting into OpenCOR.  For the underlying CellML file that is suitable for opening with OpenCOR from disk obtain the xml file.
 
-Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Noble_1962.xml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble_1962.cellml>`_.
+Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Noble_1962.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/d8eb5aacdb65f5fc1d38cdcf190a1415ea07a262/Noble_1962.cellml>`_.
 
 .. code-block:: cell
 
