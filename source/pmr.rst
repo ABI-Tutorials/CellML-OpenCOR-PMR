@@ -39,45 +39,30 @@ The CellML models on  `models.physiomeproject.org <https://models.physiomeprojec
 
 **Browse by category**
 
- -  Calcium Dynamics 140
+.. tabularcolumns:: |l|c|
 
- -  Cardiovascular Circulation 60
-
- -  Cell Cycle 38
-
- -  Cell Migration 2
-
- -  Circadian Rhythms 22
-
- -  Electrophysiology 230
-
- -  Endocrine 60
-
- -  Excitation-Contraction Coupling 22
-
- -  Gene Regulation 12
-
- -  Hepatology 29
-
- -  Immunology 55
-
- -  Ion transport 13
-
- -  Mechanical Constitutive Laws 19
-
- -  Metabolism 86
-
- -  Myofilament Mechanics 22
-
- -  Neurobiology 33
-
- -  pH regulation 2
-
- -  PKPD 11
-
- -  Signal Transduction 120
-
- -  Synthetic Biology 6
+====================================  ==========================================
+ Calcium Dynamics                     |image_variable_node_140| 140
+ Cardiovascular Circulation           |image_variable_node_60| 60
+ Cell Cycle                           |image_variable_node_38| 38
+ Cell Migration                       |image_variable_node_2| 2
+ Circadian Rhythms                    |image_variable_node_22| 22
+ Electrophysiology                    |image_variable_node_230| 230
+ Endocrine                            |image_variable_node_60| 60
+ Excitation-Contraction Coupling      |image_variable_node_22| 22
+ Gene Regulation                      |image_variable_node_12| 12
+ Hepatology                           |image_variable_node_29| 29
+ Immunology                           |image_variable_node_55| 55
+ Ion transport                        |image_variable_node_13| 13
+ Mechanical Constitutive Laws         |image_variable_node_19| 19
+ Metabolism                           |image_variable_node_86| 86
+ Myofilament Mechanics                |image_variable_node_22| 22
+ Neurobiology                         |image_variable_node_33| 33
+ pH regulation                        |image_variable_node_2| 2
+ PKPD                                 |image_variable_node_11| 11
+ Signal Transduction                  |image_variable_node_120| 120
+ Synthetic Biology                    |image_variable_node_6| 6
+====================================  ==========================================
 
 Note that searching of models can be done anywhere on the site using the
 search box on the upper right hand corner. An important benefit of
@@ -205,3 +190,68 @@ Biomodels database :cite:`15`.
 .. [*] These are currently hand drawn SVG diagrams but the plan is to automatically generate them from the model annotation and also (at some stage!) to animate them as the model is executed.
 
 .. [*] `https://creativecommons.org/licenses/by/3.0/ <https://creativecommons.org/licenses/by/3.0/>`_
+
+.. |image_variable_node_230| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 230pt
+
+.. |image_variable_node_2| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 2pt
+
+.. |image_variable_node_60| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 60pt
+
+.. |image_variable_node_22| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 22pt
+
+.. |image_variable_node_12| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 12pt
+
+.. |image_variable_node_33| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 33pt
+
+.. |image_variable_node_55| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 55pt
+
+.. |image_variable_node_120| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 120pt
+
+.. |image_variable_node_19| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 19pt
+
+.. |image_variable_node_140| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 140pt
+
+.. |image_variable_node_38| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 38pt
+
+.. |image_variable_node_29| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 29pt
+
+.. |image_variable_node_13| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 13pt
+
+.. |image_variable_node_86| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 86pt
+
+.. |image_variable_node_11| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 11pt
+
+.. |image_variable_node_6| image:: _static/images/bar.png
+   :height: 10pt
+   :width: 6pt
+
