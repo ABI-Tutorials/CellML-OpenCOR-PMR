@@ -16,19 +16,26 @@ the data when browsing the repository via a web browser, or an
 application accessing the repository’s content via web services.
 
 The CellML project website and the CellML Physiome Model Repository are
-shown in Figures 39, 40.
+shown in :numref:`ocr_tut_cellml_web_main` and :numref:`ocr_tut_cellml_web_pmr`.
 
-**Figure 39**. The website for the CellML project at
-`www.cellml.org <http://www.cellml.org>`_.
+.. figure:: _static/images/cellml_website_mainpage.png
+   :name: ocr_tut_cellml_web_main
+   :alt: CellML website mainpage
+   :align: center
+   :figwidth: 95%
+   
+   The website for the CellML project at `www.cellml.org <http://www.cellml.org>`_.
 
-**Figure 40**. The website for the Physiome Model Repository project at
-`www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`_.
+.. figure:: _static/images/cellml_website_pmr.png
+   :name: ocr_tut_cellml_web_pmr
+   :alt: CellML website PMR page
+   :align: center
+   :figwidth: 95%
+   
+   The website for the Physiome Model Repository project at `www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`_.
 
-| The CellML models on
-  `models.physiomeproject.org <https://models.physiomeproject.org>`_
-  are listed under 20 categories, shown below:
-| (numbers of exposures in each category are given besides the bar
-  graph)
+The CellML models on  `models.physiomeproject.org <https://models.physiomeproject.org>`_  are listed under 20 categories, shown below:
+(numbers of exposures in each category are given besides the bar graph)
 
 **Browse by category**
 
@@ -80,11 +87,16 @@ the models.
 
 To illustrate the features of PMR, click on the Hund, Rudy 2004 (Basic)
 model in the alphabetic listing of models under *Electrophysiology*.
-This opens a web page (Figure 41) using a 32 character string that has
+This opens a web page (:numref:`ocr_tut_pmr_exp_hr`) using a 32 character string that has
 been randomly generated as the ID for the exposure page for that model.
 
-**Figure 41**. The Physiome Model Repository exposure page for the basic
-Hund-Rudy 2004 model.
+.. figure:: _static/images/pmr_website_exp_hund_rudy.png
+   :name: ocr_tut_pmr_exp_hr
+   :alt: PMR webpage for Hund-Rudy 2004
+   :align: center
+   :figwidth: 95%
+   
+   The Physiome Model Repository exposure page for the basic Hund-Rudy 2004 model.
 
 Note that the string is still unique even with only 5 characters:
 
@@ -93,9 +105,9 @@ https://models.physiomeproject.org/exposure/f4b71/hund_rudy_2004_a.cellml/view
 
 The section labelled ‘Model Structure’ contains the journal paper
 abstract and often a diagram of the model [*]_. This is shown for the
-Hund-Rudy 2004 model in Figure 42. This model, with over 22 separate
+Hund-Rudy 2004 model in :numref:`ocr_tut_hund_2004`. This model, with over 22 separate
 protein model components, is also a good example of why it is important
-to build models from modular components [14], and in particular the
+to build models from modular components :cite:`14`, and in particular the
 individual ion channels for electrophysiology models.
 
 .. figure:: _static/images/hund_2004.png
@@ -164,7 +176,7 @@ https://models.physiomeproject.org/e/232/
 https://models.physiomeproject.org/e/233/
 
 Note that in each case, as well as the CellML-encoded mathematical
-model, links are provided (see Figure 43) to the UniProt Knowledgebase
+model, links are provided (see :numref:`ocr_tut_pmr_wsp_thiazide`) to the UniProt Knowledgebase
 for that protein, and to the Foundational Model of Anatomy (FMA)
 ontology (via the EMBLE-EBI Ontology Lookup Service) for information
 about tissue regions relevant to the expression of that protein (e.g.
@@ -173,12 +185,18 @@ of proximal tubule*; *Proximal straight tubule*). Similar facilities are
 available for SMBL-encoded biochemical reaction models through the
 Biomodels database :cite:`15`.
 
-**Figure 43**. The PMR workspace for the Thiazide-sensitive Na-Cl
-cotransporter. Bioinformatic data for this model is accessed via the
-links under the headings highlight by the :red:`arrows` and include
-**Protein** (labelled :red:`A`) and the model **Location** (labelled
-:red:`B`). Other information is as already described for the Hund-Rudy 2004
-model.
+.. figure:: _static/images/pmr_wsp_thiazide.png
+   :name: ocr_tut_pmr_wsp_thiazide
+   :alt: Thiazide-sensitive Na-Cl cotransporter workspace
+   :align: center
+   :figwidth: 95%
+   
+   The PMR workspace for the Thiazide-sensitive Na-Cl
+   cotransporter. Bioinformatic data for this model is accessed via the
+   links under the headings highlight by the :red:`arrows` and include
+   **Protein** (labelled :red:`A`) and the model **Location** (labelled
+   :red:`B`). Other information is as already described for the Hund-Rudy 2004
+   model.
 
 ---------------------------
 

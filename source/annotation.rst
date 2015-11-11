@@ -70,10 +70,18 @@ terminology used in the models, CellML uses five separate ontologies:
 These ontologies are available through OpenCOR’s annotation facilities
 as explained below.
 
+.. figure:: _static/images/opencor_anno_view.png
+   :name: ocr_tut_ocr_anno_view
+   :alt: OpenCOR annotation view
+   :align: right
+   :figwidth: 45%
+   
+   Clicking on *CellML Annotation* lists the CellML components with their variables ready for annotation.
+
 If we now go back to the potassium ion channel CellML model and, under
 *Editing*, click on *CellML* *Annotation*, the various elements of the
 model (Units, Components, Variables, Groups and Connections) are
-displayed (see Figure 34). If you right click on any of them a popup
+displayed (see :numref:`ocr_tut_ocr_anno_view`). If you right click on any of them a popup
 menu will appear, which you can use to expand/collapse all the child
 nodes, as well as remove the metadata associated with the current CellML
 element or the whole CellML file. Expanding *Components* lists all the
@@ -94,45 +102,56 @@ If you do not know which qualifier to use, click on the
 |image_variable_node| button to get some information about the current qualifier
 (you must be connected to the internet) and go through the list of
 qualifiers until you find the one that best suits your needs. Here, we
-will say that you want to use bio:isVersionOf. Figure 35 shows the
+will say that you want to use bio:isVersionOf. :numref:`ocr_tut_ocr_qualifiers` shows the
 information displayed about this qualifier.
 
-|image21|
-
-**Figure 35**. The qualifiers are displayed from the top right menu.
-Clicking on the most appropriate one (bio:isVersionOf) gives more
-information about this qualifier in the bottom panel.
+.. figure:: _static/images/opencor_qualifiers.png
+   :name: ocr_tut_ocr_qualifiers
+   :alt: Object qualifiers
+   :align: center
+   :figwidth: 95%
+   
+   The qualifiers are displayed from the top right menu.
+   Clicking on the most appropriate one (bio:isVersionOf) gives more
+   information about this qualifier in the bottom panel.
 
 Now you need to retrieve some possible ontological terms to describe the
 *potassium\_channel* component. For this you must enter a search term,
 which in our case is ‘potassium channel’ (note that regular expressions
 are supported [*]_). This returns 24 possible ontological terms as
-shown in Figure 36. The *voltage-gated potassium channel complex* is the
+shown in :numref:`ocr_tut_ocr_ont_terms_pot`. The *voltage-gated potassium channel complex* is the
 most appropriate. Clicking on the GO identifier link shown provides more
-information about this term (see Figure 37).
+information about this term (see :numref:`ocr_tut_ocr_qual_res_info`).
 
-|image22|
+.. figure:: _static/images/opencor_ont_listing.png
+   :name: ocr_tut_ocr_ont_terms_pot
+   :alt: Ontological terms for potassium
+   :align: center
+   :figwidth: 95%
+   
+   The ontological terms listed when ‘potassium channel’ is entered into the search box next to *Term*.
 
-**Figure 36**. The ontological terms listed when ‘potassium channel’ is
-entered into the search box next to *Term*.
-
-|image23|
-
-**Figure 37**. The qualifier, resource & ID information in the middle
-panel appears when you click on the |image_add| button next to the
-selected term in Fig.32. GO identifier details are listed when either of
-the :red:`arrowed` links are clicked.
+.. figure:: _static/images/opencor_qual_res_info.png
+   :name: ocr_tut_ocr_qual_res_info
+   :alt: Qualifier resource and ID information
+   :align: center
+   :figwidth: 95%
+   
+   The qualifier, resource & ID information in the middle
+   panel appears when you click on the |image_add| button next to the
+   selected term in Fig.32. GO identifier details are listed when either of
+   the :red:`arrowed` links are clicked.
 
 Now, assuming that you are happy with your choice
 of ontological term, you can associate it with the *potassium_channel*
 component by clicking on its corresponding |image_add| button which then displays
 the qualifier, resource and ID information in the middle panel as shown
-in Figure 36. If you make a mistake, this can be removed by clicking on
+in :numref:`ocr_tut_ocr_ont_terms_pot`. If you make a mistake, this can be removed by clicking on
 the |image_sub| button.
 
 The first level annotation of the *potassium\_channel* component has now
 been achieved. The content of the three terms in the RDF triple are
-shown in Figure 38, along with the annotation for the variables *Ki* and
+shown in :numref:`ocr_tut_pot_ch_anno_diag`, along with the annotation for the variables *Ki* and
 *Ko*.
 
 .. figure:: _static/images/anno_pot_ch_diagram.png
