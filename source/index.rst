@@ -73,6 +73,7 @@ to modular approaches (model hierarchies) and model annotation.
    * Tidy up citations and BiBTeX sourece (possibly use Zotero to manage?)
    * Make horizontal line for footnotes only visible in html output
    * Check external references markup
+   * Consider a more suitable theme (may require changes to an existing one to get a good result)
    
 ---------------------------
 

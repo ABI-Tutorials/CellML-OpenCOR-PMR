@@ -21,12 +21,12 @@ variable :math:`y`:
 .. math::
    :label: first_order_eqns
    
-   \frac{\text{dx}}{\text{dt}} & = y \\
+   \frac{\text{dx}}{\text{dt}} =\ y
    
 .. math::
    :label: first_order_eqns_2
    
-   \frac{\text{dy}}{\text{dt}} & = \mu\left( 1 - x^{2} \right)y - x
+   \frac{\text{dy}}{\text{dt}} =\ \mu\left( 1 - x^{2} \right)y - x
 
 The initial conditions are now :math:`x = - 2;y = 0`.
 
@@ -35,7 +35,7 @@ the *File* menu and *New*, click on *CellML 1.1 File* (:menuselection:`File --> 
 following lines of code after deleting the three lines that indicate
 where the code should go:
 
-.. code-block:: python
+.. code-block:: cell
    :emphasize-lines: 8,9
 
    def model van_der_pol_model as
@@ -85,7 +85,7 @@ or Matlab, which are procedural languages) and therefore the order of
 statements does not affect the solution. For example, the order of the
 ODEs could equally well be
 
-.. code-block:: python
+.. code-block:: cell
    :emphasize-lines: 1,2
 
    ode(y,t)=mu*(1{dimensionless}-sqr(x))*y-x;
