@@ -26,9 +26,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="-187.77109"
-     inkscape:cx="-254.07331"
-     inkscape:zoom="1.3478783"
+     inkscape:cy="755.18622"
+     inkscape:cx="1502.9436"
+     inkscape:zoom="0.9530939"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -1964,6 +1964,155 @@
        fy="622.55231"
        r="33.348618"
        gradientTransform="matrix(1.9788685,-3.921529e-7,2.5959136e-7,1.309941,575.92338,-192.95474)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12721"
+       id="linearGradient12727-8"
+       x1="277.21725"
+       y1="643.5376"
+       x2="388.55042"
+       y2="643.5376"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.85055221,0,0,0.85055221,1409.8706,-398.58411)" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleInS-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInS">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.2,-0.2)"
+         style="fill:#99b6ea;fill-opacity:1;fill-rule:evenodd;stroke:#99b6ea;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path4429-6" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12721"
+       id="linearGradient12727-5"
+       x1="277.21725"
+       y1="643.5376"
+       x2="388.55042"
+       y2="643.5376"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.85055221,0,0,0.85055221,1410.1526,-467.72557)" />
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleInS-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleInS">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.2,-0.2)"
+         style="fill:#99b6ea;fill-opacity:1;fill-rule:evenodd;stroke:#99b6ea;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path4429-45" />
+    </marker>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43768"
+       cx="2002.8025"
+       cy="457.46713"
+       fx="2002.8025"
+       fy="457.46713"
+       r="33.348618"
+       gradientTransform="matrix(1.4404686,3.9988547e-7,-3.3134662e-7,1.1935778,-882.17147,-88.556274)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43770"
+       cx="2002.8025"
+       cy="352.57089"
+       fx="2002.8025"
+       fy="352.57089"
+       r="33.348618"
+       gradientTransform="matrix(1.6292407,-1.5150408e-6,1.2269421e-6,1.3194258,-1260.2452,-112.6172)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43772"
+       cx="2002.8025"
+       cy="311.49234"
+       fx="2002.8025"
+       fy="311.49234"
+       r="33.348618"
+       gradientTransform="matrix(1.7550887,3.5139992e-6,-2.1377847e-6,1.0677298,-1512.2929,-21.10435)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43774"
+       cx="1761.3169"
+       cy="331.24103"
+       fx="1761.3169"
+       fy="331.24103"
+       r="50.043934"
+       gradientTransform="matrix(1.7757374,2.0275632e-7,-2.3300036e-7,2.0406144,-1366.3193,-344.69452)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43776"
+       cx="1761.3169"
+       cy="467.32935"
+       fx="1761.3169"
+       fy="467.32935"
+       r="50.043934"
+       gradientTransform="matrix(1.8176691,0,0,2.1244779,-1440.1744,-525.5015)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43778"
+       cx="1761.3169"
+       cy="600.0155"
+       fx="1761.3169"
+       fy="600.0155"
+       r="50.043934"
+       gradientTransform="matrix(1.7757374,1.9669364e-7,-2.3300034e-7,2.103512,-1366.3193,-662.12464)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43780"
+       cx="1557.2719"
+       cy="600.0155"
+       fx="1557.2719"
+       fy="600.0155"
+       r="50.043934"
+       gradientTransform="matrix(1.7128398,-8.9599401e-7,1.089389e-6,2.0825461,-1110.086,-649.54305)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43782"
+       cx="1557.2719"
+       cy="467.32935"
+       fx="1557.2719"
+       fy="467.32935"
+       r="50.043934"
+       gradientTransform="matrix(1.9644302,-4.1543816e-8,4.6258669e-8,2.1873755,-1501.88,-554.89534)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15870"
+       id="radialGradient43784"
+       cx="1557.2719"
+       cy="331.24103"
+       fx="1557.2719"
+       fy="331.24103"
+       r="50.043934"
+       gradientTransform="matrix(1.8805667,1.054943e-6,-1.3093824e-6,2.3341366,-1371.2814,-441.92242)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
@@ -6668,7 +6817,7 @@
          x="789.45215"
          sodipodi:role="line">current_voltage_relations.png</tspan></text>
     <rect
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        id="rect18181"
        width="338.28452"
        height="108.63541"
@@ -6678,7 +6827,7 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <rect
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43776);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect18183"
        width="98.386765"
        height="97.618111"
@@ -6688,7 +6837,7 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <rect
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43768);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect16735"
        width="64.996132"
        height="23.348124"
@@ -6699,7 +6848,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="1982.5963"
        y="460.21561"
        id="text16737"
@@ -6713,7 +6862,7 @@
          y="460.21561">n_gate</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="1761.2235"
        y="463.6199"
        id="text16747"
@@ -6725,12 +6874,12 @@
          id="tspan16749"
          x="1761.2235"
          y="463.6199"
-         style="text-align:center;text-anchor:middle">Potassium</tspan><tspan
+         style="text-align:center;text-anchor:middle;fill:#008000;">Potassium</tspan><tspan
          sodipodi:role="line"
          x="1761.2235"
          y="482.00577"
          id="tspan16751"
-         style="text-align:center;text-anchor:middle">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.05925179px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -6751,7 +6900,7 @@
        height="108.63541"
        width="338.28452"
        id="rect16785"
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -6761,13 +6910,13 @@
        height="97.618111"
        width="98.386765"
        id="rect16787"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43774);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1761.597"
        y="327.53152"
        id="text16741"
@@ -6779,14 +6928,14 @@
          id="tspan16743"
          x="1761.597"
          y="327.53152"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Sodium</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">Sodium</tspan><tspan
          sodipodi:role="line"
          x="1761.597"
          y="345.91739"
          id="tspan16745"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <rect
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43770);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect16795"
        width="64.996132"
        height="23.348124"
@@ -6797,7 +6946,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.10598373px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.10598373px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1983.7656"
        y="355.48019"
        id="text16737-0"
@@ -6815,13 +6964,13 @@
        height="23.348124"
        width="64.996132"
        id="rect16793"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43772);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1980.5933"
        y="314.24075"
        id="text16737-2"
@@ -6853,7 +7002,7 @@
        height="108.63541"
        width="338.28452"
        id="rect18185"
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -6863,13 +7012,13 @@
        height="97.618111"
        width="98.386765"
        id="rect18187"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43778);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1760.9866"
        y="596.30603"
        id="text16753"
@@ -6881,12 +7030,12 @@
          id="tspan16755"
          x="1760.9866"
          y="596.30603"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Leakage</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">Leakage</tspan><tspan
          sodipodi:role="line"
          x="1760.9866"
          y="614.69189"
          id="tspan16757"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.05925179px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -7085,6 +7234,24 @@
        id="path18602"
        d="m 1928.9747,337.1347 7.7248,10.21948"
        style="fill:#4c7fb9;fill-opacity:1;fill-rule:evenodd;stroke:#4c7fb9;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.70110441, 1.70110441;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path15717-4"
+       d="m 1557.2715,282.06032 -0.032,-49.70255"
+       style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8.00000019, 2.00000005;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect41011-7"
+       width="359.8248"
+       height="618.75018"
+       x="1332.0936"
+       y="45.965706"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
     <rect
        y="276.97171"
        x="1502.8849"
@@ -7101,7 +7268,7 @@
        height="97.618111"
        width="98.386765"
        id="rect16787-6"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43784);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -7111,7 +7278,7 @@
        height="97.618111"
        width="98.386765"
        id="rect16787-6-1"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43782);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -7121,13 +7288,13 @@
        height="97.618111"
        width="98.386765"
        id="rect16787-6-0"
-       style="fill:#9cbcb7;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:url(#radialGradient43780);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1557.5519"
        y="327.30527"
        id="text16741-5"
@@ -7139,15 +7306,15 @@
          id="tspan16743-9"
          x="1557.5519"
          y="327.30527"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Na</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">Na</tspan><tspan
          sodipodi:role="line"
          x="1557.5519"
          y="345.69113"
          id="tspan16745-9"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1557.5519"
        y="463.39365"
        id="text16741-0"
@@ -7159,15 +7326,15 @@
          id="tspan16743-5"
          x="1557.5519"
          y="463.39365"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">K</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">K</tspan><tspan
          sodipodi:role="line"
          x="1557.5519"
          y="481.77951"
          id="tspan16745-94"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="1557.5519"
        y="596.07977"
        id="text16741-2"
@@ -7179,12 +7346,12 @@
          id="tspan16743-93"
          x="1557.5519"
          y="596.07977"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">L</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">L</tspan><tspan
          sodipodi:role="line"
          x="1557.5519"
          y="614.46564"
          id="tspan16745-5"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <path
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-ydpi="300"
@@ -7318,7 +7485,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1557.2432,232.31492 -113.4416,0.0324"
+       d="m 1557.2454,232.31492 -95.6403,0.0324"
        id="path15754"
        inkscape:connector-curvature="0"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
@@ -7353,7 +7520,7 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <rect
-       style="fill:url(#radialGradient15860);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:url(#radialGradient15860);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:6,2;stroke-dashoffset:0"
        id="rect15230"
        width="339"
        height="41"
@@ -7371,7 +7538,7 @@
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <rect
-       style="fill:url(#radialGradient15852);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:url(#radialGradient15852);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:6,2;stroke-dashoffset:0"
        id="rect15232"
        width="339"
        height="41"
@@ -7382,7 +7549,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1aae54;fill-opacity:1;stroke:#1bae54;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="1352.7473"
        y="545.18579"
        id="text15234"
@@ -7396,7 +7563,7 @@
          y="545.18579">Membrane</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1aae54;fill-opacity:1;stroke:#1bae54;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="1343.9038"
        y="294.20694"
        id="text15238"
@@ -7539,14 +7706,14 @@
     <text
        sodipodi:linespacing="125%"
        id="text16811-0"
-       y="47.447495"
+       y="39.447495"
        x="1341.3342"
        style="font-style:normal;font-weight:normal;font-size:13.05925179px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
-         y="47.447495"
+         y="39.447495"
          x="1341.3342"
          id="tspan16813-9"
          sodipodi:role="line">Noble_1962.cellml</tspan></text>
@@ -7631,34 +7798,41 @@
          inkscape:transform-center-x="6.6948053"
          inkscape:transform-center-y="-4.3186257" />
     </g>
-    <path
-       inkscape:connector-curvature="0"
-       id="path15717"
-       d="m 1557.2715,274.09879 -0.032,-24.50687"
-       style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+    <g
+       id="g43733"
+       transform="matrix(0,1,-1,0,1724.8957,-1324.9407)"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:transform-center-y="4.3186257"
-       inkscape:transform-center-x="6.6948053"
-       inkscape:connector-curvature="0"
-       id="path15719"
-       d="m 1557.266,274.10036 -8.2406,-13.43388"
-       style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 1557.2777,274.10036 8.2405,-13.43388"
-       id="path15721"
-       inkscape:connector-curvature="0"
-       inkscape:transform-center-x="6.6948053"
-       inkscape:transform-center-y="-4.3186257"
-       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1557.2715,274.09879 -0.032,-24.50687"
+         id="path15717"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1557.266,274.10036 -8.2406,-13.43388"
+         id="path15719"
+         inkscape:connector-curvature="0"
+         inkscape:transform-center-x="6.6948053"
+         inkscape:transform-center-y="4.3186257" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         inkscape:transform-center-y="-4.3186257"
+         inkscape:transform-center-x="6.6948053"
+         inkscape:connector-curvature="0"
+         id="path15721"
+         d="m 1557.2777,274.10036 8.2405,-13.43388"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
     <path
        style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#4c7fb9;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 1451.3162,177.41435 24.5068,-0.0324"
@@ -7684,14 +7858,6 @@
        id="path15729"
        d="m 1451.3146,177.42055 13.4339,8.24052"
        style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#4c7eb9;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path15717-4"
-       d="m 1557.2715,256.85007 -0.032,-24.50687"
-       style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -7784,10 +7950,10 @@
     <rect
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect17992-9"
-       width="733.008"
-       height="652.88214"
-       x="1326.5272"
-       y="21.851639"
+       width="740.42706"
+       height="658.81744"
+       x="1319.1082"
+       y="15.916386"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -7803,7 +7969,7 @@
          x="1619.0127"
          sodipodi:role="line">overall_structure_noble62.png</tspan></text>
     <rect
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321,1.7011044;stroke-opacity:1;stroke-dashoffset:0"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        id="rect18181-6"
        width="338.28452"
        height="108.63541"
@@ -7834,7 +8000,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-608.56256"
        y="625.30078"
        id="text16737-8"
@@ -7848,7 +8014,7 @@
          y="625.30078">n_gate</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-829.93536"
        y="628.70508"
        id="text16747-3"
@@ -7860,12 +8026,12 @@
          id="tspan16749-8"
          x="-829.93536"
          y="628.70508"
-         style="text-align:center;text-anchor:middle">Potassium</tspan><tspan
+         style="text-align:center;text-anchor:middle;fill:#008000;">Potassium</tspan><tspan
          sodipodi:role="line"
          x="-829.93536"
          y="647.091"
          id="tspan16751-8"
-         style="text-align:center;text-anchor:middle">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.05925179px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -7886,7 +8052,7 @@
        height="108.63541"
        width="338.28452"
        id="rect16785-6"
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321,1.7011044;stroke-opacity:1;stroke-dashoffset:0"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_hh.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -7902,7 +8068,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-829.56183"
        y="492.6167"
        id="text16741-28"
@@ -7914,12 +8080,12 @@
          id="tspan16743-92"
          x="-829.56183"
          y="492.6167"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Sodium</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">Sodium</tspan><tspan
          sodipodi:role="line"
          x="-829.56183"
          y="511.00259"
          id="tspan16745-2"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <rect
        style="fill:url(#radialGradient41093);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect16795-3"
@@ -7932,7 +8098,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.10598373px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.10598373px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-607.39325"
        y="520.56537"
        id="text16737-0-3"
@@ -7956,7 +8122,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:11.78818417px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-610.56561"
        y="479.32593"
        id="text16737-2-1"
@@ -7988,7 +8154,7 @@
        height="108.63541"
        width="338.28452"
        id="rect18185-4"
-       style="fill:#d4c2e2;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321,1.7011044;stroke-opacity:1;stroke-dashoffset:0"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.7011044;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5.10331321, 1.70110439999999996;stroke-opacity:1;stroke-dashoffset:0"
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_hh.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
@@ -8004,7 +8170,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-830.1723"
        y="761.39124"
        id="text16753-7"
@@ -8016,12 +8182,12 @@
          id="tspan16755-9"
          x="-830.1723"
          y="761.39124"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Leakage</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">Leakage</tspan><tspan
          sodipodi:role="line"
          x="-830.1723"
          y="779.7771"
          id="tspan16757-4"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:13.05925179px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -8280,7 +8446,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-1033.6071"
        y="492.39044"
        id="text16741-5-6"
@@ -8292,15 +8458,15 @@
          id="tspan16743-9-6"
          x="-1033.6071"
          y="492.39044"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">Na</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;fill:#008000;">Na</tspan><tspan
          sodipodi:role="line"
          x="-1033.6071"
          y="510.77634"
          id="tspan16745-9-8"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;fill:#008000;">channel</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-1033.6071"
        y="628.47882"
        id="text16741-0-9"
@@ -8312,15 +8478,15 @@
          id="tspan16743-5-4"
          x="-1033.6071"
          y="628.47882"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">K</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;stroke:none;">K</tspan><tspan
          sodipodi:role="line"
          x="-1033.6071"
          y="646.86475"
          id="tspan16745-94-0"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;stroke:none;">channel</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:14.7087059px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        x="-1033.6071"
        y="761.16498"
        id="text16741-2-1"
@@ -8332,12 +8498,12 @@
          id="tspan16743-93-1"
          x="-1033.6071"
          y="761.16498"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">L</tspan><tspan
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">L</tspan><tspan
          sodipodi:role="line"
          x="-1033.6071"
          y="779.55084"
          id="tspan16745-5-1"
-         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none">channel</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;fill:#008000;">channel</tspan></text>
     <path
        inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_hh.png"
        inkscape:export-ydpi="300"
@@ -8509,7 +8675,7 @@
        inkscape:export-ydpi="300" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1aae54;fill-opacity:1;stroke:#1bae54;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-1238.4116"
        y="710.271"
        id="text15234-1"
@@ -8523,7 +8689,7 @@
          y="710.271">Membrane</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1aae54;fill-opacity:1;stroke:#1bae54;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:15.50536251px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        x="-1247.2551"
        y="459.29211"
        id="text15238-8"
@@ -9301,5 +9467,84 @@
          y="1307.4011"
          x="-769.71429"
          sodipodi:role="line">anno_pot_ch_diagram.png</tspan></text>
+    <path
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:connector-curvature="0"
+       id="path6160-6-2"
+       d="m 1633.179,149.67059 70.5851,0"
+       style="fill:#99b6ea;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient12727-8);stroke-width:22.26049805;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInS-1)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:18.33915138px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1d426f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1636.6621"
+       y="154.44795"
+       id="text13299-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan13301-4"
+         x="1636.6621"
+         y="154.44795">Import</tspan></text>
+    <path
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       inkscape:connector-curvature="0"
+       id="path6160-6-1"
+       d="m 1633.461,80.529131 70.5851,0"
+       style="fill:#99b6ea;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient12727-5);stroke-width:22.26049805;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleInS-5)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:18.33915138px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#1d426f;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="1636.9441"
+       y="85.30648"
+       id="text13299-07"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan13301-7"
+         x="1636.9441"
+         y="85.30648">Import</tspan></text>
+    <g
+       id="g43733-1"
+       transform="matrix(0,1,-1,0,1701.5154,-1091.2014)"
+       inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1557.2715,274.09879 -0.032,-24.50687"
+         id="path15717-66"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1557.266,274.10036 -8.2406,-13.43388"
+         id="path15719-7"
+         inkscape:connector-curvature="0"
+         inkscape:transform-center-x="6.6948053"
+         inkscape:transform-center-y="4.3186257" />
+      <path
+         inkscape:export-ydpi="300"
+         inkscape:export-xdpi="300"
+         inkscape:export-filename="/home/hsorby/work/opencor-software/CellML-OpenCOR-PMR/source/_static/images/overall_structure_noble62.png"
+         inkscape:transform-center-y="-4.3186257"
+         inkscape:transform-center-x="6.6948053"
+         inkscape:connector-curvature="0"
+         id="path15721-7"
+         d="m 1557.2777,274.10036 8.2405,-13.43388"
+         style="fill:#fc0d1b;fill-opacity:1;fill-rule:evenodd;stroke:#6f359e;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
