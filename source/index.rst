@@ -74,6 +74,7 @@ to modular approaches (model hierarchies) and model annotation.
    * Make horizontal line for footnotes only visible in html output
    * Check external references markup
    * Consider a more suitable theme (may require changes to an existing one to get a good result)
+   * Must check over output (and models) from screenshots to make sure that it matches the current release of OpenCOR, especially against running experiments for the first time.
    
 ---------------------------
 
