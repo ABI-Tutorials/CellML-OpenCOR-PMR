@@ -144,13 +144,10 @@ model components with their public and private interfaces (:numref:`ocr_tut_over
    (:blue:`blue`) and the other key parts (:red:`units`, :green:`components`, and :orange:`mappings`) of the top level CellML model.
 
 The HH model is the top level model. The *CellML Text* code for the HH
-model, together with the leakage_channel model, is given on the next
-page. The imported potassium_ion_channel model and
+model, together with the leakage_channel model, is given below. The imported potassium_ion_channel model and
 sodium_ion_channel model are unchanged from the previous sections
 
 :download:`HH.cellml <resources/HH.cellml>`
-
-some text
 
 .. code-block:: cell
 

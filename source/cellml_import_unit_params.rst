@@ -124,7 +124,7 @@ and passed down to the individual ion channel models.
    :orange:`mappings`) of the top level CellML model. Note that the overall
    structure of the Noble62 model differs from that of the earlier HH model
    in that all units are defined in a units file and imported where needed
-   (shown by the :red:`red arrows`). Also the ion concentration parameters are
+   (shown by the import arrows). Also the ion concentration parameters are
    defined in a parameters file and imported into the top level file but
    passed down to the modules that use them via the mappings.
 
