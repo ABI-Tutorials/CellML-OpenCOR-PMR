@@ -38,22 +38,22 @@ on. The terms :green:`s-the-concentration-of`, :green:`in-the` and :green:`of-th
 the predicates and these semantically rich expressions too have to come
 from controlled vocabularies. Each of these
 :red:`subject`-:green:`predicate`-:blue:`object` expressions is called an RDF **triple**
-and the World Wide Web consortium [*]_ has established a framework
-called the *Resource Description Framework* (RDF [*]_) to support
+and the World Wide Web consortium [#]_ has established a framework
+called the *Resource Description Framework* (RDF [#]_) to support
 these.
 
 CellML models therefore contain two parts, one dealing with **syntax**
 (the MathML definition of the models together with the structure of
 components, connections, groups, units, etc) as discussed in previous
 sections, and one dealing with **semantics** (the meanings of the
-terms used in the models) discussed in this section [*]_. This latter
+terms used in the models) discussed in this section [#]_. This latter
 is also referred to as *metadata* – i.e. data about data.
 
-In the CellML metadata specification [*]_ the first RDF *subject* of a
+In the CellML metadata specification [#]_ the first RDF *subject* of a
 triple is a CellML element (e.g. a variable such as ‘Ki’), the RDF
-*predicate* is chosen from the Biomodels Biological Qualifiers [*]_
+*predicate* is chosen from the Biomodels Biological Qualifiers [#]_
 list, and the RDF *object* is a URI (the string of characters used to
-identify the name of a resource [*]_). Establishing these RDF links to
+identify the name of a resource [#]_). Establishing these RDF links to
 biological and biophysical meaning is the goal of annotation.
 
 Note the different types of subject/object used in the RDF triples: *the
@@ -118,7 +118,7 @@ information displayed about this qualifier.
 Now you need to retrieve some possible ontological terms to describe the
 *potassium\_channel* component. For this you must enter a search term,
 which in our case is ‘potassium channel’ (note that regular expressions
-are supported [*]_). This returns 24 possible ontological terms as
+are supported [#]_). This returns 24 possible ontological terms as
 shown in :numref:`ocr_tut_ocr_ont_terms_pot`. The *voltage-gated potassium channel complex* is the
 most appropriate. Clicking on the GO identifier link shown provides more
 information about this term (see :numref:`ocr_tut_ocr_qual_res_info`).
@@ -204,7 +204,7 @@ Note that the three annotations added above are all biological
 annotations. Many of the other components and variables in the CellML
 potassium channel model deal with biophysical entities and these require
 the use of the OPB ontology (yet to be implemented in OpenCOR). The use
-of composite annotations is also being developed [*]_, such as
+of composite annotations is also being developed [#]_, such as
 “:red:`Ki` :green:`is-the` :red:`concentration` :green:`of` :red:`potassium` :green:`in-the`
 :red:`cytosol` :green:`of-the` :red:`neuron` :green:`of-the` :red:`giant-squid`”, where *concentration*,
 *potassium*, *cytosol*, *neuron* and *giant-squid* are defined by the
@@ -215,21 +215,21 @@ ontologies OPB, ChEBI, GO, FMA and a species ontology, respectively.
 
 .. rubric:: Footnotes
 
-.. [*] Referred to as W3C – see `www.w3.org <http://www.w3.org>`_
+.. [#] Referred to as W3C – see `www.w3.org <http://www.w3.org>`_
 
-.. [*] `www.w3.org/RDF <http://www.w3.org/RDF>`_
+.. [#] `www.w3.org/RDF <http://www.w3.org/RDF>`_
 
-.. [*] For details on the annotation plugin see http://opencor.ws/user/plugins/editing/CellMLAnnotationView.html
+.. [#] For details on the annotation plugin see http://opencor.ws/user/plugins/editing/CellMLAnnotationView.html
 
-.. [*] See http://www.cellml.org/specifications/metadata/ and http://www.cellml.org/specifications/metadata/mcdraft
+.. [#] See http://www.cellml.org/specifications/metadata/ and http://www.cellml.org/specifications/metadata/mcdraft
 
-.. [*] http://co.mbine.org/standards/qualifiers
+.. [#] http://co.mbine.org/standards/qualifiers
 
-.. [*] http://en.wikipedia.org/wiki/Uniform_resource_identifier
+.. [#] http://en.wikipedia.org/wiki/Uniform_resource_identifier
 
-.. [*] http://en.wikipedia.org/wiki/Regular_expression
+.. [#] http://en.wikipedia.org/wiki/Regular_expression
 
-.. [*] This is a project being carried out at the University of Washington, Seattle, using an annotation tool called SEMGEN (...).
+.. [#] This is a project being carried out at the University of Washington, Seattle, using an annotation tool called SEMGEN (...).
 
 .. |image_variable_node| image:: _static/images/variableNode.png
    :height: 12pt

@@ -89,7 +89,7 @@ e.g.
 https://models.physiomeproject.org/exposure/f4b71/hund_rudy_2004_a.cellml/view
 
 The section labelled ‘Model Structure’ contains the journal paper
-abstract and often a diagram of the model [*]_. This is shown for the
+abstract and often a diagram of the model\ [#]_. This is shown for the
 Hund-Rudy 2004 model in :numref:`ocr_tut_hund_2004`. This model, with over 22 separate
 protein model components, is also a good example of why it is important
 to build models from modular components :cite:`14`, and in particular the
@@ -132,7 +132,7 @@ model.
 is included in OpenCOR.
 
 Note that CellML models are available under a Creative Commons
-Attribution 3.0 Unported License [*]_. This means that you are free to:
+Attribution 3.0 Unported License\ [#]_. This means that you are free to:
 
  -  Share — copy and redistribute the material in any medium or format
 
@@ -187,9 +187,9 @@ Biomodels database :cite:`15`.
 
 .. rubric:: Footnotes
 
-.. [*] These are currently hand drawn SVG diagrams but the plan is to automatically generate them from the model annotation and also (at some stage!) to animate them as the model is executed.
+.. [#] These are currently hand drawn SVG diagrams but the plan is to automatically generate them from the model annotation and also (at some stage!) to animate them as the model is executed.
 
-.. [*] `https://creativecommons.org/licenses/by/3.0/ <https://creativecommons.org/licenses/by/3.0/>`_
+.. [#] `https://creativecommons.org/licenses/by/3.0/ <https://creativecommons.org/licenses/by/3.0/>`_
 
 .. |image_variable_node_230| image:: _static/images/bar.png
    :height: 10pt

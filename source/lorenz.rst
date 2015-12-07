@@ -4,7 +4,7 @@ The Lorenz attractor
 ====================
 
 An example of a third order ODE system (i.e. three 1\ :sup:`st` order
-equations) is the *Lorenz equations*  [*]_.
+equations) is the *Lorenz equations*\ [#]_.
 
 .. figure:: _static/images/cellml_lorenz.png
    :name: ocr_tut_cellml_lorenz
@@ -56,7 +56,7 @@ sends it off to the right hand wing of the attractor.
 
 Solutions to the Lorenz equations are organised by the 2D ‘Lorenz
 manifold’. This surface has a very beautiful shape and has become an art
-form – even rendered in crochet! [*]_ (See :numref:`ocr_tut_crotchet`).
+form – even rendered in crochet!\ [#]_ (See :numref:`ocr_tut_crotchet`).
 
 .. figure:: _static/images/crotchet.jpeg
    :name: ocr_tut_crotchet
@@ -88,7 +88,7 @@ in parameter values.
 
 .. rubric:: Footnotes
 
-.. [*] http://en.wikipedia.org/wiki/Lorenz_system
+.. [#] http://en.wikipedia.org/wiki/Lorenz_system
 
-.. [*] http://www.math.auckland.ac.nz/~hinke/crochet/
+.. [#] http://www.math.auckland.ac.nz/~hinke/crochet/
 

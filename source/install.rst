@@ -28,7 +28,7 @@ can be dragged and dropped to the top or bottom of the central area as
 shown in Figure 1(b) or they can be individually undocked or closed. All
 closed panels can be re-displayed by enabling them in the *View* menu,
 or by using the *Tools* menu *Reset All* option. Clicking on
-‘CTRL’ [*]_ & ‘spacebar’ on the Windows version, removes (for less
+‘CTRL’\ [#]_ & ‘spacebar’ on the Windows version, removes (for less
 clutter) or restores these two side panels.
 
 Any of the subpanels (*Physiome Model Repository*, *File Browser*, and
@@ -59,5 +59,5 @@ about developing plugins for OpenCOR is also `available <https://www.opencor.ws/
 
 .. rubric:: Footnotes
 
-.. [*] The ⌘ key being the equivalent on OS X.
+.. [#] The ⌘ key being the equivalent on OS X.
 

@@ -12,13 +12,13 @@ Tutorial on CellML, OpenCOR & the Physiome Model Repository
    This version of the tutorial is undergoing translation from the original source to reStructuredText. Many aspects of formatting and presentation are currently lacking, although being worked on. The original tutorial is available here: :download:`OpenCOR-Tutorial-v17.pdf <resources/OpenCOR-Tutorial-v17.pdf>`.
 
 
-This tutorial shows you how to install and run the OpenCOR [*]_ software
-:cite:`1`, to author and edit CellML models [*]_ :cite:`2` and to use the Physiome
-Model Repository (PMR) [*]_ :cite:`3`. We start by giving a brief background
+This tutorial shows you how to install and run the OpenCOR [#]_ software
+:cite:`1`, to author and edit CellML models [#]_ :cite:`2` and to use the Physiome
+Model Repository (PMR) [#]_ :cite:`3`. We start by giving a brief background
 on the VPH-Physiome project. We then create a simple model, save it as a
 CellML file and run model simulations. We next try opening existing
 CellML models, both from a local directory and from the Physiome Model
-Repository. The various features of CellML [*]_ and OpenCOR are then
+Repository. The various features of CellML [#]_ and OpenCOR are then
 explained in the context of increasingly complex biological models. A
 simple linear first order ODE model and a nonlinear third order model
 are introduced. Ion channel gating models are used to introduce the way
@@ -40,7 +40,7 @@ to modular approaches (model hierarchies) and model annotation.
    This tutorial relies on readers having some background in
    algebra and calculus, but tries to explain all mathematical concepts
    beyond this, along with the physical principles, as they are needed for
-   the development of CellML models. [*]_
+   the development of CellML models. [#]_
 
 .. toctree::
    :maxdepth: 1
@@ -66,10 +66,8 @@ to modular approaches (model hierarchies) and model annotation.
 .. todo::
 
    * Colour background of *CellML Text*
-   * Convert images from screen shots to diagrams in svg format, mostly done three or four left to complete
    * Annotate screen shots with svg for same look and feel
    * *CellML Text* code is not highlighted for all display situations, currently only in environments that are using an adapted version of pygments 
-   * Bar graph not implemented for PMR model categories
    * Tidy up citations and BiBTeX source (possibly use Zotero to manage?)
    * Make horizontal line for footnotes only visible in html output
    * Check external references markup
@@ -80,13 +78,13 @@ to modular approaches (model hierarchies) and model annotation.
 
 .. rubric:: Footnotes
 
-.. [*] OpenCOR is an open source, freely available, C++ desktop application written by Alan Garny at INRIA with funding support from the Auckland Bioengineering Institute (http://www.abi.auckland.ac.nz) and the NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard at the University of Michigan (http://virtualrat.org).
+.. [#] OpenCOR is an open source, freely available, C++ desktop application written by Alan Garny at INRIA with funding support from the Auckland Bioengineering Institute (http://www.abi.auckland.ac.nz) and the NIH-funded Virtual Physiological Rat (VPR) project led by Dan Beard at the University of Michigan (http://virtualrat.org).
 
-.. [*] For an overview and the background of CellML see http://www.cellml.org. This project is led by Poul Nielsen and David (Andre) Nickerson at the Auckland (University) Bioengineering Institute (`ABI <http://www.abi.auckland.ac.nz>`_).
+.. [#] For an overview and the background of CellML see http://www.cellml.org. This project is led by Poul Nielsen and David (Andre) Nickerson at the Auckland (University) Bioengineering Institute (`ABI <http://www.abi.auckland.ac.nz>`_).
 
-.. [*] https://models.physiomeproject.org. The PMR project is led by Tommy Yu at the ABI.
+.. [#] https://models.physiomeproject.org. The PMR project is led by Tommy Yu at the ABI.
 
-.. [*] For details on the specifications of CellML1.0 see http://www.cellml.org/specifications/cellml_1.0.
+.. [#] For details on the specifications of CellML1.0 see http://www.cellml.org/specifications/cellml_1.0.
 
-.. [*] Please send any errors discovered or suggested improvements to p.hunter@auckland.ac.nz.
+.. [#] Please send any errors discovered or suggested improvements to p.hunter@auckland.ac.nz.
 

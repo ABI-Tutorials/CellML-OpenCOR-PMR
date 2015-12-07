@@ -4,7 +4,7 @@ Speed comparisons with MATLAB
 =============================
 
 Solution speed is important for complex computational models and here we
-compare the performance of OpenCOR with MATLAB [*]_. Nine
+compare the performance of OpenCOR with MATLAB\ [#]_. Nine
 representative CellML models were chosen from the PMR model repository.
 For the MATLAB tests we used the MATLAB code, generated automatically
 from CellML, that is available on the PMR site. These comparisons are
@@ -89,12 +89,12 @@ Conclusions
 -----------
 
 For this range of tests, OpenCOR is between 38 and 218 times faster than MATLAB.
-A more extensive evaluation of these results is available on GitHub [*]_.
+A more extensive evaluation of these results is available on GitHub\ [#]_.
 
 ---------------------------
 
 .. rubric:: Footnotes
 
-.. [*] `www.mathworks.com/products/matlab <http://www.mathworks.com/products/matlab>`_
+.. [#] `www.mathworks.com/products/matlab <http://www.mathworks.com/products/matlab>`_
 
-.. [*] `https://github.com/opencor/speedcomparison <https://github.com/opencor/speedcomparison>`_. These tests were carried out by Alan Garny.
+.. [#] `https://github.com/opencor/speedcomparison <https://github.com/opencor/speedcomparison>`_. These tests were carried out by Alan Garny.

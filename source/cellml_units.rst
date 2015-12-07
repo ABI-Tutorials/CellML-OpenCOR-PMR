@@ -32,9 +32,9 @@ Entropy :math:`S` (:math:`J.K^{-1}`) is a measure of the number of
 microstates available to a system, as defined by Boltzmann’s equation
 :math:`S = k_{B}\text{lnW}`, where :math:`W` is the number of ways of
 arranging a given distribution of microstates of a system and
-:math:`k_{B}` is Boltzmann’s constant [*]_. The driving force for ion
+:math:`k_{B}` is Boltzmann’s constant\ [#]_. The driving force for ion
 movement is the dispersal of energy into a more probable distribution
-(see :numref:`ocr_tut_dist_ust`; cf. the second law of thermodynamics [*]_).
+(see :numref:`ocr_tut_dist_ust`; cf. the second law of thermodynamics\ [#]_).
 
 The energy change :math:`\Delta q` associated with this change of
 entropy :math:`\Delta S` at temperature :math:`T` is
@@ -42,7 +42,7 @@ entropy :math:`\Delta S` at temperature :math:`T` is
 
 For a given volume of fluid the number of microstates :math:`W`
 available to a solute (and hence the entropy of the solute) at a high
-concentration is less than that for a low concentration [*]_. The
+concentration is less than that for a low concentration\ [#]_. The
 energy difference driving ion movement from a high ion concentration
 :math:`\left\lbrack Y^{+} \right\rbrack_{i}` (lower entropy) to a lower
 ion concentration :math:`\left\lbrack Y^{+} \right\rbrack_{o}` (higher
@@ -58,7 +58,7 @@ or
 
 :math:`R = k_{B}N_{A} ≈ 1.34x10^{-23} (J.K^{-1}) \text{x}
 6.02x10^{23} (mol^{-1}) ≈ 8.4 (J.mol^{-1}K^{-1})`
-is the ‘universal gas constant’ [*]_.
+is the ‘universal gas constant’\ [#]_.
 At 25°C (298K), :math:`\text{RT}` ≈ 2.5 :math:`kJ.mol^{-1}`.
 
 .. figure:: _static/images/balance_forces.png
@@ -180,9 +180,9 @@ the way in which CellML deals with units.
 Note that the decision to deal with units in CellML, rather than just
 ignoring them or insisting that all equations are represented in
 dimensionless form, was made in order to be able to be able to check the
-physical consistency of all terms in each equation. [*]_
+physical consistency of all terms in each equation\ [#]_.
 
-There are seven base physical quantities defined by the *International d’Unités* (SI) [*]_.  These are (with their SI units):
+There are seven base physical quantities defined by the *International d’Unités* (SI)\ [#]_.  These are (with their SI units):
 
 -  **length** (meter or m)
 
@@ -312,24 +312,24 @@ show now for the neural potassium and sodium ion channels.
 
 .. rubric:: Footnotes
 
-.. [*]
+.. [#]
    The Brownian motion of individual molecules has energy :math:`k_{B}T`
    (J), where the Boltzmann constant :math:`k_{B}` is approximately
    :math:`1.34x10^{-23}` (:math:`J.K^{-1}`). At 25°C, or 298K, :math:`k_{B}T`
    = :math:`4.10^{-21}` (J) is the minimum amount of energy to contain a
    ‘bit’ of information at that temperature.
 
-.. [*]
+.. [#]
    The *first law of thermodynamics* states that energy is conserved,
    and the *second law* (that natural processes are accompanied by an
    increase in entropy of the universe) deals with the distribution of
    energy in space.
 
-.. [*]
+.. [#]
    At infinitely high concentration the specified volume is jammed
    packed with solute and the entropy is zero.
 
-.. [*]
+.. [#]
    :math:`N_{A}` is Avogadro’s number (:math:`6.023x10^{23}`) and is the
    scaling factor between molecular and macroscopic processes.
    Boltzmann’s constant :math:`k_{B}` and electron charge *e* operate at
@@ -337,7 +337,7 @@ show now for the neural potassium and sodium ion channels.
    is via the universal gas constant :math:`R = k_{B}N_{A}` and
    Faraday’s constant :math:`F = eN_{A}`.
 
-.. [*]
+.. [#]
    It is well accepted in engineering analysis that thinking about and
    dealing with units is a key aspect of modelling. Taking the ratio of
    dimensionally consistent terms provides non-dimensional numbers which
@@ -345,6 +345,6 @@ show now for the neural potassium and sodium ion channels.
    the interests of modelling simplicity. We investigate this idea
    further in a later section.
 
-.. [*] http://en.wikipedia.org/wiki/International_System_of_Units
+.. [#] http://en.wikipedia.org/wiki/International_System_of_Units
 
 

@@ -40,7 +40,7 @@ The final steady state solution as :math:`t \rightarrow \infty` is
 At :math:`t = \tau` , :math:`y\left( t \right)` has therefore fallen to
 :math:`\frac{1}{e}` (or about 37%) of the difference between the initial
 (:math:`y\left( 0 \right)`) and final steady state (
-:math:`y\left( \infty \right)`) values [*]_.
+:math:`y\left( \infty \right)`) values\ [#]_.
 
 Choosing parameters :math:`a = \tau = 1;b = 2` and
 :math:`y\left( 0 \right) = 5`, the *CellML Text* for this model is
@@ -107,5 +107,5 @@ Figure 8.
 
 .. rubric:: Footnotes
 
-.. [*] It is often convenient to write a first order equation as :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that its solution is expressed in terms of time constant :math:`\tau`, initial condition :math:`y_{0}` and steady state solution :math:`y_{\infty}` as: :math:`y\left( t \right) = y_{\infty} + \left( y_{0} - y_{\infty} \right).e^{- \frac{t}{\tau}}`.
+.. [#] It is often convenient to write a first order equation as :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that its solution is expressed in terms of time constant :math:`\tau`, initial condition :math:`y_{0}` and steady state solution :math:`y_{\infty}` as: :math:`y\left( t \right) = y_{\infty} + \left( y_{0} - y_{\infty} \right).e^{- \frac{t}{\tau}}`.
 

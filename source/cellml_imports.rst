@@ -18,7 +18,7 @@ the peripheral and central portions of the nerve cell membrane"*.
 Cable equation
 --------------
 
-The *cable equation* was developed in 1890 [*]_ to predict the
+The *cable equation* was developed in 1890\ [#]_ to predict the
 degradation of an electrical signal passing along the transatlantic
 cable. It is derived as follows:
 
@@ -98,7 +98,7 @@ decline of the Na channel conductance and the increasing K channel
 conductance as the voltage drops rapidly repolarises the membrane to its
 resting potential of -85mV (see :numref:`ocr_tut_cur_volt_traj`).
 
-We can neglect [*]_ the term
+We can neglect\ [#]_ the term
 (:math:`- \frac{1}{r_{a}}\frac{\partial^{2}V}{\partial x^{2}}`) (the
 rate of change of axial current along the cable) for the present models
 since we assume the whole cell is clamped with an axially uniform
@@ -314,6 +314,6 @@ when the file is saved.
 
 .. rubric:: Footnotes
 
-.. [*] http://en.wikipedia.org/wiki/Cable_theory
+.. [#] http://en.wikipedia.org/wiki/Cable_theory
 
-.. [*] This term is needed when determining the propagation of the action potential, including its wave speed.
+.. [#] This term is needed when determining the propagation of the action potential, including its wave speed.

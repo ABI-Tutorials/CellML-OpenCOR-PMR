@@ -50,7 +50,7 @@ with time constant :math:`\tau_{n} = \frac{1}{\alpha_{n} + \beta_{n}}`
 The main difference from the gating model in our previous example is
 that Hodgkin and Huxley found it necessary to make the rate constants
 functions of the membrane potential :math:`V` (see :numref:`ocr_tut_volt_deps_gates`) as
-follows\ [*]_:
+follows\ [#]_:
 
 :math:`\alpha_{n} = \frac{- 0.01\left( V + 65 \right)}{e^{\frac{- \left( V + 65 \right)}{10}} - 1}`;
 :math:`\beta_{n} = 0.125e^{\frac{- \left( V + 75 \right)}{80}}` .
@@ -105,7 +105,7 @@ need to also define the component maps as indicated in the *CellML Text*
 view on the next page.
 
 The *CellML Text* code for the potassium ion channel model is as
-follows [*]_:
+follows\ [#]_:
 
 :download:`Potassium_ion_channel.cellml <resources/potassium_ion_channel.cellml>`
 
@@ -221,7 +221,7 @@ Note that several other features have been added:
 -  the use of :math:`\left\{ pub:in \right\}` and
    :math:`\left\{ pub:out \right\}` to indicate which variables are
    either supplied as inputs to a component or produced as outputs from
-   a component [*]_. Any variables not labelled as *in* or *out* are
+   a component\ [#]_. Any variables not labelled as *in* or *out* are
    local variables or parameters defined and used only within that
    component. Public (and private) interfaces are discussed in more
    detail in the next section.
@@ -295,8 +295,8 @@ action potential.
 
 .. rubric:: Footnotes
 
-.. [*] The original expression in the HH paper used :math:`\alpha_n\ =\ \frac{0.01(v+10)}{e^{\frac{(v+10)}{10}}-1}` and :math:`\beta_n\ =\ 0.125e^{\frac{v}{80}}`, where :math:`v` is defined relative to the resting potential (:math:`-75\text{mV}`) with +ve corresponding to +ve *inward* current and :math:`v\ =\ -(V+75)`.
+.. [#] The original expression in the HH paper used :math:`\alpha_n\ =\ \frac{0.01(v+10)}{e^{\frac{(v+10)}{10}}-1}` and :math:`\beta_n\ =\ 0.125e^{\frac{v}{80}}`, where :math:`v` is defined relative to the resting potential (:math:`-75\text{mV}`) with +ve corresponding to +ve *inward* current and :math:`v\ =\ -(V+75)`.
 
-.. [*] From here on we use a coloured background to identify code blocks that relate to a particular CellML construct: :red:`units`, :green:`components`, :orange:`mappings` and :purple:`encapsulation groups` and later :blue:`imports`.
+.. [#] From here on we use a coloured background to identify code blocks that relate to a particular CellML construct: :red:`units`, :green:`components`, :orange:`mappings` and :purple:`encapsulation groups` and later :blue:`imports`.
 
-.. [*] Note that a later version of CellML will remove the terms in and out since it is now thought that the direction of information flow should not be constrained.
+.. [#] Note that a later version of CellML will remove the terms in and out since it is now thought that the direction of information flow should not be constrained.

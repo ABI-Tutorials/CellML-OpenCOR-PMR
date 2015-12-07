@@ -70,7 +70,7 @@ mS, currents are in µA and capacitance is in µF).
    g_{K1} &=&\ 1.2e^{\frac{- \left( V + 90 \right)}{50}} + 0.015e^{\frac{\left( V + 90 \right)}{60}}
 
 **Inward rectifying** :math:`\mathbf{i}_{\mathbf{K}\mathbf{2}}`
-**potassium channel** (voltage and time dependent)\ [*]_
+**potassium channel** (voltage and time dependent)\ [#]_
 
 .. math::
 
@@ -99,7 +99,7 @@ time dependent change in conductance than in the HH potassium channel.
    i_{\text{leak}} = g_{L}\left( V - E_{L} \right), \text{ with }
    E_{L} = - 60mV \text{ and } g_{L} = 0.075\text{mS}.
 
-**Membrane equation**\ [*]_
+**Membrane equation**\ [#]_
 
 .. math::
 
@@ -465,6 +465,6 @@ files that are imported into a composite model.
 
 .. rubric:: Footnotes
 
-.. [*] The second inwardly rectifying channel model was later replaced with two currents and , so that modern cardiac cell models do not include but they do include the inward rectifier (see later section).
+.. [#] The second inwardly rectifying channel model was later replaced with two currents and , so that modern cardiac cell models do not include but they do include the inward rectifier (see later section).
 
-.. [*] The Purkinje fibre membrane capacitance is 12 times higher than that found for squid axon. The use of :math:`\mu`\ F ensures unit consistency with ms, mV and  A since F is equivalent to :math:`\text{C.V}^{-1}` or :math:`\text{s.A.V}^{-1}` and therefore  A/ F or  A/(:math:`\text{ms. A. mV}^{-1}`) on the RHS matches mV/ms on the LHS).
+.. [#] The Purkinje fibre membrane capacitance is 12 times higher than that found for squid axon. The use of :math:`\mu`\ F ensures unit consistency with ms, mV and  A since F is equivalent to :math:`\text{C.V}^{-1}` or :math:`\text{s.A.V}^{-1}` and therefore  A/ F or  A/(:math:`\text{ms. A. mV}^{-1}`) on the RHS matches mV/ms on the LHS).

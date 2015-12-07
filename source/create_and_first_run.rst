@@ -5,7 +5,7 @@ Create and run a simple CellML model: editing and simulation
 ============================================================
 
 In this example we create a simple CellML model and run it. The model is
-the Van der Pol oscillator [*]_ defined by the second order equation
+the Van der Pol oscillator\ [#]_ defined by the second order equation
 
 .. math::
 
@@ -14,7 +14,7 @@ the Van der Pol oscillator [*]_ defined by the second order equation
 with initial conditions
 :math:`x = - 2;\ \frac{\text{dx}}{\text{dt}} = 0`. The parameter
 :math:`\mu` controls the magnitude of the damping term. To create a
-CellML model we convert this to two first order equations [*]_ by
+CellML model we convert this to two first order equations\ [#]_ by
 defining the velocity :math:`\frac{\text{dx}}{\text{dt}}` as a new
 variable :math:`y`:
 
@@ -50,11 +50,11 @@ where the code should go:
        enddef;
    enddef;
 
-Things to note [*]_ are: 
+Things to note\ [#]_ are: 
 
  i. the closing semicolon at the end of each line (apart from the first two *def* statements that are opening a CellML construct);
  #. the need to indicate dimensions for each variable and constant (all dimensionless in this example – but more on dimensions later);
- #. the use of *ode(x,t)* to indicate a first order [*]_ ODE in *x* and *t*
+ #. the use of *ode(x,t)* to indicate a first order\ [#]_ ODE in *x* and *t*
  #. the use of the squaring function *sqr(x)* for :math:`x^{2}`, and 
  #. the use of ‘//’ to indicate a comment.
 
@@ -80,7 +80,7 @@ OpenCOR.
 Positioning the cursor over either of the ODEs renders the maths in
 standard form above the code as shown in :numref:`ocr_tut_ren_math_eqn`.
 
-Note that CellML is a declarative language [*]_ (unlike say C, Fortran
+Note that CellML is a declarative language\ [#]_ (unlike say C, Fortran
 or Matlab, which are procedural languages) and therefore the order of
 statements does not affect the solution. For example, the order of the
 ODEs could equally well be
@@ -106,7 +106,7 @@ several CellML models to create a composite model.
    CellML code.
 
 Now save the code to a local folder using *Save* under the *File* menu (:menuselection:`File --> Save`)
-(or ‘CTRL-S’) and choosing *.cellml* as the file format [*]_. With the
+(or ‘CTRL-S’) and choosing *.cellml* as the file format\ [#]_. With the
 CellML model saved various views, accessed via the tabs on the right
 hand edge of the window, become available. One is the *CellML Text* view
 (the view used to enter the code above); another is the *Raw CellML*
@@ -162,7 +162,7 @@ This area is used to configure the solver that will run the simulation.
    appropriate to the type of equations you are solving if you choose
    to. For example, CVODE for ODE (ordinary differential equation)
    problems, IDA for DAE (differential algebraic equation) problems,
-   KINSOL for NLA (non-linear algebraic) problems [*]_.
+   KINSOL for NLA (non-linear algebraic) problems\ [#]_.
 
 -  Other parameters for the chosen solver – e.g. *Maximum step*,
    *Maximum number of steps*, and *Tolerance* settings for CVODE and
@@ -170,7 +170,7 @@ This area is used to configure the solver that will run the simulation.
    the documentation for the particular solver.
 
 Note: these can all be left at their default values for our simple demo
-problem [*]_.
+problem\ [#]_.
 
 Graphs Panel
 ============
@@ -268,21 +268,21 @@ sensitive.
 
 .. rubric:: Footnotes
 
-.. [*] http://en.wikipedia.org/wiki/Van_der_Pol_oscillator
+.. [#] http://en.wikipedia.org/wiki/Van_der_Pol_oscillator
 
-.. [*] Equations :eq:`first_order_eqns` and :eq:`first_order_eqns_2` are equations that are implemented directly in OpenCOR.
+.. [#] Equations :eq:`first_order_eqns` and :eq:`first_order_eqns_2` are equations that are implemented directly in OpenCOR.
 
-.. [*] For more on the *CellML Text* view see http://opencor.ws/user/plugins/editing/CellMLTextView.html.
+.. [#] For more on the *CellML Text* view see http://opencor.ws/user/plugins/editing/CellMLTextView.html.
 
-.. [*] Note that a more elaborated version of this is ‘ode(x, t, 1{dimensionless})’ and a 2\ :sup:`nd` order ODE can be specified as ‘ode(x, t, 2{dimensionless})’. 1\ :sup:`st` order is assumed as the default.
+.. [#] Note that a more elaborated version of this is ‘ode(x, t, 1{dimensionless})’ and a 2\ :sup:`nd` order ODE can be specified as ‘ode(x, t, 2{dimensionless})’. 1\ :sup:`st` order is assumed as the default.
 
-.. [*] Note also that the mathematical expressions in CellML are based on MathML – see www.w3.org/Math/
+.. [#] Note also that the mathematical expressions in CellML are based on MathML – see www.w3.org/Math/
 
-.. [*] Note that ‘.cellml’ is not strictly required but is best practice.
+.. [#] Note that ‘.cellml’ is not strictly required but is best practice.
 
-.. [*] Other solvers include forward Euler, Heun and Runga-Kutta solvers (RK2 and RK4).
+.. [#] Other solvers include forward Euler, Heun and Runga-Kutta solvers (RK2 and RK4).
 
-.. [*] Note that a model that requires a stimulus protocol should have the maximum step value of the CVODE solver set to the length of the stimulus.
+.. [#] Note that a model that requires a stimulus protocol should have the maximum step value of the CVODE solver set to the length of the stimulus.
 
 .. |image_run| image:: _static/images/sim_panel_btn_1.png
    :height: 12pt
