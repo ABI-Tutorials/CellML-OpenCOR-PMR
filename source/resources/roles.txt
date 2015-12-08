@@ -1,5 +1,8 @@
 .. role:: red
+   :class: red
+
 .. role:: purple
+
 .. role:: orange
 .. role:: green
 .. role:: blue

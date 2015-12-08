@@ -58,7 +58,7 @@ Choosing parameters :math:`a = \tau = 1;b = 2` and
        enddef;
    enddef;
 
-The solution by OpenCOR is shown in :numref:`Fig. %s(a)<ocr_tut_out_first_ord>` for these parameters (a
+The :red:`solution` by OpenCOR is shown in :numref:`Fig. %s(a)<ocr_tut_out_first_ord>` for these parameters (a
 decaying exponential) and in :numref:`Fig. %s(b)<ocr_tut_out_first_ord>` for parameters
 :math:`a = 1;b = 5` and :math:`y\left( 0 \right) = 2` (an inverted
 decaying exponential). Note the simulation panel with *Ending
@@ -74,10 +74,10 @@ point*\ =10, *Point interval*\ =0.1. Try putting :math:`a = - 1`.
    :math:`y\left( 0 \right) = 5`, and (b) :math:`a = 1;b = 5` and
    :math:`y\left( 0 \right) = 2`. The :red:`red arrow` indicates the point
    at which the trace reaches the time constant :math:`\tau`
-   (:math:`e^{- 1}` or ≈37% of the difference between the initial and final
+   (:math:`e^{- 1}` or :math:`\approx 37`% of the difference between the initial and final
    solution values). The black arrows indicate the initial and final
    (steady state) solutions. Note that the parameters on the left have been
-   reset to their initial values for this figure – normally they would be
+   reset to their initial values for this figure - normally they would be
    at their final solution values.
 
 These two solutions have the same exponential time constant

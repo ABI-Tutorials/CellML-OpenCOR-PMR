@@ -221,10 +221,16 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-'preamble': '\\RequirePackage{graphicx}\n\\DeclareRobustCommand{\\cmdkey}{\\raisebox{-.035em}{\\includegraphics[height=.75em]{command}}}\n\\DeclareUnicodeCharacter{2318}{\\cmdkey~}',
+'preamble': '''
+\\RequirePackage{graphicx}
+\\DeclareRobustCommand{\\cmdkey}{\\raisebox{-.035em}{\\includegraphics[height=.75em]{command}}}
+\\DeclareUnicodeCharacter{2318}{\\cmdkey~}
+\\newcommand{\\docutilsrolered}[1]{\\textcolor{red}{#1}}
+\\renewcommand{\\DUspan}[2]{#1, #2}
+''',
 
 # Latex figure (float) alignment
-#'figure_align': 'htbp',
+'figure_align': 'H',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
