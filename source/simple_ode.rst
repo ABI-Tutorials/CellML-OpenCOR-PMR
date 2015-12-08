@@ -10,7 +10,7 @@ A simple first order ODE
    :name: ocr_tut_sol_1order
    :alt: Solution of 1st order equation
    :align: right
-   :figwidth: 45%
+   :figwidth: 8cm
    
    Solution of 1\ :sup:`st` order equation.
    
