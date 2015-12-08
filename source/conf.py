@@ -215,13 +215,13 @@ numfig = True
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '\\RequirePackage{graphicx}\n\\DeclareRobustCommand{\\cmdkey}{\\raisebox{-.035em}{\\includegraphics[height=.75em]{command}}}\n\\DeclareUnicodeCharacter{2318}{\\cmdkey~}',
 
 # Latex figure (float) alignment
 #'figure_align': 'htbp',
@@ -234,6 +234,9 @@ latex_documents = [
   (master_doc, 'OpenCORTutorial.tex', u'OpenCOR Tutorial',
    u'Peter Hunter', 'manual'),
 ]
+
+# extra files to copy over
+latex_additional_files = ['resources/latex/applekeys/command.pdf']
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
