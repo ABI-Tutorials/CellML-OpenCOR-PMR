@@ -65,18 +65,19 @@ mS, currents are in µA and capacitance is in µF).
 **potassium channel** (voltage dependent only)
 
 .. math::
-   i_{K1} &=&\ g_{K1}\left( V - E_{K} \right),\text{ with }
+
+   i_{K1} &=\ g_{K1}\left( V - E_{K} \right),\text{ with }
    E_{K} = \frac{\text{RT}}{\text{zF}}ln\frac{\left\lbrack K^{+} \right\rbrack_{o}}{\left\lbrack K^{+} \right\rbrack_{i}} = 25ln\frac{2.5}{140} = - 100\text{mV}. \\
-   g_{K1} &=&\ 1.2e^{\frac{- \left( V + 90 \right)}{50}} + 0.015e^{\frac{\left( V + 90 \right)}{60}}
+   g_{K1} &=\ 1.2e^{\frac{- \left( V + 90 \right)}{50}} + 0.015e^{\frac{\left( V + 90 \right)}{60}}
 
 **Inward rectifying** :math:`\mathbf{i}_{\mathbf{K}\mathbf{2}}`
 **potassium channel** (voltage and time dependent)\ [#]_
 
 .. math::
 
-   i_{K2} &=&\ g_{K2}\left( V - E_{K} \right) \\
-   g_{K2} &=&\ 1.2n^{4} \\
-   \frac{\text{dn}}{\text{dt}} &=&\ \alpha_{n}\left( 1 - n \right) - \beta_{n}\text{.n},
+   i_{K2} &=\ g_{K2}\left( V - E_{K} \right) \\
+   g_{K2} &=\ 1.2n^{4} \\
+   \frac{\text{dn}}{\text{dt}} &=\ \alpha_{n}\left( 1 - n \right) - \beta_{n}\text{.n},
    \text{ where } \alpha_{n} = \frac{- 0.0001\left( V + 50 \right)}{e^{\frac{- \left( V + 50 \right)}{10}} - 1} \text{ and } \beta_{n} = 0.002e^{\frac{- \left( V + 90 \right)}{80}}.
 
 Note that the rate constants here reflect a much slower onset of the
@@ -86,11 +87,11 @@ time dependent change in conductance than in the HH potassium channel.
 
 .. math::
 
-   i_{\text{Na}} &=&\ \left( g_{\text{Na}} + 140 \right)\left( V - E_{\text{Na}} \right), &\text{ with }& E_{\text{Na}} = \frac{\text{RT}}{\text{zF}}ln\frac{\left\lbrack \text{Na}^{+} \right\rbrack_{o}}{\left\lbrack \text{Na}^{+} \right\rbrack_{i}} = 25ln\frac{140}{30} = 35\text{mV}. \\
-   g_{\text{Na}} &=&\ m^{3}\text{h.}g_{Na\_ max} &\text{ where }& g_{Na\_ max} = 400\text{mS}. \\
-   \frac{\text{dm}}{\text{dt}} &=&\ \alpha_{m}\left( 1 - m \right) - \beta_{m}\text{.m}, &\text{ where }& \alpha_{m} = \frac{- 0.1\left( V + 48 \right)}{e^{\frac{- \left( V + 48 \right)}{15}} - 1} \text{ and } \beta_{m} = \frac{0.12\left( V + 8 \right)}{e^{\frac{\left( V + 8 \right)}{5}} - 1} \\
-   \frac{\text{dh}}{\text{dt}} &=&\ \alpha_{h}\left( 1 - h \right) - \beta_{h}\text{.h},
-   &\text{ where }& \alpha_{h} = 0.17e^{\frac{- \left( V + 90 \right)}{20}}\text{ and } \beta_{h} = \frac{1}{1 + e^{\frac{- \left( V + 42 \right)}{10}}}
+   i_{\text{Na}} &=\ \left( g_{\text{Na}} + 140 \right)\left( V - E_{\text{Na}} \right), \text{ with } E_{\text{Na}} = \frac{\text{RT}}{\text{zF}}ln\frac{\left\lbrack \text{Na}^{+} \right\rbrack_{o}}{\left\lbrack \text{Na}^{+} \right\rbrack_{i}} = 25ln\frac{140}{30} = 35\text{mV}. \\
+   g_{\text{Na}} &=\ m^{3}\text{h.}g_{Na\_ max} \text{ where } g_{Na\_ max} = 400\text{mS}. \\
+   \frac{\text{dm}}{\text{dt}} &=\ \alpha_{m}\left( 1 - m \right) - \beta_{m}\text{.m}, \text{ where } \alpha_{m} = \frac{- 0.1\left( V + 48 \right)}{e^{\frac{- \left( V + 48 \right)}{15}} - 1} \text{ and } \beta_{m} = \frac{0.12\left( V + 8 \right)}{e^{\frac{\left( V + 8 \right)}{5}} - 1} \\
+   \frac{\text{dh}}{\text{dt}} &=\ \alpha_{h}\left( 1 - h \right) - \beta_{h}\text{.h},
+   \text{ where } \alpha_{h} = 0.17e^{\frac{- \left( V + 90 \right)}{20}}\text{ and } \beta_{h} = \frac{1}{1 + e^{\frac{- \left( V + 42 \right)}{10}}}
 
 **Leakage channel**
 
