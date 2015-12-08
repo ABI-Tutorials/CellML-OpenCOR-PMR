@@ -341,6 +341,3 @@ show now for the neural potassium and sodium ion channels.
 
 .. [#] http://en.wikipedia.org/wiki/International_System_of_Units
 
-.. only:: html
-
-   .. |esdlkfjsdjf| elelleelel
