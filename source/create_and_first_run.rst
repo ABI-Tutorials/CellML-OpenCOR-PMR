@@ -59,8 +59,6 @@ Things to note\ [#]_ are:
  #. the use of ‘//’ to indicate a comment.
 
 A partial list of mathematical functions available for OpenCOR is:
-:math:`\DeclareMathOperator{\csch}{csch}`
-:math:`\DeclareMathOperator{\sech}{sech}`
 
 +---------------------+------------+----------------------+----------+---------------------+----------+----------------------+----------+------------------------------+----------+--------------------------+----------+
 | :math:`x^{2}`       | sqr(x)     | :math:`\sqrt{x}`     | sqrt(x)  | :math:`\ln x`       | ln(x)    | :math:`\log_{10}x`   | log(x)   | :math:`e^{x}`                | exp(x)   | :math:`x^{a}`            | pow(x,a) |

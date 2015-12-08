@@ -221,10 +221,14 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '''
+\DeclareUnicodeCharacter{2318}{\chi}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+''',
 
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
+#Latex figure (float) alignment (original 'htbp')
+'figure_align': 'H'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

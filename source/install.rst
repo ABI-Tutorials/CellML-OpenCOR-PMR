@@ -59,7 +59,7 @@ about developing plugins for OpenCOR is also `available <https://www.opencor.ws/
 
 .. rubric:: Footnotes
 
-.. [#] The |cmd| key being the equivalent on OS X.
+.. [#] The cmd key being the equivalent on OS X.
 
-.. |cmd| unicode:: U+02318
+.. |cmd| unicode:: U+2318
 
