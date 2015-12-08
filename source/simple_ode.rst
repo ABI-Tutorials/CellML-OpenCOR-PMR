@@ -72,7 +72,7 @@ point*\ =10, *Point interval*\ =0.1. Try putting :math:`a = - 1`.
    OpenCOR output :math:`y\left( t \right)` for the simple
    ODE model with parameters (a) :math:`a = 1;b = 2` and
    :math:`y\left( 0 \right) = 5`, and (b) :math:`a = 1;b = 5` and
-   :math:`y\left( 0 \right) = 2`. The :red:`red arrow` indicates the point
+   :math:`y\left( 0 \right) = 2`. The red arrow indicates the point
    at which the trace reaches the time constant :math:`\tau`
    (:math:`e^{- 1}` or :math:`\approx 37`% of the difference between the initial and final
    solution values). The black arrows indicate the initial and final
@@ -99,7 +99,7 @@ Figure 8.
    
    The **exponential curve** representing the naturally
    occurring radioactive decay explained by the New Zealand Noble laureate
-   Sir Ernest Rutherford - best known for ‘splitting the atom’. This may be
+   Sir Ernest Rutherford - best known for 'splitting the atom'. This may be
    the only bank note depicting the mathematical solution of a first order
    ODE.
 
@@ -108,4 +108,5 @@ Figure 8.
 .. rubric:: Footnotes
 
 .. [#] It is often convenient to write a first order equation as :math:`\tau\frac{\text{dy}}{\text{dt}} = - y + y_{\infty}`, so that its solution is expressed in terms of time constant :math:`\tau`, initial condition :math:`y_{0}` and steady state solution :math:`y_{\infty}` as: :math:`y\left( t \right) = y_{\infty} + \left( y_{0} - y_{\infty} \right).e^{- \frac{t}{\tau}}`.
+
 

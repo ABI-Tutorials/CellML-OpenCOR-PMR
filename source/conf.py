@@ -227,6 +227,8 @@ latex_elements = {
 \\DeclareUnicodeCharacter{2318}{\\cmdkey~}
 \\newcommand{\\docutilsrolered}[1]{\\textcolor{red}{#1}}
 \\renewcommand{\\DUspan}[2]{#1, #2}
+\\DeclareMathOperator{\\csch}{csch}
+\\DeclareMathOperator{\\sech}{sech}
 ''',
 
 # Latex figure (float) alignment

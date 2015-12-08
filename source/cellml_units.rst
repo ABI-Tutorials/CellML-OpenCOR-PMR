@@ -8,7 +8,7 @@ A good example of a model based on a first order equation is the one
 used by Hodgkin and Huxley [10] to describe the gating behaviour of an
 ion channel (see also next three sections). Before we describe the
 gating behaviour of an ion channel, however, we need to explain the
-concepts of the ‘Nernst potential’ and channel conductance.
+concepts of the 'Nernst potential' and channel conductance.
 
 An ion channel is a protein or protein complex embedded in the bilipid
 membrane surrounding a cell and containing a pore through which an ion
@@ -23,8 +23,7 @@ driving an ion through the pore is calculated from the change in
    :name: ocr_tut_dist_ust
    :alt: Distribution of microstates
    :align: right
-   :figwidth: 30%
-   :width: 100%
+   :figwidth: 300
    
    Distribution of microstates in a system [11]. The 16 particles in a confined region (left) have only one possible arrangement (W = 1) and    therefore zero entropy (:math:`k_{B}\text{lnW}=0`). When the barrier is removed and the number of possible locations for each particle increases 4x (right), the number of possible arrangements for the 16 particles increases by 416 and the increase in entropy is therefore :math:`ln(416)` or :math:`16ln4`. The thermal energy (temperature) of the previously confined particles on the left has been redistributed in space to achieve a more probable (higher entropy) state. If we now added more particles to the container on the right, the concentration would increase and the entropy would decrease. 
    
@@ -56,32 +55,31 @@ or
 :math:`\Delta Q = RT\ln\frac{\left\lbrack Y^{+} \right\rbrack_{o}}{\left\lbrack Y^{+} \right\rbrack_{i}}`
 (:math:`J.mol^{-1}`).
 
-:math:`R = k_{B}N_{A} ≈ 1.34x10^{-23} (J.K^{-1}) \text{x}
-6.02x10^{23} (mol^{-1}) ≈ 8.4 (J.mol^{-1}K^{-1})`
-is the ‘universal gas constant’\ [#]_.
-At 25°C (298K), :math:`\text{RT}` ≈ 2.5 :math:`kJ.mol^{-1}`.
+:math:`R = k_{B}N_{A} \approx 1.34x10^{-23} (J.K^{-1}) \text{x}
+6.02x10^{23} (mol^{-1}) \approx 8.4 (J.mol^{-1}K^{-1})`
+is the 'universal gas constant'\ [#]_.
+At 25°C (298K), :math:`\text{RT} \approx 2.5 kJ.mol^{-1}`.
 
 .. figure:: _static/images/balance_forces.png
    :name: ocr_tut_bal_force
    :alt: Balance of entropic and electrostatic forces
    :align: right
-   :figwidth: 30%
-   :width: 100%
+   :figwidth: 250
    
    The balance between :purple:`entropic` and :red:`electrostatic` forces determines the Nernst potential.
    
 Every positively charged ion that crosses the membrane raises the
 potential difference and produces an electrostatic driving force that
 opposes the entropic force (see :numref:`ocr_tut_bal_force`). To move an electron of
-charge *e* (:math:`≈1.6x10^{-19}` C) through a voltage change of
+charge *e* (:math:`\approx 1.6x10^{-19}` C) through a voltage change of
 :math:`\Delta\phi` (V) requires energy :math:`e\Delta\phi` (J) and
 therefore the energy needed to move an ion :math:`Y^{+}` of valence
 *z=1* (the number of charges per ion) through a voltage change of
 :math:`\Delta\phi` is :math:`\text{ze}\Delta\phi`
 (:math:`J.ion^{-1}`) or
-:math:`\text{ze}N_{A}\Delta\phi` (:math:`J.mol^{-1}`). Using Faraday’s
+:math:`\text{ze}N_{A}\Delta\phi` (:math:`J.mol^{-1}`). Using Faraday's
 constant :math:`F = eN_{A}`, where
-:math:`F ≈ 0.96x10^{5} C.mol^{-1}`, the change in energy
+:math:`F \approx 0.96x10^{5} C.mol^{-1}`, the change in energy
 density at the macroscopic scale is :math:`\text{zF}\Delta\phi`
 (:math:`J.mol^{-1}`).
 
@@ -94,17 +92,15 @@ force associated with charge movement:
 :math:`\Delta\phi = E_{Y} = \frac{\text{RT}}{\text{zF}}\ln\frac{\left\lbrack Y^{+} \right\rbrack_{o}}{\left\lbrack Y^{+} \right\rbrack_{i}}`
 (:math:`J.C^{-1}` or V)
 
-where :math:`E_{Y}` is the ‘equilibrium’ or ‘Nernst’ potential for
+where :math:`E_{Y}` is the 'equilibrium' or 'Nernst' potential for
 :math:`Y^{+}`. At 25°C (298K),
-:math:`\frac{\text{RT}}{F} = \frac{2.5x10^{3}\ }{0.96x10^{5}}`
-(:math:`J.C^{-1}`) ≈ 25mV.
+:math:`\frac{\text{RT}}{F} = \frac{2.5x10^{3}\ }{0.96x10^{5}} (J.C^{-1}) \approx 25mV`.
 
 .. figure:: _static/images/open_ch_linear_iv.png
    :name: ocr_tut_open_ch_iv
    :alt: Open channel linear IV
    :align: right
-   :figwidth: 30%
-   :width: 100%
+   :figwidth: 250
    
    Open channel linear current-voltage relation
    
@@ -115,7 +111,7 @@ Nernst potential for that ion:
 
 :math:`{\overset{\overline{}}{i}}_{Y}\mathbf{=}{\overset{\overline{}}{g}}_{Y}\left( V - E_{Y} \right)`.
 
-This defines a linear current-voltage relation (‘Ohms law’) as shown in
+This defines a linear current-voltage relation ('Ohms law') as shown in
 :numref:`ocr_tut_open_ch_iv`. The gates to be discussed below modify this open channel
 conductance.
 
@@ -123,8 +119,7 @@ conductance.
    :name: ocr_tut_ion_ch_gating
    :alt: Ion channel gating kinetics
    :align: right
-   :figwidth: 30%
-   :width: 100%
+   :figwidth: 250
    
    Ion channel gating kinetics. y is the fraction of gates in the open state. α_y and β_y  are the rate constants for opening and closing, respectively.
    
@@ -132,8 +127,7 @@ conductance.
    :name: ocr_tut_trans_gate_beh
    :alt: Transient gate behaviour
    :align: right
-   :figwidth: 30%
-   :width: 100%
+   :figwidth: 250
    
    Transient behaviour for one gate (left) and γ gates in series (right). Note that the right hand graph has an initial S-shaped increase, reflecting the multiple gates in series.
    
@@ -201,7 +195,7 @@ There are seven base physical quantities defined by the *International d’Unit�
 All other units are derived from these seven. Additional derived units
 that CellML defines intrinsically (with their dependence on previously
 defined units) are: **Hz** (:math:`s^{-1}`); **Newton**, N
-(:math:`kg⋅m⋅s^{-1}`); **Joule**, J (:math:`N.m`); **Pascal**, Pa (:math:`N.m^{-2}`);
+(:math:`kg.m.s^{-1}`); **Joule**, J (:math:`N.m`); **Pascal**, Pa (:math:`N.m^{-2}`);
 **Watt**, W (:math:`J.s^{-1}`); **Volt**, V (:math:`W.A^{-1}`); **Siemen**, S
 (:math:`A.V^{-1}`); **Ohm**, :math:`\Omega` (:math:`V.A^{-1}`); **Coulomb**, C
 (:math:`s.A`); **Farad**, F (:math:`C.V^{-1}`); **Weber**, Wb (:math:`V.s`); and **Henry**,
@@ -219,7 +213,7 @@ follows:
 +           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
 | Fractions | Symbol |                | d               | c             | m               | μ               | n               | p                | f                 | a                | z                | y                |
 +           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-|           | Factor | :math:`10^{0}` | :math:`10^{−1}` |:math:`10^{-2}`| :math:`10^{−3}` | :math:`10^{−6}` | :math:`10^{−9}` | :math:`10^{−12}` | :math:`10^{−15}`  | :math:`10^{−18}` | :math:`10^{−21}` | :math:`10^{−24}` |
+|           | Factor | :math:`10^{0}` | :math:`10^{-1}` |:math:`10^{-2}`| :math:`10^{-3}` | :math:`10^{-6}` | :math:`10^{-9}` | :math:`10^{-12}` | :math:`10^{-15}`  | :math:`10^{-18}` | :math:`10^{-21}` | :math:`10^{-24}` |
 +-----------+--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
 
 Units for this model, with multiples and fractions, are illustrated in
@@ -347,4 +341,6 @@ show now for the neural potassium and sodium ion channels.
 
 .. [#] http://en.wikipedia.org/wiki/International_System_of_Units
 
+.. only:: html
 
+   .. |esdlkfjsdjf| elelleelel

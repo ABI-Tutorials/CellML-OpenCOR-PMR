@@ -10,7 +10,7 @@ equations) is the *Lorenz equations*\ [#]_.
    :name: ocr_tut_cellml_lorenz
    :alt: CellML Lorenz equations in OpenCOR
    :align: right
-   :figwidth: 50%
+   :figwidth: 400 
    
    *CellML Text* code for the Lorenz equations.
    
@@ -35,12 +35,12 @@ and initial conditions
 Solutions for :math:`x\left( t \right)`, :math:`y\left( x \right)` and
 :math:`z\left( x \right)`, corresponding to the time integration
 parameters shown on the LHS, are shown in :numref:`ocr_tut_soln_lorenz`. Note that this
-system exhibits ‘chaotic dynamics’ with small changes in the initial
+system exhibits 'chaotic dynamics' with small changes in the initial
 conditions leading to quite different solution paths.
 
-This example illustrates the value of OpenCOR’s ability to plot
+This example illustrates the value of OpenCOR's ability to plot
 variables as they are computed. Use the *Simulation Delay* wheel to slow
-down the plotting by a factor of about 5-10,000 – in order to follow the
+down the plotting by a factor of about 5-10,000 - in order to follow the
 solution as it spirals in ever widening trajectories around the left
 hand wing of the attractor before coming close to the origin that then
 sends it off to the right hand wing of the attractor.
@@ -54,9 +54,9 @@ sends it off to the right hand wing of the attractor.
    parameters on the left have been reset to their initial values for this
    figure – normally they would be at their final solution values.
 
-Solutions to the Lorenz equations are organised by the 2D ‘Lorenz
-manifold’. This surface has a very beautiful shape and has become an art
-form – even rendered in crochet!\ [#]_ (See :numref:`ocr_tut_crotchet`).
+Solutions to the Lorenz equations are organised by the 2D 'Lorenz
+manifold'. This surface has a very beautiful shape and has become an art
+form - even rendered in crochet!\ [#]_ (See :numref:`ocr_tut_crotchet`).
 
 .. figure:: _static/images/crotchet.jpeg
    :name: ocr_tut_crotchet
@@ -69,7 +69,7 @@ Exercise for the reader
 =======================
 
 Another example of intriguing and unpredictable behaviour from a simple
-deterministic ODE system is the ‘blue sky catastrophe’ model [9] defined
+deterministic ODE system is the 'blue sky catastrophe' model [9] defined
 by the following equations:
 
 .. math::
