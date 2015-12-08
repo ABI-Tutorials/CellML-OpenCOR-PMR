@@ -1,5 +1,3 @@
-Andre making a change
-
 .. include:: resources/roles.txt
 
 ============================================================
