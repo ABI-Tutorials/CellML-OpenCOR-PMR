@@ -74,7 +74,7 @@ point*\ =10, *Point interval*\ =0.1. Try putting :math:`a = - 1`.
    :math:`y\left( 0 \right) = 5`, and (b) :math:`a = 1;b = 5` and
    :math:`y\left( 0 \right) = 2`. The red arrow indicates the point
    at which the trace reaches the time constant :math:`\tau`
-   (:math:`e^{- 1}` or :math:`\approx 37`% of the difference between the initial and final
+   (:math:`e^{- 1}` or :math:`\approx 37\%` of the difference between the initial and final
    solution values). The black arrows indicate the initial and final
    (steady state) solutions. Note that the parameters on the left have been
    reset to their initial values for this figure - normally they would be
