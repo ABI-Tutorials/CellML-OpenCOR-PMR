@@ -4,6 +4,8 @@
    :width: 100%
    :alt: logo banner
 
+.. _cellml_opencor_pmr_tutorial_index:
+
 ===========================================================
 Tutorial on CellML, OpenCOR & the Physiome Model Repository
 ===========================================================
