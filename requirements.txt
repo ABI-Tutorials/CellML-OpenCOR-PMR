@@ -1,1 +1,2 @@
 sphinxcontrib-bibtex
+-e https://github.com/ABI-Software/pygments-cellscript#egg=pygments_cellscriptlexer
