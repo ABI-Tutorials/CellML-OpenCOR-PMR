@@ -74,7 +74,7 @@ as explained below.
    :name: ocr_tut_ocr_anno_view
    :alt: OpenCOR annotation view
    :align: right
-   :figwidth: 45%
+   :figwidth: 7.5cm
    
    Clicking on *CellML Annotation* lists the CellML components with their variables ready for annotation.
 
@@ -109,7 +109,6 @@ information displayed about this qualifier.
    :name: ocr_tut_ocr_qualifiers
    :alt: Object qualifiers
    :align: center
-   :figwidth: 95%
    
    The qualifiers are displayed from the top right menu.
    Clicking on the most appropriate one (bio:isVersionOf) gives more
@@ -127,7 +126,6 @@ information about this term (see :numref:`ocr_tut_ocr_qual_res_info`).
    :name: ocr_tut_ocr_ont_terms_pot
    :alt: Ontological terms for potassium
    :align: center
-   :figwidth: 95%
    
    The ontological terms listed when ‘potassium channel’ is entered into the search box next to *Term*.
 
@@ -135,7 +133,6 @@ information about this term (see :numref:`ocr_tut_ocr_qual_res_info`).
    :name: ocr_tut_ocr_qual_res_info
    :alt: Qualifier resource and ID information
    :align: center
-   :figwidth: 95%
    
    The qualifier, resource & ID information in the middle
    panel appears when you click on the |image_add| button next to the

@@ -32,7 +32,7 @@ The gating kinetics are described by
    \frac{\text{dh}}{\text{dt}} = \alpha_{h}\left( 1 - h \right) - \beta_{h}\text{.h}
 
 where the voltage dependence of these four rate constants is determined
-experimentally to be [*]_
+experimentally to be\ [#]_
 
 .. math::
 
@@ -233,7 +233,7 @@ more or less space depending on their magnitude.
 
 .. rubric:: Footnotes
 
-.. [*] The HH paper used :math:`\alpha_m\ =\ \frac{0.1(v+25)}{e^{\frac{(v+25)}{10}}-1}`; :math:`\beta_m\ =\ 4e^{\frac{v}{18}}`; :math:`\alpha_h\ =\ 0.07e^{\frac{v}{20}}`; :math:`\beta_h\ =\ \frac{1}{e^{\frac{(v+30)}{10}}+1}`;.
+.. [#] The HH paper used :math:`\alpha_m\ =\ \frac{0.1(v+25)}{e^{\frac{(v+25)}{10}}-1}`; :math:`\beta_m\ =\ 4e^{\frac{v}{18}}`; :math:`\alpha_h\ =\ 0.07e^{\frac{v}{20}}`; :math:`\beta_h\ =\ \frac{1}{e^{\frac{(v+30)}{10}}+1}`;.
 
 
 

@@ -12,7 +12,7 @@ introduced by Hodgkin and Huxley, the gating variable for the potassium
 channel is :math:`n` and the number of gates in series is
 :math:`\gamma = 4`, therefore
 
-:math:`i_{K} = \bar{i}_{K}n^{4} = n^{4}\bar{g}_{K}\left( V - E_{K} \right)`
+:math:`i_{K} = \bar{i_K}n^{4} = n^{4}\bar{g}_{K}\left( V - E_{K} \right)`
 
 where :math:`\bar{g}_{K} = \ 36 \text{mS.cm}^{-2}`,
 and with intra- and extra-cellular concentrations
@@ -35,7 +35,7 @@ the channel conductance.
    :name: ocr_tut_volt_deps_gates
    :alt: Voltage dependencies of gate constants
    :align: right
-   :figwidth: 45%
+   :figwidth: 8cm
    
    Voltage dependence of rate constants :math:`\alpha_n` and :math:`\beta_n\ (\text{ms}^{-1})`, time constant
    :math:`\tau_n\ (\text{ms})` and relative conductance :math:`\frac{g_{SS}}{\bar{g}_Y}`.
@@ -65,7 +65,7 @@ Note that under steady state conditions when
    :name: ocr_tut_ss_cur_volt
    :alt: Steady-state current voltage
    :align: right
-   :figwidth: 45%
+   :figwidth: 8cm
    
    The steady-state current-voltage relation for the potassium channel.
    
@@ -84,7 +84,7 @@ to explain some further CellML concepts.
    :name: ocr_tut_cellml_comp_legend
    :alt: CellML components legend
    :align: right
-   :figwidth: 45%
+   :figwidth: 8cm
    
    Key entities in a CellML model.
    
