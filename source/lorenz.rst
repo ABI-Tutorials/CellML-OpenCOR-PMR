@@ -63,13 +63,16 @@ form - even rendered in crochet!\ [#]_ (See :numref:`ocr_tut_crotchet`).
    :alt:  Crotchet of the Lorenz manifold
    :align: center
    
-   The crocheted Lorenz manifold made by Hinke Osinga and Bernd Krauskopf of the Mathematics Department at the University of Auckland, New Zealand.
+   The crocheted Lorenz manifold made by Professors Hinke Osinga and Bernd Krauskopf of the Mathematics Department at the University of Auckland, New Zealand.
+   
+.. note::
+   The simulation presented in :numref:`ocr_tut_soln_lorenz` can be loaded direction into OpenCOR using this `link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/f0e63e292ebb1d6798da08914b4217aec434af96/lorenz.sedml>`_.
 
 Exercise for the reader
 =======================
 
 Another example of intriguing and unpredictable behaviour from a simple
-deterministic ODE system is the 'blue sky catastrophe' model [9] defined
+deterministic ODE system is the 'blue sky catastrophe' model :cite:`9` defined
 by the following equations:
 
 .. math::
@@ -80,7 +83,7 @@ by the following equations:
 with parameter :math:`A = 0.2645` and initial conditions
 :math:`x\left( 0 \right) = 0.9`, :math:`y\left( 0 \right) = 0.4`. Run to
 :math:`t = 500` with :math:`\Delta t = 0.01` and plot
-:math:`x\left( t \right)` and :math:`y\left( x \right)`. Also try with
+:math:`x\left( t \right)` and :math:`y\left( x \right)` (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/8b61448c7ea1b1aedc16931d97a3036fe298b0a3/BlueSkyCatastrophy.sedml>`_). Also try with
 :math:`A = 0.265` to see how sensitive the solution is to small changes
 in parameter values.
 

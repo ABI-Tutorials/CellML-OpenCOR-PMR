@@ -226,7 +226,7 @@ more or less space depending on their magnitude.
    :alt: Interfaces between CellML components
    :align: center
    
-   Kinetics of the sodium channel gates for voltage steps to (a) -20mV, (b) 0mV, and (c) 20mV.
+   Kinetics of the sodium channel gates for voltage steps to (a) -20mV, (b) 0mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/31aa609fc5a976bb65b2803a4bc24776d4ef612b/sodium_ion_channel.sedml>`_), and (c) 20mV.
 
 
 ---------------------------

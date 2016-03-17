@@ -5,7 +5,7 @@ A model of ion channel gating and current: Introducing CellML units
 ===================================================================
 
 A good example of a model based on a first order equation is the one
-used by Hodgkin and Huxley [10] to describe the gating behaviour of an
+used by Hodgkin and Huxley :cite:`10` to describe the gating behaviour of an
 ion channel (see also next three sections). Before we describe the
 gating behaviour of an ion channel, however, we need to explain the
 concepts of the 'Nernst potential' and channel conductance.
@@ -25,7 +25,7 @@ driving an ion through the pore is calculated from the change in
    :align: right
    :figwidth: 300
    
-   Distribution of microstates in a system [11]. The 16 particles in a confined region (left) have only one possible arrangement (W = 1) and    therefore zero entropy (:math:`k_{B}\text{lnW}=0`). When the barrier is removed and the number of possible locations for each particle increases 4x (right), the number of possible arrangements for the 16 particles increases by 416 and the increase in entropy is therefore :math:`ln(416)` or :math:`16ln4`. The thermal energy (temperature) of the previously confined particles on the left has been redistributed in space to achieve a more probable (higher entropy) state. If we now added more particles to the container on the right, the concentration would increase and the entropy would decrease. 
+   Distribution of microstates in a system :cite:`11`. The 16 particles in a confined region (left) have only one possible arrangement (W = 1) and    therefore zero entropy (:math:`k_{B}\text{lnW}=0`). When the barrier is removed and the number of possible locations for each particle increases 4x (right), the number of possible arrangements for the 16 particles increases by 416 and the increase in entropy is therefore :math:`ln(416)` or :math:`16ln4`. The thermal energy (temperature) of the previously confined particles on the left has been redistributed in space to achieve a more probable (higher entropy) state. If we now added more particles to the container on the right, the concentration would increase and the entropy would decrease. 
    
 Entropy :math:`S` (:math:`J.K^{-1}`) is a measure of the number of
 microstates available to a system, as defined by Boltzmann’s equation
@@ -202,19 +202,19 @@ defined units) are: **Hz** (:math:`s^{-1}`); **Newton**, N
 H (:math:`Wb.A^{-1}`). Multiples and fractions of these are defined as
 follows:
 
-+-----------+--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-|           | Prefix |                | deca            | hecto         | kilo            | mega            | giga            | tera             | peta              | exa              | zetta            | yotta            |
-+           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-| Multiples | Symbol |                | da              | h             | k               | M               | G               | T                | P                 | E                | Z                | Y                |
-+           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-|           | Factor | :math:`10^0`   | :math:`10^{1}`  | :math:`10^{2}`| :math:`10^{3}`  | :math:`10^{6}`  | :math:`10^{9}`  | :math:`10^{12}`  | :math:`10^{15}`   | :math:`10^{18}`  | :math:`10^{21}`  | :math:`10^{24}`  |
-+-----------+--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-|           | Prefix |                | deci            | centi         | milli           | micro           | nano            | pico             | femto             | atto             | zepto            | yocto            |
-+           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-| Fractions | Symbol |                | d               | c             | m               | μ               | n               | p                | f                 | a                | z                | y                |
-+           +--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
-|           | Factor | :math:`10^{0}` | :math:`10^{-1}` |:math:`10^{-2}`| :math:`10^{-3}` | :math:`10^{-6}` | :math:`10^{-9}` | :math:`10^{-12}` | :math:`10^{-15}`  | :math:`10^{-18}` | :math:`10^{-21}` | :math:`10^{-24}` |
-+-----------+--------+----------------+-----------------+---------------+-----------------+-----------------+-----------------+------------------+-------------------+------------------+------------------+------------------+
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|           | Prefix |                | deca            | hecto           | kilo            | mega            | giga            | tera             | peta             | exa              | zetta            | yotta            |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+| Multiples | Symbol |                | da              | h               | k               | M               | G               | T                | P                | E                | Z                | Y                |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|           | Factor | :math:`10^0`   | :math:`10^{1}`  | :math:`10^{2}`  | :math:`10^{3}`  | :math:`10^{6}`  | :math:`10^{9}`  | :math:`10^{12}`  | :math:`10^{15}`  | :math:`10^{18}`  | :math:`10^{21}`  | :math:`10^{24}`  |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|           | Prefix |                | deci            | centi           | milli           | micro           | nano            | pico             | femto            | atto             | zepto            | yocto            |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+| Fractions | Symbol |                | d               | c               | m               | μ               | n               | p                | f                | a                | z                | y                |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
+|           | Factor | :math:`10^{0}` | :math:`10^{-1}` | :math:`10^{-2}` | :math:`10^{-3}` | :math:`10^{-6}` | :math:`10^{-9}` | :math:`10^{-12}` | :math:`10^{-15}` | :math:`10^{-18}` | :math:`10^{-21}` | :math:`10^{-24}` |
++-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
 
 Units for this model, with multiples and fractions, are illustrated in
 the following *CellML Text* code:
@@ -275,7 +275,7 @@ illustrated in :numref:`ocr_tut_ocr_4_ion_ch`.
    
    The behaviour of an ion channel with :math:`\gamma = 4`
    gates transitioning from the closed to the open state at a membrane
-   voltage :math:`V = 0`. The opening and closing rate constants are
+   voltage :math:`V = 0` (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/c4b85039efecd603ee0b9d4ad46e3015b91fdef7/SimpleFirstOrderEqn.sedml>`_). The opening and closing rate constants are
    :math:`\alpha_{y} = 1` ms\ :sup:`-1` and :math:`\beta_{y} = 2`
    ms\ :sup:`-1`. The ion channel has an open conductance of
    :math:`{\overset{\overline{}}{g}}_{Y} = 36` mS.cm\ :sup:`-2` and an

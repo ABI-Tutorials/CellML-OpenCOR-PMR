@@ -30,8 +30,8 @@ variable :math:`y`:
 
 The initial conditions are now :math:`x = - 2;y = 0`.
 
-With the central pane in *Editing* mode (e.g. *CellML Text* view), under
-the *File* menu and *New*, click on *CellML 1.1 File* (:menuselection:`File --> New --> CellML 1.1 File`) then type in the
+With the central pane in *Editing* mode (e.g. *CellML Text* view), create a new CellML file:
+:menuselection:`File --> New --> CellML File` and then type in the
 following lines of code after deleting the three lines that indicate
 where the code should go:
 
@@ -250,7 +250,7 @@ BiosignalML) will be available in future versions of OpenCOR.
 
 You can move the graphical output traces around with ‘left click and
 drag’ and you can change the horizontal or vertical scale with ‘right
-click and drag’. Holding the SHIIFT key down while clicking on a
+click and drag’. Holding the SHIFT key down while clicking on a
 graphical output panel allows you to interrogate the solution at any
 point. Right clicking on a panel provides zoom facilities.
 

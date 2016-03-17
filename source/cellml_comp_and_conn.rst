@@ -77,7 +77,7 @@ The voltage dependence of the steady state channel conductance is then
 channel is illustrated in :numref:`ocr_tut_ss_cur_volt`.
 
 These equations are captured with OpenCOR *CellML Text* view (together
-with the previous unit definitions) on the next page. But first we need
+with the previous unit definitions) below. But first we need
 to explain some further CellML concepts.
 
 .. figure:: _static/images/cellml_comp_legend.png
@@ -102,7 +102,7 @@ dynamics of the n-gate.
 
 Since certain variables (t, V and n) are shared between components, we
 need to also define the component maps as indicated in the *CellML Text*
-view on the next page.
+view below.
 
 The *CellML Text* code for the potassium ion channel model is as
 follows\ [#]_:
@@ -210,7 +210,7 @@ Note that several other features have been added:
    specified to jump from 0 mV to -85 mV at t = 5 ms then back to 0 mV at
    t = 15 ms. This is only used here in order to test the K channel model;
    when the potassium_channel component is later imported into a neuron
-   model, the environment component is not imported.
+   model, **the environment component is not imported**.
 
 -  the use of :purple:`encapsulation` to embed the
    **potassium_channel_n_gate** inside the **potassium_channel**.
@@ -260,7 +260,7 @@ albeit brief since the channel is closing.
    :align: center
    
    Kinetics of the potassium channel gates for a voltage
-   step from 0mV to -85mV. The voltage clamp step is shown at the top, then
+   step from 0mV to -85mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/66e44ef897fca3e513c077adfff0380acbdc9bf2/potassium_ion_channel.sedml>`_). The voltage clamp step is shown at the top, then
    the n gate first order response, then the channel conductance, then the
    channel current. Notice how the conductance is slightly slower to turn
    on (due to the four gates in series) but fast to inactivate. Current

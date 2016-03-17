@@ -433,7 +433,7 @@ Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, X
    :alt: OpenCOR output of Noble 62 model
    :align: center
    
-   Output from the Noble62 model. Top panel is
+   Output from the Noble62 model (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/c584eab55e20fdc9cffb9d20a5d548b9910e18fd/Noble_1962.sedml>`_). Top panel is
    :math:`V\left( t \right)`, the cardiac action potential. The next
    panel has the two membrane ion channel currents
    :math:`i_{\text{Na}}\left( t \right)` and

@@ -71,7 +71,7 @@ point*\ =10, *Point interval*\ =0.1. Try putting :math:`a = - 1`.
 
    OpenCOR output :math:`y\left( t \right)` for the simple
    ODE model with parameters (a) :math:`a = 1;b = 2` and
-   :math:`y\left( 0 \right) = 5`, and (b) :math:`a = 1;b = 5` and
+   :math:`y\left( 0 \right) = 5` (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/60ac9389285471a704f2f4be6e1a8ba5cbf45d1a/Firstorder.sedml>`_), and (b) :math:`a = 1;b = 5` and
    :math:`y\left( 0 \right) = 2`. The red arrow indicates the point
    at which the trace reaches the time constant :math:`\tau`
    (:math:`e^{- 1}` or :math:`\approx 37\%` of the difference between the initial and final

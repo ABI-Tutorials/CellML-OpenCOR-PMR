@@ -3,7 +3,7 @@ Install and Launch OpenCOR
 ==========================
 
 Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`_.
-Versions are available for Windows, OS X and Linux. Note that some ascpects of this tutorial require
+Versions are available for Windows, OS X and Linux [#]_. Note that some aspects of this tutorial require
 OpenCOR snapshot 2016-02-27 (or newer). Create a shortcut to the executable (found in the
 bin directory) on your desktop and click on this to launch OpenCOR. A
 window will appear that looks like :numref:`Fig. %s(a)<ocr_tut_main_win>`.
@@ -26,9 +26,9 @@ are dockable windows, which provide additional features. Those windows
 can be dragged and dropped to the top or bottom of the central area as
 shown in Figure 1(b) or they can be individually undocked or closed. All
 closed panels can be re-displayed by enabling them in the *View* menu,
-or by using the *Tools* menu *Reset All* option. Clicking on
-:kbd:`Control-spacebar`\ [#]_ on the Windows version, removes (for less
-clutter) or restores these two side panels.
+or by using the *Tools* menu *Reset All* option. The key combination 
+:kbd:`Control-spacebar` removes (for less clutter) or restores these 
+two side panels.
 
 Any of the subpanels (*Physiome Model Repository*, *File Browser*, and
 *File Organiser*) can be closed with the top right delete button, and
@@ -58,7 +58,10 @@ about developing plugins for OpenCOR is also `available <https://www.opencor.ws/
 
 .. rubric:: Footnotes
 
-.. [#] The cmd key being the equivalent on OS X.
+.. [#] http://opencor.ws/user/supportedPlatforms.html
 
-.. |cmd| unicode:: U+2318
+
+.. .. [#] The |cmd| key being the equivalent on OS X.
+
+.. .. |cmd| unicode:: U+2318
 
