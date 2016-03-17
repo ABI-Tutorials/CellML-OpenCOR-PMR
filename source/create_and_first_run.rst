@@ -272,11 +272,11 @@ sensitive.
 
 .. [#] For more on the *CellML Text* view see http://opencor.ws/user/plugins/editing/CellMLTextView.html.
 
-.. [#] Note that a more elaborated version of this is ‘ode(x, t, 1{dimensionless})’ and a 2\ :sup:`nd` order ODE can be specified as ‘ode(x, t, 2{dimensionless})’. 1\ :sup:`st` order is assumed as the default.
+.. [#] Note that a more elaborated version of this is ``ode(x, t, 1{dimensionless})`` and a 2\ :sup:`nd` order ODE can be specified as ``ode(x, t, 2{dimensionless})``. 1\ :sup:`st` order is assumed as the default.
 
-.. [#] Note also that the mathematical expressions in CellML are based on MathML – see www.w3.org/Math/
+.. [#] Note also that the mathematical expressions in CellML are based on MathML – see http://www.w3.org/Math/
 
-.. [#] Note that ‘.cellml’ is not strictly required but is best practice.
+.. [#] Note that ``.cellml`` is not strictly required but is best practice.
 
 .. [#] Other solvers include forward Euler, Heun and Runga-Kutta solvers (RK2 and RK4).
 
