@@ -254,6 +254,10 @@ click and drag’. Holding the SHIIFT key down while clicking on a
 graphical output panel allows you to interrogate the solution at any
 point. Right clicking on a panel provides zoom facilities.
 
+.. note::
+
+   The simulation described above can also be loaded and run directly in OpenCOR using this `link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/8a37f2ca3961ff783c054b5763364c596caa66bc/vanderpol.sedml>`_.
+
 The various plugins used by OpenCOR can be viewed under the Tools menu.
 A French language version of OpenCOR is also available under the *Tools*
 menu. An option under the *File* menu allows a file to be locked (also
