@@ -6,7 +6,7 @@ Install and Launch OpenCOR
 
 Download OpenCOR from `www.opencor.ws <http://www.opencor.ws>`_.
 Versions are available for Windows, OS X and Linux [#]_. Note that some aspects of this tutorial require
-OpenCOR snapshot XXXX-XX-XX (or newer). Create a shortcut to the executable (found in the
+OpenCOR snapshot 2017-02-10 (or newer). Create a shortcut to the executable (found in the
 bin directory) on your desktop and click on this to launch OpenCOR. A
 window will appear that looks like :numref:`Fig. %s(a)<ocr_tut_main_win>`.
 
