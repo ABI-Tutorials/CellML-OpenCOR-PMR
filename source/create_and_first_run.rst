@@ -1,5 +1,7 @@
 .. include:: resources/roles.txt
 
+.. _cellml_opencor_pmr_tutorial__first_model:
+
 ============================================================
 Create and run a simple CellML model: editing and simulation
 ============================================================

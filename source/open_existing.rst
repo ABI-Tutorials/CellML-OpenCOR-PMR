@@ -1,3 +1,4 @@
+.. _cellml_opencor_pmr_tutorial__open_existing:
 
 ====================================================================================
 Open an existing CellML file from a local directory or the Physiome Model Repository
