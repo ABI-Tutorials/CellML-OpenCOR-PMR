@@ -7,7 +7,7 @@ The Physiome Model Repository and the link to bioinformatics
 The Physiome Model Repository (PMR) :cite:`13` is the main online repository
 for the IUPS Physiome Project, providing version and access controlled
 repositories, called *workspaces*, for users to store their data.
-Currently there are approximately 640 public workspaces and another 200
+Currently there are over 700 public workspaces and many
 private workspaces in the repository. PMR also provides a mechanism to
 create persistent access to specific revisions of a workspace, termed
 *exposures*. Exposure plugins are available for specific types of data
@@ -15,27 +15,10 @@ create persistent access to specific revisions of a workspace, termed
 the data when browsing the repository via a web browser, or an
 application accessing the repository’s content via web services.
 
-The CellML project website and the CellML Physiome Model Repository are
-shown in :numref:`ocr_tut_cellml_web_main` and :numref:`ocr_tut_cellml_web_pmr`.
-
-.. figure:: _static/images/cellml_website_mainpage.png
-   :name: ocr_tut_cellml_web_main
-   :alt: CellML website mainpage
-   :align: center
-   :figwidth: 95%
-   
-   The website for the CellML project at `www.cellml.org <http://www.cellml.org>`_.
-
-.. figure:: _static/images/cellml_website_pmr.png
-   :name: ocr_tut_cellml_web_pmr
-   :alt: CellML website PMR page
-   :align: center
-   :figwidth: 95%
-   
-   The website for the Physiome Model Repository project at `www.cellml.org/tools/pmr <http://www.cellml.org/tools/pmr>`_.
+More complete documentation describing how to use PMR is available in the PMR documentation: https://models.physiomeproject.org/docs.
 
 The CellML models on  `models.physiomeproject.org <https://models.physiomeproject.org>`_  are listed under 20 categories, shown below:
-(numbers of exposures in each category are given besides the bar graph)
+(numbers of exposures in each category are given besides the bar graph, correct as at early 2016)
 
 **Browse by category**
 
@@ -71,22 +54,15 @@ then be retrieved by a web-search using any of the annotated terms in
 the models.
 
 To illustrate the features of PMR, click on the Hund, Rudy 2004 (Basic)
-model in the alphabetic listing of models under *Electrophysiology*.
-This opens a web page (:numref:`ocr_tut_pmr_exp_hr`) using a 32 character string that has
-been randomly generated as the ID for the exposure page for that model.
+model in the alphabetic listing of models under the *Electrophysiology* category.
 
 .. figure:: _static/images/pmr_website_exp_hund_rudy.png
    :name: ocr_tut_pmr_exp_hr
-   :alt: PMR webpage for Hund-Rudy 2004
+   :alt: PMR exposure page for the Hund-Rudy 2004 model
    :align: center
    :figwidth: 95%
    
-   The Physiome Model Repository exposure page for the basic Hund-Rudy 2004 model.
-
-Note that the string is still unique even with only 5 characters:
-
-e.g.
-https://models.physiomeproject.org/exposure/f4b71/hund_rudy_2004_a.cellml/view
+   The Physiome Model Repository exposure page for the basic `Hund-Rudy 2004 model <https://models.physiomeproject.org/exposure/f4b7120aa512c7f5e7a0664abcee3e8b/hund_rudy_2004_a.cellml/view>`_.
 
 The section labelled ‘Model Structure’ contains the journal paper
 abstract and often a diagram of the model\ [#]_. This is shown for the
@@ -103,7 +79,7 @@ individual ion channels for electrophysiology models.
    
    A diagrammatic representation of the Hund-Rudy 2004 model.
 
-There is a list of ‘Views Available’ for the CellMLmodel on the lower
+There is a list of ‘Views Available’ for the CellML model on the
 right hand side of the exposure page. The function of each of these
 views is as follows:
 
@@ -120,7 +96,7 @@ this is soon to be updated.
 **Mathematics** - Displays all the mathematical equations contained in
 the model.
 
-**Generated Code** - Creates code (C, C-IDA, F77, MATLAB or Python) for
+**Generated Code** - Various codes (C, C-IDA, F77, MATLAB or Python) generated from
 the model.
 
 **Cite this model** - Provides details on how to cite use of the CellML
@@ -128,8 +104,7 @@ model.
 
 **Source view** - Gives a full listing of the XML code for the model.
 
-**Simulate using OpenCell** - This will be OpenCOR once the SED-ML API
-is included in OpenCOR.
+**Launch with OpenCOR** - Opens the model (or simulation experiment) in OpenCOR.
 
 Note that CellML models are available under a Creative Commons
 Attribution 3.0 Unported License\ [#]_. This means that you are free to:
