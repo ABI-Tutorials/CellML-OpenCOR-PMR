@@ -1,3 +1,4 @@
+.. _ocr_tut_intro_cellml_encaps_inter:
 
 ==============================================================================
 A model of the sodium channel: Introducing CellML encapsulation and interfaces
