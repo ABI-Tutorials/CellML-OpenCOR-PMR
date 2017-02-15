@@ -1,5 +1,7 @@
 .. include:: resources/roles.txt
 
+.. _cellml_opencor_pmr_tutorial__pmr_intro:
+
 ============================================================
 The Physiome Model Repository and the link to bioinformatics
 ============================================================
