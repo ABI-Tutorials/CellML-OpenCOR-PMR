@@ -175,7 +175,7 @@ the way in which CellML deals with units.
 
 Note that the decision to deal with units in CellML, rather than just
 ignoring them or insisting that all equations are represented in
-dimensionless form, was made in order to be able to be able to check the
+dimensionless form, was made in order to be able to check the
 physical consistency of all terms in each equation\ [#]_.
 
 There are seven base physical quantities defined by the *International d’Unités* (SI)\ [#]_.  These are (with their SI units):
