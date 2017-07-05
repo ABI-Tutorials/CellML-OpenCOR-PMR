@@ -139,7 +139,6 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
          var m: dimensionless {priv: in};
          var h: dimensionless {priv: in};
          var g_Na: milliS_per_cm2 {init: 120};
-         var E_Na: millivolt {init: 35};
          var i_Na: microA_per_cm2 {pub: out};
          var Nao: mM {init: 140};
          var Nai: mM {init: 30};
