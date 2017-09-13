@@ -147,10 +147,10 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
          var Na_conductance: milliS_per_cm2 {pub: out};
    
          E_Na=RTF*ln(Nao/Nai);
-         Na_conductance = g_Na*pow(m, 3{dimensionless})*h);
+         Na_conductance = g_Na*pow(m, 3{dimensionless})*h;
          i_Na= Na_conductance*(V-E_Na);
       enddef;
-         def comp sodium_channel_m_gate a s
+      def comp sodium_channel_m_gate as
          var V: millivolt {pub: in};
          var t: millisec {pub: in};
          var alpha_m: per_millisec;
