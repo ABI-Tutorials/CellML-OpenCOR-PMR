@@ -13,7 +13,7 @@ Tutorial on CellML, OpenCOR & the Physiome Model Repository
 .. note::
    This tutorial originated from a translation from a single Word document in July 2015. Aspects of formatting and presentation may need further work. For reference, the original tutorial is available here: :download:`OpenCOR-Tutorial-v17.pdf <resources/OpenCOR-Tutorial-v17.pdf>`.
    
-   The current tutorial has now progressed well beyond the original version and we recommend using this online version or the PDF available via ReadTheDocs.
+   The current tutorial has now progressed well beyond the original version and we recommend using this online version or the PDF available via `ReadTheDocs <http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/>`_.
 
 
 This tutorial shows you how to install and run the OpenCOR [#]_ software
@@ -60,6 +60,7 @@ to modular approaches (model hierarchies) and model annotation.
    cellml_encaps_and_inter
    cellml_imports
    cellml_import_unit_params
+   code_generation
    annotation
    pmr
    pmr_workspaces_in_opencor
