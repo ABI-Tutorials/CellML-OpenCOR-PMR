@@ -381,9 +381,9 @@ Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, X
          var g_K2: microS;
          var i_K: nanoA {pub: out};
          E_K = RTF*ln(Ko/Ki);
-         g_K1 = 1200{microS}exp(-(V+90{mV})/50{mV})
-           +15{microS}exp((V+90{mV})/60{mV});
-         g_K2 = 1200{microS}pow(n, 4{dimensionless});
+         g_K1 = 1200{microS}*exp(-(V+90{mV})/50{mV})
+           +15{microS}*exp((V+90{mV})/60{mV});
+         g_K2 = 1200{microS}*pow(n, 4{dimensionless});
          i_K = (g_K1+g_K2)*(V-E_K);
       enddef;
       def comp potassium_channel_n_gate as
@@ -392,9 +392,9 @@ Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, X
          var n: dimensionless {init: 0.01, pub: out};
          var alpha_n: per_ms;
          var beta_n: per_ms;
-         alpha_n = -0.0001{per_mV_ms}(V+50{mV})
+         alpha_n = -0.0001{per_mV_ms}*(V+50{mV})
            /(exp(-(V+50{mV})/10{mV})-1{dimensionless});
-         beta_n = 0.0020{per_ms}exp(-(V+90{mV})/80{mV});
+         beta_n = 0.0020{per_ms}*exp(-(V+90{mV})/80{mV});
          ode(n,t)= alpha_n*(1{dimensionless}-n)-beta_n*n;
       enddef;
       def map between environment
