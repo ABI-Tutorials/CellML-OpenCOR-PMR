@@ -260,7 +260,7 @@ albeit brief since the channel is closing.
    :align: center
    
    Kinetics of the potassium channel gates for a voltage
-   step from 0mV to -85mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/66e44ef897fca3e513c077adfff0380acbdc9bf2/potassium_ion_channel.sedml>`_). The voltage clamp step is shown at the top, then
+   step from 0mV to -85mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/e3ef4cf57b9be0b9f5ccb72e98dac46f2381add5/potassium_ion_channel.sedml>`_). The voltage clamp step is shown at the top, then
    the n gate first order response, then the channel conductance, then the
    channel current. Notice how the conductance is slightly slower to turn
    on (due to the four gates in series) but fast to inactivate. Current
