@@ -158,7 +158,7 @@ sodium_ion_channel model are unchanged from the previous sections
       def import using "potassium_ion_channel.cellml" for
          comp K_channel using comp potassium_channel;
       enddef;
-      def import using "leakage_ion_channel.cellml"" for
+      def import using "leakage_ion_channel.cellml" for
          comp L_channel using comp leakage_channel;
       enddef;
       def unit millisec as
