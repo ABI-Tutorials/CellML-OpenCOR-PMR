@@ -54,7 +54,7 @@ def model potassium_ion_channel as
       var K_conductance: milliS_per_cm2 {pub: out};
       E_K=RTF*ln(Ko/Ki);
       K_conductance = g_K*pow(n, 4{dimensionless});
-      i_K = K_conductance(V-E_K);
+      i_K = K_conductance*(V-E_K);
    enddef;
    def comp potassium_channel_n_gate as
       var V: millivolt {pub: in};
