@@ -318,9 +318,9 @@ Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`,
          var m: dimensionless {init: 0.01, pub: out};
          var alpha_m: per_ms;
          var beta_m: per_ms;
-         alpha_m = -0.10{per_mV_ms}(V+48{mV})
+         alpha_m = -0.10{per_mV_ms}*(V+48{mV})
            /(exp(-(V+48{mV})/15{mV})-1{dimensionless});
-         beta_m = 0.12{per_mV_ms}(V+8{mV})
+         beta_m = 0.12{per_mV_ms}*(V+8{mV})
            /(exp((V+8{mV})/5{mV})-1{dimensionless});
          ode(m, t)=alpha_m*(1{dimensionless}-m)-beta_m*m;
       enddef;
@@ -330,7 +330,7 @@ Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`,
          var h: dimensionless {init: 0.8, pub: out};
          var alpha_h: per_ms;
          var beta_h: per_ms;
-         alpha_h = 0.17{per_ms}exp(-(V+90{mV})/20{mV});
+         alpha_h = 0.17{per_ms}*exp(-(V+90{mV})/20{mV});
          beta_h = 1.00{per_ms}
            /(1{dimensionless}+exp(-(V+42{mV})/10{mV}));
          ode(h, t) = alpha_h*(1{dimensionless}-h)-beta_h*h;
