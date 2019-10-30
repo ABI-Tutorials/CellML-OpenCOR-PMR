@@ -10,7 +10,9 @@ CellML provides a good technology to create, describe, and share definitions of 
 
 Often in research projects, however, it is not always possible to describe the model and/or simulation that you need to perform in these declarative formats. It also doesn't make sense to try and standardise extensions or modifications in such standards for potentially short-lived, one-off, research studies. Thus having access to a flexible scripting environment that works in concert with a standards-based tool like OpenCOR allows users to make use of standards when possible but with the flexibility to adapt as needed. OpenCOR supports this through the integration of a Python interpreter within the OpenCOR application.
 
-Python-enabled versions of OpenCOR are now relatively mature, but still undergoing extensive user testing and implementation review. As such, this functionality is only available in special snapshot releases of OpenCOR available from: https://github.com/dbrnz/opencor/releases. In this part of the tutorial we are going to be using the *20 September 2019* snapshot of the Python-enabled OpenCOR.
+Python-enabled versions of OpenCOR are now relatively mature, but still undergoing extensive user testing and implementation review. As such, this functionality is only available in special snapshot releases of OpenCOR available from: https://github.com/dbrnz/opencor/releases. In this part of the tutorial we are going to be using the *20 September 2019* snapshot of the Python-enabled OpenCOR. This particular release is distributed with the following Python packages and their dependencies: ``numpy``, ``scipy``, and ``matplotlib``.
+
+.. contents::
 
 Installation and setup
 ======================
@@ -61,3 +63,141 @@ There is another mode to make use of the Python-enabled versions of OpenCOR and 
 .. todo::
 
     Write this section on Jupyter notebooks and OpenCOR.
+
+Installing packages
+-------------------
+
+As described above, the Python interpreter lives inside the OpenCOR application -- making it difficult to access in order to install packages or modules that are not distributed with the Python-enabled versions of OpenCOR. To install packages using ``pip`` combined with the interactive Python console in the OpenCOR graphical user interface is the way to go here, as shown below.
+
+.. code-block::
+
+    Jupyter QtConsole 4.5.5
+    Python 3.7.4 (default, Sep 20 2019, 18:29:34) [MSC v.1916 64 bit (AMD64)]
+    Type 'copyright', 'credits' or 'license' for more information
+    IPython 7.8.0 -- An enhanced Interactive Python. Type '?' for help.
+
+    In [1]: !pip install [options] package
+
+Basic usage
+===========
+
+The scope and capabilities of the Python interface to OpenCOR is still being refined, but here we focus on use of the capabilities relevant to performing simulation experiments. Here we walk through the basic usage of using Python to interact with OpenCOR in performing a simulation experiment.
+
+As with any Python script, we must first import the OpenCOR module to expose the functionality that we desire.
+
+.. code-block:: python
+
+    import OpenCOR as oc
+
+The main object that we are interested in dealing with is OpenCOR's representation of a simulation. OpenCOR is able to generate a default simulation for a CellML model or to load a SED-ML document which defines the simulation experiment in detail. As the exposed simulation features are not yet complete, it is best to load a SED-ML document giving full control over the simulation settings. The output plots defined in the SED-ML will also be used when running the Python code via the interactive Python console in OpenCOR, but will be disregarded when running via the command line mode.
+
+.. code-block:: python
+
+    # for a local file
+    simulation = oc.openSimulation('path/to/cellml/or/sedml')
+
+    # OR for loading a remote file, e.g., from the model repository:
+    simulation = oc.openRemoteSimulation('URL/of/cellml/or/sedml')
+
+    # OR if using the OpenCOR GUI and models are already loaded
+    simulation = oc.simulation()   # The model in the currently active tab
+
+For a given simulation, the ``data`` object houses all the relevant information and pointers to the OpenCOR internal data representations.
+
+.. code-block:: python
+
+    data = simulation.data()
+
+And the data object allows us to define the interval of interest for this simulation experiment.
+
+.. code-block:: python
+
+    data.setStartingPoint(start)
+    data.setEndingPoint(end)
+    data.setPointInterval(pointInterval)
+
+As in the OpenCOR graphical user interface, constant parameters and initial values for the state variables can also be set via the Python interface OpenCOR provides. When address specific variables in a model, they are mapped to Python dictionaries using key's comprising of ``component_name/variable_name``. This provides a method to uniquely identify all variables in a model.
+
+.. code-block:: python
+
+    # Set constant parameter values
+    data.constants()['key'] = value
+
+    # Set initial value for state variables
+    data.states()['key'] = value
+
+Once you have the simulation defined that you would like to perform, it can be executed with the following.
+
+.. code-block:: python
+
+    simulation.run()
+
+If you are using the OpenCOR graphical user interface and have define plots for the current simulation experiment, then these will be displayed as usual during the execution of the simulation. The simulation results can also be used directly in the Python script as shown below.
+
+.. code-block:: python
+
+    # Access simulation results
+    results = simulation.results()
+
+    # grab a specific state variable results
+    r1 = results.states()['key'].values()  # Numpy array
+
+    # grab a specific algebraic variable results
+    r2 = results.algebraic()['key'].values()  # Numpy array
+
+    # access the full datastore representation of the simulation results
+    ds = results.dataStore()
+    # the dictionary or all result variables in the simulation
+    variables = ds.voiAndVariables()
+
+    # grab a the results for a given variable
+    r3 = variables['key'].values()   # Python list of values
+
+When continuing a simulation from an existing state, the default behaviour is to continue from the current state. The system can be reset to the initial state as shown below. As with using the OpenCOR graphical user interface, this includes resetting any parameters or initial values that you may have set via the GUI or the Python interface.
+
+.. code-block:: python
+
+    # Reset things if needed when re-running
+    simulation.resetParameters()
+    # clear any existing results
+    simulation.clearResults()
+
+Interactive example
+-------------------
+
+In this example, we use the :ref:`simple ODE model <ocr_tut_out_first_ode>` introduced earlier in the tutorial. We will be using the Python console in the OpenCOR graphical user interface, working with the SED-ML loaded directly from the Physiome Model Repository. As we are using the OpenCOR application, you should see the user interface updating in response the to various Python commands. The following commands should be copy-pasted one at a time into the Python console to observe the behaviour.
+
+.. code-block:: python
+
+    import OpenCOR as oc
+
+    simulation = oc.openRemoteSimulation('https://models.physiomeproject.org/workspace/25d/rawfile/60ac9389285471a704f2f4be6e1a8ba5cbf45d1a/Firstorder.sedml')
+    data = simulation.data()
+    data.setStartingPoint(0)
+    data.setEndingPoint(10)
+    data.setPointInterval(0.1)
+    simulation.run()
+
+    # reset
+    simulation.resetParameters()
+    simulation.clearResults()
+
+    # change parameter values
+    data.constants()['main/b'] = 5
+    data.states()['main/y'] = 2
+    simulation.run()
+
+    # look at the simulation results
+    results = simulation.results()
+    y = results.states()['main/y'].values()  # Numpy array
+    print(y)
+
+    ds = results.dataStore()
+    variables = ds.voiAndVariables()
+    y = variables['main/y'].values()   # Python list of values
+    print(y)
+
+    a = variables['main/a'].values()
+    print(a)
+
+In working through this example, you should be able to reproduce the results as seen in :numref:`Fig. %s<ocr_tut_out_first_ord>`.
