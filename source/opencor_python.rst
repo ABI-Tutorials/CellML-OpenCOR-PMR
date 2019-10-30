@@ -201,3 +201,55 @@ In this example, we use the :ref:`simple ODE model <ocr_tut_out_first_ode>` intr
     print(a)
 
 In working through this example, you should be able to reproduce the results as seen in :numref:`Fig. %s<ocr_tut_out_first_ord>`.
+
+OpenCOR, CellML, and TensorFlow
+===============================
+
+`TensorFlow <https://www.tensorflow.org/>`_ is a popular end-to-end open source machine learning platform in Python. Together with the Python-enabled OpenCOR capabilities and CellML itself, this opens up a new world of application of machine learning in computational physiology. This is a very new application that we are still actively developing, but here we give a brief demonstration that might help show what could be achieved.
+
+Getting prepared
+----------------
+
+The first step is to ensure that you have TensorFlow installed. As described above, Python packages need to be installed in the Python embedded inside OpenCOR. We are using here TensorFlow version 1.15, which can be installed using the OpenCOR Python console with the following command. (TensorFlow 2.0 will not work with this demonstration.)
+
+.. code-block::
+
+    In [1]: !pip install tensorflow==1.15
+
+We have prepared a couple of Python scripts that you can use for this demonstration. The first is :download:`MPL.py <resources/python-demonstration-01/MLP.py>`, which is a TensorFlow-based script to construct a simple MLP (fully-connected feed-forward network or MultiLayer Perceptron) and trains it with a given dataset. The second is :download:`train-tf-model.py <resources/python-demonstration-01/train-tf-model.py>`, which will first generate a set of training data using the `O'Hara & Rudy <https://www.ncbi.nlm.nih.gov/pubmed/21637795>`_ cardiac electrophysiology model, which has been encoded in the CellML format as an extension of this `model <https://models.physiomeproject.org/e/4eb>`_ in the Physiome Model Repository. Both files should be downloaded into the same folder on your local machine.
+
+Finally, in the OpenCOR Python console we need to make sure the plotting happens in-place rather than trying to bring windows. This is done by exectuing the following command in the OpenCOR Python console.
+
+.. code-block::
+
+    In [1]: %matplotlib inline
+
+Training a machine learning model
+---------------------------------
+
+The :download:`train-tf-model.py <resources/python-demonstration-01/train-tf-model.py>` script is the one that contains the definition of the workflow we are demonstrating here. It is easiest to open this file in your preferred Python editor and follow through the script, with the comments attempting to explain what is happening.
+
+This script can be run in the OpenCOR Python console by first making sure the console is looking at the correct folder,
+
+.. code-block::
+
+    In [1]: %cd path/to/folder/with/downloaded/scripts
+
+and then running the training script as follows.
+
+.. code-block::
+
+    In [1]: %run train-tf-model.py
+
+All going well, this should result in something similar to :numref:`Fig. %s<ocr_tut_python_training_ML_model>`.
+
+.. Figure:: _static/images/python-opencor-02.png
+   :name: ocr_tut_python_training_ML_model
+   :alt: Training a TensorFlow machine learning model using a CellML model in OpenCOR.
+   :align: center
+   :width: 100%
+   :figwidth: 66%
+
+   The result of training a TensorFlow machine learning model using data from a simulation of a CellML model in OpenCOR and then comparing the ML-model predictions to the actual simulation results.
+
+You should now be able to play around with the training script to see what happens as you change, for example, the stimulation period or simulation duration.
