@@ -4,9 +4,9 @@
 SED-ML, functional curation and Web Lab
 =======================================
 
-In the same way that CellML models can be defined unambiguously, and shared easily, in a machine- readable format, there is a need to do the same thing with 'protocols' - i.e. to define what you have to do to replicate/simulate an experiment, and to analyse the results. An XML standard for this called SED-ML\ [#]_ is being developed by the CellML/SBML community and preliminary support for SED-ML has been implemented in OpenCOR in order to allow precise and reproducible control over the OpenCOR simulation and graphical output (e.g., see :numref:`ocr_tut_out_moble62_ocr`).
+In the same way that CellML models can be defined unambiguously, and shared easily, in a machine-readable format, there is a need to do the same thing with 'protocols' - i.e. to define what you have to do to replicate/simulate an experiment, and to analyse the results. An XML standard for this called SED-ML\ [#]_ is being developed by the COMBINE community and preliminary support for SED-ML has been implemented in OpenCOR in order to allow precise and reproducible control over the OpenCOR simulation and graphical output (e.g., see :numref:`ocr_tut_out_moble62_ocr`).
 
-The current snapshot release (2016-02-27) of OpenCOR supports exporting the *Simulation view* configuration to a SED-ML file, which can then be read back into OpenCOR to reproduce a given simulation experiment, illustrated in :numref:`ocr_tut_sedml_export_fig`.
+The recent versions of OpenCOR (since early 2016) support exporting the *Simulation view* configuration to a SED-ML file, which can then be read back into OpenCOR to reproduce a given simulation experiment, illustrated in :numref:`ocr_tut_sedml_export_fig`.
 
 .. figure:: _static/images/sedml_export.png
    :name: ocr_tut_sedml_export_fig
