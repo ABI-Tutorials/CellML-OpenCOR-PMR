@@ -65,8 +65,8 @@ to modular approaches (model hierarchies) and model annotation.
    pmr
    pmr_workspaces_in_opencor
    sedml_func_cur_web_lab
+   opencor_python
    speed_comp
-   future
    zreferences
    
 .. toctree::
