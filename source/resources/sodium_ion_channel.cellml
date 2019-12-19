@@ -1,97 +1,106 @@
 def model sodium_ion_channel as
-   def unit millisec as
-      unit second {pref: milli};
-   enddef;
-   def unit per_millisec as
-      unit second {pref: milli, expo: -1};
-   enddef;
-   def unit millivolt as
-      unit volt {pref: milli};
-   enddef;
-   def unit per_millivolt as
-      unit millivolt {expo: -1};
-   enddef;
-   def unit per_millivolt_millisec as
-      unit per_millivolt;
-      unit per_millisec;
-   enddef;
-   def unit microA_per_cm2 as
-      unit ampere {pref: micro};
-      unit metre {pref: centi, expo: -2};
-   enddef;
-   def unit milliS_per_cm2 as
-      unit siemens {pref: milli};
-      unit metre {pref: centi, expo: -2};
-   enddef;
-   def unit mM as
-      unit mole {pref: milli};
-   enddef;
-   def comp environment as
-      var V: millivolt {pub: out};
-      var t: millisec {pub: out};
-      V = sel
-      case (t > 5 {millisec}) and (t < 15 {millisec}):
-         -20.0 {millivolt};
-      otherwise:
-         -85.0 {millivolt}; 
-      endsel;
-   enddef;
-   def group as encapsulation for
-      comp sodium_channel incl
-         comp sodium_channel_m_gate;
-         comp sodium_channel_h_gate;
-      endcomp;
-   enddef;
-   def comp sodium_channel as
-      var V: millivolt {pub: in, priv: out};
-      var t: millisec {pub: in, priv: out };
-      var m: dimensionless {priv: in};
-      var h: dimensionless {priv: in};
-      var g_Na: milliS_per_cm2 {init: 120};
-      var i_Na: microA_per_cm2 {pub: out};
-      var Nao: mM {init: 140};
-      var Nai: mM {init: 30};
-      var RTF: millivolt {init: 25};
-      var E_Na: millivolt;
-      var Na_conductance: milliS_per_cm2 {pub: out};
+    def unit millisec as
+        unit second {pref: milli};
+    enddef;
 
-      E_Na=RTF*ln(Nao/Nai);
-      Na_conductance = g_Na*pow(m, 3{dimensionless})*h);
-      i_Na= Na_conductance*(V-E_Na);
-   enddef;
-      def comp sodium_channel_m_gate a s
-      var V: millivolt {pub: in};
-      var t: millisec {pub: in};
-      var alpha_m: per_millisec;
-      var beta_m: per_millisec;
-      var m: dimensionless {init: 0.05, pub: out};
-      alpha_m = 0.1{per_millivolt_millisec}*(V+25{millivolt})
-         /(exp((V+25{millivolt})/10{millivolt})-1{dimensionless});
-      beta_m = 4{per_millisec}*exp(V/18{millivolt});
-      ode(m, t) = alpha_m*(1{dimensionless}-m)-beta_m*m;
-   enddef;
-   def comp sodium_channel_h_gate as
-      var V: millivolt {pub: in};
-      var t: millisec {pub: in};
-      var alpha_h: per_millisec;
-      var beta_h: per_millisec;
-      var h: dimensionless {init: 0.6, pub: out};
-      alpha_h = 0.07{per_millisec}*exp(V/20{millivolt});
-      beta_h = 1{per_millisec}/(exp((V+30{millivolt})/10{millivolt})+1{dimensionless});
-      ode(h, t) = alpha_h*(1{dimensionless}-h)-beta_h*h;
-   enddef;
-   def map between environment and sodium_channel for
-      vars V and V;
-      vars t and t;
-   enddef;
-   def map between sodium_channel and sodium_channel_m_gate for
-      vars V and V;
-      vars t and t;
-      vars m and m;
-   enddef;
-   def map between sodium_channel and sodium_channel_h_gate for
-      vars V and V;
-      vars t and t;
-      vars h and h;
-   enddef;
+    def unit per_millisec as
+        unit second {pref: milli, expo: -1};
+    enddef;
+
+    def unit millivolt as
+        unit volt {pref: milli};
+    enddef;
+
+    def unit per_millivolt as
+        unit millivolt {expo: -1};
+    enddef;
+
+    def unit per_millivolt_millisec as
+        unit per_millivolt;
+        unit per_millisec;
+    enddef;
+
+    def unit microA_per_cm2 as
+        unit ampere {pref: micro};
+        unit metre {pref: centi, expo: -2};
+    enddef;
+
+    def unit milliS_per_cm2 as
+        unit siemens {pref: milli};
+        unit metre {pref: centi, expo: -2};
+    enddef;
+
+    def comp environment as
+        var V: millivolt {pub: out};
+        var t: millisec {pub: out};
+
+        V = sel
+            case (t > 5{millisec}) and (t < 15{millisec}):
+                0.0{millivolt};
+            otherwise:
+                -85.0{millivolt};
+        endsel;
+    enddef;
+
+    def group as encapsulation for
+        comp sodium_channel incl
+            comp sodium_channel_m_gate;
+            comp sodium_channel_h_gate;
+        endcomp;
+    enddef;
+
+    def comp sodium_channel as
+        var V: millivolt {pub: in, priv: out};
+        var t: millisec {pub: in, priv: out};
+        var m: dimensionless {priv: in};
+        var h: dimensionless {priv: in};
+        var g_Na: milliS_per_cm2 {init: 120};
+        var E_Na: millivolt {init: 35};
+        var Na_conductance: milliS_per_cm2 {pub: out};
+        var i_Na: microA_per_cm2 {pub: out};
+
+        Na_conductance = g_Na*pow(m, 3{dimensionless})*h;
+        i_Na = Na_conductance*(V-E_Na);
+    enddef;
+
+    def comp sodium_channel_m_gate as
+        var V: millivolt {pub: in};
+        var t: millisec {pub: in};
+        var alpha_m: per_millisec;
+        var beta_m: per_millisec;
+        var m: dimensionless {init: 0.05, pub: out};
+
+        alpha_m = -0.1{per_millivolt_millisec}*(V+50{millivolt})/(exp(-(V+50{millivolt})/10{millivolt})-1{dimensionless});
+        beta_m = 4{per_millisec}*exp(-(V+75{millivolt})/18{millivolt});
+        ode(m, t) = alpha_m*(1{dimensionless}-m)-beta_m*m;
+    enddef;
+
+    def comp sodium_channel_h_gate as
+        var V: millivolt {pub: in};
+        var t: millisec {pub: in};
+        var alpha_h: per_millisec;
+        var beta_h: per_millisec;
+        var h: dimensionless {init: 0.6, pub: out};
+
+        alpha_h = 0.07{per_millisec}*exp(-(V+75{millivolt})/20{millivolt});
+        beta_h = 1{per_millisec}/(exp(-(V+45{millivolt})/10{millivolt})+1{dimensionless});
+        ode(h, t) = alpha_h*(1{dimensionless}-h)-beta_h*h;
+    enddef;
+
+    def map between sodium_channel and environment for
+        vars V and V;
+        vars t and t;
+    enddef;
+
+    def map between sodium_channel and sodium_channel_m_gate for
+        vars V and V;
+        vars t and t;
+        vars m and m;
+    enddef;
+
+    def map between sodium_channel and sodium_channel_h_gate for
+        vars V and V;
+        vars t and t;
+        vars h and h;
+    enddef;
 enddef;
