@@ -68,11 +68,6 @@ to modular approaches (model hierarchies) and model annotation.
    opencor_python
    speed_comp
    zreferences
-   
-.. toctree::
-   :hidden:
-   
-   ../README
 
 .. todo::
 
