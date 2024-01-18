@@ -120,6 +120,11 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'logo': 'images/OpenCOR.png',
+    "description": "Introducing OpenCOR, PMR, and CellML",
+    "fixed_sidebar": False,
+    "sidebar_width": "250px",
+    "page_width": "1140px",
+    "show_relbars": False
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -160,7 +165,14 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'about.html',
+        'searchbox.html',
+        'navigation.html',
+        'relations.html',
+    ]
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
