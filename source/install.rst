@@ -63,7 +63,7 @@ Python
 ======
 
 OpenCOR version 0.7 introduced support for Python scripting, both within the application itself (see the Python console in :numref:`Fig. %s<ocr_tut_main_win>`) and from Python scripts outside the application.
-Comprehensive description of this capability is provided on the OpenCOR `Python support page <https://opencor.ws/user/pythonSupport.html#pythonsupport>`_) and in :ref:`cellml_opencor_pmr_tutorial__opencor_python` we provide some brief guidance.
+Comprehensive description of this capability is provided on the OpenCOR `Python support page <https://opencor.ws/user/pythonSupport.html#pythonsupport>`_ and in :ref:`cellml_opencor_pmr_tutorial__opencor_python` we provide some brief guidance.
 
 ---------------------------
 
