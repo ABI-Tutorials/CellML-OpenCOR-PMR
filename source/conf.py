@@ -52,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenCOR Tutorial'
-copyright = u'2015, Peter Hunter'
+copyright = u'2024, Peter Hunter'
 author = u'Peter Hunter'
 
 # The version info for the project you're documenting, acts as replacement for
