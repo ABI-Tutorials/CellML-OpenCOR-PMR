@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinxcontrib.bibtex'
 ]
+bibtex_bibfiles = ['refs.bib']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -51,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenCOR Tutorial'
-copyright = u'2015, Peter Hunter'
+copyright = u'2024, Peter Hunter'
 author = u'Peter Hunter'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -68,7 +69,7 @@ release = '0.18.0-alpha'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -119,6 +120,11 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'logo': 'images/OpenCOR.png',
+    "description": "Introducing OpenCOR, PMR, and CellML",
+    "fixed_sidebar": False,
+    "sidebar_width": "250px",
+    "page_width": "1140px",
+    "show_relbars": False
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -159,7 +165,14 @@ html_static_path = ['_static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    '**': [
+        'about.html',
+        'searchbox.html',
+        'navigation.html',
+        'relations.html',
+    ]
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
