@@ -219,7 +219,7 @@ follows:
 +-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
 
 Units for this model, with multiples and fractions, are illustrated in
-the following *CellML Text* code:
+the following *CellML Text* code\ [#]_:
 
 .. code-block:: cell
    :linenos:
@@ -342,3 +342,8 @@ show now for the neural potassium and sodium ion channels.
    further in a later section.
 
 .. [#] http://en.wikipedia.org/wiki/International_System_of_Units.
+
+.. [#]
+   To check for unit consistency in OpenCOR, switch to the `Raw CellML` view (to the right of the editor), right click on the editor (to open the context menu), and click on the `CellML Validation​` menu item.
+   If there are unit inconsistencies, they will be listed below the editor.
+   Note that even if a model has unit inconsistencies, it can still be run in OpenCOR, but the results may not be physically meaningful.
