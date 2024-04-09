@@ -14,7 +14,7 @@ window will appear that looks like :numref:`Fig. %s(a)<ocr_tut_main_win>`.
    :name: ocr_tut_main_win
    :alt: OpenCOR application
    :align: center
-   
+
    OpenCOR application (a) Default positioning of dockable windows. (b) An
    alternative configuration achieved by dragging and dropping the dockable
    windows.
@@ -28,8 +28,8 @@ are dockable windows, which provide additional features. Those windows
 can be dragged and dropped to the top or bottom of the central area as
 shown in Figure 1(b) or they can be individually undocked or closed. All
 closed panels can be re-displayed by enabling them in the *View* menu,
-or by using the *Tools* menu *Reset All* option. The key combination 
-:kbd:`Control-spacebar` removes (for less clutter) or restores these 
+or by using the *Tools* menu *Reset All* option. The key combination
+:kbd:`Control-spacebar` removes (for less clutter) or restores these
 two side panels [#]_.
 
 Any of the subpanels (*Physiome Model Repository*, *File Browser*, and
@@ -52,8 +52,8 @@ about developing plugins for OpenCOR is also `available <https://www.opencor.ws/
    :align: center
    :width: 100%
    :figwidth: 66%
-   
-   OpenCOR tools menu showing the plugins that are selectable.  Untick 
+
+   OpenCOR tools menu showing the plugins that are selectable.  Untick
    the box on the bottom left to show all plugins.
 
 ---------------------------
@@ -65,4 +65,3 @@ about developing plugins for OpenCOR is also `available <https://www.opencor.ws/
 .. [#] |cmd| :kbd:`-spacebar` being the equivalent on OS X.
 
 .. |cmd| unicode:: U+2318
-

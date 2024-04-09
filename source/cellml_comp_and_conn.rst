@@ -36,10 +36,10 @@ the channel conductance.
    :alt: Voltage dependencies of gate constants
    :align: right
    :figwidth: 8cm
-   
+
    Voltage dependence of rate constants :math:`\alpha_n` and :math:`\beta_n\ (\text{ms}^{-1})`, time constant
    :math:`\tau_n\ (\text{ms})` and relative conductance :math:`\frac{g_{SS}}{\bar{g}_Y}`.
-   
+
 The gating kinetics are described (as before) by
 
 :math:`\frac{\text{dn}}{\text{dt}} = \alpha_{n}\left( 1 - n \right) - \beta_{n}\text{.n}`
@@ -66,9 +66,9 @@ Note that under steady state conditions when
    :alt: Steady-state current voltage
    :align: right
    :figwidth: 8cm
-   
+
    The steady-state current-voltage relation for the potassium channel.
-   
+
 The voltage dependence of the steady state channel conductance is then
 
 :math:`g_{\text{SS}} = \left( \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} \right)^{4}.\bar{g}_{Y}`.
@@ -85,9 +85,9 @@ to explain some further CellML concepts.
    :alt: CellML components legend
    :align: right
    :figwidth: 8cm
-   
+
    Key entities in a CellML model.
-   
+
 We introduced CellML :red:`units` above. We now need to introduce three
 more CellML constructs: :green:`components`, :orange:`connections` (mappings
 between components) and :purple:`groups`. For completeness we also show one
@@ -112,7 +112,7 @@ follows\ [#]_:
 .. code-block:: cell
    :name: ocr_tut_k_ion_ch_ctc
    :linenos:
-   
+
    def model potassium_ion_channel as
       def unit millisec as
          unit second {pref: milli};
@@ -258,7 +258,7 @@ albeit brief since the channel is closing.
    :name: ocr_tut_kin_pot_ch
    :alt: Kinetics of the potassium channel
    :align: center
-   
+
    Kinetics of the potassium channel gates for a voltage
    step from 0mV to -85mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/66e44ef897fca3e513c077adfff0380acbdc9bf2/potassium_ion_channel.sedml>`_). The voltage clamp step is shown at the top, then
    the n gate first order response, then the channel conductance, then the

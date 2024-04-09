@@ -43,7 +43,7 @@ channel.
    :name: ocr_tut_cur_volt_relations
    :alt: Current voltage relations
    :align: center
-   
+
    Current-voltage relations (a) around the equilibrium
    potentials for the potassium and sodium channels in cardiac cells. The
    sodium channel is similar to the one in neurons but the two potassium
@@ -120,7 +120,7 @@ and passed down to the individual ion channel models.
    :name: ocr_tut_ove_str_noble62
    :alt: Current voltage relations
    :align: center
-   
+
    Overall structure of the Noble62 CellML model showing the
    encapsulation hierarchy (:purple:`purple`), the CellML model imports
    (:blue:`blue`) and the other key parts (:red:`units`, :green:`components` &
@@ -223,7 +223,7 @@ Raw text: :download:`Noble_1962.txt <resources/Noble_1962.txt>`, XML file: `Nobl
          vars i_L and i_L;
       enddef;
    enddef;
-   
+
 Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file `Noble62_units.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_units.cellml>`_.
 
 .. code-block:: cell
@@ -258,7 +258,7 @@ Raw text: :download:`Noble62_units.txt <resources/Noble62_units.txt>`, XML file 
          unit ampere {pref: nano};
       enddef;
    enddef;
-   
+
 Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`, XML file `Noble62_parameters.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_parameters.cellml>`_.
 
 .. code-block:: cell
@@ -274,7 +274,7 @@ Raw text: :download:`Noble62_parameters.txt <resources/Noble62_parameters.txt>`,
          var Nao: mM {init: 140, pub: out};
       enddef;
    enddef;
-   
+
 Raw text: :download:`Noble62_Na_channel.txt <resources/Noble62_Na_channel.txt>`, XML file `Noble62_Na_channel.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_Na_channel.cellml>`_.
 
 .. code-block:: cell
@@ -409,7 +409,7 @@ Raw text: :download:`Noble62_K_channel.txt <resources/Noble62_K_channel.txt>`, X
          vars n and n;
       enddef;
    enddef;
-      
+
 Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, XML file `Noble62_L_channel.cellml <https://models.physiomeproject.org/workspace/25d/rawfile/aec9dd2760d3512135605017226531ac1d4d0d0f/Noble62_L_channel.cellml>`_.
 
 .. code-block:: cell
@@ -429,12 +429,12 @@ Raw text: :download:`Noble62_L_channel.txt <resources/Noble62_L_channel.txt>`, X
          i_L = g_L*(V-E_L);
       enddef;
    enddef;
-   
+
 .. figure:: _static/images/opencor_output_noble62.png
    :name: ocr_tut_out_moble62_ocr
    :alt: OpenCOR output of Noble 62 model
    :align: center
-   
+
    Output from the Noble62 model (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/c584eab55e20fdc9cffb9d20a5d548b9910e18fd/Noble_1962.sedml>`_). Top panel is
    :math:`V\left( t \right)`, the cardiac action potential. The next
    panel has the two membrane ion channel currents

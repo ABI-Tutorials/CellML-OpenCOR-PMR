@@ -35,4 +35,3 @@ These notes are currently being extended to include
 -  more extensive discussion of membrane protein models
 
 -  CellML modules for signal transduction pathways
-

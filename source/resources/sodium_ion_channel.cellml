@@ -33,7 +33,7 @@ def model sodium_ion_channel as
       case (t > 5 {millisec}) and (t < 15 {millisec}):
          -20.0 {millivolt};
       otherwise:
-         -85.0 {millivolt}; 
+         -85.0 {millivolt};
       endsel;
    enddef;
    def group as encapsulation for

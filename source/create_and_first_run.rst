@@ -22,12 +22,12 @@ variable :math:`y`:
 
 .. math::
    :label: first_order_eqns
-   
+
    \frac{\text{dx}}{\text{dt}} =\ y
-   
+
 .. math::
    :label: first_order_eqns_2
-   
+
    \frac{\text{dy}}{\text{dt}} =\ \mu\left( 1 - x^{2} \right)y - x
 
 The initial conditions are now :math:`x = - 2;y = 0`.
@@ -52,12 +52,12 @@ where the code should go:
        enddef;
    enddef;
 
-Things to note\ [#]_ are: 
+Things to note\ [#]_ are:
 
  i. the closing semicolon at the end of each line (apart from the first two *def* statements that are opening a CellML construct);
  #. the need to indicate dimensions for each variable and constant (all dimensionless in this example – but more on dimensions later);
  #. the use of *ode(x,t)* to indicate a first order\ [#]_ ODE in *x* and *t*
- #. the use of the squaring function *sqr(x)* for :math:`x^{2}`, and 
+ #. the use of the squaring function *sqr(x)* for :math:`x^{2}`, and
  #. the use of ‘//’ to indicate a comment.
 
 A partial list of mathematical functions available for OpenCOR is:
@@ -98,7 +98,7 @@ several CellML models to create a composite model.
    :name: ocr_tut_ren_math_eqn
    :alt: Render math equation and save CellML model
    :align: center
-	
+
    (a) Positioning the cursor over an equation and clicking
    (shown by the highlighted line) renders the maths. (b) Once the model
    has been successfully saved, the *CellML Text* view tab becomes white
@@ -235,7 +235,7 @@ the key characteristics of the equations being solved.
    :name: ocr_tut_gra_out
    :align: center
    :alt: Graphical output from simulation run
-   
+
    Graphical output from OpenCOR. The top window is *x(t)*,
    the middle is *y(t)* and the bottom is *y(x)*. The *Graphs* panel shows that *y(x)* is being plotted on the graph
    output window highlighted by the LH blue line.
@@ -290,43 +290,42 @@ sensitive.
 
 .. |image_run| image:: _static/images/sim_panel_btn_1.png
    :height: 12pt
-   
+
 .. |image_stop| image:: _static/images/sim_panel_btn_2.png
    :height: 12pt
-   
+
 .. |image_reset| image:: _static/images/sim_panel_btn_3.png
    :height: 12pt
-   
+
 .. |image_clear| image:: _static/images/sim_panel_btn_4.png
    :height: 12pt
-   
+
 .. |image_delay| image:: _static/images/sim_panel_btn_5.png
    :height: 12pt
-   
+
 .. |image_add| image:: _static/images/sim_panel_btn_6.png
    :height: 12pt
-   
+
 .. |image_sub| image:: _static/images/sim_panel_btn_7.png
    :height: 12pt
-   
+
 .. |image_csv| image:: _static/images/sim_panel_btn_8.png
    :height: 12pt
-   
+
 .. |image_con| image:: _static/images/constant.png
    :height: 12pt
-   
+
 .. |image_ccon| image:: _static/images/computedConstant.png
    :height: 12pt
-   
+
 .. |image_sta| image:: _static/images/state.png
    :height: 12pt
-   
+
 .. |image_voi| image:: _static/images/voi.png
    :height: 12pt
-   
+
 .. |image_rate| image:: _static/images/rate.png
    :height: 12pt
-   
+
 .. |image_alg| image:: _static/images/algebraic.png
    :height: 12pt
-   
