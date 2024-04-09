@@ -65,11 +65,6 @@ to modular approaches (model hierarchies) and model annotation.
    speed_comp
    future
    zreferences
-   
-.. toctree::
-   :hidden:
-   
-   ../README
 
 .. todo::
 

@@ -1,2 +1,3 @@
+setuptools
 sphinxcontrib-bibtex
 -e git+https://github.com/ABI-Software/pygments-cellscript.git#egg=pygments-cellscriptlexer
