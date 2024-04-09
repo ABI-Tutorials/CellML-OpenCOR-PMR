@@ -341,4 +341,4 @@ show now for the neural potassium and sodium ion channels.
    the interests of modelling simplicity. We investigate this idea
    further in a later section.
 
-.. [#] http://en.wikipedia.org/wiki/International_System_of_Units
+.. [#] http://en.wikipedia.org/wiki/International_System_of_Units.
