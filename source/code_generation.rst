@@ -25,11 +25,11 @@ The steps to generate code from OpenCOR are given below.
 This conversion can also be performed using OpenCOR as a command line client. In this case the command is::
 
    $ ./OpenCOR -c CellMLTools::export myfile.cellml myformat.xml
-   
+
 or for a remote model::
 
    $ ./OpenCOR -c CellMLTools::export http://mydomain.com/myfile.cellml myformat.xml
-   
+
 where :file:`myformat.xml` can be one of the standard definition files described above.
 
 Generated code in PMR

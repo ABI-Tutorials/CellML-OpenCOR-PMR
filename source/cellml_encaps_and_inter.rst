@@ -51,10 +51,10 @@ it is useful to use the terms ‘parent’, ‘child’ and ‘sibling’.
 
 .. code-block:: cell
 
-   def group as encapsulation for 
+   def group as encapsulation for
       comp sodium_channel incl
          comp sodium_channel_m_gate;
-         comp sodium_channel_h_gate; 
+         comp sodium_channel_h_gate;
       endcomp;
    enddef;
 
@@ -74,7 +74,7 @@ interface* allows siblings to talk among themselves and to their parents
    :name: ocr_tut_int_bet_comp
    :alt: Interfaces between CellML components
    :align: center
-   
+
    Children talk to each other as siblings, and to their
    parents, via *public interfaces*. But the outside world can only talk
    to children through their parents via a *private interface*. Note that
@@ -196,7 +196,7 @@ The OpenCOR *CellML Text* for the HH sodium ion channel is given below.
       enddef;
    enddef;
 
-   
+
 The results of the OpenCOR computation, with *Ending point* 40 and
 *Point interval* 0.1, are shown in :numref:`ocr_tut_kin_na_ch_vs` with plots :math:`V\left( t \right)`, :math:`m\left( t \right)`,
 :math:`h\left( t \right)`, :math:`g_{\text{Na}}\left( t \right)` and
@@ -235,7 +235,7 @@ more or less space depending on their magnitude.
    :name: ocr_tut_kin_na_ch_vs
    :alt: Interfaces between CellML components
    :align: center
-   
+
    Kinetics of the sodium channel gates for voltage steps to (a) -20mV, (b) 0mV (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/31aa609fc5a976bb65b2803a4bc24776d4ef612b/sodium_ion_channel.sedml>`_), and (c) 20mV.
 
 
@@ -244,11 +244,3 @@ more or less space depending on their magnitude.
 .. rubric:: Footnotes
 
 .. [#] The HH paper used :math:`\alpha_m\ =\ \frac{0.1(v+25)}{e^{\frac{(v+25)}{10}}-1}`; :math:`\beta_m\ =\ 4e^{\frac{v}{18}}`; :math:`\alpha_h\ =\ 0.07e^{\frac{v}{20}}`; :math:`\beta_h\ =\ \frac{1}{e^{\frac{(v+30)}{10}}+1}`;.
-
-
-
-
-
-
-
-

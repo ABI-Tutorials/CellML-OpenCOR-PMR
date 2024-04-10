@@ -12,7 +12,7 @@ Tutorial on CellML, OpenCOR & the Physiome Model Repository
 
 .. note::
    This tutorial originated from a translation from a single Word document in July 2015. Aspects of formatting and presentation may need further work. For reference, the original tutorial is available here: :download:`OpenCOR-Tutorial-v17.pdf <resources/OpenCOR-Tutorial-v17.pdf>`.
-   
+
    The current tutorial has now progressed well beyond the original version and we recommend using this online version or the PDF available via `ReadTheDocs <http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/>`_.
 
 
@@ -73,13 +73,13 @@ to modular approaches (model hierarchies) and model annotation.
 
    * Colour background of *CellML Text*
    * Annotate screen shots with svg for same look and feel
-   * *CellML Text* code is not highlighted for all display situations, currently only in environments that are using an adapted version of pygments 
+   * *CellML Text* code is not highlighted for all display situations, currently only in environments that are using an adapted version of pygments
    * Tidy up citations and BiBTeX source (possibly use Zotero to manage?)
    * Make horizontal line for footnotes only visible in html output
    * Check external references markup
    * Consider a more suitable theme (may require changes to an existing one to get a good result)
    * Must check over output (and models) from screenshots to make sure that it matches the current release of OpenCOR, especially against running experiments for the first time.
-   
+
 ---------------------------
 
 .. rubric:: Footnotes
@@ -93,4 +93,3 @@ to modular approaches (model hierarchies) and model annotation.
 .. [#] For details on the specifications of CellML1.0 see http://www.cellml.org/specifications/cellml_1.0.
 
 .. [#] Please send any errors discovered or suggested improvements to p.hunter@auckland.ac.nz.
-
