@@ -98,4 +98,3 @@ now globally, for the VPH-Physiome Project.
    inaugural Director was Marco Viceconti. The current Director is
    Adriano Henney. The inaugural and current President of the
    VPH-Institute is Denis Noble.
-

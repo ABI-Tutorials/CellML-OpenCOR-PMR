@@ -42,7 +42,7 @@ creating.
    :name: ocr_tut_pmr_win
    :alt: PMR window
    :align: center
-   
+
    The Physiome Model Repository (PMR) window listing all PMR
    models. These can be opened from within OpenCOR using the two buttons to
    the right of a model, as explained below.
@@ -51,4 +51,3 @@ In the PMR window (:numref:`ocr_tut_pmr_win`) the buttons on the right-hand side
 
 .. |image_cross| image:: _static/images/close_red_square.png
    :height: 12pt
-   

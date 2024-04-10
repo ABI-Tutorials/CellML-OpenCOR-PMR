@@ -75,7 +75,7 @@ as explained below.
    :alt: OpenCOR annotation view
    :align: right
    :figwidth: 7.5cm
-   
+
    Clicking on *CellML Annotation* lists the CellML components with their variables ready for annotation.
 
 If we now go back to the potassium ion channel CellML model and, under
@@ -109,7 +109,7 @@ information displayed about this qualifier.
    :name: ocr_tut_ocr_qualifiers
    :alt: Object qualifiers
    :align: center
-   
+
    The qualifiers are displayed from the top right menu.
    Clicking on the most appropriate one (bio:isVersionOf) gives more
    information about this qualifier in the bottom panel.
@@ -126,14 +126,14 @@ information about this term (see :numref:`ocr_tut_ocr_qual_res_info`).
    :name: ocr_tut_ocr_ont_terms_pot
    :alt: Ontological terms for potassium
    :align: center
-   
+
    The ontological terms listed when ‘potassium channel’ is entered into the search box next to *Term*.
 
 .. figure:: _static/images/opencor_qual_res_info.png
    :name: ocr_tut_ocr_qual_res_info
    :alt: Qualifier resource and ID information
    :align: center
-   
+
    The qualifier, resource & ID information in the middle
    panel appears when you click on the |image_add| button next to the
    selected term in Fig.32. GO identifier details are listed when either of
@@ -155,7 +155,7 @@ shown in :numref:`ocr_tut_pot_ch_anno_diag`, along with the annotation for the v
    :name: ocr_tut_pot_ch_anno_diag
    :alt: Annotation of the potassium channel diagram
    :align: center
-   
+
    The RDF triple used in CellML metadata to link a CellML
    element (component or variable) with an ontological term from one of the
    five ontologies accessed via
@@ -233,8 +233,6 @@ ontologies OPB, ChEBI, GO, FMA and a species ontology, respectively.
 
 .. |image_add| image:: _static/images/sim_panel_btn_6.png
    :height: 12pt
-   
+
 .. |image_sub| image:: _static/images/sim_panel_btn_7.png
    :height: 12pt
-   
-   

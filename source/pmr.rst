@@ -63,7 +63,7 @@ model in the alphabetic listing of models under the *Electrophysiology* category
    :alt: PMR exposure page for the Hund-Rudy 2004 model
    :align: center
    :figwidth: 95%
-   
+
    The Physiome Model Repository exposure page for the basic `Hund-Rudy 2004 model <https://models.physiomeproject.org/exposure/f4b7120aa512c7f5e7a0664abcee3e8b/hund_rudy_2004_a.cellml/view>`_.
 
 The section labelled ‘Model Structure’ contains the journal paper
@@ -78,7 +78,7 @@ individual ion channels for electrophysiology models.
    :alt: Hund 2004 shematic diagram
    :align: center
    :figwidth: 95%
-   
+
    A diagrammatic representation of the Hund-Rudy 2004 model.
 
 There is a list of ‘Views Available’ for the CellML model on the
@@ -152,7 +152,7 @@ Biomodels database :cite:`15`.
    :alt: Thiazide-sensitive Na-Cl cotransporter workspace
    :align: center
    :figwidth: 95%
-   
+
    The PMR workspace for the Thiazide-sensitive Na-Cl
    cotransporter. Bioinformatic data for this model is accessed via the
    links under the headings highlight by the :red:`arrows` and include
@@ -231,4 +231,3 @@ Biomodels database :cite:`15`.
 .. |image_variable_node_6| image:: _static/images/bar.png
    :height: 10pt
    :width: 6pt
-

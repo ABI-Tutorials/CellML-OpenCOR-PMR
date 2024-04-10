@@ -10,10 +10,10 @@ equations) is the *Lorenz equations*\ [#]_.
    :name: ocr_tut_cellml_lorenz
    :alt: CellML Lorenz equations in OpenCOR
    :align: right
-   :figwidth: 400 
-   
+   :figwidth: 400
+
    *CellML Text* code for the Lorenz equations.
-   
+
 This system has three equations:
 
 .. math::
@@ -49,7 +49,7 @@ sends it off to the right hand wing of the attractor.
    :name: ocr_tut_soln_lorenz
    :alt: Solutions of the Lorenz equations
    :align: center
-   
+
    Solutions of the Lorenz equations. Note that the
    parameters on the left have been reset to their initial values for this
    figure – normally they would be at their final solution values.
@@ -62,9 +62,9 @@ form - even rendered in crochet!\ [#]_ (See :numref:`ocr_tut_crotchet`).
    :name: ocr_tut_crotchet
    :alt:  Crotchet of the Lorenz manifold
    :align: center
-   
+
    The crocheted Lorenz manifold made by Professors Hinke Osinga and Bernd Krauskopf of the Mathematics Department at the University of Auckland, New Zealand.
-   
+
 .. note::
    The simulation presented in :numref:`ocr_tut_soln_lorenz` can be loaded direction into OpenCOR using this `link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/f0e63e292ebb1d6798da08914b4217aec434af96/lorenz.sedml>`_.
 
@@ -94,4 +94,3 @@ in parameter values.
 .. [#] http://en.wikipedia.org/wiki/Lorenz_system
 
 .. [#] http://www.math.auckland.ac.nz/~hinke/crochet/
-

@@ -26,9 +26,9 @@ driving an ion through the pore is calculated from the change in
    :alt: Distribution of microstates
    :align: right
    :figwidth: 300
-   
-   Distribution of microstates in a system :cite:`11`. The 16 particles in a confined region (left) have only one possible arrangement (W = 1) and    therefore zero entropy (:math:`k_{B}\text{lnW}=0`). When the barrier is removed and the number of possible locations for each particle increases 4x (right), the number of possible arrangements for the 16 particles increases by 416 and the increase in entropy is therefore :math:`ln(416)` or :math:`16ln4`. The thermal energy (temperature) of the previously confined particles on the left has been redistributed in space to achieve a more probable (higher entropy) state. If we now added more particles to the container on the right, the concentration would increase and the entropy would decrease. 
-   
+
+   Distribution of microstates in a system :cite:`11`. The 16 particles in a confined region (left) have only one possible arrangement (W = 1) and    therefore zero entropy (:math:`k_{B}\text{lnW}=0`). When the barrier is removed and the number of possible locations for each particle increases 4x (right), the number of possible arrangements for the 16 particles increases by 416 and the increase in entropy is therefore :math:`ln(416)` or :math:`16ln4`. The thermal energy (temperature) of the previously confined particles on the left has been redistributed in space to achieve a more probable (higher entropy) state. If we now added more particles to the container on the right, the concentration would increase and the entropy would decrease.
+
 Entropy :math:`S` (:math:`J.K^{-1}`) is a measure of the number of
 microstates available to a system, as defined by Boltzmann’s equation
 :math:`S = k_{B}\text{lnW}`, where :math:`W` is the number of ways of
@@ -67,9 +67,9 @@ At 25°C (298K), :math:`\text{RT} \approx 2.5 kJ.mol^{-1}`.
    :alt: Balance of entropic and electrostatic forces
    :align: right
    :figwidth: 250
-   
+
    The balance between :purple:`entropic` and :red:`electrostatic` forces determines the Nernst potential.
-   
+
 Every positively charged ion that crosses the membrane raises the
 potential difference and produces an electrostatic driving force that
 opposes the entropic force (see :numref:`ocr_tut_bal_force`). To move an electron of
@@ -103,9 +103,9 @@ where :math:`E_{Y}` is the 'equilibrium' or 'Nernst' potential for
    :alt: Open channel linear IV
    :align: right
    :figwidth: 250
-   
+
    Open channel linear current-voltage relation
-   
+
 For an open channel the electrochemical current flow is driven by the
 open channel conductance :math:`{\overset{\overline{}}{g}}_{Y}` times
 the difference between the transmembrane voltage :math:`V` and the
@@ -122,17 +122,17 @@ conductance.
    :alt: Ion channel gating kinetics
    :align: right
    :figwidth: 250
-   
+
    Ion channel gating kinetics. y is the fraction of gates in the open state. α_y and β_y  are the rate constants for opening and closing, respectively.
-   
+
 .. figure:: _static/images/transient_beh_gates.png
    :name: ocr_tut_trans_gate_beh
    :alt: Transient gate behaviour
    :align: right
    :figwidth: 250
-   
+
    Transient behaviour for one gate (left) and γ gates in series (right). Note that the right hand graph has an initial S-shaped increase, reflecting the multiple gates in series.
-   
+
 To describe the time dependent transition between the closed and open
 states of the channel, Hodgkin and Huxley introduced the idea of channel
 gates that control the passage of ions through a membrane ion channel.
@@ -219,7 +219,7 @@ follows:
 +-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+-----------------+------------------+------------------+------------------+------------------+------------------+
 
 Units for this model, with multiples and fractions, are illustrated in
-the following *CellML Text* code:
+the following *CellML Text* code\ [#]_:
 
 .. code-block:: cell
    :linenos:
@@ -274,7 +274,7 @@ illustrated in :numref:`ocr_tut_ocr_4_ion_ch`.
    :name: ocr_tut_ocr_4_ion_ch
    :alt: OpenCOR solution to 4 gate ion channel model
    :align: center
-   
+
    The behaviour of an ion channel with :math:`\gamma = 4`
    gates transitioning from the closed to the open state at a membrane
    voltage :math:`V = 0` (`OpenCOR link <opencor://openFile/https://models.physiomeproject.org/workspace/25d/rawfile/c4b85039efecd603ee0b9d4ad46e3015b91fdef7/SimpleFirstOrderEqn.sedml>`_). The opening and closing rate constants are
@@ -341,5 +341,9 @@ show now for the neural potassium and sodium ion channels.
    the interests of modelling simplicity. We investigate this idea
    further in a later section.
 
-.. [#] http://en.wikipedia.org/wiki/International_System_of_Units
+.. [#] http://en.wikipedia.org/wiki/International_System_of_Units.
 
+.. [#]
+   To check for unit consistency in OpenCOR, switch to the `Raw CellML` view (to the right of the editor), right click on the editor (to open the context menu), and click on the `CellML Validation​` menu item.
+   If there are unit inconsistencies, they will be listed below the editor.
+   Note that even if a model has unit inconsistencies, it can still be run in OpenCOR, but the results may not be physically meaningful.
